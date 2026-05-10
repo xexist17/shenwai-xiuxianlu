@@ -1442,8 +1442,13 @@ const state = {
   combatTurn: 'player',  // 'player' | 'boss' | 'over'
   playerShield: 0,
 
-  // 戰鬥屬性（修煉累積，永久持有，存 localStorage）
+  // 戰鬥屬性（境界提升時加，永久持有）
   combatStats: JSON.parse(localStorage.getItem('combatStats') || '{}'),
+
+  // 通讀進度（每書答對的題目）
+  questionMastery: JSON.parse(localStorage.getItem('questionMastery') || '{}'),
+  // 已通讀的書 → 解鎖招式
+  masteredBooks: JSON.parse(localStorage.getItem('masteredBooks') || '[]'),
 
   // 統計 / 成就
   stats: JSON.parse(localStorage.getItem('stats') || '{}'),
@@ -1474,13 +1479,57 @@ function saveStats() { localStorage.setItem('stats', JSON.stringify(state.stats)
 function saveCombatStats() { localStorage.setItem('combatStats', JSON.stringify(state.combatStats)); }
 function saveAchievements() { localStorage.setItem('achievements', JSON.stringify(state.achievements)); }
 
-// 修煉累積戰鬥屬性（每答對一題）
-function gainCombatStats() {
-  state.combatStats.atk  += 0.4;
-  state.combatStats.def  += 0.25;
-  state.combatStats.crit += 0.15;
-  state.combatStats.spd  += 0.3;
+// 境界提升時的屬性加成
+function gainStatsOnBreakthrough() {
+  state.combatStats.atk  += 3;
+  state.combatStats.def  += 2;
+  state.combatStats.crit += 1;
+  state.combatStats.spd  += 3;
   saveCombatStats();
+}
+
+// 通讀進度
+const MASTERY_THRESHOLD = 0.75;  // 答對 75% 唯一題目即通讀
+function saveMastery() {
+  localStorage.setItem('questionMastery', JSON.stringify(state.questionMastery));
+  localStorage.setItem('masteredBooks', JSON.stringify(state.masteredBooks));
+}
+function bookMasteryProgress(bookId, totalCount) {
+  const mastered = (state.questionMastery[bookId] || []).length;
+  return { mastered, total: totalCount, threshold: Math.ceil(totalCount * MASTERY_THRESHOLD) };
+}
+function markQuestionMastered(bookId, qText) {
+  if (!bookId || !qText) return;
+  if (!state.questionMastery[bookId]) state.questionMastery[bookId] = [];
+  if (!state.questionMastery[bookId].includes(qText)) {
+    state.questionMastery[bookId].push(qText);
+    saveMastery();
+    checkBookMastery(bookId);
+  }
+}
+function checkBookMastery(bookId) {
+  if (state.masteredBooks.includes(bookId)) return;
+  const book = library?.books?.find(b => b.id === bookId);
+  if (!book) return;
+  const total = book.questionCount || 1;
+  const mastered = (state.questionMastery[bookId] || []).length;
+  if (mastered >= Math.ceil(total * MASTERY_THRESHOLD)) {
+    state.masteredBooks.push(bookId);
+    saveMastery();
+    const skillId = BOOK_SKILLS[bookId];
+    const skill = skillId ? SKILLS[skillId] : null;
+    if (skill) {
+      showModal({
+        label: '通 讀 心 得',
+        title: skill.name,
+        desc: `通讀《<span style='color:var(--gold-bright)'>${book.title}</span>》<br>領悟新招式 ${skill.icon} <span style='color:var(--gold-bright)'>${skill.name}</span><br><span style='font-size:11px;color:var(--paper-dim)'>${skill.desc}</span>`,
+        rewards: '可在心魔劫中使用',
+        btn: '繼續修煉'
+      });
+    } else {
+      floatMsg(`📚 通讀《${book.title}》！`);
+    }
+  }
 }
 
 function tickDaily() {
@@ -1979,8 +2028,10 @@ function onCorrect() {
   if (state.streak > state.stats.longestStreak) state.stats.longestStreak = state.streak;
   saveStats();
   tickDaily();
-  // 修煉累積戰鬥屬性
-  gainCombatStats();
+  // 通讀進度（屬性不再每題加，只在境界突破時加）
+  // errorReview 也計入該題原書的通讀進度
+  const bookId = state.qMode === 'errorReview' ? null : activeBook?.id;
+  if (bookId && state.currentQ) markQuestionMastered(bookId, state.currentQ.q);
 
   let gain = 15;
   if (state.qMode === 'meditate') gain = 8;
@@ -2081,31 +2132,44 @@ const bosses = [
   { name: '化神古魔',   icon: '😈', hp: 500, atk: 50, threshold: 26 }
 ];
 
-// 招式池（戰鬥用）
-const SKILLS = [
-  // 起手三式（任意境界）
-  { id: 'meridian', name: '通脈劍訣', icon: '🗡️', type: 'damage', dmg: 14, cd: 0, requireRank: 0,
-    desc: '基礎劍訣，無冷卻' },
-  { id: 'guard',    name: '護心訣',   icon: '🛡️', type: 'shield', shield: 30, cd: 3, requireRank: 0,
-    desc: '生成 30 點護盾，吸收下次傷害' },
-  { id: 'channel',  name: '導引術',   icon: '💚', type: 'heal', heal: 25, cd: 3, requireRank: 0,
-    desc: '導引靈氣回復 25 道心' },
-  // 築基（rank 9）
-  { id: 'scan',     name: '神識掃破', icon: '🔮', type: 'damage', dmg: 28, cd: 2, requireRank: 9,
-    desc: '神識識破破綻，無視部分防禦' },
-  // 築基大圓滿（rank 12）
-  { id: 'thunder',  name: '無相一擊', icon: '⚡', type: 'damage', dmg: 45, cd: 4, requireRank: 12,
-    desc: '集中真元，一擊重創' },
-  // 金丹（rank 18）
-  { id: 'lifesteal',name: '吸星大法', icon: '🌑', type: 'damage', dmg: 22, lifesteal: 0.5, cd: 3, requireRank: 18,
-    desc: '吸取對手生命，回復一半傷害' },
-  // 元嬰（rank 22）
-  { id: 'judgment', name: '滅世神雷', icon: '⚜️', type: 'damage', dmg: 75, cd: 5, requireRank: 22,
-    desc: '元嬰之力，毀天滅地' }
-];
+// 招式總冊（id → 招式）
+const SKILLS = {
+  // 起手二式（永久持有）
+  meridian:  { name: '通脈劍訣', icon: '🗡️', type: 'damage', dmg: 14, cd: 0,  desc: '基礎劍訣，無冷卻' },
+  guard:     { name: '護心訣',   icon: '🛡️', type: 'shield', shield: 30, cd: 3, desc: '生成 30 護盾，吸收下次傷害' },
+  // 通讀章節解鎖
+  channel:   { name: '急救心法', icon: '💚', type: 'heal',   heal: 30, cd: 3, desc: '急救之術，回復 30 道心' },
+  scan:      { name: '神識掃破', icon: '🔮', type: 'damage', dmg: 30, cd: 2, desc: '神識識破破綻，造成大量傷害' },
+  ward:      { name: '觀氣聽脈', icon: '🌀', type: 'shield', shield: 50, cd: 2, desc: '無創觀氣，預警護身 50 點' },
+  blade:     { name: '手術一斬', icon: '⚔️', type: 'damage', dmg: 50, cd: 3, desc: '一招中的，深度斬擊' },
+  thunder:   { name: '滅世神雷', icon: '⚜️', type: 'damage', dmg: 75, cd: 5, desc: '上古劫雷，毀天滅地' },
+  lifesteal: { name: '吸星大法', icon: '🌑', type: 'damage', dmg: 25, lifesteal: 0.5, cd: 3, desc: '吸取對手生命，回復一半傷害' }
+};
+
+// 起手永久招式
+const STARTER_SKILLS = ['meridian', 'guard'];
+
+// 章節 → 招式（通讀解鎖）
+const BOOK_SKILLS = {
+  'youmans-ch382':      'scan',       // 結構影像 → 神識掃破
+  'youmans-ch386':      'channel',    // 急診處理 → 急救心法
+  'youmans-ch389':      'ward',       // 非侵入性監測 → 觀氣聽脈
+  'youmans-ch391':      'blade',      // 手術治療 → 手術一斬
+  'youmans-winn':       'thunder',    // 範例 → 滅世神雷
+  'greenberg-handbook': 'lifesteal'   // 範例 → 吸星大法
+};
+
+function unlockedSkillIds() {
+  const ids = [...STARTER_SKILLS];
+  state.masteredBooks.forEach(bookId => {
+    const skillId = BOOK_SKILLS[bookId];
+    if (skillId && !ids.includes(skillId)) ids.push(skillId);
+  });
+  return ids;
+}
 
 function unlockedSkills() {
-  return SKILLS.filter(s => state.rankIdx >= s.requireRank);
+  return unlockedSkillIds().map(id => ({ id, ...SKILLS[id] }));
 }
 
 function pickBoss() {
@@ -2465,10 +2529,13 @@ function showModal({label, title, desc, rewards, btn = '繼續', btn2, onClose, 
 function closeModal() { $('modal-overlay').classList.remove('show'); }
 
 function showBreakthrough() {
+  // 境界提升 → 屬性永久 +
+  gainStatsOnBreakthrough();
   showModal({
     label: '突 破',
     title: ranks[state.rankIdx],
     desc: '靈力充盈，經脈暢通<br>境界更上一層',
+    rewards: '攻力 +3　防力 +2　靈犀 +1　神速 +3',
     btn: '繼 續 修 煉',
     onClose: () => render()
   });
@@ -2543,12 +2610,26 @@ function renderStats() {
     ['神速（HP 加成）', Math.round(cs.spd)]
   ];
 
-  const skillsHtml = SKILLS.map(s => {
-    const got = state.rankIdx >= s.requireRank;
-    return `<div class="ach-card ${got?'unlocked':'locked'}">
+  // 顯示所有招式（含起手 + 章節解鎖）
+  const allSkillRows = [
+    ...STARTER_SKILLS.map(id => ({ id, source: '起手', mastered: true })),
+    ...Object.keys(BOOK_SKILLS).map(bookId => {
+      const skillId = BOOK_SKILLS[bookId];
+      const book = library?.books?.find(b => b.id === bookId);
+      return {
+        id: skillId,
+        source: book ? book.title : bookId,
+        mastered: state.masteredBooks.includes(bookId)
+      };
+    })
+  ];
+  const skillsHtml = allSkillRows.map(row => {
+    const s = SKILLS[row.id];
+    if (!s) return '';
+    return `<div class="ach-card ${row.mastered?'unlocked':'locked'}">
       <div class="ach-icon">${s.icon}</div>
       <div class="ach-name">${s.name}</div>
-      <div class="ach-desc">${got ? s.desc : '需 ' + ranks[s.requireRank]}</div>
+      <div class="ach-desc">${row.mastered ? s.desc : '通讀《' + row.source + '》解鎖'}</div>
     </div>`;
   }).join('');
 
@@ -2587,12 +2668,24 @@ function renderLibrary() {
     card.className = 'book-card';
     if (b.id === activeBook?.id) card.classList.add('active');
     if (!b.imported) card.classList.add('not-imported');
+    let masteryText = '';
+    if (b.imported) {
+      const prog = bookMasteryProgress(b.id, b.questionCount || 1);
+      const isMastered = state.masteredBooks.includes(b.id);
+      const skillId = BOOK_SKILLS[b.id];
+      const skill = skillId ? SKILLS[skillId] : null;
+      if (isMastered) {
+        masteryText = `✓ 已通讀${skill ? '　' + skill.icon + ' ' + skill.name : ''}`;
+      } else {
+        masteryText = `通讀進度 ${prog.mastered}/${prog.threshold}${skill ? '　🔒 ' + skill.name : ''}`;
+      }
+    }
     card.innerHTML = `
       <div class="book-cover" style="background: linear-gradient(135deg, ${b.color}cc, ${b.color}66)">${b.icon}</div>
       <div class="book-info">
         <div class="book-title">${b.title}</div>
         <div class="book-subtitle">${b.subtitle}</div>
-        <div class="book-meta">${b.imported ? '收錄 ' + (b.questionCount || '?') + ' 題' : '尚未匯入 · 待跑 pipeline'}</div>
+        <div class="book-meta">${b.imported ? '收錄 ' + (b.questionCount || '?') + ' 題　·　' + masteryText : '尚未匯入 · 待跑 pipeline'}</div>
       </div>
       <div class="book-status">${b.id === activeBook?.id ? '當前' : (b.imported ? '切換' : '待匯入')}</div>
     `;
