@@ -1,0 +1,267 @@
+{
+  "id": "youmans-ch339",
+  "title": "Youmans Ch339 C2 骨折",
+  "subtitle": "Evaluation & Treatment of C2 (Axis) Fractures · 20 題",
+  "questions": [
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch339 · 流行病學",
+      "q": "C2 骨折在頸椎骨折中的比例，以及 dens 骨折在 C2 骨折中的比例為？",
+      "opts": [
+        "A. C2 占頸椎 5%；dens 占 C2 20%",
+        "B. C2 占頸椎 10–20%；dens 占 C2 多數，70% 為 type II",
+        "C. C2 占頸椎 50%；dens 占 C2 100%",
+        "D. C2 占頸椎 1%；dens 罕見"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>頸椎骨折 = 最常見脊椎骨折</span>。C2 骨折占頸椎骨折 <span class='key'>10–20%</span>。<span class='key'>Dens (odontoid) 骨折 = C2 骨折大多數</span>，其中 <span class='key'>70% 為 Anderson-D'Alonzo type II</span>。其他 C2 骨折分類：odontoid (I/II/III)、Hangman's（bilateral pars 骨折）、其他（body、facet、foramen transversarium）。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch339 · 解剖",
+      "q": "C1–C2 複合體在脊椎旋轉中的角色為？",
+      "opts": [
+        "A. 不負責任何旋轉",
+        "B. 提供整條脊椎 50% 的旋轉，C1–2 atlantoaxial joints 允許 50° 軸向旋轉與 10° 屈伸",
+        "C. 占脊椎 90% 旋轉",
+        "D. 只負責屈伸不負責旋轉"
+      ],
+      "answer": 1,
+      "explanation": "C1–C2 atlantoaxial joints：<span class='key'>占整條脊椎 50% 旋轉</span>；允許 <span class='key'>50° 軸向旋轉 + 10° 屈伸</span>。Transverse ligament 緊抓 odontoid 至 C1 ring 腹側，防止矢狀面 subluxation。融合 C1–2 → 喪失此運動。椎動脈 C6 → C2 走 foramen transversarium，C2 後跨 C1 後外側 → foramen magnum，手術需特別注意。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch339 · 分類",
+      "q": "Anderson-D'Alonzo 分類中，type II odontoid fracture 的位置與比例為？",
+      "opts": [
+        "A. Dens 上端斜行骨折，1–3%",
+        "B. Odontoid 與 C2 body 交界處，54–74%（最常見）",
+        "C. 延伸至 C2 body 內，39–42%",
+        "D. C2 體部水平骨折"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Anderson-D'Alonzo 1974</span>：Type I 是 dens 上端斜行（1–3%，可能 alar lig 撕脫）；<span class='key'>Type II = odontoid 與 C2 body 交界（54–74%，最常見）</span>；Type III 延伸進 C2 body（39–42%）。Hadley 加 type IIA（基底有 chip fracture，不穩、保守必不癒合）。Grauer 將 type II 細分為 A/B/C 依移位與 comminution。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch339 · Type I 處置",
+      "q": "Type I odontoid fracture 的標準處置為？",
+      "opts": [
+        "A. 必須做 anterior odontoid screw",
+        "B. 多數可頸圈固定癒合；但需先排除 atlantooccipital dislocation (AOD)",
+        "C. 必須 halo vest 6 個月",
+        "D. 直接 C1–2 fusion"
+      ],
+      "answer": 1,
+      "explanation": "Type I 通常穩定 → <span class='key'>頸圈即可，癒合率高</span>。<span class='key'>陷阱：必須先排除 AOD</span>（atlantooccipital dislocation），AOD 影像可能與 type I 混淆但完全不穩，治療策略截然不同。Halo vest 雖也能用，併發症多（pressure sores、pin infection、肺炎），故 cervical collar 為首選。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch339 · Type II 處置",
+      "q": "Type II odontoid fracture 為何保守治療效果常不佳？",
+      "opts": [
+        "A. 因為患者不配合",
+        "B. Odontoid neck 為 watershed zone，血供差；且為高 load transmission 處且骨質結構不佳",
+        "C. 因為 cervical collar 沒效",
+        "D. 因為 type II 不會骨折"
+      ],
+      "answer": 1,
+      "explanation": "Type II <span class='key'>nonsurgical fusion 率較低</span>：cervical traction + collar ~57%、collar 單獨 53–57%、halo 70–74%。原因：<span class='key'>odontoid neck 為 watershed zone 血供差</span>，且為大量 load transmission 區、骨質結構不佳。多數作者建議手術。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch339 · 前路 odontoid 螺絲",
+      "q": "Anterior odontoid screw fixation 對 type II odontoid fracture 的關鍵限制條件為？",
+      "opts": [
+        "A. 必須在傷後 5 年內",
+        "B. 需 intact transverse ligament；急性 (<6 月) 效果遠優於慢性 (>18 月)（fusion 88% vs 25%）",
+        "C. 只能用於兒童",
+        "D. 不能與其他手術合併"
+      ],
+      "answer": 1,
+      "explanation": "Anterior odontoid screw 適應症：<span class='key'>急性 type II（<6 月）+ intact transverse ligament</span>。Apfelbaum：<span class='key'>急性 vs 慢性 fusion 率 88% vs 25%</span> — 急慢分界至為關鍵。Julien：急性 fusion 率 ~90%。<span class='key'>禁忌</span>：嚴重骨質疏鬆、體型不佳、anterior obliquely sloping fracture。Hardware 失敗多為 screw back-out / pullout。生物力學：1 螺絲 = 2 螺絲。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch339 · 椎動脈解剖",
+      "q": "在 C1–C2 後路手術前，為何必須仔細看 CT？",
+      "opts": [
+        "A. 要看顱內出血",
+        "B. 椎動脈在 C1–2 區異常走行率高達 20%；走螺絲路徑時應該避開",
+        "C. 確認骨密度",
+        "D. 看牙齒有無蛀牙"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>椎動脈在 C1–2 區異常率高達 20%</span>。Magerl transarticular 與 Harms 技術都需精準避開。如椎動脈走在預設螺絲路徑上 → <span class='key'>不該放該側螺絲</span>。Transarticular VAI rate 3.7–8.2%。O-arm / 3D fluoro / navigation 可降低 VAI 風險。一側放螺絲遇 brisk bleeding → <span class='key'>對側不應再嘗試</span>（避免雙側 VAI）。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch339 · 後路手術",
+      "q": "Harms 技術 (posterior C1–2 screw-rod fixation) 相較於 Magerl transarticular 的優勢為？",
+      "opts": [
+        "A. 不需要任何螺絲",
+        "B. 技術上較不嚴苛、可在 C1 laminectomy 後施行；Harms 報告 100% fusion + 無 VAI/SCI",
+        "C. 不需考慮椎動脈",
+        "D. 完全不用解剖學知識"
+      ],
+      "answer": 1,
+      "explanation": "Harms (1999) 直接 C1 lateral mass screw + C2 pars/pedicle screw。優勢：<span class='key'>技術較不嚴苛、可在 C1 laminectomy 後施行、不需 biplanar fluoro</span>。Harms 報告 37 例 <span class='key'>100% fusion，0 VAI 或 SCI</span>。常用於老年 type II odontoid。Wire-bone 技術（Gallie/Brooks/Sonntag）仍可作為 rescue/補充。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch339 · Type III 處置",
+      "q": "大多數 Type III odontoid fracture 的處置為？",
+      "opts": [
+        "A. 必須 anterior odontoid screw",
+        "B. 多數可外固定（cervical collar），癒合率 87–100%",
+        "C. 一律需 Harms fusion",
+        "D. 不需治療自行癒合"
+      ],
+      "answer": 1,
+      "explanation": "Type III 占 odontoid 39–42%（第二常見）。機轉：<span class='key'>純 extension</span>。多數 <span class='key'>cervical collar 即可，癒合率 87–100%</span>。Halo vest 雖效，併發症多。Shallow type III 處置如 type II；dislocated 或不穩定者需手術 — anterior screw 可，但若 transverse lig 斷則需後路。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch339 · Hangman's 解剖",
+      "q": "Hangman's fracture 的解剖位置與機轉為？",
+      "opts": [
+        "A. C1 atlas burst",
+        "B. C2 雙側 pars interarticularis 骨折（traumatic spondylolisthesis），多由 hyperextension + axial load 造成",
+        "C. C7 椎體骨折",
+        "D. T1 fracture-dislocation"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Hangman's = C2 雙側 pars interarticularis 骨折</span>（traumatic spondylolisthesis of axis）。機轉：<span class='key'>hyperextension + axial load</span>（與真實絞刑的 hyperextension+distraction 不同）。多由 falls 或 MVC。第二常見 axis 骨折。多數神經學完整（骨折反而拓寬椎管）— Francis 系列僅 6.5% 有神經學損傷；33% 合併其他頸椎傷。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch339 · Levine-Edwards",
+      "q": "Levine-Edwards 分類中，Hangman's type II 的特徵為？",
+      "opts": [
+        "A. <3 mm 移位、無 angulation",
+        "B. >3 mm 移位 ± angulation，C2–3 disc 與 PLL 撕裂",
+        "C. unilateral facet dislocation",
+        "D. type II 不存在"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Levine-Edwards 分類</span>：<span class='key'>Type I</span> bilateral pars 骨折 + <3mm 移位、無 angulation（最常見）。<span class='key'>Type Ia</span> fracture lines 不平行，可能跨 foramen transversarium，神經學影響達 33%。<span class='key'>Type II</span> >3 mm 移位 ± angulation，<span class='key'>C2–3 disc + PLL 撕裂</span>。<span class='key'>Type IIa</span> angulation（可 >15°）+ 最小 subluxation（<3mm），同樣有 disc/lig 傷。<span class='key'>Type III</span> 同 II + uni/bilateral facet dislocation + ALL 傷。IIa 與 III 為不穩定。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch339 · IIa 陷阱",
+      "q": "Levine type IIa Hangman's fracture 的關鍵注意事項為？",
+      "opts": [
+        "A. 必須先做 traction",
+        "B. <span class='key'>禁止做 traction</span>（會加劇 deformity），應立即 halo vest + extension/compression reduce",
+        "C. 必須立即手術",
+        "D. 不需任何治療"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Type IIa：traction 禁忌</span> — 會 accentuate deformity！正確處置：<span class='key'>halo vest + extension and compression</span> reduce → 維持 3 個月，~95% union 率。Type I/Ia 可頸圈即可。Type II 通常 gentle traction 可 reduce → halo 3 個月。Type III 需手術。<span class='key'>>5 mm subluxation 或 ≥30° angulation 應強烈考慮手術</span>。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch339 · Hangman's 治療",
+      "q": "大多數 Hangman's fracture 的處置成果為？",
+      "opts": [
+        "A. 100% 需手術",
+        "B. 多數 nonsurgical 即可：reduction 97–100%、fusion 93–100%（外固定 8–14 週），平均癒合 11.5 週",
+        "C. 完全無法癒合",
+        "D. 必死無疑"
+      ],
+      "answer": 1,
+      "explanation": "Hangman's 多數可 nonsurgical 處置：<span class='key'>reduction 97–100%、fusion 93–100%</span>（halo 或 collar 外固定 8–14 週）。平均癒合 <span class='key'>11.5 週</span>。手術指徵：fracture 無法 reduce、外固定失敗、C2–3 disc herniation 致 SCI、unstable type IIa/III。手術選擇：anterior C2–3 ACDF 或 posterior C2–3 fusion。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch339 · 老年人 C2",
+      "q": "70 歲以上老年人最常見的頸椎骨折為？mortality rate 為？",
+      "opts": [
+        "A. C5 fracture，1% 死亡率",
+        "B. Odontoid fracture（最常見的老年頸椎骨折）；30 天死亡率 10–25%、1 年 20–50%",
+        "C. T12 burst fracture，5% 死亡率",
+        "D. C1 burst，0%"
+      ],
+      "answer": 1,
+      "explanation": "Odontoid fracture <span class='key'>= 老年人 (>70 歲) 最常見頸椎骨折</span>。原因：跌倒傾向、MVC 增加、骨質疏鬆。<span class='key'>死亡率：30 天 10–25%；1 年 20–50%</span>。處置兩難：halo 雖可達 fibrous bridge，併發症多（與 collar 比死亡率更高）。Frangen：transarticular C1–2 fusion 老年人 results 比 halo 好。Faure：Harms vs anterior screw 老年 (>75) → Harms 併發症較少、機械穩定性較佳。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch339 · 主要併發症",
+      "q": "C2 骨折手術最令人擔憂的特定併發症為？",
+      "opts": [
+        "A. 心肌梗塞",
+        "B. 椎動脈損傷 (VAI) — 依手術不同 3.7–8.2% 不等",
+        "C. 失明",
+        "D. 食道穿孔"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>VAI (vertebral artery injury) 為最令人擔憂之特定併發症</span>。各手術 VAI 風險不同：transarticular 3.7–8.2%、Harms 顯著較低（Harms 系列 0%）。Canal injury 風險很低。其他併發症：pseudarthrosis、wound infection、nerve root injury、persistent numbness/neuropathic pain、hardware failure。降低 VAI：preop CT 仔細看椎動脈走行、O-arm/navigation 助手。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch339 · Type II 細分",
+      "q": "Grauer 對 Type II odontoid fracture 細分為三亞型，主要依據與處置為？",
+      "opts": [
+        "A. 不同年齡分類；都做 collar",
+        "B. 依 displacement 與 comminution：Type IIA <1mm → 外固定；IIB >1mm → 前路 odontoid screw；IIC 顯著 comminution → posterior atlantoaxial fixation",
+        "C. 依性別；都做 halo",
+        "D. 依季節分類"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Grauer 2005</span> Type II 細分（依處置）：<span class='key'>Subtype A</span> transverse + <1mm displacement + 無 comminution → 外固定足夠；<span class='key'>Subtype B</span> transverse + >1mm displacement → anterior odontoid screw；<span class='key'>Subtype C</span> 顯著 comminution → 後路 atlantoaxial fixation。此細分有助選擇最佳治療方式。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch339 · 影像評估",
+      "q": "懷疑 C2 骨折最佳影像評估為？",
+      "opts": [
+        "A. Plain X-ray 即可",
+        "B. Thin-slice CT 含 sagittal/coronal reconstruction（骨折評估）+ MRI（軟組織與韌帶評估）",
+        "C. 只需 PET",
+        "D. 直接 angiography"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Thin-slice CT 含 sagittal/coronal reconstruction = 骨折評估金標準</span>。Axial/sagittal/coronal 三向有助釐清確切骨折線。<span class='key'>MRI</span> 評估軟組織、脊髓、特別是 <span class='key'>韌帶完整性</span>（transverse ligament 是否斷）。Flexion-extension X-ray 可助評估 instability。Hangman's 若骨折跨 foramen transversarium → 加 CT angiography 排除 VAI。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch339 · 屍體研究",
+      "q": "Anterior odontoid screw 生物力學研究結論為？",
+      "opts": [
+        "A. 必須用 3 顆螺絲",
+        "B. 1 顆與 2 顆螺絲生物力學等效",
+        "C. 不能用螺絲",
+        "D. 必須結合後路 fixation"
+      ],
+      "answer": 1,
+      "explanation": "Clinical 與 biomechanical 研究皆顯示：<span class='key'>1 顆 vs 2 顆 anterior odontoid screw 生物力學等效</span>。實務上常依術者偏好。Cannulated screw（K wire 引導）vs lag screw 兩種技術，frequency 須 fluoro 確認 trajectory。多數神經學完整患者 48 小時內出院。後續 X-ray 追蹤 fracture healing 與 hardware integrity。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch339 · 預後因素",
+      "q": "影響 odontoid fracture 預後的關鍵因素不包括？",
+      "opts": [
+        "A. Fracture type",
+        "B. Displacement 與 angulation 程度",
+        "C. 患者血型",
+        "D. 年齡與 comorbidities"
+      ],
+      "answer": 2,
+      "explanation": "影響 odontoid fracture 預後因素：<span class='key'>(1) Fracture type</span>（type I 高癒合率，type III 多自癒，type II 最差）；<span class='key'>(2) Displacement 與 angulation</span>（>4–6 mm displacement 或 >55 歲 → 外固定難癒合，宜手術）；<span class='key'>(3) 年齡與 comorbidities</span>（老年人併發症多、死亡率高）。<span class='key'>血型不影響</span>。每個患者需個別化評估最適療法。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch339 · Hangman's 神經學",
+      "q": "Hangman's fracture 患者神經學損傷率較低的解剖原因為？",
+      "opts": [
+        "A. 因為 C2 在腦幹下方",
+        "B. 因為骨折反而 widening the canal — bilateral pars 骨折使 C2 椎弓往後散開，椎管擴大",
+        "C. 因為 hangman's 不會撕裂韌帶",
+        "D. 因為患者多年輕"
+      ],
+      "answer": 1,
+      "explanation": "Hangman's <span class='key'>多數神經學完整</span>（Francis 系列僅 6.5% 神經學損傷）— 因為 <span class='key'>bilateral pars 骨折反而拓寬椎管</span>，C2 椎弓向後散開，給脊髓更多空間。但有兩個陷阱：<span class='key'>33% 合併其他頸椎傷</span>（94% 在上 3 段頸椎），且 type IIa/III 為不穩定可能延遲性惡化。"
+    }
+  ]
+}

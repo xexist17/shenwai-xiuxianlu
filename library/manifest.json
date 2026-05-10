@@ -47,6 +47,39 @@
       "questionCount": 30
     },
     {
+      "id": "youmans-ch339",
+      "title": "Youmans Ch339 C2 骨折",
+      "subtitle": "C2 (Axis) Fractures · 20 題",
+      "ref": "Youmans 8th Ed · Ch339 · pp.2646–2654",
+      "icon": "🦴",
+      "color": "#5a7b8b",
+      "file": "youmans-ch339.json",
+      "imported": true,
+      "questionCount": 20
+    },
+    {
+      "id": "youmans-ch436",
+      "title": "Youmans Ch436 ICA 旁床突動脈瘤",
+      "subtitle": "Paraclinoid Aneurysms · 19 題",
+      "ref": "Youmans 8th Ed · Ch436 · pp.3538–3548",
+      "icon": "🩸",
+      "color": "#a83a4a",
+      "file": "youmans-ch436.json",
+      "imported": true,
+      "questionCount": 19
+    },
+    {
+      "id": "youmans-ch232",
+      "title": "Youmans Ch232 小兒腦瘤",
+      "subtitle": "Pediatric Brain Tumors · 20 題",
+      "ref": "Youmans 8th Ed · Ch232 · pp.1760.e1–e10",
+      "icon": "☀️",
+      "color": "#d4a04a",
+      "file": "youmans-ch232.json",
+      "imported": true,
+      "questionCount": 20
+    },
+    {
       "id": "youmans-winn",
       "title": "Youmans and Winn",
       "subtitle": "Neurological Surgery · 上古功法（範例）",
@@ -67,17 +100,6 @@
       "file": "greenberg-handbook.json",
       "imported": true,
       "questionCount": 5
-    },
-    {
-      "id": "rhoton-cranial",
-      "title": "Rhoton's Cranial Anatomy",
-      "subtitle": "顯微神經解剖 · 待匯入",
-      "ref": "Rhoton · Cranial Anatomy and Surgical Approaches",
-      "icon": "🧠",
-      "color": "#5a8b6f",
-      "file": "rhoton-cranial.json",
-      "imported": false,
-      "questionCount": 0
     }
   ]
 }

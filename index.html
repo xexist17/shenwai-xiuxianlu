@@ -2143,7 +2143,11 @@ const SKILLS = {
   ward:      { name: '觀氣聽脈', icon: '🌀', type: 'shield', shield: 50, cd: 2, desc: '無創觀氣，預警護身 50 點' },
   blade:     { name: '手術一斬', icon: '⚔️', type: 'damage', dmg: 50, cd: 3, desc: '一招中的，深度斬擊' },
   thunder:   { name: '滅世神雷', icon: '⚜️', type: 'damage', dmg: 75, cd: 5, desc: '上古劫雷，毀天滅地' },
-  lifesteal: { name: '吸星大法', icon: '🌑', type: 'damage', dmg: 25, lifesteal: 0.5, cd: 3, desc: '吸取對手生命，回復一半傷害' }
+  lifesteal: { name: '吸星大法', icon: '🌑', type: 'damage', dmg: 25, lifesteal: 0.5, cd: 3, desc: '吸取對手生命，回復一半傷害' },
+  // 第二批章節解鎖
+  bone:      { name: '龍骨真訣', icon: '🦴', type: 'damage', dmg: 38, cd: 2, desc: '貫穿龍骨之力，連續斬擊' },
+  vampire:   { name: '血脈洞察', icon: '🩸', type: 'damage', dmg: 22, lifesteal: 0.7, cd: 3, desc: '洞察血脈奧妙，吸取對手 70% 生機' },
+  sunheart:  { name: '童心赤陽', icon: '☀️', type: 'heal', heal: 50, cd: 4, desc: '赤子純陽之氣，回復 50 道心' }
 };
 
 // 起手永久招式
@@ -2156,7 +2160,10 @@ const BOOK_SKILLS = {
   'youmans-ch389':      'ward',       // 非侵入性監測 → 觀氣聽脈
   'youmans-ch391':      'blade',      // 手術治療 → 手術一斬
   'youmans-winn':       'thunder',    // 範例 → 滅世神雷
-  'greenberg-handbook': 'lifesteal'   // 範例 → 吸星大法
+  'greenberg-handbook': 'lifesteal',  // 範例 → 吸星大法
+  'youmans-ch339':      'bone',       // 脊椎 C2 骨折 → 龍骨真訣
+  'youmans-ch436':      'vampire',    // 腦血管 ICA 動脈瘤 → 血脈洞察
+  'youmans-ch232':      'sunheart'    // 小兒腦瘤 → 童心赤陽
 };
 
 function unlockedSkillIds() {
