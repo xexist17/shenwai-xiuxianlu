@@ -489,6 +489,179 @@
   }
   .submit-btn:disabled { opacity: .3; cursor: not-allowed; }
 
+  /* Boss battle (心魔劫) */
+  .boss-stage {
+    background: linear-gradient(180deg, rgba(139,30,30,.15) 0%, rgba(13,10,8,.4) 100%);
+    border: 1px solid rgba(214,56,56,.4);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .boss-row {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 10px;
+  }
+  .boss-avatar {
+    width: 56px; height: 56px;
+    background: radial-gradient(circle at 30% 30%, #d63838, #4a0a0a);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+    border: 2px solid #d63838;
+    box-shadow: 0 0 16px rgba(214,56,56,.5);
+    flex-shrink: 0;
+    animation: bossBreathe 2.5s ease-in-out infinite;
+  }
+  @keyframes bossBreathe {
+    0%,100% { transform: scale(1); box-shadow: 0 0 16px rgba(214,56,56,.5); }
+    50%     { transform: scale(1.04); box-shadow: 0 0 24px rgba(214,56,56,.8); }
+  }
+  .boss-avatar.dying { animation: bossDying .8s ease-out forwards; }
+  @keyframes bossDying {
+    0%   { transform: scale(1); opacity: 1; }
+    50%  { transform: scale(1.3) rotate(15deg); filter: blur(2px); }
+    100% { transform: scale(0); opacity: 0; }
+  }
+  .boss-info { flex: 1; min-width: 0; }
+  .boss-name {
+    font-size: 13px;
+    color: var(--red-bright);
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .hp-bar {
+    height: 10px;
+    background: rgba(0,0,0,.5);
+    border: 1px solid rgba(214,56,56,.3);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .hp-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #d63838 0%, #ff5050 100%);
+    transition: width .5s cubic-bezier(.4,0,.2,1);
+  }
+  .hp-text {
+    font-size: 10px; color: var(--paper-dim);
+    margin-top: 2px;
+    font-family: monospace;
+    letter-spacing: 1px;
+  }
+
+  .player-row {
+    display: flex; align-items: center; gap: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed rgba(201,163,90,.2);
+  }
+  .player-avatar {
+    width: 44px; height: 44px;
+    background: radial-gradient(circle at 30% 30%, var(--gold-bright), var(--gold-dim));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 12px rgba(201,163,90,.4);
+    flex-shrink: 0;
+  }
+  .player-info { flex: 1; min-width: 0; }
+  .player-name {
+    font-size: 12px;
+    color: var(--gold-bright);
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .hp-fill.player {
+    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-bright) 100%);
+  }
+
+  .dmg-num {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 700;
+    pointer-events: none;
+    animation: dmgFloat 1s ease-out forwards;
+    text-shadow: 0 0 6px currentColor;
+  }
+  .dmg-num.boss { color: #ff8050; }
+  .dmg-num.player { color: #d63838; }
+  .dmg-num.crit { font-size: 28px; color: #ffe060; }
+  @keyframes dmgFloat {
+    0%   { opacity: 0; transform: translateY(0) scale(.5); }
+    20%  { opacity: 1; transform: translateY(-10px) scale(1.2); }
+    100% { opacity: 0; transform: translateY(-50px) scale(1); }
+  }
+
+  /* Stats / Achievements page */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .stat-card {
+    background: rgba(0,0,0,.3);
+    border: 1px solid rgba(201,163,90,.25);
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 22px;
+    color: var(--gold-bright);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .stat-label {
+    font-size: 10px;
+    color: var(--paper-dim);
+    letter-spacing: 2px;
+  }
+  .ach-section-title {
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 16px 0 12px;
+  }
+  .ach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .ach-card {
+    background: rgba(0,0,0,.3);
+    border: 1px solid rgba(201,163,90,.2);
+    border-radius: 10px;
+    padding: 10px 6px;
+    text-align: center;
+    transition: all .2s;
+  }
+  .ach-card.unlocked {
+    background: linear-gradient(180deg, rgba(201,163,90,.15) 0%, rgba(201,163,90,.05) 100%);
+    border-color: var(--gold);
+  }
+  .ach-card.locked { opacity: .35; filter: grayscale(1); }
+  .ach-icon {
+    font-size: 26px;
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+  .ach-name {
+    font-size: 11px;
+    color: var(--gold-bright);
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+  .ach-card.locked .ach-name { color: var(--paper-dim); }
+  .ach-desc {
+    font-size: 9px;
+    color: var(--paper-dim);
+    line-height: 1.4;
+  }
+
   /* Tower */
   .tower-header {
     display: flex;
@@ -1037,6 +1210,11 @@
             <div class="ct" id="error-cost">∞ 可重複</div>
             <span class="badge hidden" id="error-badge">0</span>
           </button>
+          <button class="action-card wide" data-action="stats">
+            <span class="ic">🏯</span>
+            <div class="ti">我的修為</div>
+            <div class="ds">統計、戰績、成就徽章</div>
+          </button>
         </div>
 
         <div class="inv-section">
@@ -1070,11 +1248,29 @@
         </div>
       </div>
 
-      <!-- ============== TOWER ============== -->
+      <!-- ============== TOWER (心魔劫) ============== -->
       <div class="screen hidden" id="screen-tower">
         <button class="back" onclick="confirmExitTower()">←</button>
+        <div class="boss-stage" id="boss-stage">
+          <div class="boss-row">
+            <div class="boss-avatar" id="boss-avatar">👹</div>
+            <div class="boss-info">
+              <div class="boss-name" id="boss-name">心 魔</div>
+              <div class="hp-bar"><div class="hp-fill" id="boss-hp-fill" style="width: 100%"></div></div>
+              <div class="hp-text" id="boss-hp-text">100 / 100</div>
+            </div>
+          </div>
+          <div class="player-row">
+            <div class="player-avatar">⚕</div>
+            <div class="player-info">
+              <div class="player-name">道 心</div>
+              <div class="hp-bar"><div class="hp-fill player" id="player-hp-fill" style="width: 100%"></div></div>
+              <div class="hp-text" id="player-hp-text">100 / 100</div>
+            </div>
+          </div>
+        </div>
         <div class="tower-header">
-          <div class="tower-floor" id="tower-floor">試煉塔 · 第三層</div>
+          <div class="tower-floor" id="tower-floor">第 1 / 5 招</div>
           <div class="tower-timer" id="tower-timer">15</div>
         </div>
         <div class="tower-progress" id="tower-pips"></div>
@@ -1089,6 +1285,16 @@
             <button class="continue-btn" onclick="continueTower()">下 一 題</button>
           </div>
         </div>
+      </div>
+
+      <!-- ============== STATS / ACHIEVEMENTS (我的修為) ============== -->
+      <div class="screen hidden" id="screen-stats">
+        <button class="back" onclick="go('home')">←</button>
+        <div class="library-title">我 的 修 為</div>
+        <div class="library-subtitle">道 心 與 戰 績</div>
+        <div class="stats-grid" id="stats-grid"></div>
+        <div class="ach-section-title">仙 緣 成 就</div>
+        <div class="ach-grid" id="ach-grid"></div>
       </div>
 
       <!-- ============== LIBRARY (功法閣) ============== -->
@@ -1177,7 +1383,75 @@ const state = {
 
   // error notebook (補天閣)
   errorPool: JSON.parse(localStorage.getItem('errorPool') || '[]'),
+
+  // 心魔劫 (boss battle) state
+  bossHP: 0, bossMaxHP: 0, playerHP: 0, playerMaxHP: 100,
+  currentBoss: null, lastQuestionTime: 0,
+
+  // 統計 / 成就
+  stats: JSON.parse(localStorage.getItem('stats') || '{}'),
+  achievements: JSON.parse(localStorage.getItem('achievements') || '[]'),
 };
+
+// initialize stats with defaults
+state.stats = Object.assign({
+  totalAnswered: 0,
+  totalCorrect: 0,
+  longestStreak: 0,
+  towersWon: 0,
+  bossesSlain: 0,
+  errorsFixed: 0,
+  daysActive: 0,
+  lastActiveDate: ''
+}, state.stats);
+
+function saveStats() { localStorage.setItem('stats', JSON.stringify(state.stats)); }
+function saveAchievements() { localStorage.setItem('achievements', JSON.stringify(state.achievements)); }
+
+function tickDaily() {
+  const today = new Date().toISOString().slice(0, 10);
+  if (state.stats.lastActiveDate !== today) {
+    state.stats.daysActive++;
+    state.stats.lastActiveDate = today;
+    saveStats();
+  }
+}
+
+//═══════════════════════════════════════════════
+// ACHIEVEMENTS (成就)
+//═══════════════════════════════════════════════
+const achievementDefs = [
+  { id: 'first',         name: '初入凡塵',     desc: '答出第一題',                 icon: '🌱', check: s => s.totalAnswered >= 1 },
+  { id: 'cent',          name: '凡塵百題',     desc: '累計答 100 題',               icon: '📜', check: s => s.totalAnswered >= 100 },
+  { id: 'mille',         name: '凡塵千題',     desc: '累計答 1000 題',              icon: '📚', check: s => s.totalAnswered >= 1000 },
+  { id: 'accuracy90',    name: '八九不離十',   desc: '50 題以上、正確率 ≥ 90%',     icon: '🎯', check: s => s.totalAnswered >= 50 && s.totalCorrect / s.totalAnswered >= 0.9 },
+  { id: 'streak10',      name: '連勝十日',     desc: '連續閉關 10 日',              icon: '🔥', check: s => s.longestStreak >= 10 },
+  { id: 'streak30',      name: '不墜之心',     desc: '連續閉關 30 日',              icon: '🌟', check: s => s.longestStreak >= 30 },
+  { id: 'rank-zhuji',    name: '築基有成',     desc: '突破至築基期',                icon: '⛰️', check: (s, st) => st.rankIdx >= 9 },
+  { id: 'rank-jindan',   name: '金丹大成',     desc: '突破至金丹期',                icon: '🔮', check: (s, st) => st.rankIdx >= 18 },
+  { id: 'rank-yuanying', name: '元嬰之境',     desc: '突破至元嬰期',                icon: '👁️', check: (s, st) => st.rankIdx >= 22 },
+  { id: 'ascend',        name: '飛升仙境',     desc: '突破至飛升',                  icon: '☁️', check: (s, st) => st.rankIdx >= 28 },
+  { id: 'tower1',        name: '試煉初勝',     desc: '通關試煉塔 1 次',             icon: '⚔️', check: s => s.towersWon >= 1 },
+  { id: 'boss1',         name: '心魔斬首',     desc: '擊斃首個心魔',                icon: '🗡️', check: s => s.bossesSlain >= 1 },
+  { id: 'boss10',        name: '降魔大師',     desc: '擊斃 10 個心魔',              icon: '⚜️', check: s => s.bossesSlain >= 10 },
+  { id: 'errors50',      name: '補天大師',     desc: '從補天閣修補 50 題缺漏',      icon: '📜', check: s => s.errorsFixed >= 50 },
+  { id: 'daily30',       name: '日日精進',     desc: '活躍天數累計 30 日',          icon: '🗓️', check: s => s.daysActive >= 30 }
+];
+
+function checkAchievements() {
+  const newly = [];
+  achievementDefs.forEach(a => {
+    if (state.achievements.includes(a.id)) return;
+    if (a.check(state.stats, state)) {
+      state.achievements.push(a.id);
+      newly.push(a);
+    }
+  });
+  if (newly.length) {
+    saveAchievements();
+    newly.forEach((a, i) => setTimeout(() => floatMsg(`${a.icon} 解鎖成就：${a.name}`), i * 1200));
+  }
+}
 
 function saveErrorPool() {
   localStorage.setItem('errorPool', JSON.stringify(state.errorPool));
@@ -1333,6 +1607,7 @@ function go(screen) {
   $('screen-' + screen).classList.remove('hidden');
   if (screen === 'home') { render(); renderHome(); }
   if (screen === 'library') renderLibrary();
+  if (screen === 'stats') renderStats();
 }
 
 function shake() {
@@ -1458,6 +1733,7 @@ document.querySelectorAll('.action-card').forEach(card => {
     if (act === 'gather')      startGather();
     if (act === 'fortune')     drawFortune();
     if (act === 'errorReview') startStudy('errorReview');
+    if (act === 'stats')       go('stats');
   };
 });
 
@@ -1622,6 +1898,13 @@ function renderOrder(body, q) {
 }
 
 function onCorrect() {
+  // stats
+  state.stats.totalAnswered++;
+  state.stats.totalCorrect++;
+  if (state.streak > state.stats.longestStreak) state.stats.longestStreak = state.streak;
+  saveStats();
+  tickDaily();
+
   let gain = 15;
   if (state.qMode === 'meditate') gain = 8;
   if (state.qMode === 'errorReview') gain = 12;  // 補天閣中等獎勵
@@ -1646,9 +1929,15 @@ function onCorrect() {
     state.rankIdx = Math.min(ranks.length-1, state.rankIdx+1);
     showBreakthrough();
   }
+  // 補天閣中答對 = 修補一題缺漏（onCorrect 的 errorReview 分支已經移除題目，這裡計數）
+  if (state.qMode === 'errorReview') { state.stats.errorsFixed++; saveStats(); }
+  checkAchievements();
 }
 
 function onWrong() {
+  state.stats.totalAnswered++;
+  saveStats();
+  tickDaily();
   if (consumeBuff('shield')) {
     floatMsg('🛡️ 高人庇護，免於損失');
     return;
@@ -1706,15 +1995,67 @@ function useHint() {
 //═══════════════════════════════════════════════
 // TOWER (D: timed boss gauntlet)
 //═══════════════════════════════════════════════
+// 心魔劫 boss 池（依玩家境界選對應 boss）
+const bosses = [
+  { name: '練氣小妖',   icon: '👺', hp: 60,  threshold: 0  },
+  { name: '築基散修',   icon: '🥷', hp: 100, threshold: 9  },
+  { name: '金丹老怪',   icon: '🧙', hp: 160, threshold: 18 },
+  { name: '元嬰魔頭',   icon: '👹', hp: 220, threshold: 22 },
+  { name: '化神古魔',   icon: '😈', hp: 320, threshold: 26 }
+];
+
+function pickBoss() {
+  const eligible = bosses.filter(b => state.rankIdx >= b.threshold);
+  return eligible[eligible.length - 1] || bosses[0];
+}
+
 function startTower() {
   if (state.ap < 2) return;
   state.ap -= 2;
   state.towerIdx = 0;
   state.towerCorrect = 0;
   state.towerTimer = 15;
+
+  // 設定 boss 與 道心
+  const boss = pickBoss();
+  state.currentBoss = boss;
+  state.bossHP = state.bossMaxHP = boss.hp;
+  state.playerHP = state.playerMaxHP = 100;
+
+  $('boss-avatar').textContent = boss.icon;
+  $('boss-avatar').classList.remove('dying');
+  $('boss-name').textContent = boss.name;
+  updateHPBars();
+
   go('tower');
   renderTowerPips();
   loadTowerQuestion();
+}
+
+function updateHPBars() {
+  const bp = Math.max(0, (state.bossHP / state.bossMaxHP) * 100);
+  const pp = Math.max(0, (state.playerHP / state.playerMaxHP) * 100);
+  $('boss-hp-fill').style.width = bp + '%';
+  $('player-hp-fill').style.width = pp + '%';
+  $('boss-hp-text').textContent = `${Math.max(0, state.bossHP)} / ${state.bossMaxHP}`;
+  $('player-hp-text').textContent = `${Math.max(0, state.playerHP)} / ${state.playerMaxHP}`;
+}
+
+function showDamage(target, amount, isCrit) {
+  const stage = $('boss-stage');
+  const targetEl = target === 'boss' ? $('boss-avatar') : document.querySelector('.player-avatar');
+  if (!targetEl) return;
+  const stageRect = stage.getBoundingClientRect();
+  const tRect = targetEl.getBoundingClientRect();
+  const x = tRect.left - stageRect.left + tRect.width / 2;
+  const y = tRect.top - stageRect.top + tRect.height / 2;
+  const d = document.createElement('div');
+  d.className = 'dmg-num ' + target + (isCrit ? ' crit' : '');
+  d.style.left = x + 'px';
+  d.style.top = y + 'px';
+  d.textContent = (target === 'boss' ? '-' : '-') + amount;
+  stage.appendChild(d);
+  setTimeout(() => d.remove(), 1000);
 }
 
 function renderTowerPips() {
@@ -1730,11 +2071,13 @@ function renderTowerPips() {
 }
 
 function loadTowerQuestion() {
-  if (state.towerIdx >= 5) { endTower(); return; }
+  if (state.towerIdx >= 5 || state.bossHP <= 0 || state.playerHP <= 0) { endTower(); return; }
   const q = rand(questions.filter(x => x.type === 'choice'));
   state.currentQ = q;
+  $('tower-floor').textContent = `第 ${state.towerIdx + 1} / 5 招`;
   $('tower-tag').textContent = q.tag;
   $('tower-q').textContent = q.q;
+  state.lastQuestionTime = Date.now();
   // reset explanation panel
   const ep = $('tower-explain'); if (ep) ep.classList.add('hidden');
   const o = $('tower-opts');
@@ -1767,16 +2110,45 @@ function answerTower(idx) {
   const buttons = document.querySelectorAll('#tower-opts .option');
   buttons.forEach(b => b.classList.add('disabled'));
   const correct = idx === q.answer;
+  const elapsed = (Date.now() - state.lastQuestionTime) / 1000;
+
   if (correct) {
     buttons[idx].classList.add('correct');
     state.towerCorrect++;
+    state.stats.totalAnswered++;
+    state.stats.totalCorrect++;
+    saveStats();
+    // 傷害計算：30 - 經過秒數，最低 5；< 5 秒答出 = 暴擊 +10
+    let dmg = Math.max(5, Math.round(30 - elapsed));
+    const crit = elapsed < 5;
+    if (crit) dmg += 10;
+    state.bossHP -= dmg;
+    showDamage('boss', dmg, crit);
     burstParticles(buttons[idx]);
+    // 受到攻擊抖動
+    $('boss-avatar').style.animation = 'shake .3s';
+    setTimeout(() => { $('boss-avatar').style.animation = 'bossBreathe 2.5s ease-in-out infinite'; }, 300);
   } else {
     if (idx >= 0) buttons[idx].classList.add('wrong');
     buttons[q.answer].classList.add('correct');
+    state.stats.totalAnswered++;
+    saveStats();
+    // boss 反擊：扣 道心 20
+    const dmg = 20;
+    state.playerHP -= dmg;
+    showDamage('player', dmg);
+    shake();
   }
+  updateHPBars();
   state.towerIdx++;
   renderTowerPips();
+
+  // 若 boss 已斃 → 顯示斬殺動畫後結束
+  if (state.bossHP <= 0) {
+    $('boss-avatar').classList.add('dying');
+    setTimeout(() => showTowerExplanation(correct), 700);
+    return;
+  }
   setTimeout(() => showTowerExplanation(correct), 700);
 }
 
@@ -1804,28 +2176,41 @@ function continueTower() {
 function endTower() {
   clearInterval(state.towerInterval);
   let title, desc, rewards = '';
-  if (state.towerCorrect >= 4) {
-    title = '過關大圓滿';
-    desc = '靈力充盈，神識澄澈，根基堅穩。<br>此關已被你踏破。';
-    state.lingshi += 100;
-    state.lingli += 60;
+  const bossSlain = state.bossHP <= 0;
+  const playerDied = state.playerHP <= 0;
+
+  if (bossSlain) {
+    title = '斬 殺 心 魔';
+    desc = `<span style='color:var(--gold-bright)'>${state.currentBoss.name}</span> 已被你斬於劍下，<br>道心通透，因果業力盡消。`;
+    state.lingshi += 120;
+    state.lingli += 80;
     state.pills.peiyuan++;
-    rewards = '💎 +100　⚡ +60　🔴 培元丹 ×1';
-  } else if (state.towerCorrect >= 3) {
-    title = '勉強過關';
-    desc = '雖過此關，根基略有耗損。';
-    state.lingshi += 40;
-    state.lingli += 20;
-    rewards = '💎 +40　⚡ +20';
-  } else {
-    title = '走火入魔';
-    desc = '心法不穩，靈力散逸。下次再戰。';
-    state.lingli = Math.max(0, state.lingli - 40);
+    state.stats.bossesSlain++;
+    state.stats.towersWon++;
+    rewards = '💎 +120　⚡ +80　🔴 培元丹 ×1';
+  } else if (playerDied) {
+    title = '走 火 入 魔';
+    desc = '道心潰散，靈力反噬。<br>身受重創，連勝歸零。';
+    state.lingli = Math.max(0, state.lingli - 50);
     state.streak = 0;
-    rewards = '⚡ −40　🔥 連勝歸零';
+    rewards = '⚡ −50　🔥 連勝歸零';
+  } else if (state.towerCorrect >= 4) {
+    title = '招 數 用 盡';
+    desc = `已盡五招，<span style='color:var(--gold-bright)'>${state.currentBoss.name}</span> 受重創敗逃。<br>道心無損。`;
+    state.lingshi += 60;
+    state.lingli += 30;
+    state.stats.towersWon++;
+    rewards = '💎 +60　⚡ +30';
+  } else {
+    title = '互 有 損 傷';
+    desc = '雙方鬥法五招，未分勝負。';
+    state.lingli += 10;
+    rewards = '⚡ +10';
   }
+  saveStats();
+  checkAchievements();
   showModal({
-    label: '試 煉 結 果',
+    label: '心 魔 劫 結 果',
     title,
     desc,
     rewards,
@@ -2033,6 +2418,41 @@ function renderHome() {
   const ic = $('ab-icon'); const nm = $('ab-name');
   if (ic) ic.textContent = activeBook.icon || '📖';
   if (nm) nm.textContent = activeBook.title || '預設題庫';
+}
+
+function renderStats() {
+  const grid = $('stats-grid');
+  if (!grid) return;
+  const acc = state.stats.totalAnswered > 0
+    ? Math.round(100 * state.stats.totalCorrect / state.stats.totalAnswered) + '%'
+    : '—';
+  const cards = [
+    ['答題總數',     state.stats.totalAnswered],
+    ['正確率',       acc],
+    ['最長連勝',     state.stats.longestStreak + ' 日'],
+    ['活躍天數',     state.stats.daysActive + ' 日'],
+    ['試煉塔通關',   state.stats.towersWon + ' 次'],
+    ['斬殺心魔',     state.stats.bossesSlain + ' 個'],
+    ['補天修補',     state.stats.errorsFixed + ' 題'],
+    ['當前境界',     ranks[state.rankIdx]]
+  ];
+  grid.innerHTML = cards.map(([l, v]) =>
+    `<div class="stat-card"><div class="stat-num">${v}</div><div class="stat-label">${l}</div></div>`
+  ).join('');
+
+  const ag = $('ach-grid');
+  ag.innerHTML = '';
+  achievementDefs.forEach(a => {
+    const unlocked = state.achievements.includes(a.id);
+    const card = document.createElement('div');
+    card.className = 'ach-card ' + (unlocked ? 'unlocked' : 'locked');
+    card.innerHTML = `
+      <div class="ach-icon">${a.icon}</div>
+      <div class="ach-name">${a.name}</div>
+      <div class="ach-desc">${a.desc}</div>
+    `;
+    ag.appendChild(card);
+  });
 }
 
 function renderLibrary() {
