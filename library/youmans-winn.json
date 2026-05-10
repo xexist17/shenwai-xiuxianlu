@@ -1,0 +1,83 @@
+{
+  "id": "youmans-winn",
+  "title": "Youmans and Winn",
+  "subtitle": "Neurological Surgery · 上古功法（範例）",
+  "questions": [
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans 第 30 章 · 顱腦外傷",
+      "q": "硬腦膜外血腫 (epidural hematoma) 最常見的出血來源是？",
+      "opts": [
+        "A. 中腦膜動脈 (middle meningeal artery)",
+        "B. 大腦中動脈 (MCA)",
+        "C. 橋靜脈 (bridging veins)",
+        "D. 上矢狀竇 (superior sagittal sinus)"
+      ],
+      "answer": 0,
+      "explanation": "~90% 動脈性 EDH 源自<span class='key'>中腦膜動脈</span>分支被骨折撕裂；高壓動脈血將外層硬腦膜從顱骨內板剝離。約 10% 為靜脈源（蝶頂竇、橫竇、上矢狀竇）。橋靜脈撕裂則造成 SDH。"
+    },
+    {
+      "type": "image",
+      "tag": "看 圖 辨 症 · Youmans 第 30 章",
+      "q": "下圖為頭部 CT 軸切影像，最可能的診斷為？",
+      "svg": "<svg viewBox='0 0 200 160' xmlns='http://www.w3.org/2000/svg'><ellipse cx='100' cy='80' rx='75' ry='60' fill='#1a1a1a' stroke='#666' stroke-width='2'/><ellipse cx='100' cy='80' rx='60' ry='48' fill='#2a2a28' stroke='#444' stroke-width='.5'/><ellipse cx='85' cy='72' rx='6' ry='14' fill='#0a0a0a'/><ellipse cx='115' cy='72' rx='6' ry='14' fill='#0a0a0a'/><path d='M 50 60 Q 35 80 50 105 Q 60 100 58 80 Z' fill='#e8e0c0' opacity='.85'/><text x='100' y='150' text-anchor='middle' font-size='10' fill='#888' letter-spacing='2'>CT, axial</text></svg>",
+      "opts": [
+        "A. 硬腦膜下血腫 (subdural hematoma)",
+        "B. 硬腦膜外血腫 (epidural hematoma)",
+        "C. 蜘蛛膜下腔出血",
+        "D. 腦內出血"
+      ],
+      "answer": 1,
+      "hint": "凸鏡形 (lentiform) 高密度區，未跨越骨縫",
+      "explanation": "雙凸形 (lentiform/biconvex) 高密度 + 不跨骨縫 = <span class='key'>EDH</span>。SDH 為 crescent-shaped；SAH 為 linear/curvilinear 沿腦溝；ICH 則在實質內。EDH 可跨小腦天幕但通常不跨骨縫（vertex 矢狀縫例外）。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans 第 8 章 · 神經解剖",
+      "q": "Circle of Willis 後循環的主要供應動脈為下列何者？",
+      "opts": [
+        "A. 內頸動脈 (ICA)",
+        "B. 椎基底動脈系統 (vertebrobasilar system)",
+        "C. 前交通動脈 (ACoA)",
+        "D. 上矢狀竇"
+      ],
+      "answer": 1,
+      "explanation": "Circle of Willis：<span class='key'>前循環</span>來自雙側 ICA（→ ACA、MCA）；<span class='key'>後循環</span>來自<span class='key'>椎基底動脈系統</span>（雙 vertebral → basilar → 雙 PCA）。前後由 PCoA 連通。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans 第 73 章 · 腦動脈瘤",
+      "q": "Hunt and Hess 分級中，第 3 級的臨床表現為何？",
+      "opts": [
+        "A. 無症狀或輕微頭痛",
+        "B. 中重度頭痛、頸僵硬，無神經學缺損",
+        "C. 嗜睡、混亂或輕度局部神經學缺損",
+        "D. 昏迷、去大腦姿勢"
+      ],
+      "answer": 2,
+      "explanation": "<span class='key'>Hunt-Hess</span>：I 無/輕頭痛；II 中重度頭痛/頸僵硬，無神經缺損；<span class='key'>III 嗜睡/混亂或輕度局部缺損</span>；IV 昏迷、中重度 hemiparesis、可能 early decerebrate；V 深度昏迷、去大腦、moribund。決定手術時機與預後。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans 第 53 章 · 脊椎外傷",
+      "q": "Hangman's fracture 是指哪一節脊椎的骨折？",
+      "opts": ["A. C1 (atlas)", "B. C2 (axis) 椎弓骨折", "C. C7", "D. T1"],
+      "answer": 1,
+      "explanation": "<span class='key'>Hangman's fracture = C2 軸椎雙側椎弓 (bilateral pars/pedicle) 骨折</span>，典型為 hyperextension + distraction 機轉（如吊刑或交通事故）。Levine-Edwards 分型：Type I（穩定，<3mm 移位）至 Type III（合併 facet dislocation）。C1 骨折稱 Jefferson fracture。"
+    },
+    {
+      "type": "order",
+      "tag": "心法 · 標準 craniotomy 步驟",
+      "q": "請將標準開顱手術步驟依正確順序排列：",
+      "items": [
+        "皮膚切口、頭皮翻折",
+        "鑽孔 (burr holes)",
+        "用 craniotome 鋸開骨瓣",
+        "硬腦膜切開 (dural opening)",
+        "硬腦膜縫合 + 骨瓣復位"
+      ],
+      "answer": [0, 1, 2, 3, 4],
+      "explanation": "標準開顱順序：<span class='key'>皮膚 → 鑽孔 → 鋸骨瓣 → 切硬腦膜 → 病灶處理 → 縫硬腦膜 → 骨瓣復位 → 縫合</span>。Burr holes 提供 craniotome 起點並避開靜脈竇。Dural opening 通常 U 字形 base 朝靜脈竇。"
+    }
+  ]
+}

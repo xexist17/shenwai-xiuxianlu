@@ -1,0 +1,397 @@
+{
+  "id": "youmans-ch391",
+  "title": "Youmans Ch391 TBI 手術治療",
+  "subtitle": "Surgical Management of TBI · 30 題",
+  "questions": [
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · EDH 手術指徵",
+      "q": "依本章建議，硬腦膜外血腫 (EDH) 不論 GCS 為何皆應手術的標準為？",
+      "opts": [
+        "A. 體積 >30 mL、厚度 >15 mm、或中線偏移 >5 mm",
+        "B. 任何體積",
+        "C. 必須 GCS <8 才考慮",
+        "D. 只有合併 SDH 才需要"
+      ],
+      "answer": 0,
+      "explanation": "EDH 手術指徵（不論 GCS）：<span class='key'>體積 >30 mL</span>、<span class='key'>厚度 >15 mm</span>、或 <span class='key'>MLS >5 mm</span>。若 GCS <9 且體積/厚度/MLS 較小但有惡化跡象也應手術。<span class='key'>低顳部 (low temporal) EDH 惡化快</span>，多數作者建議降低手術門檻。Servadei 系列顯示無症狀小 EDH 可保守觀察 + 6–8 小時複查 CT。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · ASDH 手術指徵",
+      "q": "急性硬腦膜下血腫 (ASDH) 不論 GCS 為何皆應手術的標準為？",
+      "opts": [
+        "A. 厚度 >5 mm 或 MLS >2 mm",
+        "B. 厚度 >10 mm 或 MLS >5 mm",
+        "C. 體積 >50 mL",
+        "D. 必須昏迷才需要"
+      ],
+      "answer": 1,
+      "explanation": "ASDH 手術指徵（不論 GCS）：<span class='key'>厚度 >10 mm 或 MLS >5 mm</span>。若不滿足此標準但有：神經學惡化、瞳孔不等大、或 ICP >20 mmHg → 仍應手術。<span class='key'>GCS <9 但病灶不大</span> → 應裝 ICP monitor，必要時手術。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · 手術時機",
+      "q": "ASDH 患者一旦出現惡化或昏迷，依 Seelig 等經典研究，手術時機與死亡率的關係為？",
+      "opts": [
+        "A. 4 小時內手術 vs 之後：死亡率 30% vs 90%",
+        "B. 兩者沒有差別",
+        "C. 24 小時內手術即可，無差別",
+        "D. 越晚手術死亡率越低"
+      ],
+      "answer": 0,
+      "explanation": "<span class='key'>Seelig 1981</span>：ASDH 4 小時內手術 vs 之後 → 死亡率 <span class='key'>30% vs 90%</span>。Haselsberger 1988：惡化後 2 小時內 vs 之後 → 17% vs 56%。<span class='key'>「Time is brain」</span>對 ASDH 特別重要。良好預後組平均手術時間 170 分鐘，差預後組 390 分鐘。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · EDH 流行病學",
+      "q": "EDH 最常見的位置與相關骨折特徵為？",
+      "opts": [
+        "A. 額葉 (50%)，合併 frontal sinus fracture",
+        "B. 顳/顳頂 (~70%)，合併 pterion 與顳骨骨折跨越中腦膜動脈溝",
+        "C. 枕葉 (40%)，與橫竇骨折無關",
+        "D. 後顱窩 (60%)，源自 PICA"
+      ],
+      "answer": 1,
+      "explanation": "EDH ~<span class='key'>70% 位於顳/顳頂區</span>，骨折常跨越 <span class='key'>pterion 與顳骨</span>，撕裂中腦膜動脈分支。Vertex 與枕骨 EDH 常合併跨中線/橫竇骨折。額部 EDH 可能與鼻竇/眼眶骨折相關。<span class='key'>動脈出血最常見</span>，但 diploic veins 也可造成血腫。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · EDH 預後",
+      "q": "EDH 患者初始 GCS 3–5 vs GCS 6–8 的死亡率差異（Gennarelli 系列）為？",
+      "opts": [
+        "A. 兩組相近，皆約 20%",
+        "B. GCS 3–5 約 36% vs GCS 6–8 約 9%",
+        "C. GCS 3–5 約 5% vs GCS 6–8 約 50%",
+        "D. 全部都接近 100%"
+      ],
+      "answer": 1,
+      "explanation": "Gennarelli 1982：EDH 死亡率明顯與初始 GCS 相關 — <span class='key'>GCS 3–5 ≈ 36%、GCS 6–8 ≈ 9%</span>，整體 ~10%。但若有清醒間期 (lucid interval) 後迅速昏迷 → 高度 EDH suspicion，~40–50% 患者出現此徵象。<span class='key'>EDH evacuation 是 cost-effectiveness 最高的神外手術</span>（Pickard）。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · 影像分類",
+      "q": "Marshall CT 分類中，「Diffuse Injury IV (shift)」定義為？",
+      "opts": [
+        "A. 無病灶",
+        "B. 中線偏移 0–5 mm，腦池正常",
+        "C. 中線偏移 >5 mm，無 high/mixed-density >25 mL 病灶",
+        "D. 任何已手術病灶"
+      ],
+      "answer": 2,
+      "explanation": "Marshall：I 無病灶；II 中線 0–5mm + 腦池正常；III (swelling) 腦池受壓 + 中線 0–5mm；<span class='key'>IV (shift) 中線 >5 mm + 無 >25 mL 高密度病灶</span>；V 任何手術清除病灶；VI 未手術但 >25 mL 高密度病灶。死亡率約：I 6% / II 11% / III 29% / <span class='key'>IV 44%</span> / V 30% / VI 34%。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch391 · 體積估算",
+      "q": "急診評估腦內血腫體積最常用的 ABC/2 公式為？",
+      "opts": [
+        "A. 直接畫 ROI 估算",
+        "B. (A × B × C) / 2，A = 最大前後徑 (cm)、B = 最大內外徑 (cm)、C = 縱向高度 (cm，用切片數 × 切片厚度)",
+        "C. 直徑 × 深度",
+        "D. (長 + 寬 + 高) × 0.5"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>ABC/2 法</span>：體積 (mL) = (A × B × C) / 2。A、B 在橫切面上量，<span class='key'>C = 出現該病灶的 CT 切片數 × 切片厚度</span>（如 7 切 × 0.5 cm = 3.5 cm）。對橢球型病灶準確度足夠急診決策用。Extra-axial 病灶常用最大厚度作參數。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · 中線偏移",
+      "q": "在 Foramen of Monro 層面評估中線偏移的標準公式為？",
+      "opts": [
+        "A. MLS = (A/2) − B，A = 顱腔寬度、B = 內板到 septum pellucidum 之較短距離",
+        "B. MLS = A − B",
+        "C. MLS = A × B / 2",
+        "D. 直接用瞳孔線量"
+      ],
+      "answer": 0,
+      "explanation": "MLS 標準量法：在 <span class='key'>foramen of Monro 層面</span>，<span class='key'>MLS = (A/2) − B</span>，A = 顱內腔寬度、B = 內板到 septum pellucidum 之較短距離。對顳葉病灶可額外在第三腦室或顳角層面量（局部壓力梯度可能不同）。MLS 與預後及顱內血腫存在強烈相關。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · ICP 監測",
+      "q": "依 BTF 第 4 版指引，ICP 監測的「gold standard」是？",
+      "opts": [
+        "A. 顱內 parenchymal 探頭",
+        "B. 外耳道測壓",
+        "C. 外腦室引流 (EVD) — 量 CSF 壓且可治療性引流",
+        "D. 經頭骨 ultrasound"
+      ],
+      "answer": 2,
+      "explanation": "<span class='key'>EVD 為 ICP 監測 gold standard</span>：直接量 lateral ventricle 內 CSF 壓、無 pressure gradient confounding、且可<span class='key'>治療性引流 CSF</span>降 ICP。Timofeev 等研究：EVD 置放後 ~50% TBI 患者 ICP 顯著下降。<span class='key'>SIBICC algorithm 將 CSF 引流列為 first-tier therapy</span>。實務上很多中心仍以 parenchymal probe 為主、必要時加 EVD。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · ICP 監測",
+      "q": "BEST:TRIP（Chesnut 2012）試驗的核心發現為？",
+      "opts": [
+        "A. ICP 監測組死亡率顯著下降",
+        "B. 在開發中國家環境下，ICP 監測組與「以臨床檢查 + CT 引導積極處置」組結果相當；BTF 仍建議重症 TBI 用 ICP 監測",
+        "C. ICP 監測使死亡率上升",
+        "D. ICP 監測完全無效，所以不必使用"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>BEST:TRIP</span>（南美開發中國家）：<span class='key'>兩組積極處置模式比較 — ICP-guided vs 臨床+CT-guided</span>，結果相近。但兩組都用了大量 ICP-降壓治療。重點：<span class='key'>不可推論到先進醫療系統</span>（運送時間 >1hr 影響預後）。BTF 仍建議昏迷 TBI 應 ICP 監測 — 持續監測使治療更精準（減少不必要介入、縮短 TBI-specific ICU 天數）。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch391 · EVD 入針點",
+      "q": "Kocher's point 的標準解剖定位為？標準穿刺軌跡為？",
+      "opts": [
+        "A. 鼻根後 11 cm + 中線旁 2–3 cm（瞳孔線；或冠狀縫前 1–2 cm）；軌跡：朝同側內眥 + 同側耳屏",
+        "B. 鼻根後 5 cm，向後外側",
+        "C. 枕外粗隆上方 3 cm",
+        "D. 任意位置都可以"
+      ],
+      "answer": 0,
+      "explanation": "<span class='key'>Kocher's point</span>：<span class='key'>鼻根後 11 cm + 中線旁 2–3 cm（mid-pupillary line）</span>，或冠狀縫前 1–2 cm。穿刺軌跡：<span class='key'>同側 medial canthus（冠狀面）+ 同側 tragus（矢狀面）</span>。深度約 5 cm 遇 ependymal pop（CSF 流出）→ 再下 1–1.5 cm 至 foramen of Monro 層面。失敗時應更內側、更後方再試。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch391 · EVD 併發症",
+      "q": "下列何者為 EVD 置放併發症發生率的合理估計？",
+      "opts": [
+        "A. 感染率約 50%；出血率約 30%",
+        "B. 感染率約 5–10%（含浸銀/抗生素導管可降至 ~3.6%）；出血率約 5–10%（臨床顯著者約 2.5%）",
+        "C. 感染率 <0.1%；出血率 <0.1%",
+        "D. 沒有任何併發症"
+      ],
+      "answer": 1,
+      "explanation": "EVD 併發症：<span class='key'>感染 5–10%</span>，新型 antibiotic-impregnated 導管可降至 ~3.6%（Wang 等）。<span class='key'>出血 5–10%，但臨床顯著者僅約 2.5%</span>（Maniker 等）。降低感染做法：tunneled 隧道走行越長越好、嚴格無菌、避免不必要 sampling。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · 探頭位置",
+      "q": "瀰漫性 TBI 患者 ICP 探頭最佳放置位置為何？",
+      "opts": [
+        "A. 直接放在最大病灶內",
+        "B. 一般放在右側額部（非優勢半球）；單側病灶可放在病灶側但避開病灶實質",
+        "C. 後顱窩",
+        "D. 左側顳部固定位置"
+      ],
+      "answer": 1,
+      "explanation": "瀰漫性 TBI：<span class='key'>右側額部（非優勢半球）</span>是預設位置。單側病灶可放病灶側，但<span class='key'>避開 mass lesion 實質本身</span>以反映 global ICP 而非 local pressure gradient。Multimodal 監測（PbtO₂、microdialysis）也應放在 healthy tissue 才有可信讀數。若計畫做 DC，<span class='key'>對側 monitor 不必移除</span>。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch391 · 探查鑽孔",
+      "q": "探查鑽孔 (exploratory bur holes) 在無影像可用時，應從何側何處開始？",
+      "opts": [
+        "A. 隨意一側即可",
+        "B. 顳部優先（同側瞳孔散大、對側 hemiparesis、同側骨折/外傷跡象）；無 lateralizing 徵象則先左側",
+        "C. 必須從前額部開始",
+        "D. 從後顱窩開始"
+      ],
+      "answer": 1,
+      "explanation": "探查鑽孔順序原則：<span class='key'>顳部優先</span>（最常見 EDH 處）；側別選擇：<span class='key'>同側瞳孔散大、對側 hemiparesis、同側外傷/骨折</span>。無 lateralizing 徵象 + 雙側無反應瞳孔 → 先左側（優勢半球減壓）。<span class='key'>同側無發現要去做對側</span>，最後可加後顱窩。出血一發現需立刻轉成 craniotomy（鑽孔本身無法清血腫）。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · ASDH 出血源",
+      "q": "ASDH 最常見的出血來源為？影像特徵為？",
+      "opts": [
+        "A. 中腦膜動脈；雙凸形",
+        "B. 皮質橋靜脈 (cortical bridging veins)；新月形 (crescent)，可跨骨縫但不跨中線",
+        "C. PICA；卵圓形",
+        "D. 上矢狀竇；圓形"
+      ],
+      "answer": 1,
+      "explanation": "ASDH 多源自<span class='key'>皮質橋靜脈</span>（從 cortex 穿越蛛網膜下腔匯入靜脈竇前易被剪切撕裂）；少數源自實質病灶破入 subdural space。影像特徵：<span class='key'>crescent 新月形、可跨骨縫但不跨中線（受 falx 阻擋）</span>。Hyperacute 階段可能呈 isodense 或 mixed-density。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · DC 證據",
+      "q": "DECRA 試驗（Cooper 2011）對於早期 bifrontal DC 用於 first-tier 治療失敗的中度 ICP 升高，主要結論為？",
+      "opts": [
+        "A. 早期 DC 顯著改善預後",
+        "B. 早期 DC 雖能控 ICP，但 6 個月 GOS-E 結果反而較差（odds ratio 1.84 偏向不良）",
+        "C. 完全無差別",
+        "D. 早期 DC 死亡率近 100%"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>DECRA</span>（Cooper 2011, NEJM）：early bifrontal DC for ICP >20 持續 5 分鐘 → 雖控 ICP 有效，但<span class='key'>6 個月 GOS-E 結果差於對照組（OR 1.84 偏向不良）</span>。教訓：<span class='key'>DC 不應作為早期介入</span>，而應留作 last-tier。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · DC 證據",
+      "q": "RESCUEicp 試驗（Hutchinson 2016）關於 last-tier DC 的核心發現為？",
+      "opts": [
+        "A. 死亡率與藥物治療組相同",
+        "B. DC 將死亡率約半（26.9% vs 48.9%），但 vegetative state 與 severe disability 比例增加；12 個月時 favorable outcome 45.4% vs 32.4%",
+        "C. DC 完全無效",
+        "D. DC 使所有存活者皆可獨立生活"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>RESCUEicp</span>（Hutchinson 2016, NEJM）：難治性 ICP 的 last-tier DC vs 藥物 → <span class='key'>死亡率減半（26.9% vs 48.9%）</span>，但 6 個月時 vegetative state（8.5% vs 2.1%）與 lower severe disability 比例增加。<span class='key'>12 個月 favorable outcome（≥upper severe disability）45.4% vs 32.4%</span>。額外存活者中，~60% 可獨立在家，40% 需依賴他人。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · DC 技術",
+      "q": "依兩個 RCT 結果，decompressive craniectomy 骨瓣的最低尺寸建議為？",
+      "opts": [
+        "A. 直徑 6 cm 即可",
+        "B. 直徑至少 12 cm — 大型減壓較有限減壓 (limited DC) 顯著減少不良預後",
+        "C. 直徑 30 cm 以上",
+        "D. 大小不重要"
+      ],
+      "answer": 1,
+      "explanation": "Jiang 2005 與 Qiu 2009 RCT 都顯示<span class='key'>「standard large DC」優於 limited decompression</span>。<span class='key'>骨瓣應 ≥12 cm 最大徑</span>，包括充分的<span class='key'>顳部 squama 與蝶骨大翼下削</span>至中顱窩底 — 這是最關鍵的一步，能讓 temporal lobe 有空間擴張、避免 transtentorial herniation。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · ASDH 切口設計",
+      "q": "嚴重 ASDH 患者，建議的皮膚切口設計考量為何？",
+      "opts": [
+        "A. 小型線性切口即可",
+        "B. Trauma flap (reverse question mark)，足夠大可隨時轉成 hemicraniectomy；fronto-temporo-parietal 大型骨瓣含充分顳部下削",
+        "C. 任意位置線性切口",
+        "D. 雙側對稱切口"
+      ],
+      "answer": 1,
+      "explanation": "嚴重 ASDH：<span class='key'>大型 trauma flap (reverse question mark) 切口</span>，足夠大以便術中可轉換為 <span class='key'>primary DC</span>。<span class='key'>Fronto-temporo-parietal craniotomy</span>（直徑 ≥12 cm），<span class='key'>充分顳骨下削至中顱窩底</span>是術式關鍵，提供 temporal lobe 擴張空間。Multiple bur holes（3–5 個）outline 邊界。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch391 · 抗凝逆轉",
+      "q": "Warfarin 引起之凝血異常，急診神外手術前的逆轉方案為？",
+      "opts": [
+        "A. 給維他命 C 即可",
+        "B. Vitamin K 5–10 mg + FFP 15 mL/kg；或 4-Factor PCC 20 U/kg；嚴重者 rFVIIa 90 μg/kg",
+        "C. 等待自然代謝 7 天",
+        "D. 給 protamine"
+      ],
+      "answer": 1,
+      "explanation": "Warfarin reversal：<span class='key'>Vitamin K 5–10 mg + FFP 15 mL/kg</span>（傳統）；<span class='key'>4-Factor PCC 20 U/kg</span>（更快、更穩定）；<span class='key'>rFVIIa</span> 為備用。Dabigatran：<span class='key'>idarucizumab 5 g (2.5g × 2)</span>。Factor Xa inhibitors：4-F PCC 50 U/kg。Aspirin/Clopidogrel：platelets 1–2 U + DDAVP 0.4 μg/kg。Protamine 用於 heparin（1 mg / 100 U UH）。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · 後顱窩血腫",
+      "q": "後顱窩 EDH 最常見的出血源與相關 CT 表現為？",
+      "opts": [
+        "A. 椎動脈剝離；環狀強化",
+        "B. 橫竇/乙狀竇損傷（多由枕骨骨折造成）；可分隔靜脈竇與骨內板，呈 supra-/infratentorial 同時受累",
+        "C. 中腦膜動脈；雙凸形",
+        "D. PICA；新月形"
+      ],
+      "answer": 1,
+      "explanation": "後顱窩 EDH：典型源自<span class='key'>橫竇或乙狀竇被枕骨骨折撕裂</span>，血液可<span class='key'>把竇從骨內板剝離</span>，造成 supra-/infratentorial 同時受累的特殊型態。後顱窩各種血腫比例：<span class='key'>EDH 最常見 > intraparenchymal > ASDH</span>。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · 後顱窩手術",
+      "q": "依本章建議，後顱窩外傷性血腫之手術指徵為？",
+      "opts": [
+        "A. 任何後顱窩血腫均應立即手術",
+        "B. CT 上有 mass effect（4th ventricle 偏移/消失、basal cisterns 消失、obstructive hydrocephalus）+ 神經學異常",
+        "C. 必須 GCS = 3 才考慮",
+        "D. 後顱窩血腫不需要手術"
+      ],
+      "answer": 1,
+      "explanation": "後顱窩血腫手術指徵：<span class='key'>CT 顯示 mass effect（4th ventricle obliteration/displacement、basal cisterns effacement、obstructive hydrocephalus）+ 對應神經學異常</span>。Wong 標準：EDH >10 mL、厚度 >15 mm、或 mass effect >5 mm 應手術。<span class='key'>術前/術中放 EVD</span> 是常規（小心避免過度引流引發 upward herniation）。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch391 · 後顱窩 EVD",
+      "q": "後顱窩減壓手術中，EVD 過度引流的主要風險為何？",
+      "opts": [
+        "A. 沒有任何風險",
+        "B. 上行性 transtentorial herniation 與腦幹損傷",
+        "C. 顱內感染必發生",
+        "D. 大量出血"
+      ],
+      "answer": 1,
+      "explanation": "後顱窩有 mass lesion 時，EVD <span class='key'>過度引流可造成上行性 transtentorial herniation</span> → 腦幹損傷。對策：先設定較高引流壓（如 20 cm H₂O ≈ 14 mmHg）<span class='key'>後顱窩 dura 已切開後再開放引流較安全</span>。EVD 可從前方額部或後方枕部入路（patient prone 後）。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · 凹陷骨折",
+      "q": "凹陷性顱骨骨折的手術指徵為何？",
+      "opts": [
+        "A. 任何凹陷骨折",
+        "B. Compound（開放性）骨折凹陷深度 > 顱骨厚度；或 compound + 傷口污染/硬腦膜破損；或顯著美觀缺陷",
+        "C. 必須有意識喪失才考慮",
+        "D. 從不需要手術"
+      ],
+      "answer": 1,
+      "explanation": "凹陷骨折手術指徵：<span class='key'>Compound 骨折凹陷 > 顱骨厚度</span>；compound + <span class='key'>污染或硬腦膜破損</span>；顯著美觀缺陷；overlying dural sinus 造成靜脈引流受阻 + ICP 升高；額竇受累 + CSF leak 應 cranialization。Jennett & Miller：<span class='key'>48 小時內手術可使感染率從 36.5% 降至 4.5%</span>。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · 凹陷骨折",
+      "q": "關於凹陷骨折碎骨片的處置，現代建議與 Cushing 一戰時期建議有何不同？",
+      "opts": [
+        "A. 完全相同，都要丟棄",
+        "B. Cushing 一戰時建議激進清創 + 丟棄骨片；現代多數作者顯示適當清創後 replace 骨片不會增加感染率，可一期復位",
+        "C. 完全反過來，現代要更激進",
+        "D. 都要做 delayed cranioplasty"
+      ],
+      "answer": 1,
+      "explanation": "Cushing 一戰時建議：<span class='key'>激進 debridement + 丟棄所有骨片（之後 delayed cranioplasty）</span>。現代研究（Jennett, Braakman, Kriss）：<span class='key'>適當清創後 replace 骨片，感染率不會增加</span>。Late epilepsy 風險為 7–15%，但<span class='key'>手術未證實可降低 late epilepsy 率</span>，故不單獨作為手術指徵。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch391 · 大量出血",
+      "q": "下列關於外傷大量出血的定義與處置，何者正確？",
+      "opts": [
+        "A. 24 小時內失全血容；或 3 小時內失半量；或 >150 mL/hr",
+        "B. 任何出血都算大量",
+        "C. >50 mL/min 才算",
+        "D. 必須昏迷才算"
+      ],
+      "answer": 0,
+      "explanation": "Massive blood loss 定義：<span class='key'>24 小時內失全血容、3 小時內失半量、或 >150 mL/hr</span>。處置：<span class='key'>combination PRBC + FFP + platelets</span> 即時補充，避免 dilutional / consumptive coagulopathy 與 DIC。輸血目標：Hb >80 g/L、platelets >100K、INR <1.5、aPTT <75 sec、fibrinogen >1.0 g/L。<span class='key'>顱內血腫本身不會造成 hypovolemic shock</span>（除新生兒/嬰兒），需排除其他出血源。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Youmans Ch391 · TXA",
+      "q": "依 CRASH-3 試驗結果，TXA 在 TBI 患者的角色為？",
+      "opts": [
+        "A. 對所有 TBI 都顯著有效",
+        "B. 受傷 3 小時內安全；mild/moderate TBI 死亡率有降低，但 severe TBI 無差異；不增加血栓風險",
+        "C. 增加死亡率",
+        "D. 只能用於嚴重 TBI"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>CRASH-3</span>：12,734 患者隨機，TXA 在 3 小時內安全；整體 28-day 死亡率與 placebo 無差異；<span class='key'>但 mild/moderate TBI subgroup 顯著降低死亡率</span>；severe TBI 組無差異；<span class='key'>無增加 thrombotic complications</span>。建議：mild/moderate TBI 可考慮，severe TBI 非常規。手術前延遲給藥未被評估。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Youmans Ch391 · 實質病灶手術",
+      "q": "實質性外傷病灶（contusion / 腦內血腫）的標準手術指徵為？",
+      "opts": [
+        "A. 任何體積",
+        "B. 臨床惡化、難治性 ICP、或 mass effect on CT；或 GCS 6–8 + frontal/temporal contusion >20 mL + MLS >5 mm 或 cisternal compression；或 GCS 6–8 + 病灶 >50 mL",
+        "C. 必須 >100 mL 才考慮",
+        "D. 不需要手術"
+      ],
+      "answer": 1,
+      "explanation": "實質病灶手術指徵：<span class='key'>(1) 臨床惡化 / 難治性 ICP / mass effect on CT</span>；<span class='key'>(2) GCS 6–8 + frontal/temporal contusion >20 mL + MLS >5 mm 或 cisternal compression</span>；<span class='key'>(3) GCS 6–8 + 病灶 >50 mL</span>。<span class='key'>STITCH-Trauma</span> 因招募慢提早結束，傾向支持手術但未達統計顯著（37% vs 47% 不良預後；死亡 33% → 15%）。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch391 · 實質病灶演變",
+      "q": "外傷性實質病灶在傷後 48 小時內的擴大率約為？",
+      "opts": [
+        "A. <1%",
+        "B. 16–51%（依文獻），常造成臨床惡化",
+        "C. 100% 都會擴大",
+        "D. 從不擴大"
+      ],
+      "answer": 1,
+      "explanation": "傷後 <span class='key'>48 小時內 16–51% 實質病灶擴大</span>，常造成臨床惡化。多數作者建議 <span class='key'>24–48 小時內密切觀察 + 序列 CT 或 ICP 監測</span>。<span class='key'>顳葉病灶</span>特別需注意 — 即使 ICP 正常，局部 pressure gradient 仍可造成 herniation。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Youmans Ch391 · 歷史",
+      "q": "Cushing 1908 年首次描述 subtemporal decompressive craniectomy 在外傷的死亡率改善為？",
+      "opts": [
+        "A. 由 90% 降至 70%",
+        "B. 由 50% 降至 15%",
+        "C. 完全無改善",
+        "D. 由 5% 降至 1%"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Cushing 1908</span> 首次報告 subtemporal decompressive craniectomy 用於 bursting fractures of the skull → <span class='key'>死亡率由 50% 降至 15%</span>。這是 DC 概念的歷史起點。但要注意：現代背景下，DECRA/RESCUEicp 已界定 DC 應為 <span class='key'>last-tier rescue</span>，而非 first-line，避免不必要的長期 disability。"
+    }
+  ]
+}

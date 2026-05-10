@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>神外修仙錄</title>
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0d0a08">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="神外修仙">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="icon" href="icons/icon-512.png" type="image/png" sizes="512x512">
+<style>
+  :root {
+    --ink: #0d0a08;
+    --ink-2: #1a1410;
+    --ink-3: #221a14;
+    --gold: #c9a35a;
+    --gold-bright: #f0d488;
+    --gold-dim: #8a7040;
+    --red: #8b1e1e;
+    --red-bright: #d63838;
+    --jade: #5a8b6f;
+    --jade-bright: #7fb594;
+    --azure: #4a6b8b;
+    --paper: #ede4d0;
+    --paper-dim: rgba(237,228,208,.55);
+    --shadow: rgba(0,0,0,.6);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    height: 100%;
+    background: #000;
+    font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+    color: var(--paper);
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, #1a1410 0%, #000 70%);
+  }
+  button { font-family: inherit; cursor: pointer; }
+  .badge.hidden, .explain-ref.hidden { display: none; }
+
+  /* iPhone frame */
+  .phone {
+    width: 390px;
+    height: 844px;
+    max-height: 100vh;
+    background: linear-gradient(180deg, #0a0705 0%, #1a1410 50%, #0d0a08 100%);
+    border-radius: 48px;
+    border: 2px solid #2a1f15;
+    box-shadow: 0 0 80px rgba(201,163,90,.08), inset 0 0 60px rgba(0,0,0,.5);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .phone::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 30% 10%, rgba(201,163,90,.12) 0%, transparent 40%),
+      radial-gradient(circle at 70% 90%, rgba(139,30,30,.1) 0%, transparent 40%);
+    pointer-events: none; z-index: 0;
+  }
+  .notch {
+    position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 32px; background: #000; border-radius: 20px; z-index: 10;
+  }
+
+  /* Top status bar */
+  .topbar {
+    padding: 56px 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    border-bottom: 1px solid rgba(201,163,90,.15);
+  }
+  .topbar .rank-mini {
+    font-size: 13px;
+    color: var(--gold-bright);
+    letter-spacing: 4px;
+  }
+  .resources {
+    display: flex; gap: 10px;
+    font-size: 12px;
+  }
+  .res {
+    display: flex; align-items: center; gap: 3px;
+    color: var(--paper);
+  }
+  .res .icon { font-size: 13px; }
+  .res.streak .icon { animation: flame 2s ease-in-out infinite; }
+  @keyframes flame {
+    0%,100% { filter: drop-shadow(0 0 3px rgba(255,140,0,.6)); }
+    50%     { filter: drop-shadow(0 0 6px rgba(255,180,0,.9)); }
+  }
+
+  /* Screen container */
+  .screen-container { flex: 1; position: relative; overflow: hidden; }
+  .screen {
+    position: absolute; inset: 0;
+    overflow-y: auto;
+    padding: 12px 20px 24px;
+    z-index: 1;
+    transition: transform .35s cubic-bezier(.4,0,.2,1), opacity .25s;
+  }
+  .screen.hidden { transform: translateX(100%); opacity: 0; pointer-events: none; }
+  .screen::-webkit-scrollbar { width: 0; }
+
+  /* Back button */
+  .back {
+    background: none;
+    border: 1px solid rgba(201,163,90,.3);
+    color: var(--gold);
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: all .2s;
+  }
+  .back:hover { background: rgba(201,163,90,.1); border-color: var(--gold); }
+
+  /* HOME — character card */
+  .char-card {
+    background: linear-gradient(135deg, rgba(201,163,90,.08) 0%, rgba(139,30,30,.05) 100%);
+    border: 1px solid rgba(201,163,90,.3);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+  .char-card::before {
+    content: "";
+    position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px;
+    border: 1px solid rgba(201,163,90,.15);
+    border-radius: 12px; pointer-events: none;
+  }
+  .portrait {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, var(--gold-bright) 0%, var(--gold) 50%, var(--gold-dim) 100%);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 0 20px rgba(201,163,90,.4), inset 0 0 10px rgba(0,0,0,.3);
+    flex-shrink: 0;
+  }
+  .char-info { flex: 1; min-width: 0; }
+  .char-name {
+    font-size: 14px; color: var(--paper-dim);
+    letter-spacing: 2px; margin-bottom: 2px;
+  }
+  .char-rank {
+    font-size: 22px; color: var(--gold-bright);
+    letter-spacing: 6px; font-weight: 600;
+    margin-bottom: 8px;
+    text-shadow: 0 0 12px rgba(201,163,90,.4);
+  }
+  .progress-wrap {
+    height: 6px;
+    background: rgba(255,255,255,.08);
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgba(201,163,90,.25);
+    margin-bottom: 4px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-bright) 50%, var(--gold) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+    transition: width .8s cubic-bezier(.4,0,.2,1);
+  }
+  @keyframes shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  .progress-text { font-size: 10px; color: var(--paper-dim); letter-spacing: 1px; }
+
+  /* Attributes row */
+  .attrs {
+    display: flex; gap: 10px;
+    margin-bottom: 14px;
+    padding: 10px 14px;
+    background: rgba(0,0,0,.25);
+    border: 1px solid rgba(201,163,90,.2);
+    border-radius: 10px;
+  }
+  .attr {
+    flex: 1;
+    text-align: center;
+    cursor: help;
+  }
+  .attr-name {
+    font-size: 10px;
+    color: var(--paper-dim);
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+  }
+  .attr-val {
+    font-size: 18px;
+    color: var(--gold-bright);
+    font-weight: 600;
+  }
+
+  /* Action points */
+  .ap-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: rgba(74,107,139,.1);
+    border: 1px solid rgba(74,107,139,.3);
+    border-radius: 10px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .ap-label { color: var(--paper-dim); }
+  .ap-dots { display: flex; gap: 4px; }
+  .ap-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(201,163,90,.3);
+    transition: all .3s;
+  }
+  .ap-dot.full {
+    background: var(--gold-bright);
+    box-shadow: 0 0 6px rgba(240,212,136,.6);
+  }
+
+  /* Action grid */
+  .action-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .action-card {
+    background: linear-gradient(180deg, rgba(237,228,208,.04) 0%, rgba(237,228,208,.01) 100%);
+    border: 1px solid rgba(201,163,90,.25);
+    border-radius: 12px;
+    padding: 14px 10px;
+    color: var(--paper);
+    text-align: center;
+    transition: all .2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .action-card.wide { grid-column: span 2; }
+  .action-card:hover:not(.disabled) {
+    border-color: var(--gold);
+    background: rgba(201,163,90,.08);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.4);
+  }
+  .action-card.disabled { opacity: .4; cursor: not-allowed; }
+  .action-card .ic { font-size: 28px; margin-bottom: 4px; display: block; }
+  .action-card .ti {
+    font-size: 14px; font-weight: 600;
+    letter-spacing: 3px; color: var(--gold-bright);
+    margin-bottom: 2px;
+  }
+  .action-card .ds {
+    font-size: 10px; color: var(--paper-dim);
+    line-height: 1.4;
+  }
+  .action-card .ct {
+    font-size: 9px;
+    color: var(--gold-dim);
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+  .action-card .badge {
+    position: absolute;
+    top: 8px; right: 8px;
+    background: var(--red-bright);
+    color: white;
+    font-size: 10px;
+    min-width: 20px; height: 20px;
+    border-radius: 10px;
+    padding: 0 6px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 8px rgba(214,56,56,.6);
+    font-weight: 600;
+  }
+
+  /* Inventory */
+  .inv-section {
+    background: rgba(0,0,0,.2);
+    border: 1px solid rgba(201,163,90,.2);
+    border-radius: 12px;
+    padding: 12px;
+  }
+  .inv-title {
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .pills {
+    display: flex; gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .pill {
+    background: radial-gradient(circle at 35% 35%, rgba(214,56,56,.4), rgba(139,30,30,.6));
+    border: 1px solid rgba(214,56,56,.5);
+    color: var(--paper);
+    font-size: 11px;
+    padding: 6px 10px;
+    border-radius: 14px;
+    letter-spacing: 1px;
+    transition: all .2s;
+  }
+  .pill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(214,56,56,.5);
+  }
+  .pill.peiyuan { background: radial-gradient(circle at 35% 35%, rgba(214,56,56,.5), rgba(139,30,30,.7)); }
+  .pill.xingshen { background: radial-gradient(circle at 35% 35%, rgba(127,181,148,.4), rgba(90,139,111,.6)); border-color: rgba(127,181,148,.5); }
+  .pill.huxin { background: radial-gradient(circle at 35% 35%, rgba(74,107,139,.4), rgba(50,80,110,.6)); border-color: rgba(74,107,139,.5); }
+  .pill .count {
+    color: var(--gold-bright);
+    font-weight: 600;
+    margin-left: 2px;
+  }
+
+  /* QUESTION SCREEN */
+  .chapter-tag {
+    font-size: 11px;
+    color: var(--jade-bright);
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+  .q-card {
+    background: linear-gradient(180deg, rgba(237,228,208,.04) 0%, rgba(237,228,208,.02) 100%);
+    border: 1px solid rgba(201,163,90,.3);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: inset 0 0 30px rgba(0,0,0,.3);
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .q-card::before {
+    content: "";
+    position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px;
+    border: 1px solid rgba(201,163,90,.12);
+    border-radius: 12px; pointer-events: none;
+  }
+  .question {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--paper);
+    margin-bottom: 16px;
+    letter-spacing: .5px;
+    position: relative;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option {
+    background: rgba(0,0,0,.3);
+    border: 1px solid rgba(201,163,90,.25);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: var(--paper);
+    font-size: 13px;
+    text-align: left;
+    transition: all .2s;
+    letter-spacing: .5px;
+  }
+  .option:hover:not(.disabled) {
+    border-color: var(--gold);
+    background: rgba(201,163,90,.08);
+    transform: translateX(2px);
+  }
+  .option.correct {
+    border-color: var(--jade);
+    background: rgba(90,139,111,.2);
+    box-shadow: 0 0 18px rgba(90,139,111,.4);
+    animation: pop .4s;
+  }
+  .option.wrong {
+    border-color: var(--red-bright);
+    background: rgba(214,56,56,.15);
+    animation: shake .4s;
+  }
+  .option.disabled { pointer-events: none; }
+  .option.disabled:not(.correct):not(.wrong) { opacity: .4; }
+  @keyframes pop {
+    0%,100% { transform: scale(1); }
+    50%     { transform: scale(1.03); }
+  }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    25%     { transform: translateX(-5px); }
+    75%     { transform: translateX(5px); }
+  }
+
+  /* Image question (SVG brain) */
+  .img-q {
+    height: 180px;
+    background: radial-gradient(circle, #0a0805 0%, #000 100%);
+    border: 1px solid rgba(201,163,90,.25);
+    border-radius: 10px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-q svg { width: 100%; height: 100%; }
+  .img-caption {
+    position: absolute;
+    bottom: 6px; left: 8px;
+    font-size: 10px;
+    color: var(--paper-dim);
+    letter-spacing: 1px;
+  }
+
+  /* Ordering question */
+  .order-pool, .order-list {
+    display: flex; flex-direction: column; gap: 6px;
+    margin-bottom: 8px;
+  }
+  .order-list { min-height: 30px; }
+  .order-list-title, .order-pool-title {
+    font-size: 10px;
+    color: var(--paper-dim);
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .order-item {
+    background: rgba(0,0,0,.3);
+    border: 1px solid rgba(201,163,90,.25);
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: var(--paper);
+    font-size: 12px;
+    text-align: left;
+    transition: all .2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .order-item:hover { border-color: var(--gold); background: rgba(201,163,90,.08); }
+  .order-item.placed {
+    background: rgba(90,139,111,.12);
+    border-color: rgba(127,181,148,.4);
+  }
+  .order-num {
+    color: var(--gold-bright);
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-right: 8px;
+  }
+  .submit-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold-bright);
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    letter-spacing: 4px;
+    transition: all .2s;
+    margin-top: 6px;
+  }
+  .submit-btn:hover:not(:disabled) {
+    background: rgba(201,163,90,.12);
+    box-shadow: 0 0 16px rgba(201,163,90,.3);
+  }
+  .submit-btn:disabled { opacity: .3; cursor: not-allowed; }
+
+  /* Tower */
+  .tower-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: rgba(139,30,30,.15);
+    border: 1px solid rgba(214,56,56,.4);
+    border-radius: 12px;
+    margin-bottom: 14px;
+  }
+  .tower-floor {
+    color: var(--red-bright);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  .tower-timer {
+    color: var(--gold-bright);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: monospace;
+  }
+  .tower-timer.danger { color: var(--red-bright); animation: pulse .5s ease-in-out infinite; }
+  @keyframes pulse {
+    0%,100% { transform: scale(1); }
+    50%     { transform: scale(1.08); }
+  }
+  .tower-progress {
+    display: flex; gap: 4px;
+    margin-bottom: 14px;
+  }
+  .tower-pip {
+    flex: 1;
+    height: 4px;
+    background: rgba(255,255,255,.08);
+    border-radius: 2px;
+  }
+  .tower-pip.done { background: var(--jade-bright); }
+  .tower-pip.fail { background: var(--red-bright); }
+
+  /* Gather (mini-game) */
+  .gather-stage {
+    height: 380px;
+    background: radial-gradient(ellipse at 50% 80%, rgba(90,139,111,.15) 0%, transparent 60%),
+                linear-gradient(180deg, rgba(13,10,8,.5) 0%, rgba(13,10,8,.9) 100%);
+    border: 1px solid rgba(201,163,90,.25);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+  .gather-instructions {
+    position: absolute; top: 12px; left: 0; right: 0;
+    text-align: center;
+    color: var(--paper-dim);
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .herb {
+    position: absolute;
+    width: 36px; height: 36px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .herb:hover { transform: scale(1.2); filter: drop-shadow(0 0 8px var(--jade-bright)); }
+  .herb.gone {
+    animation: gather .5s forwards;
+    pointer-events: none;
+  }
+  @keyframes gather {
+    to { transform: translateY(-30px) scale(0); opacity: 0; }
+  }
+  .gather-timer {
+    position: absolute;
+    bottom: 12px; left: 50%; transform: translateX(-50%);
+    color: var(--gold-bright);
+    font-family: monospace;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  /* Modals */
+  .modal-overlay {
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    padding: 24px;
+  }
+  .modal-overlay.show { display: flex; animation: fadeIn .3s; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .modal {
+    background: linear-gradient(180deg, var(--ink-2) 0%, var(--ink) 100%);
+    border: 1px solid var(--gold);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+    animation: ascend .6s cubic-bezier(.34,1.56,.64,1);
+    box-shadow: 0 0 40px rgba(201,163,90,.3);
+  }
+  @keyframes ascend {
+    0%   { transform: translateY(40px) scale(.7); opacity: 0; }
+    60%  { transform: translateY(-8px) scale(1.05); opacity: 1; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+  }
+  .modal-label {
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+  }
+  .modal-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--gold-bright);
+    letter-spacing: 8px;
+    text-shadow: 0 0 16px rgba(201,163,90,.6);
+    margin-bottom: 16px;
+  }
+  .modal-title.small { font-size: 22px; letter-spacing: 4px; }
+  .modal-desc {
+    font-size: 13px;
+    color: var(--paper);
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .modal-rewards {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .modal-reward {
+    color: var(--gold-bright);
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .modal-btn {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold-bright);
+    padding: 10px 32px;
+    border-radius: 22px;
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 4px;
+    transition: all .3s;
+  }
+  .modal-btn:hover {
+    background: rgba(201,163,90,.15);
+    box-shadow: 0 0 16px rgba(201,163,90,.4);
+  }
+  .modal-btn.danger { border-color: var(--red-bright); color: var(--red-bright); }
+  .modal-btn.danger:hover { background: rgba(214,56,56,.15); }
+  .modal-btn-row {
+    display: flex; gap: 8px; justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Floating notifications */
+  .float-msg {
+    position: absolute;
+    left: 50%; top: 100px;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,.85);
+    border: 1px solid var(--gold);
+    color: var(--gold-bright);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    z-index: 200;
+    pointer-events: none;
+    animation: floatMsg 2.2s forwards;
+    white-space: nowrap;
+  }
+  @keyframes floatMsg {
+    0%   { transform: translate(-50%, 20px); opacity: 0; }
+    15%  { transform: translate(-50%, 0); opacity: 1; }
+    85%  { transform: translate(-50%, 0); opacity: 1; }
+    100% { transform: translate(-50%, -30px); opacity: 0; }
+  }
+
+  /* Particles */
+  .particle {
+    position: absolute;
+    width: 3px; height: 3px;
+    background: var(--gold-bright);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  /* Active book indicator on home */
+  .active-book {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    background: linear-gradient(90deg, rgba(201,163,90,.1) 0%, rgba(201,163,90,.02) 100%);
+    border: 1px solid rgba(201,163,90,.25);
+    border-radius: 10px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: all .2s;
+  }
+  .active-book:hover {
+    background: linear-gradient(90deg, rgba(201,163,90,.18) 0%, rgba(201,163,90,.05) 100%);
+    border-color: var(--gold);
+  }
+  .active-book .ic { font-size: 18px; }
+  .active-book .info { flex: 1; min-width: 0; }
+  .active-book .lbl { font-size: 9px; color: var(--paper-dim); letter-spacing: 2px; }
+  .active-book .nm {
+    font-size: 13px; color: var(--gold-bright);
+    letter-spacing: 1px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .active-book .arrow { color: var(--gold); font-size: 14px; }
+
+  /* Library screen */
+  .library-title {
+    text-align: center;
+    font-size: 22px;
+    color: var(--gold-bright);
+    letter-spacing: 12px;
+    margin: 6px 0 4px;
+    text-shadow: 0 0 12px rgba(201,163,90,.4);
+  }
+  .library-subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: var(--paper-dim);
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+  }
+  .book-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+  .book-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: rgba(0,0,0,.3);
+    border: 1px solid rgba(201,163,90,.25);
+    border-radius: 12px;
+    text-align: left;
+    color: var(--paper);
+    transition: all .2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .book-card:hover:not(.not-imported) {
+    border-color: var(--gold);
+    background: rgba(201,163,90,.08);
+    transform: translateX(2px);
+  }
+  .book-card.active {
+    border-color: var(--gold);
+    background: rgba(201,163,90,.12);
+    box-shadow: 0 0 16px rgba(201,163,90,.2);
+  }
+  .book-card.active::before {
+    content: "";
+    position: absolute; top: 0; left: 0; bottom: 0; width: 3px;
+    background: var(--gold-bright);
+    box-shadow: 0 0 8px var(--gold-bright);
+  }
+  .book-card.not-imported { opacity: .5; cursor: not-allowed; }
+  .book-cover {
+    width: 48px; height: 56px;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.4), inset 0 0 8px rgba(0,0,0,.3);
+  }
+  .book-info { flex: 1; min-width: 0; }
+  .book-title {
+    font-size: 14px;
+    color: var(--gold-bright);
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .book-subtitle {
+    font-size: 10px;
+    color: var(--paper-dim);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .book-meta {
+    font-size: 10px;
+    color: var(--jade-bright);
+    letter-spacing: 1px;
+  }
+  .book-card.not-imported .book-meta { color: var(--red-bright); }
+  .book-status {
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 2px;
+    padding: 4px 8px;
+    border: 1px solid rgba(201,163,90,.3);
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  .book-card.active .book-status {
+    color: var(--gold-bright);
+    border-color: var(--gold-bright);
+    background: rgba(201,163,90,.15);
+  }
+  .library-howto {
+    background: rgba(74,107,139,.1);
+    border: 1px dashed rgba(74,107,139,.4);
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 10px;
+  }
+  .library-howto-title {
+    font-size: 12px;
+    color: var(--azure);
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+  }
+  .library-howto p {
+    font-size: 11px;
+    color: var(--paper-dim);
+    line-height: 1.7;
+    letter-spacing: 1px;
+  }
+  .library-howto code {
+    background: rgba(0,0,0,.4);
+    color: var(--gold-bright);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-family: monospace;
+  }
+
+  /* Buff indicator */
+  .buffs {
+    display: flex; gap: 6px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .buff {
+    background: rgba(201,163,90,.15);
+    border: 1px solid var(--gold);
+    color: var(--gold-bright);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .buff.danger { border-color: var(--red-bright); color: var(--red-bright); background: rgba(214,56,56,.1); }
+
+  /* Explanation panel */
+  .explanation {
+    margin-top: 14px;
+    padding: 14px 16px;
+    background: linear-gradient(180deg, rgba(127,181,148,.1) 0%, rgba(127,181,148,.02) 100%);
+    border: 1px solid rgba(127,181,148,.35);
+    border-left: 3px solid var(--jade-bright);
+    border-radius: 10px;
+    animation: explainIn .4s cubic-bezier(.4,0,.2,1);
+    position: relative;
+  }
+  .explanation.wrong-tone {
+    background: linear-gradient(180deg, rgba(214,56,56,.08) 0%, rgba(214,56,56,.02) 100%);
+    border-color: rgba(214,56,56,.35);
+    border-left-color: var(--red-bright);
+  }
+  .explanation.hidden { display: none; }
+  @keyframes explainIn {
+    from { opacity: 0; transform: translateY(-8px); max-height: 0; }
+    to   { opacity: 1; transform: translateY(0); max-height: 600px; }
+  }
+  .explain-label {
+    font-size: 11px;
+    color: var(--jade-bright);
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .explanation.wrong-tone .explain-label { color: var(--red-bright); }
+  .explain-body {
+    font-size: 13px;
+    color: var(--paper);
+    line-height: 1.8;
+    letter-spacing: .5px;
+    margin-bottom: 12px;
+  }
+  .explain-ref {
+    font-size: 10px;
+    color: var(--paper-dim);
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    padding-top: 8px;
+    border-top: 1px dashed rgba(201,163,90,.2);
+  }
+  .explain-body .key {
+    color: var(--gold-bright);
+    font-weight: 600;
+  }
+  .continue-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold-bright);
+    padding: 10px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 6px;
+    transition: all .2s;
+  }
+  .continue-btn:hover {
+    background: rgba(201,163,90,.12);
+    box-shadow: 0 0 12px rgba(201,163,90,.3);
+  }
+
+  /* Hint button */
+  .hint-row {
+    display: flex; justify-content: flex-end;
+    margin-top: 10px;
+  }
+  .hint-btn {
+    background: transparent;
+    border: 1px solid rgba(127,181,148,.5);
+    color: var(--jade-bright);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .hint-btn:hover { background: rgba(127,181,148,.1); }
+</style>
+</head>
+<body>
+  <div class="phone" id="phone">
+    <div class="notch"></div>
+
+    <!-- Top status bar -->
+    <div class="topbar">
+      <div class="rank-mini" id="rank-mini">築基三層</div>
+      <div class="resources">
+        <span class="res streak"><span class="icon">🔥</span><span id="r-streak">7</span></span>
+        <span class="res"><span class="icon">⚡</span><span id="r-lingli">234</span></span>
+        <span class="res"><span class="icon">💎</span><span id="r-lingshi">88</span></span>
+      </div>
+    </div>
+
+    <div class="screen-container">
+
+      <!-- ============== HOME ============== -->
+      <div class="screen" id="screen-home">
+        <div class="char-card">
+          <div class="portrait">⚕</div>
+          <div class="char-info">
+            <div class="char-name">道號 · 玄元子</div>
+            <div class="char-rank" id="char-rank">築基三層</div>
+            <div class="progress-wrap"><div class="progress-fill" id="progress-fill" style="width: 67%"></div></div>
+            <div class="progress-text">距下一境界 <span id="to-next">33</span> 靈力</div>
+          </div>
+        </div>
+
+        <div class="attrs">
+          <div class="attr" title="影響獲得靈力">
+            <div class="attr-name">悟性</div>
+            <div class="attr-val" id="attr-wuxing">5</div>
+          </div>
+          <div class="attr" title="連勝上限">
+            <div class="attr-name">根骨</div>
+            <div class="attr-val" id="attr-genfu">3</div>
+          </div>
+          <div class="attr" title="每日提示次數">
+            <div class="attr-name">神識</div>
+            <div class="attr-val" id="attr-shenshi">2</div>
+          </div>
+        </div>
+
+        <div class="active-book" onclick="go('library')">
+          <span class="ic" id="ab-icon">📚</span>
+          <div class="info">
+            <div class="lbl">正 在 研 習</div>
+            <div class="nm" id="ab-name">—</div>
+          </div>
+          <span class="arrow">›</span>
+        </div>
+
+        <div class="ap-bar">
+          <span class="ap-label">試煉/採藥點</span>
+          <div class="ap-dots" id="ap-dots"></div>
+        </div>
+
+        <div class="action-grid">
+          <button class="action-card" data-action="study">
+            <span class="ic">📖</span>
+            <div class="ti">修煉</div>
+            <div class="ds">研讀新章節<br>主要靈力來源</div>
+            <div class="ct">∞ 可重複</div>
+          </button>
+          <button class="action-card" data-action="meditate">
+            <span class="ic">🧘</span>
+            <div class="ti">打坐</div>
+            <div class="ds">複習舊功法<br>鞏固熟練度</div>
+            <div class="ct">∞ 可重複</div>
+          </button>
+          <button class="action-card" data-action="tower">
+            <span class="ic">⚔️</span>
+            <div class="ti">闖試煉塔</div>
+            <div class="ds">五題限時，過關得寶<br>失敗則走火入魔</div>
+            <div class="ct">－2 點</div>
+          </button>
+          <button class="action-card" data-action="gather">
+            <span class="ic">🌿</span>
+            <div class="ti">採藥</div>
+            <div class="ds">後山靈藥草<br>限時採集</div>
+            <div class="ct">－1 點</div>
+          </button>
+          <button class="action-card" data-action="fortune">
+            <span class="ic">🎴</span>
+            <div class="ti">抽機緣</div>
+            <div class="ds">每日 1 卦<br>機緣天定</div>
+            <div class="ct" id="fortune-cost">每日 1 次</div>
+          </button>
+          <button class="action-card" data-action="errorReview">
+            <span class="ic">📜</span>
+            <div class="ti">補天閣</div>
+            <div class="ds">錯題重練<br>補回根基缺漏</div>
+            <div class="ct" id="error-cost">∞ 可重複</div>
+            <span class="badge hidden" id="error-badge">0</span>
+          </button>
+        </div>
+
+        <div class="inv-section">
+          <div class="inv-title">丹 藥 背 包</div>
+          <div class="pills">
+            <button class="pill peiyuan" data-pill="peiyuan">培元丹<span class="count">×<span id="p-peiyuan">2</span></span></button>
+            <button class="pill xingshen" data-pill="xingshen">醒神丹<span class="count">×<span id="p-xingshen">1</span></span></button>
+            <button class="pill huxin" data-pill="huxin">護心丹<span class="count">×<span id="p-huxin">3</span></span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============== STUDY (single choice / image / order) ============== -->
+      <div class="screen hidden" id="screen-study">
+        <button class="back" onclick="go('home')">←</button>
+        <div class="buffs" id="study-buffs"></div>
+        <div class="chapter-tag" id="study-tag"></div>
+        <div class="q-card">
+          <div class="img-q" id="study-img" style="display:none"></div>
+          <div class="question" id="study-q"></div>
+          <div id="study-body"></div>
+          <div class="explanation hidden" id="study-explain">
+            <div class="explain-label" id="study-explain-label">📖 解 說</div>
+            <div class="explain-body" id="study-explain-text"></div>
+            <div class="explain-ref hidden" id="study-explain-ref"></div>
+            <button class="continue-btn" onclick="continueStudy()">繼 續 修 煉</button>
+          </div>
+          <div class="hint-row" id="study-hint-row">
+            <button class="hint-btn" onclick="useHint()">🔮 神識探察 (剩 <span id="hint-left">2</span>)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============== TOWER ============== -->
+      <div class="screen hidden" id="screen-tower">
+        <button class="back" onclick="confirmExitTower()">←</button>
+        <div class="tower-header">
+          <div class="tower-floor" id="tower-floor">試煉塔 · 第三層</div>
+          <div class="tower-timer" id="tower-timer">15</div>
+        </div>
+        <div class="tower-progress" id="tower-pips"></div>
+        <div class="chapter-tag" id="tower-tag"></div>
+        <div class="q-card">
+          <div class="question" id="tower-q"></div>
+          <div class="options" id="tower-opts"></div>
+          <div class="explanation hidden" id="tower-explain">
+            <div class="explain-label" id="tower-explain-label">📖 解 說</div>
+            <div class="explain-body" id="tower-explain-text"></div>
+            <div class="explain-ref hidden" id="tower-explain-ref"></div>
+            <button class="continue-btn" onclick="continueTower()">下 一 題</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============== LIBRARY (功法閣) ============== -->
+      <div class="screen hidden" id="screen-library">
+        <button class="back" onclick="go('home')">←</button>
+        <div class="library-title">功 法 閣</div>
+        <div class="library-subtitle">凡塵諸般功法 · 擇 一 而 修</div>
+        <div class="book-list" id="book-list"></div>
+        <div class="library-howto">
+          <div class="library-howto-title">📂 如 何 加 入 新 功 法</div>
+          <p>
+            將 PDF 放入 <code>pipeline/pdfs/</code><br>
+            終端機執行 <code>python pipeline/generate.py "書名"</code><br>
+            自動切章、AI 生題、寫入題庫，重整即見新功法
+          </p>
+        </div>
+      </div>
+
+      <!-- ============== GATHER ============== -->
+      <div class="screen hidden" id="screen-gather">
+        <button class="back" onclick="endGather()">←</button>
+        <div class="chapter-tag">後山藥圃 · 採集模式</div>
+        <div class="gather-stage" id="gather-stage">
+          <div class="gather-instructions">點擊靈藥採集，限時 15 秒</div>
+          <div class="gather-timer" id="gather-timer">15</div>
+        </div>
+        <div style="text-align:center; color: var(--paper-dim); font-size: 11px; letter-spacing: 2px;">
+          採得越多靈藥，獎勵越豐厚
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal-content"></div>
+    </div>
+
+  </div>
+
+<script>
+// Register service worker for offline use (PWA)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+
+//═══════════════════════════════════════════════
+// STATE
+//═══════════════════════════════════════════════
+const state = {
+  // resources
+  lingli: 234,
+  lingshi: 88,
+  apMax: 10, ap: 10,
+
+  // progress
+  rankIdx: 11,
+  progress: 67, toNext: 33,
+
+  // attributes (E)
+  attr: { wuxing: 5, genfu: 3, shenshi: 2 },
+  hintLeft: 2,
+
+  // streak
+  streak: 7,
+  correctChain: 0,
+
+  // inventory (B)
+  pills: { peiyuan: 2, xingshen: 1, huxin: 3 },
+
+  // buffs
+  buffs: [],          // { type, label, remaining }
+
+  // daily flags
+  fortuneUsedToday: false,
+
+  // mode-specific
+  currentQ: null,
+  qMode: "study",     // "study" | "meditate" | "tower" | "errorReview"
+  towerIdx: 0,
+  towerCorrect: 0,
+  towerTimer: 15,
+  towerInterval: null,
+
+  // error notebook (補天閣)
+  errorPool: JSON.parse(localStorage.getItem('errorPool') || '[]'),
+};
+
+function saveErrorPool() {
+  localStorage.setItem('errorPool', JSON.stringify(state.errorPool));
+}
+function addToErrorPool(q) {
+  if (!q || !q.q) return;
+  const idx = state.errorPool.findIndex(e => e.q === q.q);
+  if (idx >= 0) {
+    state.errorPool[idx].wrongCount = (state.errorPool[idx].wrongCount || 1) + 1;
+    state.errorPool[idx].lastWrong = Date.now();
+  } else {
+    state.errorPool.push({...q, bookTitle: activeBook?.title, bookRef: activeBook?.ref, wrongCount: 1, lastWrong: Date.now()});
+  }
+  saveErrorPool();
+}
+function removeFromErrorPool(q) {
+  state.errorPool = state.errorPool.filter(e => e.q !== q.q);
+  saveErrorPool();
+}
+
+const ranks = [
+  "練氣一層","練氣二層","練氣三層","練氣四層","練氣五層","練氣六層","練氣七層","練氣八層","練氣九層",
+  "築基一層","築基二層","築基三層","築基四層","築基五層","築基六層","築基七層","築基八層","築基九層",
+  "金丹初期","金丹中期","金丹後期","金丹大圓滿",
+  "元嬰初期","元嬰中期","元嬰後期","元嬰大圓滿",
+  "化神","渡劫","飛升"
+];
+
+//═══════════════════════════════════════════════
+// QUESTION BANK — loaded from library/ at boot
+//═══════════════════════════════════════════════
+let questions = [];
+let library = null;
+let activeBook = null;
+
+const fallbackQuestions = [
+  // type: choice
+  { type: "choice",
+    tag: "功法 · Youmans 第 30 章 · 顱腦外傷",
+    q: "硬腦膜外血腫 (epidural hematoma) 最常見的出血來源是？",
+    opts: ["A. 中腦膜動脈 (middle meningeal artery)","B. 大腦中動脈 (MCA)","C. 橋靜脈 (bridging veins)","D. 上矢狀竇"],
+    answer: 0
+  },
+  { type: "choice",
+    tag: "功法 · Greenberg Handbook · 第 10 章 · 神經重症",
+    q: "Glasgow Coma Scale 中，「對疼痛刺激會睜眼」屬於眼睛反應的幾分？",
+    opts: ["A. 1 分","B. 2 分","C. 3 分","D. 4 分"],
+    answer: 1
+  },
+  { type: "choice",
+    tag: "心法 · Youmans 第 8 章 · 神經解剖",
+    q: "Circle of Willis 後循環的主要供應動脈為下列何者？",
+    opts: ["A. 內頸動脈 (ICA)","B. 椎基底動脈系統","C. 前交通動脈 (ACoA)","D. 上矢狀竇"],
+    answer: 1
+  },
+  { type: "choice",
+    tag: "秘籍 · Youmans 第 73 章 · 腦動脈瘤",
+    q: "Hunt and Hess 分級中，第 3 級的臨床表現為何？",
+    opts: ["A. 無症狀或輕微頭痛","B. 中重度頭痛、頸僵硬，無神經學缺損","C. 嗜睡、混亂或輕度局部神經學缺損","D. 昏迷、去大腦姿勢"],
+    answer: 2
+  },
+  // type: image (SVG-rendered)
+  { type: "image",
+    tag: "看 圖 辨 症 · Youmans 第 30 章",
+    q: "下圖為頭部 CT 軸切影像，最可能的診斷為？",
+    svg: `<svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="100" cy="80" rx="75" ry="60" fill="#1a1a1a" stroke="#666" stroke-width="2"/>
+      <ellipse cx="100" cy="80" rx="60" ry="48" fill="#2a2a28" stroke="#444" stroke-width=".5"/>
+      <ellipse cx="85" cy="72" rx="6" ry="14" fill="#0a0a0a"/>
+      <ellipse cx="115" cy="72" rx="6" ry="14" fill="#0a0a0a"/>
+      <path d="M 50 60 Q 35 80 50 105 Q 60 100 58 80 Z" fill="#e8e0c0" opacity=".85"/>
+      <text x="100" y="150" text-anchor="middle" font-size="10" fill="#888" letter-spacing="2">CT, axial</text>
+    </svg>`,
+    opts: ["A. 硬腦膜下血腫 (subdural hematoma)","B. 硬腦膜外血腫 (epidural hematoma)","C. 蜘蛛膜下腔出血","D. 腦內出血"],
+    answer: 1,
+    hint: "凸鏡形 (lentiform) 高密度區，未跨越骨縫"
+  },
+  // type: ordering
+  { type: "order",
+    tag: "心法 · 標準 craniotomy 步驟",
+    q: "請將標準開顱手術步驟依正確順序排列：",
+    items: [
+      "皮膚切口、頭皮翻折",
+      "鑽孔 (burr holes)",
+      "用 craniotome 鋸開骨瓣",
+      "硬腦膜切開 (dural opening)",
+      "硬腦膜縫合 + 骨瓣復位"
+    ],
+    answer: [0,1,2,3,4]
+  },
+  { type: "choice",
+    tag: "功法 · Youmans 第 53 章 · 脊椎外傷",
+    q: "Hangman's fracture 是指哪一節脊椎的骨折？",
+    opts: ["A. C1 (atlas)","B. C2 (axis) 椎弓骨折","C. C7","D. T1"],
+    answer: 1
+  }
+];
+
+//═══════════════════════════════════════════════
+// FORTUNE EVENTS (C: random encounters)
+//═══════════════════════════════════════════════
+const fortuneEvents = [
+  { title: "拾 得 殘 卷",
+    desc: "你在後山採藥時偶然發現一卷封塵已久的醫書殘頁，記載著前輩的心得。",
+    effect: () => { state.lingli += 30; floatMsg("✨ 靈力 +30"); }
+  },
+  { title: "高 人 指 點",
+    desc: "途中遇見一位白髮老者，他撫鬚一笑：「年輕人，下一題我助你一臂之力。」",
+    effect: () => { addBuff({type:"shield", label:"高人庇護", remaining:1}); floatMsg("🛡️ 下次答錯免扣"); }
+  },
+  { title: "天 降 異 象",
+    desc: "天空忽現紫氣東來，靈氣大盛。但盛極而衰，有失即有得。",
+    effect: () => { addBuff({type:"x3xp", label:"異象 XP×3", remaining:3}); floatMsg("🌟 下 3 題 XP×3，答錯重扣"); }
+  },
+  { title: "走 火 入 魔",
+    desc: "你昨夜閉關時心境不穩，靈力散亂，今日修為略有耗損。",
+    effect: () => { state.lingli = Math.max(0, state.lingli - 25); floatMsg("💢 靈力 -25"); }
+  },
+  { title: "靈 石 散 落",
+    desc: "你在小徑上撿到三枚散落的靈石，光華內斂，品質不俗。",
+    effect: () => { state.lingshi += 15; floatMsg("💎 靈石 +15"); }
+  },
+  { title: "藥 童 贈 丹",
+    desc: "山中遇見一名稚氣藥童，因你曾贈他清水，他從袖中取出一顆丹藥相贈。",
+    effect: () => { state.pills.peiyuan += 1; floatMsg("🔴 培元丹 +1"); }
+  },
+  { title: "悟 道 頓 悟",
+    desc: "靜坐松下，忽有所悟。你對醫道的理解又深了一層。",
+    effect: () => { state.attr.wuxing += 1; floatMsg("📈 悟性 +1（永久）"); }
+  },
+  { title: "心 魔 來 襲",
+    desc: "心魔趁虛而入，你險些走火入魔，所幸定力尚存，僅損元氣。",
+    effect: () => { state.streak = Math.max(0, state.streak - 1); floatMsg("🔥 連勝 -1"); }
+  }
+];
+
+//═══════════════════════════════════════════════
+// HELPERS
+//═══════════════════════════════════════════════
+function $(id) { return document.getElementById(id); }
+function rand(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+function floatMsg(text) {
+  const m = document.createElement('div');
+  m.className = 'float-msg';
+  m.textContent = text;
+  $('phone').appendChild(m);
+  setTimeout(() => m.remove(), 2300);
+}
+
+function go(screen) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.add('hidden'));
+  $('screen-' + screen).classList.remove('hidden');
+  if (screen === 'home') { render(); renderHome(); }
+  if (screen === 'library') renderLibrary();
+}
+
+function shake() {
+  $('phone').style.animation = 'shake .4s';
+  setTimeout(() => $('phone').style.animation = '', 400);
+}
+
+function burstParticles(el, color) {
+  const rect = el.getBoundingClientRect();
+  const phoneRect = $('phone').getBoundingClientRect();
+  const cx = rect.left - phoneRect.left + rect.width/2;
+  const cy = rect.top - phoneRect.top + rect.height/2;
+  for (let i = 0; i < 14; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = cx + 'px'; p.style.top = cy + 'px';
+    if (color) p.style.background = color;
+    $('phone').appendChild(p);
+    const a = (Math.PI*2*i)/14;
+    const d = 50 + Math.random()*40;
+    p.animate([
+      { transform: 'translate(0,0) scale(1)', opacity: 1 },
+      { transform: `translate(${Math.cos(a)*d}px,${Math.sin(a)*d}px) scale(0)`, opacity: 0 }
+    ], { duration: 800, easing: 'cubic-bezier(.2,.6,.4,1)' }).onfinish = () => p.remove();
+  }
+}
+
+function addBuff(b) { state.buffs.push(b); }
+function consumeBuff(type) {
+  const i = state.buffs.findIndex(b => b.type === type);
+  if (i >= 0) {
+    state.buffs[i].remaining--;
+    if (state.buffs[i].remaining <= 0) state.buffs.splice(i, 1);
+    return true;
+  }
+  return false;
+}
+
+//═══════════════════════════════════════════════
+// RENDER
+//═══════════════════════════════════════════════
+function render() {
+  $('rank-mini').textContent = ranks[state.rankIdx];
+  $('char-rank').textContent = ranks[state.rankIdx];
+  $('r-streak').textContent = state.streak;
+  $('r-lingli').textContent = state.lingli;
+  $('r-lingshi').textContent = state.lingshi;
+  $('progress-fill').style.width = state.progress + '%';
+  $('to-next').textContent = state.toNext;
+  $('attr-wuxing').textContent = state.attr.wuxing;
+  $('attr-genfu').textContent = state.attr.genfu;
+  $('attr-shenshi').textContent = state.attr.shenshi;
+  $('hint-left').textContent = state.hintLeft;
+  $('p-peiyuan').textContent = state.pills.peiyuan;
+  $('p-xingshen').textContent = state.pills.xingshen;
+  $('p-huxin').textContent = state.pills.huxin;
+
+  // AP dots
+  const dots = $('ap-dots');
+  dots.innerHTML = '';
+  for (let i = 0; i < state.apMax; i++) {
+    const d = document.createElement('div');
+    d.className = 'ap-dot' + (i < state.ap ? ' full' : '');
+    dots.appendChild(d);
+  }
+
+  // Action availability
+  document.querySelectorAll('.action-card').forEach(c => {
+    const act = c.dataset.action;
+    // 修煉/打坐/補天閣/抽機緣 不消耗行動點；只有試煉塔和採藥消耗
+    let cost = 0;
+    if (act === 'tower') cost = 2;
+    if (act === 'gather') cost = 1;
+    const canAfford = state.ap >= cost;
+    const fortuneOK = act !== 'fortune' || !state.fortuneUsedToday;
+    const errorOK = act !== 'errorReview' || state.errorPool.length > 0;
+    c.classList.toggle('disabled', !canAfford || !fortuneOK || !errorOK);
+  });
+  $('fortune-cost').textContent = state.fortuneUsedToday ? '今日已抽' : '每日 1 次';
+
+  // Error notebook badge
+  const errorBadge = $('error-badge');
+  const errorCount = state.errorPool.length;
+  if (errorCount > 0) {
+    errorBadge.textContent = errorCount > 99 ? '99+' : errorCount;
+    errorBadge.classList.remove('hidden');
+  } else {
+    errorBadge.classList.add('hidden');
+  }
+  const errorCost = $('error-cost');
+  if (errorCost) errorCost.textContent = errorCount > 0 ? `∞ · ${errorCount} 題待補` : '尚無錯題';
+
+  // active book indicator
+  if (activeBook) {
+    const ic = $('ab-icon'); const nm = $('ab-name');
+    if (ic) ic.textContent = activeBook.icon || '📖';
+    if (nm) nm.textContent = activeBook.title || '預設題庫';
+  }
+}
+
+function renderBuffs(containerId) {
+  const c = $(containerId);
+  if (!c) return;
+  c.innerHTML = '';
+  state.buffs.forEach(b => {
+    const el = document.createElement('span');
+    el.className = 'buff' + (b.type === 'x3xp' ? ' danger' : '');
+    el.textContent = `${b.label} · 剩 ${b.remaining}`;
+    c.appendChild(el);
+  });
+}
+
+//═══════════════════════════════════════════════
+// ACTIONS (A: action menu)
+//═══════════════════════════════════════════════
+document.querySelectorAll('.action-card').forEach(card => {
+  card.onclick = () => {
+    if (card.classList.contains('disabled')) return;
+    const act = card.dataset.action;
+    if (act === 'study')       startStudy('study');
+    if (act === 'meditate')    startStudy('meditate');
+    if (act === 'tower')       startTower();
+    if (act === 'gather')      startGather();
+    if (act === 'fortune')     drawFortune();
+    if (act === 'errorReview') startStudy('errorReview');
+  };
+});
+
+document.querySelectorAll('.pill').forEach(p => {
+  p.onclick = () => usePill(p.dataset.pill);
+});
+
+//═══════════════════════════════════════════════
+// STUDY / MEDITATE (single questions)
+//═══════════════════════════════════════════════
+function startStudy(mode) {
+  state.qMode = mode;
+  go('study');
+  loadQuestion();
+}
+
+function loadQuestion() {
+  const pool = state.qMode === 'errorReview' ? state.errorPool : questions;
+  if (pool.length === 0) {
+    floatMsg('暫無錯題，可喜可賀');
+    go('home');
+    return;
+  }
+  const q = rand(pool);
+  state.currentQ = q;
+  const prefix = {meditate: '打坐 · 回顧 · ', errorReview: '補天閣 · '}[state.qMode] || '';
+  $('study-tag').textContent = prefix + q.tag;
+  $('study-q').textContent = q.q;
+  // reset explanation panel
+  const ep = $('study-explain'); if (ep) ep.classList.add('hidden');
+  const hr = $('study-hint-row'); if (hr) hr.style.display = 'flex';
+  renderBuffs('study-buffs');
+
+  const body = $('study-body');
+  body.innerHTML = '';
+  const img = $('study-img');
+
+  if (q.type === 'image') {
+    img.style.display = 'flex';
+    img.innerHTML = q.svg + '<div class="img-caption">CT axial · 軸切影像</div>';
+    renderChoices(body, q);
+  } else if (q.type === 'order') {
+    img.style.display = 'none';
+    renderOrder(body, q);
+  } else {
+    img.style.display = 'none';
+    renderChoices(body, q);
+  }
+  render();
+}
+
+function renderChoices(body, q) {
+  const div = document.createElement('div');
+  div.className = 'options';
+  q.opts.forEach((opt, i) => {
+    const b = document.createElement('button');
+    b.className = 'option';
+    b.textContent = opt;
+    b.onclick = () => answerChoice(i);
+    div.appendChild(b);
+  });
+  body.appendChild(div);
+}
+
+function answerChoice(idx) {
+  const q = state.currentQ;
+  const buttons = document.querySelectorAll('#study-body .option');
+  buttons.forEach(b => b.classList.add('disabled'));
+  const correct = idx === q.answer;
+
+  if (correct) {
+    buttons[idx].classList.add('correct');
+    onCorrect();
+    burstParticles(buttons[idx]);
+  } else {
+    buttons[idx].classList.add('wrong');
+    buttons[q.answer].classList.add('correct');
+    onWrong();
+  }
+  setTimeout(() => showStudyExplanation(correct), 700);
+}
+
+function showStudyExplanation(correct) {
+  const q = state.currentQ;
+  const panel = $('study-explain');
+  const label = $('study-explain-label');
+  const text = $('study-explain-text');
+  const refEl = $('study-explain-ref');
+  const hintRow = $('study-hint-row');
+
+  panel.classList.toggle('wrong-tone', !correct);
+  label.innerHTML = correct ? '✓ 解 說' : '✗ 解 說';
+  text.innerHTML = q.explanation || '<span style="color:var(--paper-dim)">（此題暫無解說）</span>';
+  // ref: question-level overrides book-level
+  const ref = q.ref || activeBook?.ref;
+  if (ref) {
+    refEl.innerHTML = '📖 ' + ref;
+    refEl.classList.remove('hidden');
+  } else {
+    refEl.classList.add('hidden');
+  }
+  panel.classList.remove('hidden');
+  if (hintRow) hintRow.style.display = 'none';
+  setTimeout(() => panel.scrollIntoView({behavior:'smooth', block:'nearest'}), 50);
+}
+
+function continueStudy() {
+  const panel = $('study-explain');
+  const hintRow = $('study-hint-row');
+  panel.classList.add('hidden');
+  if (hintRow) hintRow.style.display = 'flex';
+  maybeContinue();
+}
+
+function renderOrder(body, q) {
+  const order = [];
+  const pool = q.items.map((t,i)=>({t,i}));
+
+  const wrap = document.createElement('div');
+  wrap.innerHTML = `
+    <div class="order-list-title">已排序（點擊取消）</div>
+    <div class="order-list" id="ord-list"></div>
+    <div class="order-pool-title">候選步驟（點擊加入）</div>
+    <div class="order-pool" id="ord-pool"></div>
+    <button class="submit-btn" id="ord-submit" disabled>運 功 答 題</button>
+  `;
+  body.appendChild(wrap);
+
+  function rerender() {
+    const list = $('ord-list');
+    const poolEl = $('ord-pool');
+    list.innerHTML = ''; poolEl.innerHTML = '';
+    order.forEach((it, idx) => {
+      const e = document.createElement('button');
+      e.className = 'order-item placed';
+      e.innerHTML = `<span><span class="order-num">${idx+1}.</span>${it.t}</span><span style="color:var(--paper-dim)">×</span>`;
+      e.onclick = () => { pool.push(it); order.splice(idx,1); rerender(); };
+      list.appendChild(e);
+    });
+    pool.sort((a,b)=>a.i-b.i).forEach(it => {
+      const e = document.createElement('button');
+      e.className = 'order-item';
+      e.textContent = it.t;
+      e.onclick = () => { order.push(it); pool.splice(pool.indexOf(it),1); rerender(); };
+      poolEl.appendChild(e);
+    });
+    $('ord-submit').disabled = order.length !== q.items.length;
+  }
+  rerender();
+
+  $('ord-submit').onclick = () => {
+    const correct = order.every((it, idx) => q.answer[idx] === it.i);
+    document.querySelectorAll('#ord-list .order-item').forEach((el, idx) => {
+      el.classList.add(q.answer[idx] === order[idx].i ? 'correct' : 'wrong');
+      el.classList.add('disabled');
+    });
+    document.querySelectorAll('#ord-pool .order-item').forEach(el => el.classList.add('disabled'));
+    $('ord-submit').disabled = true;
+    if (correct) onCorrect(); else onWrong();
+    setTimeout(() => showStudyExplanation(correct), 700);
+  };
+}
+
+function onCorrect() {
+  let gain = 15;
+  if (state.qMode === 'meditate') gain = 8;
+  if (state.qMode === 'errorReview') gain = 12;  // 補天閣中等獎勵
+  // 悟性加成
+  gain = Math.round(gain * (1 + state.attr.wuxing * 0.05));
+  if (state.buffs.find(b => b.type === 'x3xp')) gain *= 3;
+  if (state.buffs.find(b => b.type === 'doublexp')) gain *= 2;
+  state.lingli += gain; state.progress += gain;
+  state.toNext = Math.max(0, state.toNext - gain);
+  state.correctChain++;
+  if (state.correctChain > state.attr.genfu) state.correctChain = state.attr.genfu;
+  floatMsg(`⚡ 靈力 +${gain}`);
+  consumeBuff('x3xp');
+  consumeBuff('doublexp');
+  // 補天閣中答對 → 從錯題本移除
+  if (state.qMode === 'errorReview' && state.currentQ) {
+    removeFromErrorPool(state.currentQ);
+    floatMsg('📜 缺漏已補');
+  }
+  if (state.progress >= 100) {
+    state.progress = 0; state.toNext = 100;
+    state.rankIdx = Math.min(ranks.length-1, state.rankIdx+1);
+    showBreakthrough();
+  }
+}
+
+function onWrong() {
+  if (consumeBuff('shield')) {
+    floatMsg('🛡️ 高人庇護，免於損失');
+    return;
+  }
+  // 護心丹 protection
+  if (state.buffs.find(b => b.type === 'huxin')) {
+    consumeBuff('huxin');
+    floatMsg('🛡️ 護心丹擋下');
+    return;
+  }
+  let loss = 8;
+  if (state.buffs.find(b => b.type === 'x3xp')) loss = 24;
+  state.lingli = Math.max(0, state.lingli - loss);
+  state.correctChain = 0;
+  consumeBuff('x3xp');
+  floatMsg(`💢 走火入魔，靈力 -${loss}`);
+  shake();
+  // 答錯 → 加入補天閣
+  if (state.currentQ && state.qMode !== 'tower') addToErrorPool(state.currentQ);
+}
+
+function maybeContinue() {
+  // 30% chance of fortune event between questions
+  if (Math.random() < 0.25) {
+    triggerFortune();
+  } else {
+    loadQuestion();
+  }
+}
+
+function useHint() {
+  if (state.hintLeft <= 0) { floatMsg('神識耗盡'); return; }
+  const q = state.currentQ;
+  if (q.type === 'image' && q.hint) {
+    state.hintLeft--;
+    floatMsg('🔮 ' + q.hint);
+  } else if (q.type === 'choice') {
+    state.hintLeft--;
+    // dim two wrong options
+    const buttons = document.querySelectorAll('#study-body .option');
+    let dimmed = 0;
+    buttons.forEach((b, i) => {
+      if (i !== q.answer && dimmed < 2 && !b.classList.contains('disabled')) {
+        b.style.opacity = '.3'; dimmed++;
+      }
+    });
+    floatMsg('🔮 神識探察，二選排除');
+  } else {
+    floatMsg('此題無法使用神識');
+    return;
+  }
+  render();
+}
+
+//═══════════════════════════════════════════════
+// TOWER (D: timed boss gauntlet)
+//═══════════════════════════════════════════════
+function startTower() {
+  if (state.ap < 2) return;
+  state.ap -= 2;
+  state.towerIdx = 0;
+  state.towerCorrect = 0;
+  state.towerTimer = 15;
+  go('tower');
+  renderTowerPips();
+  loadTowerQuestion();
+}
+
+function renderTowerPips() {
+  const c = $('tower-pips');
+  c.innerHTML = '';
+  for (let i = 0; i < 5; i++) {
+    const p = document.createElement('div');
+    p.className = 'tower-pip';
+    if (i < state.towerCorrect) p.classList.add('done');
+    if (i < state.towerIdx && i >= state.towerCorrect) p.classList.add('fail');
+    c.appendChild(p);
+  }
+}
+
+function loadTowerQuestion() {
+  if (state.towerIdx >= 5) { endTower(); return; }
+  const q = rand(questions.filter(x => x.type === 'choice'));
+  state.currentQ = q;
+  $('tower-tag').textContent = q.tag;
+  $('tower-q').textContent = q.q;
+  // reset explanation panel
+  const ep = $('tower-explain'); if (ep) ep.classList.add('hidden');
+  const o = $('tower-opts');
+  o.innerHTML = '';
+  q.opts.forEach((opt, i) => {
+    const b = document.createElement('button');
+    b.className = 'option';
+    b.textContent = opt;
+    b.onclick = () => answerTower(i);
+    o.appendChild(b);
+  });
+  state.towerTimer = 15;
+  $('tower-timer').textContent = state.towerTimer;
+  $('tower-timer').classList.remove('danger');
+  if (state.towerInterval) clearInterval(state.towerInterval);
+  state.towerInterval = setInterval(() => {
+    state.towerTimer--;
+    $('tower-timer').textContent = state.towerTimer;
+    if (state.towerTimer <= 5) $('tower-timer').classList.add('danger');
+    if (state.towerTimer <= 0) {
+      clearInterval(state.towerInterval);
+      answerTower(-1);
+    }
+  }, 1000);
+}
+
+function answerTower(idx) {
+  clearInterval(state.towerInterval);
+  const q = state.currentQ;
+  const buttons = document.querySelectorAll('#tower-opts .option');
+  buttons.forEach(b => b.classList.add('disabled'));
+  const correct = idx === q.answer;
+  if (correct) {
+    buttons[idx].classList.add('correct');
+    state.towerCorrect++;
+    burstParticles(buttons[idx]);
+  } else {
+    if (idx >= 0) buttons[idx].classList.add('wrong');
+    buttons[q.answer].classList.add('correct');
+  }
+  state.towerIdx++;
+  renderTowerPips();
+  setTimeout(() => showTowerExplanation(correct), 700);
+}
+
+function showTowerExplanation(correct) {
+  const q = state.currentQ;
+  const panel = $('tower-explain');
+  const label = $('tower-explain-label');
+  const text = $('tower-explain-text');
+  const refEl = $('tower-explain-ref');
+  panel.classList.toggle('wrong-tone', !correct);
+  label.innerHTML = correct ? '✓ 解 說' : '✗ 解 說';
+  text.innerHTML = q.explanation || '<span style="color:var(--paper-dim)">（此題暫無解說）</span>';
+  const ref = q.ref || activeBook?.ref;
+  if (ref) { refEl.innerHTML = '📖 ' + ref; refEl.classList.remove('hidden'); }
+  else refEl.classList.add('hidden');
+  panel.classList.remove('hidden');
+  setTimeout(() => panel.scrollIntoView({behavior:'smooth', block:'nearest'}), 50);
+}
+
+function continueTower() {
+  $('tower-explain').classList.add('hidden');
+  loadTowerQuestion();
+}
+
+function endTower() {
+  clearInterval(state.towerInterval);
+  let title, desc, rewards = '';
+  if (state.towerCorrect >= 4) {
+    title = '過關大圓滿';
+    desc = '靈力充盈，神識澄澈，根基堅穩。<br>此關已被你踏破。';
+    state.lingshi += 100;
+    state.lingli += 60;
+    state.pills.peiyuan++;
+    rewards = '💎 +100　⚡ +60　🔴 培元丹 ×1';
+  } else if (state.towerCorrect >= 3) {
+    title = '勉強過關';
+    desc = '雖過此關，根基略有耗損。';
+    state.lingshi += 40;
+    state.lingli += 20;
+    rewards = '💎 +40　⚡ +20';
+  } else {
+    title = '走火入魔';
+    desc = '心法不穩，靈力散逸。下次再戰。';
+    state.lingli = Math.max(0, state.lingli - 40);
+    state.streak = 0;
+    rewards = '⚡ −40　🔥 連勝歸零';
+  }
+  showModal({
+    label: '試 煉 結 果',
+    title,
+    desc,
+    rewards,
+    btn: '返 回',
+    onClose: () => go('home')
+  });
+}
+
+function confirmExitTower() {
+  showModal({
+    label: '撤 出 試 煉',
+    title: '確定撤退？',
+    desc: '中途撤退視為走火入魔。',
+    btn: '繼續挑戰',
+    btn2: '撤退',
+    onClose: () => {},
+    onConfirm: () => { state.towerCorrect = 0; endTower(); }
+  });
+}
+
+//═══════════════════════════════════════════════
+// GATHER (resource mini-game)
+//═══════════════════════════════════════════════
+function startGather() {
+  if (state.ap < 1) return;
+  state.ap--;
+  go('gather');
+  const stage = $('gather-stage');
+  stage.querySelectorAll('.herb').forEach(h => h.remove());
+  let collected = 0;
+  let timeLeft = 15;
+  let timerInt;
+
+  const herbTypes = [
+    { ic:'🌿', val:2, type:'lingshi' },
+    { ic:'🍀', val:3, type:'lingshi' },
+    { ic:'🌺', val:1, type:'pill' },
+    { ic:'🍄', val:5, type:'lingshi' }
+  ];
+
+  function spawnHerb() {
+    if (timeLeft <= 0) return;
+    const h = document.createElement('div');
+    h.className = 'herb';
+    const t = rand(herbTypes);
+    h.textContent = t.ic;
+    h.style.left = (15 + Math.random()*80) + '%';
+    h.style.top  = (35 + Math.random()*45) + '%';
+    h.onclick = () => {
+      h.classList.add('gone');
+      collected++;
+      if (t.type === 'lingshi') {
+        state.lingshi += t.val;
+        floatMsg(`💎 +${t.val}`);
+      } else {
+        const which = rand(['peiyuan','xingshen','huxin']);
+        state.pills[which]++;
+        const name = {peiyuan:'培元丹', xingshen:'醒神丹', huxin:'護心丹'}[which];
+        floatMsg(`${name} +1`);
+      }
+      setTimeout(()=>h.remove(), 500);
+    };
+    stage.appendChild(h);
+    setTimeout(() => { if (h.parentElement) h.remove(); }, 2500);
+  }
+
+  const spawnInt = setInterval(spawnHerb, 700);
+  timerInt = setInterval(() => {
+    timeLeft--;
+    $('gather-timer').textContent = timeLeft;
+    if (timeLeft <= 0) {
+      clearInterval(spawnInt);
+      clearInterval(timerInt);
+      setTimeout(() => endGather(collected), 600);
+    }
+  }, 1000);
+
+  state._gatherCleanup = () => {
+    clearInterval(spawnInt);
+    clearInterval(timerInt);
+  };
+}
+
+function endGather(collected) {
+  if (state._gatherCleanup) state._gatherCleanup();
+  if (collected === undefined) { go('home'); return; }
+  showModal({
+    label: '採 藥 完 畢',
+    title: `採得 ${collected} 株`,
+    desc: '靈藥入袋，可待煉丹之用。',
+    btn: '返 回',
+    onClose: () => go('home')
+  });
+}
+
+//═══════════════════════════════════════════════
+// FORTUNE (C)
+//═══════════════════════════════════════════════
+function drawFortune() {
+  if (state.fortuneUsedToday) return;
+  state.fortuneUsedToday = true;
+  triggerFortune();
+}
+
+function triggerFortune() {
+  const ev = rand(fortuneEvents);
+  showModal({
+    label: '機 緣',
+    title: ev.title,
+    desc: ev.desc,
+    btn: '應 之',
+    onClose: () => { ev.effect(); render(); if ($('screen-study') && !$('screen-study').classList.contains('hidden')) loadQuestion(); }
+  });
+}
+
+//═══════════════════════════════════════════════
+// PILLS (B)
+//═══════════════════════════════════════════════
+function usePill(name) {
+  if (state.pills[name] <= 0) { floatMsg('無此丹藥'); return; }
+  if (name === 'peiyuan') {
+    state.pills.peiyuan--;
+    addBuff({type:'doublexp', label:'培元丹 XP×2', remaining: 5});
+    floatMsg('🔴 服下培元丹，下 5 題 XP×2');
+  } else if (name === 'xingshen') {
+    state.pills.xingshen--;
+    state.streak += 1;
+    floatMsg('🟢 服下醒神丹，連勝 +1');
+  } else if (name === 'huxin') {
+    state.pills.huxin--;
+    addBuff({type:'huxin', label:'護心丹', remaining: 1});
+    floatMsg('🔵 服下護心丹，下次答錯免扣');
+  }
+  render();
+}
+
+//═══════════════════════════════════════════════
+// MODAL & BREAKTHROUGH
+//═══════════════════════════════════════════════
+function showModal({label, title, desc, rewards, btn = '繼續', btn2, onClose, onConfirm}) {
+  $('modal-content').innerHTML = `
+    <div class="modal-label">${label}</div>
+    <div class="modal-title ${title.length > 4 ? 'small' : ''}">${title}</div>
+    <div class="modal-desc">${desc}</div>
+    ${rewards ? `<div class="modal-rewards"><div class="modal-reward">${rewards}</div></div>` : ''}
+    <div class="modal-btn-row">
+      <button class="modal-btn" id="m-btn1">${btn}</button>
+      ${btn2 ? `<button class="modal-btn danger" id="m-btn2">${btn2}</button>` : ''}
+    </div>
+  `;
+  $('modal-overlay').classList.add('show');
+  $('m-btn1').onclick = () => { closeModal(); onClose && onClose(); };
+  if (btn2) $('m-btn2').onclick = () => { closeModal(); onConfirm && onConfirm(); };
+}
+function closeModal() { $('modal-overlay').classList.remove('show'); }
+
+function showBreakthrough() {
+  showModal({
+    label: '突 破',
+    title: ranks[state.rankIdx],
+    desc: '靈力充盈，經脈暢通<br>境界更上一層',
+    btn: '繼 續 修 煉',
+    onClose: () => render()
+  });
+}
+
+//═══════════════════════════════════════════════
+// LIBRARY (功法閣) — load manifest + active book
+//═══════════════════════════════════════════════
+async function loadLibrary() {
+  try {
+    const mf = await fetch('library/manifest.json?t=' + Date.now()).then(r => r.json());
+    library = mf;
+    const savedActive = localStorage.getItem('activeBookId');
+    const candidate = savedActive || mf.activeId;
+    const book = mf.books.find(b => b.id === candidate && b.imported)
+              || mf.books.find(b => b.imported);
+    if (book) await switchBook(book.id, true);
+  } catch (e) {
+    console.warn('library load failed, using fallback', e);
+    questions = fallbackQuestions;
+    activeBook = { title: '預設題庫', id: 'fallback' };
+  }
+}
+
+async function switchBook(id, silent) {
+  const b = library.books.find(x => x.id === id);
+  if (!b || !b.imported) { floatMsg('此功法尚未匯入'); return; }
+  try {
+    const data = await fetch('library/' + b.file + '?t=' + Date.now()).then(r => r.json());
+    questions = data.questions || [];
+    activeBook = { ...b, ...data };
+    localStorage.setItem('activeBookId', id);
+    if (!silent) floatMsg(`已切換 · ${b.title}`);
+    renderHome();
+    renderLibrary();
+  } catch (e) {
+    floatMsg('載入失敗');
+    console.error(e);
+  }
+}
+
+function renderHome() {
+  if (!activeBook) return;
+  const ic = $('ab-icon'); const nm = $('ab-name');
+  if (ic) ic.textContent = activeBook.icon || '📖';
+  if (nm) nm.textContent = activeBook.title || '預設題庫';
+}
+
+function renderLibrary() {
+  const list = $('book-list');
+  if (!list || !library) return;
+  list.innerHTML = '';
+  library.books.forEach(b => {
+    const card = document.createElement('button');
+    card.className = 'book-card';
+    if (b.id === activeBook?.id) card.classList.add('active');
+    if (!b.imported) card.classList.add('not-imported');
+    card.innerHTML = `
+      <div class="book-cover" style="background: linear-gradient(135deg, ${b.color}cc, ${b.color}66)">${b.icon}</div>
+      <div class="book-info">
+        <div class="book-title">${b.title}</div>
+        <div class="book-subtitle">${b.subtitle}</div>
+        <div class="book-meta">${b.imported ? '收錄 ' + (b.questionCount || '?') + ' 題' : '尚未匯入 · 待跑 pipeline'}</div>
+      </div>
+      <div class="book-status">${b.id === activeBook?.id ? '當前' : (b.imported ? '切換' : '待匯入')}</div>
+    `;
+    card.onclick = () => {
+      if (!b.imported) { floatMsg('將 PDF 丟入 pipeline 後可匯入'); return; }
+      if (b.id === activeBook?.id) { go('home'); return; }
+      switchBook(b.id);
+    };
+    list.appendChild(card);
+  });
+}
+
+//═══════════════════════════════════════════════
+// INIT
+//═══════════════════════════════════════════════
+(async () => {
+  await loadLibrary();
+  render();
+})();
+</script>
+</body>
+</html>

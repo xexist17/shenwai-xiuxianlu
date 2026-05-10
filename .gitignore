@@ -1,0 +1,17 @@
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# iCloud sync conflicts
+*\ 2.json
+*\ 2.html
+*\ 2.js
+
+# Editor
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+*.tmp
