@@ -936,6 +936,99 @@
     opacity: 0;
   }
 
+  /* 研讀整理按鈕 */
+  .summary-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(90deg, rgba(127,181,148,.18) 0%, rgba(127,181,148,.04) 100%);
+    border: 1px solid rgba(127,181,148,.4);
+    color: var(--jade-bright);
+    padding: 11px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: all .2s;
+  }
+  .summary-btn:hover {
+    background: linear-gradient(90deg, rgba(127,181,148,.28) 0%, rgba(127,181,148,.06) 100%);
+    border-color: var(--jade-bright);
+  }
+
+  /* 整理頁內容樣式 */
+  .summary-doc {
+    font-size: 14px;
+    line-height: 1.85;
+    color: var(--paper);
+    letter-spacing: .5px;
+    padding: 0 4px 24px;
+  }
+  .summary-doc h2 {
+    font-size: 16px;
+    color: var(--gold-bright);
+    letter-spacing: 4px;
+    margin: 22px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(201,163,90,.3);
+  }
+  .summary-doc h3 {
+    font-size: 13px;
+    color: var(--jade-bright);
+    letter-spacing: 2px;
+    margin: 14px 0 6px;
+  }
+  .summary-doc p { margin-bottom: 8px; }
+  .summary-doc ul, .summary-doc ol {
+    margin-left: 18px;
+    margin-bottom: 10px;
+  }
+  .summary-doc li { margin-bottom: 4px; }
+  .summary-doc table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  .summary-doc th, .summary-doc td {
+    border: 1px solid rgba(201,163,90,.25);
+    padding: 6px 8px;
+    text-align: left;
+  }
+  .summary-doc th {
+    background: rgba(201,163,90,.12);
+    color: var(--gold-bright);
+    letter-spacing: 1px;
+  }
+  .summary-doc .key {
+    color: var(--gold-bright);
+    font-weight: 600;
+  }
+  .summary-doc .warn {
+    color: var(--red-bright);
+    font-weight: 600;
+  }
+  .summary-doc blockquote {
+    border-left: 3px solid var(--gold);
+    padding: 8px 12px;
+    margin: 10px 0;
+    background: rgba(201,163,90,.08);
+    color: var(--paper-dim);
+    font-size: 13px;
+  }
+  .summary-empty {
+    text-align: center;
+    color: var(--paper-dim);
+    padding: 60px 20px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 2;
+  }
+
   /* Active book indicator on home */
   .active-book {
     display: flex;
@@ -1284,6 +1377,9 @@
           </div>
           <span class="arrow">›</span>
         </div>
+        <button class="summary-btn" onclick="go('summary')">
+          <span>📖</span><span>研 讀 整 理</span>
+        </button>
 
         <div class="ap-bar">
           <span class="ap-label">試煉/採藥點</span>
@@ -1389,6 +1485,14 @@
         </div>
         <div class="combat-log" id="combat-log">道心通透，迎戰心魔。</div>
         <div class="skill-box" id="skill-box"></div>
+      </div>
+
+      <!-- ============== SUMMARY (心法整理) ============== -->
+      <div class="screen hidden" id="screen-summary">
+        <button class="back" onclick="go('home')">←</button>
+        <div class="library-title">心 法 整 理</div>
+        <div class="library-subtitle" id="summary-bookname">—</div>
+        <div class="summary-doc" id="summary-content"></div>
       </div>
 
       <!-- ============== STATS / ACHIEVEMENTS (我的修為) ============== -->
@@ -1500,6 +1604,10 @@ const state = {
   questionMastery: JSON.parse(localStorage.getItem('questionMastery') || '{}'),
   // 已通讀的書 → 解鎖招式
   masteredBooks: JSON.parse(localStorage.getItem('masteredBooks') || '[]'),
+  // 已斬殺的 boss（首次斬殺掉落招式）
+  bossesFirstClear: JSON.parse(localStorage.getItem('bossesFirstClear') || '[]'),
+  // boss 此回合連擊計數（rage 機制用）
+  bossTurnCount: 0,
 
   // 統計 / 成就
   stats: JSON.parse(localStorage.getItem('stats') || '{}'),
@@ -1783,6 +1891,25 @@ function go(screen) {
   if (screen === 'home') { render(); renderHome(); }
   if (screen === 'library') renderLibrary();
   if (screen === 'stats') renderStats();
+  if (screen === 'summary') renderSummary();
+}
+
+function renderSummary() {
+  const bookEl = $('summary-bookname');
+  const cEl = $('summary-content');
+  if (!activeBook) {
+    bookEl.textContent = '無';
+    cEl.innerHTML = '<div class="summary-empty">尚未選擇功法。</div>';
+    return;
+  }
+  bookEl.textContent = activeBook.title || '';
+  if (activeBook.summary) {
+    cEl.innerHTML = activeBook.summary;
+  } else {
+    cEl.innerHTML = `<div class="summary-empty">此章節尚無整理筆記。<br><span style="color:var(--gold)">先答題庫，整理日後補上。</span></div>`;
+  }
+  // 滾回頂
+  setTimeout(() => $('screen-summary').scrollTop = 0, 50);
 }
 
 function shake() {
@@ -1932,7 +2059,25 @@ function loadQuestion() {
     go('home');
     return;
   }
-  const q = rand(pool);
+  // 防重複：優先抽未通讀題目（已答對者拉到備選）
+  let q;
+  if (state.qMode === 'errorReview') {
+    q = rand(pool);
+  } else {
+    const bookId = activeBook?.id;
+    const masteredKeys = (state.questionMastery && state.questionMastery[bookId]) || [];
+    const unmastered = pool.filter(x => !masteredKeys.includes(x.q));
+    if (unmastered.length > 0) {
+      q = rand(unmastered);
+    } else {
+      // 全本通讀完 → 純複習模式，純隨機
+      q = rand(pool);
+      if (state.lastFloatMastered !== bookId) {
+        floatMsg(`✨ 此書全題已熟稔，進入複習模式`);
+        state.lastFloatMastered = bookId;
+      }
+    }
+  }
   state.currentQ = q;
   const prefix = {meditate: '打坐 · 回顧 · ', errorReview: '補天閣 · '}[state.qMode] || '';
   $('study-tag').textContent = prefix + q.tag;
@@ -2176,12 +2321,21 @@ function useHint() {
 //═══════════════════════════════════════════════
 // 心魔劫 boss 池（依玩家境界選對應 boss）
 const bosses = [
-  { name: '練氣小妖',   icon: '👺', hp: 80,  atk: 10, threshold: 0  },
-  { name: '築基散修',   icon: '🥷', hp: 140, atk: 16, threshold: 9  },
-  { name: '金丹老怪',   icon: '🧙', hp: 220, atk: 24, threshold: 18 },
-  { name: '元嬰魔頭',   icon: '👹', hp: 320, atk: 35, threshold: 22 },
-  { name: '化神古魔',   icon: '😈', hp: 500, atk: 50, threshold: 26 }
+  { name: '練氣小妖',   icon: '👺', hp: 120, atk: 16, threshold: 0,  drop: 'piercer' },
+  { name: '築基散修',   icon: '🥷', hp: 220, atk: 24, threshold: 9,  drop: 'iron-skin' },
+  { name: '金丹老怪',   icon: '🧙', hp: 380, atk: 38, threshold: 18, drop: 'flame-burst' },
+  { name: '元嬰魔頭',   icon: '👹', hp: 600, atk: 55, threshold: 22, drop: 'soul-pierce' },
+  { name: '化神古魔',   icon: '😈', hp: 950, atk: 75, threshold: 26, drop: 'phoenix' }
 ];
+
+// Boss 首次斬殺掉落的招式（與書本通讀解鎖獨立）
+const BOSS_DROP_SKILLS = {
+  'piercer':     { name: '破甲擊',   icon: '🗡', type: 'damage', dmg: 24, cd: 1, desc: '低冷卻穿甲一擊，殺練氣小妖所得' },
+  'iron-skin':   { name: '鐵骨身',   icon: '🛡', type: 'shield', shield: 60, cd: 4, desc: '築基散修真傳，60 點重盾' },
+  'flame-burst': { name: '焚天爆',   icon: '🔥', type: 'damage', dmg: 55, cd: 4, desc: '金丹老怪丹焰，巨額傷害' },
+  'soul-pierce': { name: '魂噬',     icon: '👁', type: 'damage', dmg: 30, lifesteal: 1.0, cd: 4, desc: '元嬰魔頭噬魂，傷害 100% 吸血' },
+  'phoenix':     { name: '不滅鳳鳴', icon: '🦅', type: 'heal', heal: 80, cd: 5, desc: '化神古魔遺贈，回復 80 道心' }
+};
 
 // 招式總冊（id → 招式）
 const SKILLS = {
@@ -2233,11 +2387,26 @@ function unlockedSkillIds() {
     const skillId = BOOK_SKILLS[bookId];
     if (skillId && !ids.includes(skillId)) ids.push(skillId);
   });
+  // boss-drop 招式
+  state.bossesFirstClear.forEach(bossName => {
+    const boss = bosses.find(b => b.name === bossName);
+    const dropId = boss?.drop;
+    if (dropId && BOSS_DROP_SKILLS[dropId]) {
+      // 用 'drop:' prefix 區分，避免與 SKILLS dict 衝突
+      const id = 'drop:' + dropId;
+      if (!ids.includes(id)) ids.push(id);
+    }
+  });
   return ids;
 }
 
+function getSkillById(id) {
+  if (id.startsWith('drop:')) return BOSS_DROP_SKILLS[id.slice(5)];
+  return SKILLS[id];
+}
+
 function unlockedSkills() {
-  return unlockedSkillIds().map(id => ({ id, ...SKILLS[id] }));
+  return unlockedSkillIds().map(id => ({ id, ...getSkillById(id) }));
 }
 
 function pickBoss() {
@@ -2259,6 +2428,7 @@ function startTower() {
   state.skillCooldowns = {};
   state.combatTurn = 'player';
   state.playerShield = 0;
+  state.bossTurnCount = 0;
 
   $('boss-avatar').textContent = boss.icon;
   $('boss-avatar').classList.remove('dying');
@@ -2355,9 +2525,20 @@ function useSkill(skill) {
 
 function bossTurn() {
   state.combatTurn = 'boss';
-  setCombatLog(`${state.currentBoss.name} 反擊！`, 'boss-turn');
+  state.bossTurnCount++;
+  // Rage 機制：每 3 個 boss turn 一次大爆發（1.6x 傷害）
+  const isRage = state.bossTurnCount % 3 === 0;
+  // < 30% HP 進入狂暴，每招都 1.3x
+  const isLowHP = state.bossHP < state.bossMaxHP * 0.3;
+  const logMsg = isRage ? `${state.currentBoss.name} 蓄力爆發！` :
+                 isLowHP ? `${state.currentBoss.name} 困獸之鬥！` :
+                 `${state.currentBoss.name} 反擊！`;
+  setCombatLog(logMsg, 'boss-turn');
   setTimeout(() => {
-    let dmg = Math.round(state.currentBoss.atk * (0.85 + Math.random() * 0.3));
+    let dmgMult = 1;
+    if (isRage) dmgMult *= 1.6;
+    if (isLowHP) dmgMult *= 1.3;
+    let dmg = Math.round(state.currentBoss.atk * dmgMult * (0.85 + Math.random() * 0.3));
     const reduction = state.combatStats.def * 0.6;
     dmg = Math.max(1, Math.round(dmg - reduction));
     if (state.playerShield > 0) {
@@ -2397,11 +2578,40 @@ function endCombat(result) {
     state.lingli += 80;
     state.pills.peiyuan++;
     saveStats();
+    // 首次斬殺 boss → 掉落招式
+    const bossName = state.currentBoss.name;
+    const isFirstClear = !state.bossesFirstClear.includes(bossName);
+    if (isFirstClear) {
+      state.bossesFirstClear.push(bossName);
+      localStorage.setItem('bossesFirstClear', JSON.stringify(state.bossesFirstClear));
+    }
     checkAchievements();
+    if (isFirstClear && state.currentBoss.drop && BOSS_DROP_SKILLS[state.currentBoss.drop]) {
+      const drop = BOSS_DROP_SKILLS[state.currentBoss.drop];
+      // 先給戰勝獎勵 modal，讀完接著新招式 modal
+      showModal({
+        label: '首 戰 告 捷',
+        title: '斬 殺 心 魔',
+        desc: `<span style='color:var(--gold-bright)'>${bossName}</span> 首次被你斬於劍下！`,
+        rewards: '💎 +120　⚡ +80　🔴 培元丹 ×1',
+        btn: '查 看 戰 利 品',
+        onClose: () => {
+          showModal({
+            label: '掉 落 心 法',
+            title: drop.name,
+            desc: `自 ${bossName} 元神中悟得 ${drop.icon} <span style='color:var(--gold-bright)'>${drop.name}</span><br><span style='font-size:11px;color:var(--paper-dim)'>${drop.desc}</span>`,
+            rewards: '可在心魔劫中使用',
+            btn: '繼 續 修 煉',
+            onClose: () => go('home')
+          });
+        }
+      });
+      return;
+    }
     showModal({
       label: '心 魔 劫 結 果',
       title: '斬 殺 心 魔',
-      desc: `<span style='color:var(--gold-bright)'>${state.currentBoss.name}</span> 已被你斬於劍下，<br>道心通透。`,
+      desc: `<span style='color:var(--gold-bright)'>${bossName}</span> 已被你斬於劍下，<br>道心通透。`,
       rewards: '💎 +120　⚡ +80　🔴 培元丹 ×1',
       btn: '返 回',
       onClose: () => go('home')
