@@ -2202,7 +2202,9 @@ const SKILLS = {
   // Greenberg 新章解鎖
   cradle:    { name: '赤子護身', icon: '🍼', type: 'shield', shield: 40, cd: 3, desc: '小兒之身柔韌，築護盾 40 點' },
   meridian2: { name: '斷脈再生', icon: '🌿', type: 'heal', heal: 35, cd: 3, desc: '脊髓殘傷再修復，回復 35 道心' },
-  lockstrike:{ name: '封脈一擊', icon: '🔒', type: 'damage', dmg: 42, cd: 3, desc: '封鎖頸椎要害，造成大量傷害' }
+  lockstrike:{ name: '封脈一擊', icon: '🔒', type: 'damage', dmg: 42, cd: 3, desc: '封鎖頸椎要害，造成大量傷害' },
+  // 韌性醫療
+  resilience:{ name: '韌性真氣', icon: '⚛️', type: 'heal', heal: 60, cd: 4, desc: '戰陣救護心法，回復 60 道心' }
 };
 
 // 起手永久招式
@@ -2221,7 +2223,8 @@ const BOOK_SKILLS = {
   'youmans-ch232':      'sunheart',   // 小兒腦瘤 → 童心赤陽
   'greenberg-ch66':     'cradle',     // 小兒頭部外傷 → 赤子護身
   'greenberg-ch69':     'meridian2',  // SCI 管理 → 斷脈再生
-  'greenberg-ch71':     'lockstrike'  // 下頸椎傷 → 封脈一擊
+  'greenberg-ch71':     'lockstrike', // 下頸椎傷 → 封脈一擊
+  'resilient-borp':     'resilience'  // 韌性醫療 BORP → 韌性真氣
 };
 
 function unlockedSkillIds() {

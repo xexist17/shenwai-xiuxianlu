@@ -146,6 +146,19 @@
       "topic": "08 脊椎"
     },
     {
+      "id": "resilient-borp",
+      "title": "備援手術室 BORP 演練",
+      "subtitle": "戰傷／災難情境 · 54 題",
+      "ref": "BORP 交班單 V.2 · 115 年備援手術室團隊挑戰賽評分說明 · 南區劇本",
+      "icon": "⚛️",
+      "color": "#7a3a3a",
+      "file": "resilient-borp.json",
+      "imported": true,
+      "questionCount": 54,
+      "book": "韌性醫療",
+      "topic": "備援手術室 BORP"
+    },
+    {
       "id": "greenberg-handbook",
       "title": "住院醫師心法",
       "subtitle": "10th Edition · 5 題",
