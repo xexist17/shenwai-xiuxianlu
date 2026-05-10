@@ -1,105 +1,123 @@
 {
-  "version": 1,
+  "version": 2,
   "activeId": "youmans-ch382",
   "books": [
     {
       "id": "youmans-ch382",
-      "title": "Youmans Ch382 TBI 結構影像",
+      "title": "Ch382 TBI 結構影像",
       "subtitle": "Structural Neuroimaging in TBI · 32 題",
       "ref": "Youmans 8th Ed · Ch382 · pp.2966.e1–e21",
       "icon": "📚",
       "color": "#c9a35a",
       "file": "youmans-ch382.json",
       "imported": true,
-      "questionCount": 32
+      "questionCount": 32,
+      "book": "Youmans and Winn",
+      "topic": "09 創傷 TBI"
     },
     {
       "id": "youmans-ch386",
-      "title": "Youmans Ch386 TBI 急診處理",
+      "title": "Ch386 TBI 急診處理",
       "subtitle": "Emergency Management of TBI · 30 題",
       "ref": "Youmans 8th Ed · Ch386 · pp.2994–3013",
       "icon": "📚",
       "color": "#d4824a",
       "file": "youmans-ch386.json",
       "imported": true,
-      "questionCount": 30
+      "questionCount": 30,
+      "book": "Youmans and Winn",
+      "topic": "09 創傷 TBI"
     },
     {
       "id": "youmans-ch389",
-      "title": "Youmans Ch389 TBI 非侵入性監測",
+      "title": "Ch389 TBI 非侵入性監測",
       "subtitle": "Noninvasive Neuromonitoring · 29 題",
       "ref": "Youmans 8th Ed · Ch389 · pp.3041–3049",
       "icon": "📚",
       "color": "#b8884a",
       "file": "youmans-ch389.json",
       "imported": true,
-      "questionCount": 29
+      "questionCount": 29,
+      "book": "Youmans and Winn",
+      "topic": "09 創傷 TBI"
     },
     {
       "id": "youmans-ch391",
-      "title": "Youmans Ch391 TBI 手術治療",
+      "title": "Ch391 TBI 手術治療",
       "subtitle": "Surgical Management of TBI · 30 題",
       "ref": "Youmans 8th Ed · Ch391 · pp.3059–3094",
       "icon": "📚",
       "color": "#a8493a",
       "file": "youmans-ch391.json",
       "imported": true,
-      "questionCount": 30
+      "questionCount": 30,
+      "book": "Youmans and Winn",
+      "topic": "09 創傷 TBI"
     },
     {
       "id": "youmans-ch339",
-      "title": "Youmans Ch339 C2 骨折",
+      "title": "Ch339 C2 骨折",
       "subtitle": "C2 (Axis) Fractures · 20 題",
       "ref": "Youmans 8th Ed · Ch339 · pp.2646–2654",
       "icon": "🦴",
       "color": "#5a7b8b",
       "file": "youmans-ch339.json",
       "imported": true,
-      "questionCount": 20
+      "questionCount": 20,
+      "book": "Youmans and Winn",
+      "topic": "08 脊椎"
     },
     {
       "id": "youmans-ch436",
-      "title": "Youmans Ch436 ICA 旁床突動脈瘤",
+      "title": "Ch436 ICA 旁床突動脈瘤",
       "subtitle": "Paraclinoid Aneurysms · 19 題",
       "ref": "Youmans 8th Ed · Ch436 · pp.3538–3548",
       "icon": "🩸",
       "color": "#a83a4a",
       "file": "youmans-ch436.json",
       "imported": true,
-      "questionCount": 19
+      "questionCount": 19,
+      "book": "Youmans and Winn",
+      "topic": "10 腦血管"
     },
     {
       "id": "youmans-ch232",
-      "title": "Youmans Ch232 小兒腦瘤",
+      "title": "Ch232 小兒腦瘤",
       "subtitle": "Pediatric Brain Tumors · 20 題",
       "ref": "Youmans 8th Ed · Ch232 · pp.1760.e1–e10",
       "icon": "☀️",
       "color": "#d4a04a",
       "file": "youmans-ch232.json",
       "imported": true,
-      "questionCount": 20
+      "questionCount": 20,
+      "book": "Youmans and Winn",
+      "topic": "06 小兒"
     },
     {
       "id": "youmans-winn",
-      "title": "Youmans and Winn",
-      "subtitle": "Neurological Surgery · 上古功法（範例）",
+      "title": "綜合範例題庫",
+      "subtitle": "上古功法概覽 · 6 題",
       "ref": "Youmans 8th Ed · 多章節綜合範例",
       "icon": "📚",
       "color": "#a07a3a",
       "file": "youmans-winn.json",
       "imported": true,
-      "questionCount": 6
+      "questionCount": 6,
+      "book": "Youmans and Winn",
+      "topic": "綜合範例"
     },
     {
       "id": "greenberg-handbook",
-      "title": "Greenberg's Handbook",
-      "subtitle": "10th Edition · 住院醫師心法（範例）",
+      "title": "住院醫師心法",
+      "subtitle": "10th Edition · 5 題",
       "ref": "Greenberg's Handbook of Neurosurgery · 10th Ed",
       "icon": "📕",
       "color": "#8b1e1e",
       "file": "greenberg-handbook.json",
       "imported": true,
-      "questionCount": 5
+      "questionCount": 5,
+      "book": "Greenberg's Handbook",
+      "topic": "綜合範例"
     }
   ]
 }

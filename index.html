@@ -980,6 +980,57 @@
     margin-bottom: 18px;
   }
   .book-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+
+  /* 書系 / 主題 分組 */
+  .series-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    margin: 14px 0 6px;
+    background: linear-gradient(90deg, rgba(201,163,90,.18) 0%, rgba(201,163,90,.04) 100%);
+    border: 1px solid rgba(201,163,90,.4);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: all .15s;
+  }
+  .series-header:hover { background: linear-gradient(90deg, rgba(201,163,90,.28) 0%, rgba(201,163,90,.06) 100%); }
+  .series-name {
+    font-size: 14px;
+    color: var(--gold-bright);
+    letter-spacing: 4px;
+    font-weight: 600;
+    flex: 1;
+  }
+  .series-meta {
+    font-size: 10px;
+    color: var(--paper-dim);
+    letter-spacing: 1px;
+    margin-right: 8px;
+  }
+  .series-chev {
+    color: var(--gold);
+    font-size: 13px;
+    transition: transform .25s;
+  }
+  .series.collapsed .series-chev { transform: rotate(-90deg); }
+  .series.collapsed .series-body { display: none; }
+
+  .topic-header {
+    padding: 8px 12px 4px;
+    margin: 8px 0 4px 8px;
+    font-size: 11px;
+    color: var(--jade-bright);
+    letter-spacing: 3px;
+    border-left: 2px solid var(--jade);
+  }
+  .topic-body {
+    display: flex; flex-direction: column;
+    gap: 8px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+  }
   .book-card {
     display: flex;
     align-items: center;
@@ -2666,42 +2717,115 @@ function renderStats() {
   `;
 }
 
+// 摺疊狀態 (localStorage)
+function getCollapsedSeries() {
+  try { return JSON.parse(localStorage.getItem('collapsedSeries') || '[]'); }
+  catch { return []; }
+}
+function saveCollapsedSeries(arr) {
+  localStorage.setItem('collapsedSeries', JSON.stringify(arr));
+}
+function toggleSeries(name) {
+  const collapsed = getCollapsedSeries();
+  const idx = collapsed.indexOf(name);
+  if (idx >= 0) collapsed.splice(idx, 1); else collapsed.push(name);
+  saveCollapsedSeries(collapsed);
+  renderLibrary();
+}
+
+function buildBookCard(b) {
+  const card = document.createElement('button');
+  card.className = 'book-card';
+  if (b.id === activeBook?.id) card.classList.add('active');
+  if (!b.imported) card.classList.add('not-imported');
+  let masteryText = '';
+  if (b.imported) {
+    const prog = bookMasteryProgress(b.id, b.questionCount || 1);
+    const isMastered = state.masteredBooks.includes(b.id);
+    const skillId = BOOK_SKILLS[b.id];
+    const skill = skillId ? SKILLS[skillId] : null;
+    if (isMastered) {
+      masteryText = `✓ 已通讀${skill ? '　' + skill.icon + ' ' + skill.name : ''}`;
+    } else {
+      masteryText = `通讀 ${prog.mastered}/${prog.threshold}${skill ? '　🔒 ' + skill.name : ''}`;
+    }
+  }
+  card.innerHTML = `
+    <div class="book-cover" style="background: linear-gradient(135deg, ${b.color}cc, ${b.color}66)">${b.icon}</div>
+    <div class="book-info">
+      <div class="book-title">${b.title}</div>
+      <div class="book-subtitle">${b.subtitle}</div>
+      <div class="book-meta">${b.imported ? (b.questionCount || '?') + ' 題　·　' + masteryText : '尚未匯入 · 待跑 pipeline'}</div>
+    </div>
+    <div class="book-status">${b.id === activeBook?.id ? '當前' : (b.imported ? '切換' : '待匯入')}</div>
+  `;
+  card.onclick = () => {
+    if (!b.imported) { floatMsg('將 PDF 丟入 pipeline 後可匯入'); return; }
+    if (b.id === activeBook?.id) { go('home'); return; }
+    switchBook(b.id);
+  };
+  return card;
+}
+
 function renderLibrary() {
   const list = $('book-list');
   if (!list || !library) return;
   list.innerHTML = '';
+
+  // 分組：書系 → 主題 → 章節
+  const bySeries = {};
   library.books.forEach(b => {
-    const card = document.createElement('button');
-    card.className = 'book-card';
-    if (b.id === activeBook?.id) card.classList.add('active');
-    if (!b.imported) card.classList.add('not-imported');
-    let masteryText = '';
-    if (b.imported) {
-      const prog = bookMasteryProgress(b.id, b.questionCount || 1);
-      const isMastered = state.masteredBooks.includes(b.id);
-      const skillId = BOOK_SKILLS[b.id];
-      const skill = skillId ? SKILLS[skillId] : null;
-      if (isMastered) {
-        masteryText = `✓ 已通讀${skill ? '　' + skill.icon + ' ' + skill.name : ''}`;
-      } else {
-        masteryText = `通讀進度 ${prog.mastered}/${prog.threshold}${skill ? '　🔒 ' + skill.name : ''}`;
-      }
-    }
-    card.innerHTML = `
-      <div class="book-cover" style="background: linear-gradient(135deg, ${b.color}cc, ${b.color}66)">${b.icon}</div>
-      <div class="book-info">
-        <div class="book-title">${b.title}</div>
-        <div class="book-subtitle">${b.subtitle}</div>
-        <div class="book-meta">${b.imported ? '收錄 ' + (b.questionCount || '?') + ' 題　·　' + masteryText : '尚未匯入 · 待跑 pipeline'}</div>
-      </div>
-      <div class="book-status">${b.id === activeBook?.id ? '當前' : (b.imported ? '切換' : '待匯入')}</div>
+    const series = b.book || '其他';
+    const topic = b.topic || '未分類';
+    bySeries[series] = bySeries[series] || {};
+    bySeries[series][topic] = bySeries[series][topic] || [];
+    bySeries[series][topic].push(b);
+  });
+
+  const collapsed = getCollapsedSeries();
+  // 內含 active 書的書系自動展開
+  const activeSeries = activeBook ? library.books.find(b => b.id === activeBook.id)?.book : null;
+
+  Object.keys(bySeries).forEach(seriesName => {
+    const seriesDiv = document.createElement('div');
+    seriesDiv.className = 'series';
+    const isCollapsed = collapsed.includes(seriesName) && seriesName !== activeSeries;
+    if (isCollapsed) seriesDiv.classList.add('collapsed');
+
+    const topics = bySeries[seriesName];
+    const totalBooks = Object.values(topics).flat().length;
+    const totalQs = Object.values(topics).flat().reduce((s, b) => s + (b.questionCount || 0), 0);
+
+    // 書系標題（可摺疊）
+    const header = document.createElement('div');
+    header.className = 'series-header';
+    header.innerHTML = `
+      <span class="series-name">📚 ${seriesName}</span>
+      <span class="series-meta">${totalBooks} 章 · ${totalQs} 題</span>
+      <span class="series-chev">▼</span>
     `;
-    card.onclick = () => {
-      if (!b.imported) { floatMsg('將 PDF 丟入 pipeline 後可匯入'); return; }
-      if (b.id === activeBook?.id) { go('home'); return; }
-      switchBook(b.id);
-    };
-    list.appendChild(card);
+    header.onclick = () => toggleSeries(seriesName);
+    seriesDiv.appendChild(header);
+
+    // 書系內容
+    const body = document.createElement('div');
+    body.className = 'series-body';
+
+    Object.keys(topics).sort().forEach(topicName => {
+      const books = topics[topicName];
+      const topicHdr = document.createElement('div');
+      topicHdr.className = 'topic-header';
+      topicHdr.textContent = `${topicName} · ${books.length} 章`;
+      body.appendChild(topicHdr);
+
+      const topicBody = document.createElement('div');
+      topicBody.className = 'topic-body';
+      books.forEach(b => topicBody.appendChild(buildBookCard(b)));
+      body.appendChild(topicBody);
+    });
+
+    seriesDiv.appendChild(body);
+    list.appendChild(seriesDiv);
   });
 }
 
