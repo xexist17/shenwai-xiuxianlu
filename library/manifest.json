@@ -25,6 +25,17 @@
       "questionCount": 30
     },
     {
+      "id": "youmans-ch389",
+      "title": "Youmans Ch389 TBI 非侵入性監測",
+      "subtitle": "Noninvasive Neuromonitoring · 29 題",
+      "ref": "Youmans 8th Ed · Ch389 · pp.3041–3049",
+      "icon": "📚",
+      "color": "#b8884a",
+      "file": "youmans-ch389.json",
+      "imported": true,
+      "questionCount": 29
+    },
+    {
       "id": "youmans-ch391",
       "title": "Youmans Ch391 TBI 手術治療",
       "subtitle": "Surgical Management of TBI · 30 題",
