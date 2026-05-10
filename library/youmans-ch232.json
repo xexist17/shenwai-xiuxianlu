@@ -8,10 +8,10 @@
       "tag": "功法 · Youmans Ch232 · 流行病學",
       "q": "兒童 (<19 歲) 最常見的固體腫瘤與其癌症死亡率排名為？",
       "opts": [
-        "A. 白血病；第三死因",
-        "B. 腦瘤（最常見固體腫瘤）；癌症相關死亡率第一；占兒童癌症 20–30%",
-        "C. 淋巴瘤；第五死因",
-        "D. 骨肉瘤；第二死因"
+        "A. 腦瘤約占兒童癌症 5%，癌症死亡率排第三",
+        "B. 腦瘤為兒童最常見固體腫瘤；癌症相關死亡率第一；占兒童癌症 20–30%",
+        "C. 白血病為最常見固體腫瘤，腦瘤癌症死亡率排第五",
+        "D. 淋巴瘤為兒童癌症死亡率第一，腦瘤排第三"
       ],
       "answer": 1,
       "explanation": "<span class='key'>兒童惡性腦瘤 = 最常見固體腫瘤 + 癌症相關死亡率第一</span>。占兒童癌症 <span class='key'>20–30%</span>。CBTRUS 2011–2015：<span class='key'>5.95 / 100,000</span>（0–19 歲）。<span class='key'>0–4 歲與 15–19 歲發病率高</span>於中段（5–14 歲）。整體 5 年存活率 35–65%（依 histology、location、年齡而異）。"
@@ -21,12 +21,12 @@
       "tag": "心法 · Youmans Ch232 · 解剖位置",
       "q": "兒童 vs 成人 CNS 腫瘤位置分佈的關鍵差異為？",
       "opts": [
-        "A. 完全相同",
-        "B. 兒童（除 <1 歲）多 infratentorial（~50%，2 歲以上達 60%）；成人 25–35% infratentorial",
-        "C. 兒童多 spinal",
-        "D. 成人多 infratentorial"
+        "A. 兒童（除 <1 歲）多 infratentorial（~50%，2 歲以上達 60%）；成人 25–35% infratentorial",
+        "B. 兒童與成人 CNS 腫瘤位置分佈幾乎相同",
+        "C. 兒童多 spinal cord 病灶，腦內罕見",
+        "D. 成人多 infratentorial（>60%），兒童多 supratentorial"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>兒童 vs 成人 CNS 腫瘤位置不同</span>：<span class='key'>兒童約 50% infratentorial</span>（2 歲以上達 60%）；<span class='key'>成人 25–35% infratentorial</span>。<span class='key'>例外：<1 歲 supratentorial 反而更常</span>。Histology 也大不同 — 兒童多 pilocytic astrocytoma、medulloblastoma、ependymoma；成人多 GBM、meningioma、metastasis。"
     },
     {
@@ -34,12 +34,12 @@
       "tag": "心法 · Youmans Ch232 · 臨床",
       "q": "兒童腦瘤最常見的初始症狀為？診斷延遲的常見表現為？",
       "opts": [
-        "A. 抽搐；多數 <1 週診斷",
-        "B. 頭痛（50–90%）+ 嘔吐；<25% 在 1 個月內診斷，>50% 超過 3 個月才診斷",
-        "C. 意識喪失；當下立即診斷",
-        "D. 運動麻痺；不會延遲"
+        "A. 抽搐為主，多在症狀出現 1 週內即診斷",
+        "B. 突發意識喪失為最常見初始症狀，可立即診斷",
+        "C. 頭痛（50–90%）+ 嘔吐；<25% 在 1 個月內診斷，>50% 超過 3 個月才診斷",
+        "D. 肢體麻痺為主，因症狀明顯故無診斷延遲"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>頭痛（50–90%）+ 噁心嘔吐 = 最常見初始症狀</span>。但這些症狀在兒童常見、多為非威脅性疾病 → <span class='key'>診斷延遲：< 25% 在症狀後 1 個月內診斷，>50% 超過 3 個月才診斷</span>，~25% 診斷時已為威脅生命狀態。Infratentorial tumor 症狀多為 <span class='key'>raised ICP</span>（hydrocephalus 從 4th ventricle 阻塞）— 早晨頭痛、噁心、嘔吐、嗜睡。"
     },
     {
@@ -47,12 +47,12 @@
       "tag": "秘籍 · Youmans Ch232 · Parinaud",
       "q": "Parinaud 症候群之三聯徵與其機轉為？",
       "opts": [
-        "A. 對側 hemiparesis、語言障礙、抽搐",
-        "B. Upgaze paralysis、accommodation paresis、convergence nystagmus；機轉為 midbrain tectum 受 mass effect 或 hydrocephalus 壓迫",
-        "C. 失明、失聽、失味",
-        "D. 雙側 ptosis"
+        "A. 上凝視麻痺、accommodation paresis、convergence nystagmus；機轉為 midbrain tectum 受 mass effect 或 hydrocephalus 壓迫",
+        "B. 對側 hemiparesis、語言障礙、抽搐三聯",
+        "C. 完全失明、感覺神經性聽損、味覺喪失三聯",
+        "D. 雙側 ptosis 合併瞳孔反射消失"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Parinaud syndrome</span>三聯徵：<span class='key'>(1) 上凝視麻痺 (upgaze paralysis)</span>、<span class='key'>(2) accommodation paresis</span>、<span class='key'>(3) convergence nystagmus</span>。機轉：<span class='key'>midbrain tectum 受 mass effect 或 hydrocephalus 壓迫</span>。常見於 pineal region 病灶（germinoma、pineoblastoma）或 aqueduct 阻塞性 hydrocephalus。亦可見 third nerve palsy 變化。"
     },
     {
@@ -61,11 +61,11 @@
       "q": "<2 歲兒童增高 ICP 較獨特的徵象不包括？",
       "opts": [
         "A. 巨頭症 (macrocephaly)",
-        "B. 囟門隆起 (bulging fontanelle)",
-        "C. 聲帶麻痺",
-        "D. 第六腦神經麻痺 → 限制 lateral gaze"
+        "B. 聲帶麻痺",
+        "C. 囟門隆起 (bulging fontanelle)",
+        "D. 第六腦神經麻痺造成 lateral gaze 受限"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "<span class='key'><2 歲兒童增高 ICP 獨特徵象</span>：<span class='key'>巨頭症、囟門隆起</span>（顱縫尚未癒合，可代償部分 ICP）；<span class='key'>第六腦神經（外旋神經）麻痺 → 限制 lateral gaze</span>（CN VI 路徑長易受 ICP 影響）。聲帶麻痺非典型 ICP 徵象。Infratentorial tumor 局部 mass effect 可致 ataxia、gait disturbance、brainstem dysfunction（吞嚥困難、呼吸困難、weakness）。"
     },
     {
@@ -73,12 +73,12 @@
       "tag": "功法 · Youmans Ch232 · 分類",
       "q": "WHO CNS 腫瘤分類系統的等級劃分為？",
       "opts": [
-        "A. Grade A–D",
-        "B. Grade I 至 IV，IV 為最大惡性潛力",
-        "C. Grade 1 至 10",
-        "D. 沒有等級系統"
+        "A. Grade A–D，D 為最大惡性",
+        "B. Grade 1 至 10，10 為最大惡性",
+        "C. Grade I 至 IV，IV 為最大惡性潛力",
+        "D. WHO 並未對 CNS 腫瘤建立分級系統"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>WHO 分類：Grade I–IV，IV 為最大惡性潛力</span>。依細胞起源分類。神經系統細胞分 nerve cells 與 neuroglia（neuroepithelial cells，比 nerve cells 多 3:1，含 astrocytes、oligodendrocytes、ependymal cells、microglia）。<span class='key'>兒童最常見：neuroepithelial origin tumor</span> — 含 astrocytic、embryonal、ependymal tumors。"
     },
     {
@@ -86,10 +86,10 @@
       "tag": "功法 · Youmans Ch232 · 主要腫瘤",
       "q": "兒童 CNS 腫瘤前三大為？",
       "opts": [
-        "A. Lymphoma、Sarcoma、Leukemia",
+        "A. Lymphoma → Sarcoma → Leukemia",
         "B. Glioma（特別是 astrocytoma，達 50%）→ Medulloblastoma（15–20%）→ Ependymoma（10%）",
-        "C. Meningioma、Schwannoma、Pituitary",
-        "D. Metastatic tumors"
+        "C. Meningioma → Schwannoma → Pituitary adenoma",
+        "D. Metastatic tumors 為前三大來源"
       ],
       "answer": 1,
       "explanation": "兒童 CNS 腫瘤前三大：<span class='key'>(1) Glioma（especially astrocytoma）達 50%</span>；<span class='key'>(2) Medulloblastoma 15–20%</span>（自 4th ventricle neural stem cell 起源）；<span class='key'>(3) Ependymoma 10%</span>。其他：PNET 1.9%、ganglioglioma 2.5%、craniopharyngioma 5.6%、AT/RT 1.3%、germ cell 2.5%、choroid plexus 0.9%。"
@@ -99,10 +99,10 @@
       "tag": "秘籍 · Youmans Ch232 · Pilocytic",
       "q": "Pilocytic astrocytoma 在兒童的特徵為？關鍵分子標記為？",
       "opts": [
-        "A. 罕見的高度惡性腫瘤；無分子標記",
-        "B. 兒童 CNS 腫瘤中 25%（最常見的單一型），多 posterior fossa；80% 帶 BRAF fusion gene → vemurafenib 為標靶藥",
-        "C. 完全不能手術",
-        "D. 無治療方法"
+        "A. 為罕見的高度惡性腫瘤，目前無分子標記",
+        "B. 占兒童 CNS 腫瘤 25%（最常見單一型），多 posterior fossa；80% 帶 BRAF fusion gene → vemurafenib 為標靶選擇",
+        "C. 病灶完全無法手術切除，僅能放射治療",
+        "D. 目前文獻無有效治療方法"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Pilocytic astrocytoma = 兒童 CNS 腫瘤中 25%（最常見單一型）</span>。位置：多 posterior fossa，但可在任何處（含多發）。為 benign 組織學，但因位置（hypothalamic/optic pathway）難手術。<span class='key'>80% 帶 BRAF fusion gene</span>（viral oncogene homolog）→ 改善診斷與預後。<span class='key'>Vemurafenib</span>（小分子，選擇性辨識 BRAF mutant 之 ATP-binding domain）為標靶藥。Low-grade glioma 主要分子改變：MAPK pathway 活化（BRAF mutation）。"
@@ -112,12 +112,12 @@
       "tag": "心法 · Youmans Ch232 · Medulloblastoma",
       "q": "Medulloblastoma 之分子亞型與預後為？",
       "opts": [
-        "A. 只有一種，預後相同",
-        "B. 4 種分子亞型 — WNT（最佳預後）、SHH、Group 3（最差，frequent metastasis）、Group 4（中等，常見 metastasis）",
-        "C. 沒有分子分類",
-        "D. 全部預後極佳"
+        "A. 僅有單一型，所有患者預後相同",
+        "B. 目前無公認的分子分類系統",
+        "C. 無論亞型，五年存活率皆超過 95%",
+        "D. 4 種分子亞型 — WNT（最佳預後）、SHH、Group 3（最差，frequent metastasis）、Group 4（中等，常見 metastasis）"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Medulloblastoma 4 個分子亞型</span>：<span class='key'>WNT（CTNNB1 mutation，最佳預後，rarely metastatic）</span>、<span class='key'>SHH（PTCH1/SMO/SUFU mutation，infants 預後好其他中等）</span>、<span class='key'>Group 3（MYC amplification，frequent metastasis，最差預後）</span>、<span class='key'>Group 4（MYCN/CDK6 amplification，frequently metastatic，中等預後）</span>。比傳統 histology 分類預後預測力強。Group 3/4 為標靶藥研究熱點。"
     },
     {
@@ -125,12 +125,12 @@
       "tag": "秘籍 · Youmans Ch232 · NF1",
       "q": "Neurofibromatosis type 1 (NF1) 之遺傳基礎與相關腦瘤為？",
       "opts": [
-        "A. 染色體 22 alteration；vestibular schwannoma",
-        "B. 染色體 17 alteration → neurofibromin 失能（無法調控細胞生長）→ optic gliomas、malignant peripheral nerve sheath tumors",
-        "C. 染色體 X；無腦瘤",
-        "D. 染色體 1；只致皮膚變化"
+        "A. 染色體 22 alteration → vestibular schwannoma 為主",
+        "B. X 染色體連鎖遺傳，與腦瘤無關",
+        "C. 染色體 1 alteration，僅造成皮膚變化",
+        "D. 染色體 17 alteration → neurofibromin 失能 → optic gliomas、malignant peripheral nerve sheath tumors"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>NF1</span>：<span class='key'>染色體 17</span>，產生 nonfunctional <span class='key'>neurofibromin（tumor suppressor）</span>，無法調控細胞生長分裂 → <span class='key'>optic gliomas、malignant peripheral nerve sheath tumors</span>。<span class='key'>NF2</span>：<span class='key'>染色體 22 → merlin/schwannomin → meningiomas、vestibular schwannomas</span>。表現型可變異大，部分病人幾乎無症狀，部分嚴重。"
     },
     {
@@ -151,12 +151,12 @@
       "tag": "心法 · Youmans Ch232 · AT/RT",
       "q": "Atypical teratoid/rhabdoid tumor (AT/RT) 之關鍵分子標記為？",
       "opts": [
-        "A. BRAF mutation",
-        "B. INI1 gene（染色體 22）失活 — 重要診斷工具，因 AT/RT 與 medulloblastoma 影像/組織學難分",
-        "C. EGFR amplification",
-        "D. p53 mutation"
+        "A. BRAF V600E mutation 為 AT/RT 之主要驅動因子",
+        "B. EGFR amplification 為診斷標記",
+        "C. p53 mutation 為其唯一分子特徵",
+        "D. INI1 gene（染色體 22）失活 — 為診斷關鍵，可區分 AT/RT 與 medulloblastoma"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>AT/RT</span>：<span class='key'>染色體 22 之 INI1 gene 失活</span>為其分子發病學關鍵。<span class='key'>免疫組化用 INI1 antibody 區分 AT/RT 與 medulloblastoma</span>（兩者影像與細微組織學特徵相似但 INI1 染色不同）。占兒童 CNS 腫瘤 1.3%。"
     },
     {
@@ -164,12 +164,12 @@
       "tag": "功法 · Youmans Ch232 · 影像",
       "q": "兒童疑似 CNS 腫瘤之 first-line 影像為？",
       "opts": [
-        "A. Plain X-ray",
-        "B. MRI（含 contrast、FLAIR、必要時 MRS）；CT 次之",
-        "C. PET first",
-        "D. 直接 biopsy"
+        "A. Plain X-ray 顱骨 series 為首選",
+        "B. PET-CT 作為第一線評估工具",
+        "C. MRI（含 contrast、FLAIR、必要時 MRS）；CT 次之",
+        "D. 直接送 OR 做 biopsy，不需術前影像"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>MRI 為兒童 CNS 腫瘤評估首選</span>。CT（1970s）+ MRI（1980s mid）已 revolutionized 此領域。<span class='key'>Contrast-enhanced</span>（識別 BBB 改變、subtle lesion、tumor boundary）；<span class='key'>FLAIR</span>（區分 tumor vs 周邊水腫）；<span class='key'>MRS</span>（細胞代謝資訊）。Post-treatment surveillance 區分 recurrence vs radiation effect 困難 — 可用 diffusion、perfusion、MRS、PET、SPECT、TRAMs (delayed-contrast MRI)。"
     },
     {
@@ -177,12 +177,12 @@
       "tag": "秘籍 · Youmans Ch232 · 散播評估",
       "q": "下列何種 CNS 腫瘤需做 spine MRI + CSF cytology 排除散播？",
       "opts": [
-        "A. Pilocytic astrocytoma",
-        "B. Meningioma",
-        "C. Medulloblastoma、germ cell tumors、ependymomas、PNETs",
-        "D. Schwannoma"
+        "A. Medulloblastoma、germ cell tumors、ependymomas、PNETs",
+        "B. Pilocytic astrocytoma 為散播風險最高之腫瘤",
+        "C. Meningioma 為兒童 drop metastasis 主要來源",
+        "D. Schwannoma 經 CSF 散播率最高"
       ],
-      "answer": 2,
+      "answer": 0,
       "explanation": "<span class='key'>具 CNS 散播傾向之兒童 CNS 腫瘤</span>：<span class='key'>medulloblastoma、germ cell tumors、ependymomas、PNETs</span>。需 <span class='key'>spine MRI（最好術前，或術後 ≥2 週讓血液產物 clear）+ CSF cytology（lumbar puncture）</span>排除 drop metastasis。Pineal/suprasellar 病灶另需 metabolic workup（germ cell markers 如 β-hCG、AFP、PLAP；hypothalamic/sellar lesion 加 endocrine workup：metabolic、thyroid、GH、IGF-1、prolactin、cortisol、ACTH、gonadotropins）。"
     },
     {
@@ -190,10 +190,10 @@
       "tag": "功法 · Youmans Ch232 · 治療",
       "q": "大多數兒童 CNS 腫瘤之治療主軸為？",
       "opts": [
-        "A. 完全 chemotherapy",
-        "B. 手術切除為主軸，必要時輔以 chemo/RT；緊急情況：嚴重 hydrocephalus、tumor hemorrhage、急性 mass effect → urgent surgery",
-        "C. 完全放射治療",
-        "D. 完全保守觀察"
+        "A. 完全 chemotherapy，避免任何手術",
+        "B. 手術切除為主軸，必要時輔以 chemo/RT；緊急情況 → urgent surgery",
+        "C. 完全放射治療，不施行手術",
+        "D. 完全保守觀察，不主動處置"
       ],
       "answer": 1,
       "explanation": "<span class='key'>手術切除為主軸</span>，必要時輔以 chemo/RT。Urgent surgery：嚴重 hydrocephalus、tumor hemorrhage、急性 debilitating mass effect。緊急時主要目標處理威脅生命狀況，二次手術才為腫瘤切除。<span class='key'>多數 CNS tumor 預後直接相關於 surgical resection extent</span>。Lower-grade neoplasm 或 surveillance imaging 為合理選擇。Tissue diagnosis 為非緊急 case 之首要目標，gross total resection 若安全則執行。"
@@ -203,12 +203,12 @@
       "tag": "心法 · Youmans Ch232 · Germinoma",
       "q": "松果體區 germinoma 之獨特治療策略為？",
       "opts": [
-        "A. 必須 gross total resection",
-        "B. 對 craniospinal radiation 極度敏感，>90% 長期存活；常先 endoscopic biopsy + germ cell markers + （hydrocephalus 時 ETV）→ 確認後不需切除，僅 neoadjuvant therapy",
-        "C. 不能用放射治療",
-        "D. 必須化療而非放療"
+        "A. 對 craniospinal radiation 極度敏感，>90% 長期存活；常 endoscopic biopsy + germ cell markers + ETV → 確認後 neoadjuvant therapy 不需切除",
+        "B. 必須 gross total resection 才能控制",
+        "C. 對 radiation 完全不敏感，禁用放療",
+        "D. 僅化療有效，放療反致惡化"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Germinoma 對 radiation 極度敏感</span> → <span class='key'>單獨 craniospinal RT 即達 >90% 長期存活</span>。已從 classical 「resection 後 adjuvant」轉為 <span class='key'>endoscopic biopsy + serum/CSF germ cell markers + hydrocephalus 時 ETV</span>（同次手術），確認 germinoma 後 → <span class='key'>不需切除，直接 neoadjuvant therapy</span>。但 mixed germ cell 與 nonmarker tumor（如 pineoblastoma）仍需 surgical resection + chemo/RT。"
     },
     {
@@ -216,12 +216,12 @@
       "tag": "秘籍 · Youmans Ch232 · 放射治療",
       "q": "兒童 CNS 腫瘤放射治療的關鍵年齡限制為？",
       "opts": [
-        "A. 任何年齡都可做",
-        "B. <3 歲應避免（對發育中神經系統破壞性極大），罕見例外才用 — 多用 resection + chemo 直至年齡稍長",
-        "C. >18 歲才能做",
-        "D. 只能 25 歲以上"
+        "A. 任何年齡皆可做，無年齡限制",
+        "B. 需 ≥18 歲方可施行",
+        "C. <3 歲應避免（對發育中神經系統破壞性極大），罕見例外才用",
+        "D. 僅 ≥25 歲成人才能接受 CNS 放療"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>RT 在 <3 歲應避免</span>（對發育中神經系統 deleterious effect 極大）— 多用 resection + chemo 至年齡稍長。罕見例外才用。<span class='key'>>3 歲</span>：依腫瘤位置與 subarachnoid seed 傾向，選 localized RT、whole-brain RT 或 craniospinal RT。<span class='key'>Stereotactic RT</span>（高劑量精準遞送）：用於小、well-circumscribed brain tumor。<span class='key'>Posterior fossa medulloblastoma + 部分 metastatic ependymoma → craniospinal RT</span>。"
     },
     {
@@ -229,12 +229,12 @@
       "tag": "心法 · Youmans Ch232 · 不能切的腫瘤",
       "q": "下列何種兒童腦瘤位置常無法手術切除？",
       "opts": [
-        "A. Cerebellar pilocytic astrocytoma",
-        "B. Optic pathway tumors、hypothalamic tumors、brainstem lesions（diffuse infiltrative pontine glioma 預後極差）",
-        "C. Lateral ventricle papilloma",
-        "D. Frontal lobe meningioma"
+        "A. Cerebellar pilocytic astrocytoma 多無法切除",
+        "B. Lateral ventricle choroid plexus papilloma 為禁忌",
+        "C. Frontal convexity meningioma 多無法切除",
+        "D. Optic pathway tumors、hypothalamic tumors、brainstem lesions（diffuse pontine glioma 預後極差）"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>難切除的兒童腦瘤位置</span>：<span class='key'>optic pathway tumors、hypothalamic tumors、brainstem lesions</span>。多基於影像特徵管理（不需 tissue diagnosis）。<span class='key'>Diffuse infiltrative pontine glioma 預後與 GBM 相當</span>（不可切）。Focal brainstem lesion 預後較好，可 serial MRI 追；dorsally exophytic 部分可 surgical debulking。Hypothalamic 與 optic pathway pilocytic astrocytoma 多為良性病程，但仍可致 hypothalamic dysfunction 與失明 — 多 frequent imaging follow-up，progressive 才用 chemo。"
     },
     {
@@ -242,12 +242,12 @@
       "tag": "心法 · Youmans Ch232 · 嬰兒期",
       "q": "依年齡，0–2 歲嬰兒最常見之 CNS 腫瘤類型為？",
       "opts": [
-        "A. Astrocytoma + craniopharyngioma",
-        "B. Choroid plexus papilloma、desmoplastic infantile astrocytoma、teratoma、PNET、AT/RT",
-        "C. Germinoma 為主",
-        "D. Schwannoma 為主"
+        "A. Astrocytoma 與 craniopharyngioma 為主",
+        "B. Germinoma 為 0–2 歲最常見腫瘤",
+        "C. Vestibular schwannoma 為主",
+        "D. Choroid plexus papilloma、desmoplastic infantile astrocytoma、teratoma、PNET、AT/RT"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>0–2 歲（嬰兒期）腫瘤分布獨特</span>：<span class='key'>choroid plexus papilloma、desmoplastic infantile astrocytoma、teratoma、PNET、AT/RT</span> 為主。3–11 歲（兒童期）：astrocytoma 與 craniopharyngioma 較常見，前述少見。≥12 歲（青春期）：germ cell tumor 漸多，craniopharyngioma 漸少。年齡分布反映 CNS 發育期不同腫瘤前驅細胞之活性。"
     },
     {
@@ -255,12 +255,12 @@
       "tag": "秘籍 · Youmans Ch232 · 長期",
       "q": "兒童腦瘤倖存者長期挑戰為？",
       "opts": [
-        "A. 完全康復無後遺症",
-        "B. 即使成功治療，仍面對終生身心後遺症（治療相關 sequelae 含認知、內分泌、心理影響）；最佳由經驗豐富之 multidisciplinary team 管理",
-        "C. 只有身體後遺症",
-        "D. 只有心理後遺症"
+        "A. 即使成功治療仍面對終生身心後遺症（認知、內分泌、心理）；由 multidisciplinary team 管理為最佳",
+        "B. 完全康復，幾乎無任何後遺症",
+        "C. 後遺症僅限於身體機能，無心理影響",
+        "D. 後遺症僅限於心理層面，身體無影響"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>兒童腦瘤倖存者面對終生身心後遺症</span>。研究顯示這些孩子比其他兒童癌症有更嚴重 disease + treatment sequelae（認知、內分泌、心理、家庭功能影響）。<span class='key'>診斷時為家庭脆弱期 — 準確、誠實、有同理心的訊息至為重要</span>。<span class='key'>由經驗豐富的 multidisciplinary team（neurosurgery、neuro-oncology、RT、endocrine、neuropsychology、social work）管理</span>為最佳。"
     }
   ]

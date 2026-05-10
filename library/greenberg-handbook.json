@@ -6,62 +6,67 @@
     {
       "type": "choice",
       "tag": "功法 · Greenberg 第 10 章 · 神經重症",
-      "q": "Glasgow Coma Scale 中，「對疼痛刺激會睜眼」屬於眼睛反應的幾分？",
-      "opts": ["A. 1 分", "B. 2 分", "C. 3 分", "D. 4 分"],
+      "q": "Glasgow Coma Scale 中，「對疼痛刺激會睜眼」屬於眼睛反應 (E) 的幾分？",
+      "opts": [
+        "A. E1（完全無反應）",
+        "B. E2（對疼痛刺激睜眼）",
+        "C. E3（對聲音刺激睜眼）",
+        "D. E4（自發睜眼）"
+      ],
       "answer": 1,
-      "explanation": "GCS 眼睛反應 (E)：<span class='key'>4 自發；3 對聲音；2 對疼痛；1 無反應</span>。語言 (V)：5 切題、4 混亂、3 無關詞、2 發聲、1 無。動作 (M)：6 服從、5 定位疼痛、4 縮回、3 屈曲（decorticate）、2 伸展（decerebrate）、1 無。最低 3，最高 15。"
+      "explanation": "GCS 眼睛反應 (E)：<span class='key'>4 自發；3 對聲音；2 對疼痛；1 無反應</span>。語言 (V)：5 切題、4 混亂、3 無關詞、2 發聲、1 無。動作 (M)：6 服從、5 定位疼痛、4 縮回、3 屈曲（decorticate）、2 伸展（decerebrate）、1 無。最低 3T，最高 15。"
     },
     {
       "type": "choice",
       "tag": "心法 · Greenberg 第 14 章 · ICP 控制",
-      "q": "Brain Trauma Foundation 建議，TBI 患者開始積極治療顱內壓的閾值為？",
+      "q": "Brain Trauma Foundation 第 4 版指引建議，TBI 患者開始積極治療顱內壓的閾值為？",
       "opts": [
-        "A. ICP > 15 mmHg",
-        "B. ICP > 20 mmHg",
-        "C. ICP > 22 mmHg",
-        "D. ICP > 30 mmHg"
+        "A. ICP > 15 mmHg（早期介入）",
+        "B. ICP > 20 mmHg（BTF 第 3 版建議值）",
+        "C. ICP > 22 mmHg（BTF 第 4 版建議值）",
+        "D. ICP > 25 mmHg（仰賴影像/臨床惡化）"
       ],
       "answer": 2,
-      "explanation": "BTF 第 4 版指引建議 <span class='key'>ICP > 22 mmHg</span> 為治療閾值（先前版本為 20）。原則：階段式 — 床頭抬高、鎮靜止痛、CSF 引流、滲透治療（mannitol、HTS）、過度換氣（短期、PaCO2 30–35）、低溫、巴比妥昏迷、最後 decompressive craniectomy。<span class='key'>CPP 目標 60–70 mmHg</span>。"
+      "explanation": "BTF 第 4 版 (2016) 將閾值由 20 上修至 <span class='key'>22 mmHg</span>（基於 Sonberg & Sahuquillo 的 ICP-monitor cohort 分析）。階梯式處置：床頭抬高 30°、鎮靜止痛、CSF 引流、滲透治療（mannitol、HTS）、過度換氣（短期、PaCO₂ 30–35）、低溫、巴比妥昏迷、最後 decompressive craniectomy。<span class='key'>CPP 目標 60–70 mmHg</span>。"
     },
     {
       "type": "choice",
       "tag": "心法 · Greenberg 第 14 章 · 顱內高壓",
       "q": "Cushing reflex（庫欣反射）的典型三聯徵 (triad) 為？",
       "opts": [
-        "A. 高血壓、心搏過緩、呼吸不規律",
-        "B. 低血壓、心搏過速、深快呼吸",
-        "C. 高血壓、心搏過速、過度換氣",
-        "D. 低血壓、心搏過緩、呼吸暫停"
+        "A. 高血壓 + 心搏過速 + 過度換氣（早期 SAH 模式）",
+        "B. 低血壓 + 心搏過緩 + 呼吸暫停（neurogenic shock 模式）",
+        "C. 高血壓 + 心搏過緩 + Kussmaul 深快呼吸（DKA 模式）",
+        "D. 高血壓 + 心搏過緩 + 呼吸不規律"
       ],
-      "answer": 0,
-      "explanation": "<span class='key'>Cushing triad</span>（顱內高壓 late sign）= 高血壓 + 心搏過緩 + 呼吸不規律（Cheyne-Stokes 或 Biot's）。機轉：ICP 過高壓迫腦幹 → sympathetic 反應升高 SBP 維持 CPP → baroreflex 引發 bradycardia + 呼吸中樞受壓。<span class='key'>出現此徵代表迫切的 herniation 風險</span>。"
+      "answer": 3,
+      "explanation": "<span class='key'>Cushing triad</span>（顱內高壓 late sign）= <span class='key'>高血壓 + 心搏過緩 + 呼吸不規律</span>（Cheyne-Stokes 或 Biot's）。機轉：ICP 升高 → 腦幹缺血 → 交感反應抬高 SBP 維持 CPP → baroreflex 引發 bradycardia + 髓質呼吸中樞受壓。<span class='key'>出現此徵代表迫切的 herniation 風險</span>。Neurogenic shock 是高位脊髓損傷後 sympathetic 失能 → 低血壓 + 心搏過緩。"
     },
     {
       "type": "choice",
       "tag": "功法 · Greenberg 第 14 章 · 滲透治療",
-      "q": "Mannitol 用於降低顱內壓的常用劑量為？",
+      "q": "Mannitol bolus 用於急性顱內壓降壓的常用劑量為？",
       "opts": [
-        "A. 0.05–0.1 g/kg",
-        "B. 0.25–1.0 g/kg",
-        "C. 2–3 g/kg",
-        "D. 5 g/kg 以上"
+        "A. 0.25–1.0 g/kg IV（每 4–6 小時 prn）",
+        "B. 0.10 g/kg IV（每 8 小時）",
+        "C. 1.5–2.0 g/kg IV（loading + 連續輸注）",
+        "D. 3 g/kg IV（一次性大劑量）"
       ],
-      "answer": 1,
-      "explanation": "Mannitol 急性 ICP 降壓常用 <span class='key'>0.25–1.0 g/kg</span> bolus（20% 溶液 IV 15–30 分鐘）。機轉：滲透梯度抽水 + 改善 rheology。<span class='key'>監測</span>：serum osmolality < 320、osmolar gap、避免容積耗竭與低血壓。HTS（3% 或 23.4%）為替代選項，特別在 hypovolemic 或腎功能不全。"
+      "answer": 0,
+      "explanation": "Mannitol 急性 ICP 降壓常用 <span class='key'>0.25–1.0 g/kg</span> bolus（20% 溶液 IV 15–30 分鐘），可重複給予。機轉：滲透梯度抽水 + 改善 rheology（降黏度→改善 microcirculation）。<span class='key'>監測</span>：serum osmolality < 320 mOsm/kg、osmolar gap < 20、避免容積耗竭與低血壓（先補液或合併 vasopressor）。HTS（3% 或 23.4%）為替代選項，特別在 hypovolemic 或腎功能不全時。"
     },
     {
       "type": "choice",
       "tag": "秘籍 · Greenberg 第 25 章 · 腦室引流",
       "q": "右側 Kocher's point（額骨腦室引流入點）的標準解剖定位為？",
       "opts": [
-        "A. 鼻根後 5 cm，中線旁 1 cm",
-        "B. 鼻根後 11 cm，中線旁 3 cm（瞳孔線）",
-        "C. 耳道前 6 cm",
-        "D. 枕外粗隆上 3 cm"
+        "A. 鼻根後 5 cm，中線旁 1 cm（瞳孔內側）",
+        "B. 鼻根後 7 cm，中線旁 4 cm（瞳孔外側）",
+        "C. 鼻根後 11 cm（冠狀縫前 1 cm），中線旁 3 cm（mid-pupillary line）",
+        "D. 冠狀縫後 2 cm，中線旁 3 cm（typical Frazier point 替代位）"
       ],
-      "answer": 1,
-      "explanation": "<span class='key'>Kocher's point</span>：<span class='key'>鼻根後 11 cm（或冠狀縫前 1 cm）+ 中線旁 3 cm（mid-pupillary line）</span>。穿刺方向：朝同側內眥 + 對側耳屏 — 進入右側 lateral ventricle frontal horn，深度約 5–6.5 cm。避開運動皮質與上矢狀竇。"
+      "answer": 2,
+      "explanation": "<span class='key'>Kocher's point</span>：<span class='key'>鼻根後 11 cm（冠狀縫前 1 cm）+ 中線旁約 3 cm（mid-pupillary line）</span>，避開上矢狀竇與運動皮質。穿刺方向：朝同側內眥 + 對側耳屏（external auditory meatus），進入右側 lateral ventricle frontal horn，深度約 5–6.5 cm。Frazier point 位於枕部（OZ + 6 cm + 4 cm lateral），用於三角區引流。"
     }
   ]
 }

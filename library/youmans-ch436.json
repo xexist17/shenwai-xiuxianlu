@@ -8,10 +8,10 @@
       "tag": "功法 · Youmans Ch436 · 解剖",
       "q": "Paraclinoid ICA 包含哪兩個解剖節段？",
       "opts": [
-        "A. C2 + C3",
+        "A. Cavernous segment (C4) + Lacerum segment (C3)",
         "B. Clinoidal segment (C5) + Ophthalmic segment (C6)",
-        "C. Cervical + Petrous",
-        "D. Communicating + Bifurcation"
+        "C. Communicating segment (C7) + Bifurcation",
+        "D. Petrous segment (C2) + Cervical segment (C1)"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Paraclinoid ICA = Clinoidal segment (C5) + Ophthalmic segment (C6)</span>。Clinoidal segment 為 cavernous → subarachnoid 過渡，<span class='key'>位於 dural ring (DR) 與 carotid-oculomotor membrane (COM) 之間，屬 interdural</span>（既不在 cavernous 也不在 subarachnoid）。Ophthalmic segment 由 DR 至 PCoA 起源，<span class='key'>完全位於 subarachnoid space</span>。"
@@ -21,12 +21,12 @@
       "tag": "功法 · Youmans Ch436 · 解剖",
       "q": "Anterior clinoid process (ACP) 在哪三處與 sphenoid body 相接？",
       "opts": [
-        "A. 只在前方",
-        "B. 前方（lesser wing 內側）、上前方（形成 optic canal 頂、續為 planum sphenoidale）、下方（optic strut 連接 sphenoid body，形成 optic canal 外下壁）",
-        "C. 只在後方",
-        "D. 完全游離不相接"
+        "A. 僅前方一處：自 lesser wing 內側延伸",
+        "B. 僅後方一處：固定於 dorsum sellae",
+        "C. 前方（lesser wing 內側）、上前方（optic canal 頂續為 planum sphenoidale）、下方（optic strut 連接 sphenoid body）",
+        "D. 完全游離，不與 sphenoid body 相接"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "ACP 三處附著：<span class='key'>(1) 前方 — lesser wing 內側</span>；<span class='key'>(2) 上前方 — sphenoid body 內側，形成 optic canal 頂、續為 planum sphenoidale</span>；<span class='key'>(3) 下方 — optic strut（ACP 後根）連接 sphenoid body</span>，形成 optic canal 外下壁，將 optic canal 與 SOF 分隔。Anterior clinoidectomy 需切斷此三處。"
     },
     {
@@ -34,12 +34,12 @@
       "tag": "心法 · Youmans Ch436 · 變異",
       "q": "Paraclinoid 動脈瘤分為幾種變異？",
       "opts": [
-        "A. 2 種",
-        "B. 5 種：anterolateral clinoidal、medial clinoidal、ophthalmic artery、superior hypophyseal、dorsal variant",
-        "C. 10 種",
-        "D. 沒有分類"
+        "A. 5 種：anterolateral clinoidal、medial clinoidal、ophthalmic artery、superior hypophyseal、dorsal variant",
+        "B. 2 種：medial clinoidal 與 dorsal variant",
+        "C. 10 種以上，依 angiographic projection 細分",
+        "D. 目前文獻無公認的解剖分類"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>5 種 paraclinoid aneurysm variants</span>：<span class='key'>Clinoidal segment</span> 2 種 — anterolateral 與 medial；<span class='key'>Ophthalmic segment</span> 3 種 — ophthalmic artery、superior hypophyseal artery、dorsal variant。每種有獨特起源、投射方向、臨床表現與處置策略。"
     },
     {
@@ -47,12 +47,12 @@
       "tag": "心法 · Youmans Ch436 · Anterolateral",
       "q": "Anterolateral variant clinoidal segment 動脈瘤之典型臨床表現為？",
       "opts": [
-        "A. 雙側失明",
-        "B. 小者侵蝕 optic strut 與 ACP 下表面 → 同側 monocular visual loss（壓迫 optic canal 內 ON）；大者經 ACP 入 subarachnoid space",
-        "C. 完全無症狀",
-        "D. 對側 hemiparesis"
+        "A. 通常以雙側全盲表現（同步壓迫 chiasm）",
+        "B. 症狀僅限對側 hemiparesis 與失語",
+        "C. 小者侵蝕 optic strut 與 ACP 下表面 → 同側 monocular visual loss；大者經 ACP 入 subarachnoid space",
+        "D. 幾乎終生無症狀，僅在剖檢偶然發現"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Anterolateral variant</span>（clinoidal segment 2 變異之一）來自 clinoidal segment 之 anterolateral 表面。小者：<span class='key'>侵蝕 optic strut 與 ACP 下表面 → 同側 monocular visual loss</span>。大者：穿過或經 ACP 內側 → 進入 subarachnoid space。第一眼可能與 ophthalmic artery aneurysm 混淆 — 鑑別在 origin proximal to DR 且位於 ACP 屋頂之下。"
     },
     {
@@ -60,12 +60,12 @@
       "tag": "秘籍 · Youmans Ch436 · Medial 變異",
       "q": "Medial variant clinoidal segment 動脈瘤之獨特臨床表現可包括？",
       "opts": [
-        "A. 完全無症狀",
-        "B. 擴展入 sphenoid sinus → 可致致命性鼻血（life-threatening epistaxis）；亦可致 hypopituitarism、模仿 pituitary apoplexy",
-        "C. 只表現為 facial pain",
-        "D. 僅表現為視覺缺損"
+        "A. 僅造成同側 facial pain，無內分泌或鼻部表現",
+        "B. 僅以單純 monocular 視覺缺損表現",
+        "C. 完全無症狀，僅 incidental 影像發現",
+        "D. 可擴展入 sphenoid sinus → 致命性 epistaxis；亦可致 hypopituitarism、模仿 pituitary apoplexy"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Medial variant</span>：自 clinoidal segment 內側面擴展，<span class='key'>朝 sphenoid sinus 與 sella 生長</span>。臨床：先入 pituitary fossa → 漸大致 <span class='key'>hypopituitarism</span>；破入 sella → 模仿 <span class='key'>pituitary apoplexy</span>；<span class='key'>擴展入 sphenoid sinus → 可致致命性 epistaxis</span>。視覺缺損僅大者影響（>diaphragma sellae 入 suprasellar）。鑑別 SH artery aneurysm 困難。"
     },
     {
@@ -73,12 +73,12 @@
       "tag": "心法 · Youmans Ch436 · 眼動脈瘤",
       "q": "Ophthalmic artery aneurysm 典型早期視覺缺損為？",
       "opts": [
-        "A. 完全失明",
-        "B. 同側 monocular inferior nasal field defect（falciform ligament 對 optic nerve 上表面之壓迫）→ 漸擴及整個 nasal field → 對側 superior temporal field loss",
-        "C. 完全沒有視覺症狀",
-        "D. 對側 homonymous hemianopia"
+        "A. 同側 monocular inferior nasal field defect（falciform 對 optic nerve 上表面壓迫）→ 漸擴及整個 nasal field、對側 superior temporal field loss",
+        "B. 首發即為對側 homonymous hemianopia",
+        "C. 首發為突然完全 monocular 全盲",
+        "D. 完全沒有視覺症狀，僅 SAH 後才被發現"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Ophthalmic artery aneurysm 自 ICA 之 dorsomedial 表面（distal to dural ring 與 ophthalmic artery 起源處）。投射 dorsally/dorsomedially，<span class='key'>把 optic nerve lateral edge 推向 falciform ligament</span>。早期：<span class='key'>同側 monocular inferior nasal field defect</span>（falciform 壓 ON 上表面）。漸擴：整 nasal field → 對側 superior temporal field loss。較大者前下方常 thickened/calcified，影響 clip 選擇。"
     },
     {
@@ -86,12 +86,12 @@
       "tag": "秘籍 · Youmans Ch436 · SH artery aneurysm",
       "q": "Superior hypophyseal artery (SH) aneurysm 之獨特解剖位置為？",
       "opts": [
-        "A. 與 ophthalmic artery 共起源",
-        "B. 自 ICA 內側面、distal to DR、常位於 carotid cave 內，medial 投射，鄰近 ICA 與 SH artery 之穿支",
-        "C. 在 cavernous segment 內",
-        "D. 自 PCoA 起源"
+        "A. 與 ophthalmic artery 共起源，投射 dorsally",
+        "B. 自 cavernous segment 起源，位於 lateral wall",
+        "C. 自 ICA 內側面、distal to DR、常位於 carotid cave 內，medial 投射，鄰近 SH artery 之穿支",
+        "D. 自 PCoA 起源，投射 posteriorly"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>SH artery aneurysm</span>：自 ICA <span class='key'>內側面、distal to DR、常位於 carotid cave 內</span>。Medial 投射，鄰近 ICA 與 SH artery 之 perforators → <span class='key'>手術 expose 棘手</span>。投射入 carotid cave 朝 sellar/cavernous dura 者：小者破裂風險低（dura 支持）；填滿 cave + balloon 入 suprasellar → <span class='key'>失去 dural 支持，破裂風險顯著增加</span>。Giant 者似 pituitary tumor 壓 chiasm。"
     },
     {
@@ -99,10 +99,10 @@
       "tag": "秘籍 · Youmans Ch436 · Dorsal variant",
       "q": "Dorsal variant ophthalmic segment 動脈瘤的特殊風險為？",
       "opts": [
-        "A. 完全 benign",
-        "B. 通常為 blister-like，源於 dissection；小時即可破裂、之後 fusiform 快速擴大；不治療則 malignant re-rupture",
-        "C. 永遠不會破",
-        "D. 只見於兒童"
+        "A. 幾乎完全 benign，極少破裂",
+        "B. 通常為 blister-like，源於 dissection；小時即可破裂、之後 fusiform 快速擴大；不治療常 malignant re-rupture",
+        "C. 僅見於兒童族群，成人罕見",
+        "D. 與 ICA dissection 無關，是 saccular 病灶"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Dorsal variant</span>：罕見，自 ICA dorsal aspect、distal to ophthalmic artery 起源，與分支無關。表現為 <span class='key'>blister-like，源於 dissection</span>。<span class='key'>小時即可破裂 + fusiform 快速擴大</span>；診斷常在 SAH 後。<span class='key'>未治療有 malignant re-rupture 病程</span>。極脆弱，術中易破。少數報告自然癒合。"
@@ -112,12 +112,12 @@
       "tag": "功法 · Youmans Ch436 · 流行病學",
       "q": "Paraclinoid 動脈瘤之流行病學特徵為？",
       "opts": [
-        "A. 男性 9:1，少見",
-        "B. 女性 9:1；高機率為 multiple；ophthalmic segment 患者多達一半合併其他顱內動脈瘤",
-        "C. 完全無性別差異",
-        "D. 男女比 1:1"
+        "A. 女性 9:1；高 multiple aneurysm 比率；ophthalmic segment 患者多達一半合併其他顱內動脈瘤",
+        "B. 男性 9:1；極少 multiple aneurysm",
+        "C. 男女比 1:1，且幾乎不合併其他動脈瘤",
+        "D. 在亞洲族群發生率近乎 0"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Paraclinoid 動脈瘤：<span class='key'>女性 9:1</span>，高機率為 multiple aneurysm。<span class='key'>Ophthalmic segment 患者多達一半合併其他顱內動脈瘤</span>。處置時需做完整影像評估排除其他病灶。"
     },
     {
@@ -125,10 +125,10 @@
       "tag": "心法 · Youmans Ch436 · 治療指徵",
       "q": "Paraclinoid 動脈瘤之治療指徵為？",
       "opts": [
-        "A. 任何大小皆需治療",
-        "B. 小 (<1 cm) 無症狀 clinoidal/SH 者保守追蹤；symptomatic 或 ≥1 cm 者需手術；dorsal variant 例外（小者亦可破）",
-        "C. 完全不治療",
-        "D. 只治療大於 5 cm 者"
+        "A. 任何大小皆需立即手術，無觀察空間",
+        "B. ≥1 cm 或 symptomatic 者建議治療；<1 cm 無症狀 clinoidal/SH 可保守追蹤；dorsal variant 即使小也應治療",
+        "C. 僅 ≥5 cm 才考慮治療，其他全部追蹤",
+        "D. 完全不需治療，因破裂風險極低"
       ],
       "answer": 1,
       "explanation": "<span class='key'>治療指徵</span>：<span class='key'>≥1 cm 或 symptomatic 者</span>都應治療。<span class='key'>小 (<1 cm) 無症狀 clinoidal segment 者破裂風險低 → 保守追蹤</span>。例外：<span class='key'>dorsal variant 即使小也高風險</span>（dissection 病灶）。視覺缺損患者應 urgent 手術。Endovascular（含 flow diverter）已成大型/giant 病灶之重要選擇。"
@@ -138,12 +138,12 @@
       "tag": "功法 · Youmans Ch436 · 手術關鍵",
       "q": "Paraclinoid 動脈瘤微手術不可或缺之步驟為？",
       "opts": [
-        "A. 完全不需 craniotomy",
-        "B. Anterior clinoidectomy（ACP 切除）— 多數 paraclinoid 動脈瘤都需",
-        "C. 後顱窩 craniotomy",
-        "D. 經鼻內視鏡進入"
+        "A. Anterior clinoidectomy（ACP 切除）— 多數 paraclinoid aneurysm 的必要步驟",
+        "B. 後顱窩 craniotomy 經 retrosigmoid 入路",
+        "C. 經鼻內視鏡 transsphenoidal 路徑切除",
+        "D. 完全不需 craniotomy，可純以 endovascular 處置"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Anterior clinoidectomy 為大多 paraclinoid aneurysm 微手術的必要步驟</span>。可 extradural（Dolenc）或 intradural 進行。<span class='key'>Intradural 為作者偏好</span> — 可同時 visualize ON 與 aneurysm，並在動脈瘤過早破裂時立刻控制。<span class='key'>Anterolateral variant 應避免 extradural ACP 切除</span>（aneurysm 可侵蝕進 ACP，切時可破）。"
     },
     {
@@ -151,12 +151,12 @@
       "tag": "心法 · Youmans Ch436 · 術前評估",
       "q": "Paraclinoid aneurysm 之術前 gold standard 影像為？",
       "opts": [
-        "A. 顱骨平片",
-        "B. Digital subtraction angiography (DSA)，鑑別 intracavernous vs subarachnoid 動脈瘤",
-        "C. 顱骨超音波",
-        "D. PET"
+        "A. 顱骨平片 (X-ray skull series)",
+        "B. 顱骨超音波 (transcranial ultrasound)",
+        "C. PET-CT 為首選",
+        "D. Digital subtraction angiography (DSA)，鑑別 intracavernous vs subarachnoid 動脈瘤"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>DSA = 鑑別 intracavernous vs subarachnoid ICA aneurysm 之 gold standard</span>，常依與 ophthalmic artery 起源、ACP 之關係判斷。但解剖變異使這些 marker 有時不可靠。<span class='key'>3D contrast-enhanced CT cisternography</span> 可同時看 ICA、視覺系統、骨結構。Optic strut + COM 在 CT angiography 上可作可靠 landmark 區分 clinoidal segment 之過渡。"
     },
     {
@@ -164,10 +164,10 @@
       "tag": "秘籍 · Youmans Ch436 · 變異區分",
       "q": "Anterolateral clinoidal segment variant vs ophthalmic artery aneurysm 之鑑別關鍵為？",
       "opts": [
-        "A. 完全無法區分",
-        "B. CT 上 focal bony erosion of ACP（前者特徵）；前者 origin 在 ophthalmic artery 起源 proximal；前者投射 dorsal+lateral（vs 後者純 dorsal/dorsomedial）；angiographic 'waist' 標示 DR 穿過點",
-        "C. 看患者性別",
-        "D. 看是否有頭痛"
+        "A. 兩者影像上完全無法區分",
+        "B. CT 上 ACP focal bony erosion；origin proximal to ophthalmic artery；投射 dorsal+lateral；angiographic 'waist' 標 DR 穿過點",
+        "C. 依患者性別判斷（男性 anterolateral）",
+        "D. 依是否伴隨頭痛區分"
       ],
       "answer": 1,
       "explanation": "Anterolateral clinoidal variant 易與 ophthalmic artery aneurysm 混淆（兩者皆 dorsally projecting）。鑑別要點：<span class='key'>(1) CT 上 ACP focal bony erosion</span>（anterolateral 特徵）；<span class='key'>(2) Anterolateral origin proximal to ophthalmic artery 起源</span>；<span class='key'>(3) 投射 dorsal+lateral</span>（ophthalmic 純 dorsal/dorsomedial）；<span class='key'>(4) Angiographic 'waist' 標 DR 穿過點</span>（anterolateral 特徵）。"
@@ -177,10 +177,10 @@
       "tag": "心法 · Youmans Ch436 · 神經解剖",
       "q": "Cavernous sinus 內 cranial nerves 的位置（從上到下、由內到外）為？",
       "opts": [
-        "A. 全部都在 venous lumen 內",
-        "B. CN III/IV/V1（與 V2）在 lateral cavernous sinus 壁內；CN VI 在 venous lumen 內，位於 ICA 外側、V1 內側",
-        "C. 全部在 medial wall 內",
-        "D. CN II 也在 cavernous sinus"
+        "A. CN III/IV/V1/V2/VI 全部位於 venous lumen 內",
+        "B. CN III/IV/V1/V2 在 lateral cavernous sinus 壁 dura 內；CN VI 獨特位於 venous lumen 內，ICA 外側、V1 內側",
+        "C. 全部 CN 都位於 medial wall dura 內",
+        "D. CN II 也走 cavernous sinus，與 III 同行"
       ],
       "answer": 1,
       "explanation": "<span class='key'>CN III/IV/V1（V2）在 lateral cavernous sinus 壁的 dura 內</span>。<span class='key'>CN VI（abducens）獨特：在 venous lumen 內</span>，位於 ICA 外側、V1 內側。Sympathetic fiber bundle 沿 cavernous ICA 壁走，proximal to DR 進入 orbit。<span class='key'>CN II 不經 cavernous sinus</span> — 走 optic canal、medial to ACP，在 optic canal 後端被 falciform ligament 上覆。"
@@ -190,12 +190,12 @@
       "tag": "秘籍 · Youmans Ch436 · 動脈解剖",
       "q": "Ophthalmic artery 在多數人是從哪裡起源？多少比例可能變異？",
       "opts": [
-        "A. 100% 從 cavernous segment 起源",
-        "B. 多數從 dural ring 上方 ICA dorsomedial 表面；~10% 變異（自 distal cavernous 或 clinoidal segment）；極少從 middle meningeal artery",
-        "C. 100% 從 PCoA 起源",
-        "D. 從基底動脈起源"
+        "A. 100% 自 cavernous segment 起源",
+        "B. 100% 自 PCoA 起源",
+        "C. 多數自 DR 上方 ICA dorsomedial 表面；~10% 變異（distal cavernous 或 clinoidal segment）；極少自 middle meningeal artery",
+        "D. 起源於基底動脈，經椎基底前路供應"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Ophthalmic artery</span>：多數自 <span class='key'>DR 上方 ICA dorsomedial 表面</span>，下穿 optic canal 經 ON 下方供應視神經。<span class='key'>~10% 變異 — 自 distal cavernous segment 或 clinoidal segment</span>，經 SOF 或 optic strut 內 orifice 入 orbit。<span class='key'>極少自 middle meningeal artery</span>（手術 elevate dura 自 sphenoid wing 時可能傷）。SH artery 為 ophthalmic segment 最大 perforator，自 medial 或 inferomedial wall 起源（常在 carotid cave 內）。"
     },
     {
@@ -203,12 +203,12 @@
       "tag": "心法 · Youmans Ch436 · 手術技術",
       "q": "Intradural ACP 切除相較於 extradural 之優勢為？",
       "opts": [
-        "A. 速度更快",
-        "B. 可同時 visualize ON 與 aneurysm；過早破裂可立即控制；但 anterolateral variant 應避用 extradural（aneurysm 可侵 ACP 內，切時可破）",
-        "C. 完全無優勢",
-        "D. 只能用於老年人"
+        "A. 速度遠快於 extradural，是唯一優勢",
+        "B. 完全無優勢，僅在無 drill 時使用",
+        "C. 只能用於老年人或骨質疏鬆者",
+        "D. 可同時 visualize ON 與 aneurysm；過早破裂可立即控制；但 anterolateral variant 應避 extradural 切除"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Intradural ACP 切除（作者偏好）</span>：<span class='key'>同時 visualize ON 與 aneurysm，過早破裂可立即控制</span>。Extradural（Dolenc）：基底 dissection extension + diamond drill 從 ACP 內挖空。<span class='key'>Anterolateral variant 應避用 extradural</span>（aneurysm 可侵 ACP 內，鑽切時破）。Intradural 切除後 → optic canal unroof → optic strut drill → ON sheath lateral 切開可進一步 mobilize ON，DR 環切可完全 expose clinoidal segment。"
     },
     {
@@ -216,12 +216,12 @@
       "tag": "秘籍 · Youmans Ch436 · 術中血流動力",
       "q": "大型 paraclinoid aneurysm 術中常用以軟化動脈瘤之策略為？",
       "opts": [
-        "A. 注射熱水",
-        "B. Temporary proximal cervical carotid 阻斷 + 醫源性 EEG burst suppression + mild hypertension；可加 trapping ± retrograde cervical 或 intra-aneurysmal suction decompression",
-        "C. 不用任何技巧",
-        "D. 完全 hypotension"
+        "A. 局部注射熱生理食鹽水使動脈瘤壁軟化",
+        "B. 完全不需特殊技巧，直接 clip 即可",
+        "C. Temporary proximal cervical carotid 阻斷 + EEG burst suppression + mild hypertension；可合併 trapping ± suction decompression",
+        "D. 全程 deep induced hypotension 並停止心臟"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Temporary proximal cervical carotid 阻斷 + EEG burst suppression + mild hypertension</span> = 動脈瘤軟化的標準組合。可加 <span class='key'>trapping ± retrograde cervical 或 intra-aneurysmal suction decompression</span>。Open 動脈瘤 + 移除 intraluminal thrombus 可促 wall collapse。<span class='key'>Fenestrated clip</span> 處理 calcified 病灶（環繞 affected segment 重建 wall）。<span class='key'>Indocyanine green</span> 視覺化 perforator patency，可替代 angiography。"
     },
     {
@@ -229,12 +229,12 @@
       "tag": "心法 · Youmans Ch436 · Carotid cave",
       "q": "Carotid cave 是什麼？",
       "opts": [
-        "A. 一種腫瘤",
-        "B. 沿 ICA medial 面之小型 subarachnoid recess，由 DR 從前外向後內向下傾斜形成",
-        "C. 心室結構",
-        "D. 顱底骨骼凹陷"
+        "A. 為一種良性骨性顱底凹陷，位於 sphenoid sinus 內",
+        "B. 為一種側腦室結構，位於 frontal horn",
+        "C. 為 cavernous sinus 內之 dural 區隔",
+        "D. 沿 ICA medial 面之小型 subarachnoid recess，由 DR 從前外向後內向下傾斜形成"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Carotid cave</span>：DR 平面向後內向下傾斜（兩個方向）→ 在 ICA <span class='key'>medial 面形成小型 subarachnoid recess</span>。SH artery 常自此起源；SH artery aneurysm 多投射入此 cave。<span class='key'>位於 cave 內者破裂風險低</span>（dura 支持），<span class='key'>填滿 cave + balloon 入 suprasellar 即失去 dural 支持，破裂風險急升</span>。"
     },
     {
@@ -242,12 +242,12 @@
       "tag": "心法 · Youmans Ch436 · 手術準備",
       "q": "為何 paraclinoid aneurysm 手術前頸部 ICA 應 sterile draped 入術野？",
       "opts": [
-        "A. 為了美觀",
-        "B. 為 proximal ICA control（特別大型、複雜或 ruptured clinoidal segment 動脈瘤）；可考慮 superficial temporal artery 之 bypass conduit",
-        "C. 為了監測呼吸",
-        "D. 為了打點滴"
+        "A. 為 proximal ICA control（大型/複雜/ruptured clinoidal segment 動脈瘤）；亦可評估 STA 作為 bypass conduit",
+        "B. 為了維持頸部美觀與術後外觀",
+        "C. 為了監測呼吸（透過頸部 plethysmography）",
+        "D. 為了在頸部建立靜脈點滴通路"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>頸部 ICA sterile draped 入術野</span>：為 <span class='key'>proximal ICA control</span>，特別在大型/複雜/ruptured clinoidal segment 動脈瘤。Cervical carotid angiogram 應仔細看是否有 atherosclerotic plaque 使 proximal temporary clamping 危險。<span class='key'>Ipsilateral superficial temporal artery 應評估</span>，可能需作為 bypass conduit。患者體位：仰臥，肩墊同側；頭高於心臟，radiolucent head clamp（術中 angiography 用）；頭轉 45–60° 離 aneurysm 側；vertex 下降使 maxilla 最高（gravity retraction）。"
     }
   ]

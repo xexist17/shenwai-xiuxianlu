@@ -8,12 +8,12 @@
       "tag": "功法 · Greenberg Ch69 · 流行病學",
       "q": "脊髓損傷 (SCI) 患者主要的死因為？",
       "opts": [
-        "A. 出血性休克",
-        "B. Aspiration 與 shock",
-        "C. 顱內出血",
-        "D. 心肌梗塞"
+        "A. 出血性休克為唯一主因",
+        "B. 顱內出血為最常見死因",
+        "C. Aspiration（吸入性肺炎）與 shock",
+        "D. 心肌梗塞為主要死因"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "SCI 主要死因：<span class='key'>aspiration（吸入性肺炎）與 shock</span>。Initial survey 仍依 ATLS：<span class='key'>ABC（airway → breathing → circulation/出血控制）</span>，再簡短 neuro exam。<span class='key'>NB：其他傷（如腹部）可能因 SCI level 以下感覺喪失被遮蔽</span>。"
     },
     {
@@ -21,12 +21,12 @@
       "tag": "心法 · Greenberg Ch69 · 懷疑 SCI",
       "q": "下列何者不該被當成可能 SCI 處置直到證實非 SCI？",
       "opts": [
-        "A. 顯著外傷之患者",
-        "B. 意識喪失之外傷患",
-        "C. 完全無症狀、無外傷史的健康者來門診",
-        "D. 輕微外傷但抱怨 spine 相關症狀（頸/背痛、麻、無力、癱瘓）"
+        "A. 完全無症狀、無外傷史的健康者來門診",
+        "B. 顯著外傷的患者",
+        "C. 意識喪失之外傷患",
+        "D. 輕微外傷但抱怨頸/背痛、麻、無力或癱瘓者"
       ],
-      "answer": 2,
+      "answer": 0,
       "explanation": "下列患者應被當成 SCI 處置直至證實非 SCI：(1) 顯著外傷；(2) 外傷 + LOC；(3) 輕微外傷但 spine 相關症狀（頸/背痛/壓痛、numbness/tingling、weakness、paralysis）；<span class='key'>(4) 暗示 SCI 之發現：abdominal breathing、priapism</span>。健康無外傷者不在此列。"
     },
     {
@@ -34,12 +34,12 @@
       "tag": "心法 · Greenberg Ch69 · 院前 BP",
       "q": "SCI 院前處置中，pressors 之首選與禁忌為？",
       "opts": [
-        "A. Phenylephrine 為首選",
-        "B. Dopamine 為首選；避免 phenylephrine（non-inotropic 且可能 reflex 增加 vagal tone → bradycardia）",
-        "C. Norepinephrine 唯一選擇",
-        "D. 不可用任何 pressor"
+        "A. Dopamine 為首選；避免 phenylephrine（non-inotropic 且可能 reflex 增加 vagal tone → bradycardia）",
+        "B. Phenylephrine 為首選 pressor",
+        "C. Norepinephrine 為唯一可用之 pressor",
+        "D. 完全不可使用任何 pressor"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "SCI 本質上為 <span class='key'>traumatic sympathectomy</span>，pressors 治療根本問題優於液體（除必要補充失血）。<span class='key'>Dopamine 為首選</span>。<span class='key'>避免 phenylephrine (Neosynephrine)</span> — non-inotropic 且可能 reflex 增加 vagal tone 致 bradycardia。"
     },
     {
@@ -47,12 +47,12 @@
       "tag": "秘籍 · Greenberg Ch69 · MAP 目標",
       "q": "依現行 SCI 指引，目標 MAP 為何？維持多久？",
       "opts": [
-        "A. MAP > 60 任意時間",
-        "B. MAP 85–90 mmHg 維持傷後 7 天，以改善脊髓灌流（Level III）",
-        "C. MAP > 120 至少 30 天",
-        "D. 不需特別維持"
+        "A. MAP 85–90 mmHg 維持傷後 7 天，以改善脊髓灌流（Level III）",
+        "B. MAP > 60 維持任意時間即可",
+        "C. MAP > 120 維持至少 30 天",
+        "D. 不需特別維持血壓"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Level III 建議：SBP < 90 mmHg 應避免或盡快矯正</span>；<span class='key'>MAP 維持 85–90 mmHg 共傷後 7 天</span>，以改善脊髓灌流。Initial 建議放重症監測（特別是嚴重頸髓傷）— Level III。Spinal shock 致 hypotension 機轉複雜，可進一步傷脊髓或其他器官系統。處置：pressors（dopamine 首選）+ careful 補液（避免 pulmonary edema）+ atropine for bradycardia + hypotension。"
     },
     {
@@ -60,12 +60,12 @@
       "tag": "功法 · Greenberg Ch69 · Methylprednisolone",
       "q": "依目前 Level I 證據，急性 SCI 使用 high-dose methylprednisolone (MP) 的建議為？",
       "opts": [
-        "A. 應該對所有 SCI 患者使用",
-        "B. 不建議 — 無 Class I/II 證據支持，且 Class I/II/III 證據顯示有害副作用甚至死亡；GM-1 ganglioside 也不建議",
-        "C. 只在<8 小時內使用",
-        "D. 必須立即靜脈注射"
+        "A. 應對所有 SCI 患者使用 high-dose MP",
+        "B. 只在受傷 <8 小時內使用",
+        "C. 不建議 — 無 Class I/II 證據支持，且 Class I/II/III 證據顯示有害副作用甚至死亡；GM-1 ganglioside 也不建議",
+        "D. 必須立即靜脈注射，越快越好"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Level I：不建議 MP 治療急性 SCI</span>。<span class='key'>同樣不建議 GM-1 ganglioside (Sygen)</span>。MP <span class='key'>不為 FDA 批准用於急性 SCI</span>。早期 Class III data 支持其使用，但效益可能源自隨機性或 selection bias。<span class='key'>Class I/II/III 證據顯示 high-dose steroid 有副作用甚至死亡</span>。Use 在脊椎外科醫師中已穩步下降，但仍有 ~56% 在某 survey 使用。"
     },
     {
@@ -73,12 +73,12 @@
       "tag": "心法 · Greenberg Ch69 · DVT 預防",
       "q": "嚴重運動缺損之 SCI 患者 DVT 預防的 Level I 建議為？",
       "opts": [
-        "A. 完全不需預防",
-        "B. LMW heparin、rotating beds、adjusted-dose heparin 或組合；或 low-dose heparin + 氣壓襪/電刺激",
-        "C. 只用 oral anticoagulant",
-        "D. 只用 vena cava filter"
+        "A. 完全不需要 VTE 預防",
+        "B. 只用 oral anticoagulant 即可",
+        "C. 只用 vena cava filter 為唯一手段",
+        "D. LMW heparin、rotating beds、adjusted-dose heparin 或組合；或 low-dose heparin + 氣壓襪/電刺激"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Level I：<span class='key'>嚴重運動缺損 SCI 患者必須 VTE 預防</span>。選項：<span class='key'>LMW heparin、rotating beds、adjusted-dose heparin 或組合</span>；或 <span class='key'>low-dose heparin + 氣壓襪或電刺激</span>。Level II：<span class='key'>72 小時內早期給藥；治療 3 個月</span>。<span class='key'>禁忌單獨使用 low-dose heparin 或 oral anticoagulant</span>。Level III：<span class='key'>Vena cava filter 不應 routine 預防</span>，僅用於 fail anticoagulation 或非 anticoagulation 候選。"
     },
     {
@@ -86,12 +86,12 @@
       "tag": "秘籍 · Greenberg Ch69 · DVT 流行病學",
       "q": "在無預防情況下，SCI 患者 DVT 發生率（用 125I-fibrinogen 偵測）可達多少？",
       "opts": [
-        "A. <5%",
-        "B. 高達 100%；DVT 整體死亡率 9% 之 SCI 患者",
-        "C. 約 50%",
-        "D. 從不發生"
+        "A. <5%，極為罕見",
+        "B. 約 50%，僅中度風險",
+        "C. 從不發生 DVT",
+        "D. 高達 100%（125I-fibrinogen 偵測）；DVT 整體死亡率 9% 之 SCI 患者"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>SCI 患者 DVT 發生率（125I-fibrinogen 偵測）高達 100%</span>。<span class='key'>整體 DVT 死亡率 9% 之 SCI 患者</span>。一研究：titrating SQ heparin q12h 至 PTT 1.5 倍 control → thromboembolic event (DVT, PE) 7%，較「mini-dose」heparin (5000U SQ q12h) 之 31% 顯著低。Heparin 副作用：thrombosis 或 thrombocytopenia (HIT)、長期使用 osteoporosis。"
     },
     {
@@ -99,10 +99,10 @@
       "tag": "功法 · Greenberg Ch69 · NEXUS",
       "q": "NEXUS 低風險標準（可不需頸椎 X 光）含哪些條件？",
       "opts": [
-        "A. 任何外傷患者皆可不照",
-        "B. 無精神狀態改變（含酒/藥）；無頸痛或後正中壓痛（無分散注意之痛）；無局部神經學缺損；無顯著合併傷分散評估",
-        "C. 只看年齡",
-        "D. 必須有外傷史"
+        "A. 任何外傷患者皆可不照頸椎影像",
+        "B. 無精神狀態改變；無頸痛或後正中壓痛；無局部神經學缺損；無顯著合併傷分散評估",
+        "C. 僅依年齡判斷 (>50 必照)",
+        "D. 必須有外傷史才能不照"
       ],
       "answer": 1,
       "explanation": "<span class='key'>NEXUS 低風險標準</span>（清醒無症狀外傷患者可不照頸椎 X 光，Level I & II）：<span class='key'>(1) 無精神狀態改變</span>（GCS ≤14、定向力差、5 分鐘記不住 3 物、反應延遲、酒/藥；<span class='key'>(2) 無頸痛或後正中壓痛</span>（無分散注意之痛）；<span class='key'>(3) 無局部神經學缺損</span>；<span class='key'>(4) 無顯著合併傷分散評估</span>。Canadian C-Spine Rule 較 NEXUS 敏感+特異性高，但 EAST 2009 未採納。滿足者可去除 cervical immobilization 不需影像。"
@@ -112,10 +112,10 @@
       "tag": "心法 · Greenberg Ch69 · Helmet 移除",
       "q": "依 NATA 指引，運動場上頭盔何時應移除？",
       "opts": [
-        "A. 任何頭傷都立即移除",
+        "A. 任何頭傷皆立即移除頭盔",
         "B. 一般場上不該移除（神經學評估、固定皆可帶頭盔做；面罩可移除）；僅特定情境移除（airway 無法建立、致命出血需移除控制等）",
-        "C. 永遠不可移除",
-        "D. 只看球員意願"
+        "C. 永遠不可移除頭盔，不管狀況",
+        "D. 完全依球員意願決定"
       ],
       "answer": 1,
       "explanation": "<span class='key'>NATA：場上不該移除頭盔</span>。理由：可帶頭盔看影像、做神經學檢查、固定於 spine board；面罩可特殊工具移除以處理 airway。<span class='key'>移除頭盔 + 肩墊後必須避免 hyperextension</span>（控制環境下兩者一起移除避免頸部屈伸）。<span class='key'>移除指徵</span>：(1) 面罩無法合理時間內移除；(2) 移面罩後 airway 仍無法建立；(3) 致命出血只能移除控制；(4) 頭盔/strap 無法穩固頭部使固定無效；(5) 頭盔阻礙運送固定；(6) 不穩定特定情境（醫師判斷）。"
@@ -125,12 +125,12 @@
       "tag": "秘籍 · Greenberg Ch69 · 插管陷阱",
       "q": "未清頸椎之 SCI 患者插管時的關鍵注意事項為？",
       "opts": [
-        "A. 標準插管即可",
-        "B. 用 chin lift（不用 jaw thrust）+ 不伸展頸；nasotracheal 可能避免頸椎活動但需自主呼吸；避免 tracheostomy/cricothyroidotomy（會影響後續前路手術）",
-        "C. 必須伸展頸部",
-        "D. 無需考慮頸椎"
+        "A. 標準插管即可，無特殊考量",
+        "B. 必須伸展頸部以 visualize cords",
+        "C. 用 chin lift（不用 jaw thrust）+ 不伸展頸；nasotracheal 可能避免頸椎活動但需自主呼吸；避免 tracheostomy/cricothyroidotomy",
+        "D. 完全無需考慮頸椎，依正常 RSI"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "未清頸椎插管原則：<span class='key'>(1) 用 chin lift（不用 jaw thrust）+ 不 neck extension</span>；<span class='key'>(2) Nasotracheal intubation 可避免頸椎活動，但需患者自主呼吸</span>；<span class='key'>(3) 盡量避免 tracheostomy 或 cricothyroidotomy</span>（會影響日後前路頸椎手術）。SCI 之 hypopnea 可能源自 paralyzed intercostal、phrenic 神經 (C3-5) 麻痺致橫膈麻痺、TBI 致 LOC。"
     },
     {
@@ -138,12 +138,12 @@
       "tag": "功法 · Greenberg Ch69 · ICU 監測",
       "q": "依 SCI in-hospital critical care guidelines (Level III)，急性 SCI（特別嚴重頸髓傷）之監測建議為？",
       "opts": [
-        "A. 一般病房即可",
-        "B. ICU 或類似監測病房；建議 cardiac、hemodynamic、respiratory monitoring",
-        "C. 不需監測",
-        "D. 只需門診追蹤"
+        "A. ICU 或類似監測病房；建議 cardiac、hemodynamic、respiratory monitoring",
+        "B. 一般病房即可，無需 ICU",
+        "C. 完全不需任何監測",
+        "D. 僅需門診定期追蹤"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Level III：<span class='key'>急性 SCI 應在 ICU 或類似監測病房</span>，特別是嚴重頸髓傷。<span class='key'>Cardiac、hemodynamic、respiratory monitoring 建議</span>。早期 backboard 移除減少 decubitus ulcer 風險。注意：vasomotor paralysis 可致 poikilothermy（喪失溫度調節），需 cooling blankets。Hypovolemia + hypotension → aldosterone 升 → 可能 hypokalemia。"
     },
     {
@@ -151,12 +151,12 @@
       "tag": "心法 · Greenberg Ch69 · 評估系統",
       "q": "依指引，SCI 之神經學評估標準為？",
       "opts": [
-        "A. GCS",
-        "B. ASIA Impairment Scale（Level III 神經學）+ FIM (Level II 功能評估) + modified Barthel index (Level III)",
-        "C. Hunt-Hess",
-        "D. Marshall score"
+        "A. GCS 為 SCI 評估首選",
+        "B. Hunt-Hess 分級為 SCI 評估標準",
+        "C. Marshall score 為 SCI 評估首選",
+        "D. ASIA Impairment Scale（Level III 神經學）+ FIM (Level II 功能評估) + modified Barthel index (Level III)"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>ASIA International Standards 為 SCI 神經學評估之建議</span>（Level III）。<span class='key'>功能評估</span>：<span class='key'>FIM (Functional Impairment Measure) Level II</span>；<span class='key'>modified Barthel index Level III</span>。Spinal shock 階段 muscle stretch reflexes 通常缺失。Bulbocavernosus reflex（鞍部）為脊髓 shock 結束之 marker。<span class='key'>Priapism 在男性可能為完全 SCI 或 spinal shock 之徵</span>。"
     },
     {
@@ -164,12 +164,12 @@
       "tag": "心法 · Greenberg Ch69 · 神經學",
       "q": "急性 SCI 之自主神經功能異常表現包括？",
       "opts": [
-        "A. 完全無自主神經影響",
-        "B. 排汗模式改變（病灶以下無汗，皮膚摩擦係數低）、bowel/bladder incontinence、男性 priapism / 女性 clitorism（提示完全 SCI 或 spinal shock）",
-        "C. 僅有失味",
-        "D. 僅有失明"
+        "A. 排汗模式改變、bowel/bladder incontinence、男性 priapism / 女性 clitorism（提示完全 SCI 或 spinal shock）",
+        "B. 急性 SCI 完全無自主神經影響",
+        "C. 僅有失味（dysgeusia）",
+        "D. 僅有失明（amaurosis）"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "急性 SCI 自主神經失調：<span class='key'>(1) 排汗模式改變</span>（病灶上皮膚摩擦係數低，下皮膚無汗顯粗糙）；<span class='key'>(2) bowel 或 bladder incontinence</span>；<span class='key'>(3) priapism (男) / clitorism (女)</span> — 提示完全 SCI 或 spinal shock。鞍區反射（bulbocavernosus、anal-cutaneous）對 spinal shock 之 resolution 重要。"
     },
     {
@@ -177,12 +177,12 @@
       "tag": "功法 · Greenberg Ch69 · 影像首選",
       "q": "Obtunded 或 unevaluable 之外傷患者 (altered mental status、distracting injury 等) 之頸椎影像 Level I 首選為？",
       "opts": [
-        "A. Plain X-ray",
-        "B. 高品質 CT — 若可用，不建議 routine 三視圖 X 光；無 CT 才用 3-view（AP, lateral, OMO）+ 補 CT",
-        "C. MRI 唯一",
-        "D. 不需影像"
+        "A. 高品質 CT（Level I 首選）；無 CT 才用 3-view（AP, lateral, OMO）+ 補 CT",
+        "B. Plain X-ray 為首選且足夠",
+        "C. MRI 為唯一影像選擇",
+        "D. Obtunded 患者不需任何影像"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Level I：obtunded/unevaluable 外傷者頸椎影像首選 = 高品質 CT</span>；可用時不建議 routine 三視圖 X 光。無 CT 才用 3-view（AP, lateral, open-mouth odontoid）+ 補 CT。<span class='key'>CT normal 但臨床懷疑度高 → 應由 spine injury 專科處置</span>（Level II）。Level III：CT normal 之選項：(1) 持續 collar 直無症狀；(2) 48 小時內 cervical MRI 若 normal 則去 collar；(3) 主治判斷去 collar。<span class='key'>不建議 routine dynamic imaging（flexion-extension）</span>。"
     },
     {
@@ -190,12 +190,12 @@
       "tag": "心法 · Greenberg Ch69 · Lateral X-ray 局限",
       "q": "Lateral C-spine X-ray 單獨拍可能漏掉多少比例的頸椎傷？頸椎評估必須涵蓋到哪？",
       "opts": [
-        "A. 漏 0%；只需到 C5 即可",
-        "B. 約 15% 漏；必須涵蓋 cranio-cervical junction 至 C7-T1 junction（C7-T1 病變率達 9%）",
-        "C. 漏 50%；只需到 C3",
-        "D. 漏 100%；只需到 C1"
+        "A. 約 15% 漏；必須涵蓋 cranio-cervical junction 至 C7-T1 junction（C7-T1 病變率達 9%）",
+        "B. 漏 0%；只需涵蓋到 C5",
+        "C. 漏 50%；只需涵蓋到 C3",
+        "D. 漏 100%；只需涵蓋到 C1"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Lateral C-spine X-ray 單獨拍漏約 15% 之頸椎傷</span>。<span class='key'>必須涵蓋 cranio-cervical junction 至 C7-T1 junction</span>（C7-T1 病變率達 9%）。Lateral + AP + OMO 一起可偵測幾乎所有 unstable fracture（神經學完整患者）。下頸椎/胸頸交界顯像不佳時：lateral X-ray + 手臂 caudal traction、Swimmer's (Twining) view、CT 含薄切重建。"
     },
     {
@@ -203,12 +203,12 @@
       "tag": "秘籍 · Greenberg Ch69 · Flexion-extension",
       "q": "Flexion-extension 頸椎 X 光的禁忌為？",
       "opts": [
-        "A. 任何時候都可做",
-        "B. 患者必須 cooperative + 無精神損害；neutral lateral 上不該有 >3.5mm subluxation；患者必須神經學完整；不再建議用於 obtunded 患者（low yield、cost-ineffective、可能危險）",
-        "C. 必須 GCS<8 才能做",
-        "D. 一定要打鎮靜劑做"
+        "A. 任何時候皆可做，無禁忌",
+        "B. 必須 GCS<8 才能做",
+        "C. 一定要打鎮靜劑後才能做",
+        "D. 患者必須 cooperative + 無精神損害；neutral lateral 上不該有 >3.5mm subluxation；患者必須神經學完整；不再建議用於 obtunded"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Flexion-extension 禁忌：<span class='key'>(1) 患者必須 cooperative + 無精神損害</span>（無頭傷、街頭/處方藥、酒）；<span class='key'>(2) neutral lateral 上不該有 >3.5mm subluxation</span>（possible instability marker）；<span class='key'>(3) 患者必須神經學完整</span>（任何 SCI 應改做 MRI）；<span class='key'>(4) 不再建議用於 obtunded 患者</span>（low yield、cost-ineffective、可能危險）。技術：患者坐姿，慢慢 flex，5–10° 增量拍 X 光，痛或無法再 flex 即停。Abnormal：translation >3.5mm 或 spinous process 'flaring'。"
     },
     {
@@ -216,12 +216,12 @@
       "tag": "心法 · Greenberg Ch69 · MRI 適應症",
       "q": "緊急 MRI 在 SCI 之適應症為？",
       "opts": [
-        "A. 任何 SCI 都需要",
-        "B. (1) 不完全 SCI 但 alignment 正常 — 排除軟組織壓迫；(2) 神經學惡化（含 closed reduction 後）；(3) 神經學缺損與影像不符（fracture level 與 deficit 不符、無 bony injury 等）",
-        "C. 只在出院前做",
-        "D. 從不需要"
+        "A. 任何 SCI 都需要立即 MRI",
+        "B. 只需在出院前做一次 MRI",
+        "C. (1) 不完全 SCI 但 alignment 正常；(2) 神經學惡化（含 closed reduction 後）；(3) 神經學缺損與影像不符",
+        "D. 從不需要做 MRI"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "緊急 MRI 在 SCI 之適應症：<span class='key'>(1) 不完全 SCI + alignment 正常</span>（排除軟組織壓迫）；<span class='key'>(2) 神經學惡化（worsening deficit 或 rising level）含 closed reduction 後</span>；<span class='key'>(3) 神經學缺損與影像不符</span>（fracture level 與 deficit level 不符；無 bony injury → 排除 disc herniation/hematoma 軟組織壓迫；總是考慮 arterial dissection）。MRI 不可時 → myelogram（注意 LP 在完全 block 患者可致 14% 惡化，可能需 C1-2 puncture）。"
     },
     {
@@ -229,12 +229,12 @@
       "tag": "功法 · Greenberg Ch69 · Closed reduction",
       "q": "頸椎 fracture-dislocation 之早期 closed reduction 適應症與禁忌為？",
       "opts": [
-        "A. 任何時候都可做",
-        "B. Level III 建議：清醒患者用 craniocervical traction 做早期 closed reduction；不建議：合併 rostral injury 之患者；無法 closed reduction 前檢查者應 MRI 先（herniated disc 為相對 anterior decompression 指徵）",
-        "C. 完全不可做",
-        "D. 必須麻醉做"
+        "A. 任何時候、任何情境都可做",
+        "B. 完全不可做 closed reduction",
+        "C. 必須先麻醉再做 closed reduction",
+        "D. Level III：清醒患者用 craniocervical traction 做早期 closed reduction；不建議：合併 rostral injury；無法檢查者應 MRI 先"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Closed reduction 指引：<span class='key'>Level III：清醒患者用 craniocervical traction 做早期 closed reduction</span> 恢復 alignment。<span class='key'>不建議：合併 rostral injury</span>。<span class='key'>無法 closed reduction 前檢查者 → MRI 先</span>（significant herniated disc 為 anterior decompression 之相對指徵，例如 ACDF 先）。Pre-reduction MRI 在 facet subluxation 患者中發現 disrupted/herniated disc 33–50%，但對清醒 closed reduction 結果影響不顯著，故 prereduction MRI 之必要性不確定。"
     },
     {
@@ -242,12 +242,12 @@
       "tag": "秘籍 · Greenberg Ch69 · Traction 禁忌",
       "q": "下列何者為頸椎 traction 之絕對或相對禁忌？",
       "opts": [
-        "A. 普通 type II odontoid fracture",
-        "B. Atlantooccipital dislocation (AOD)（傷會惡化，halo 最多 ~4 lbs）；Hangman's type IIa 或 III；skull defect/fracture 在 pin site；≤3 歲；極老年；demineralized skull；rostral injury；movement disorder",
-        "C. 任何 hangman's",
-        "D. 沒有禁忌"
+        "A. 普通 type II odontoid fracture 為禁忌",
+        "B. 任何 hangman's fracture 皆為禁忌",
+        "C. AOD（halo 最多 ~4 lbs）；Hangman's type IIa 或 III；skull defect/fracture 在 pin site；≤3 歲；極老年；demineralized skull；rostral injury；movement disorder",
+        "D. 頸椎 traction 完全沒有禁忌"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Traction 禁忌：<span class='key'>(1) AOD（traction 可能惡化 deficit；halo immobilization 用 ~4 lbs 以下）</span>；<span class='key'>(2) Hangman's type IIa 或 III</span>；(3) skull defect/fracture 在預定 pin site；(4) <span class='key'>小心兒童（≤3 歲不該用）</span>；(5) 極老年；(6) demineralized skull（部分老年、osteogenesis imperfecta）；<span class='key'>(7) 合併 rostral injury</span>；(8) movement disorder（持續活動可致 pin 侵蝕顱骨）。"
     },
     {
@@ -255,10 +255,10 @@
       "tag": "心法 · Greenberg Ch69 · Gardner-Wells",
       "q": "Gardner-Wells tongs 的 pin 位置與調整為？",
       "opts": [
-        "A. 在 occiput 下",
-        "B. Temporal ridge（顳肌上方），耳廓上 3–4 cm（2-3 finger-breadth）；正下耳道為 neutral；後 2–3 cm 為 flexion；前 2–3 cm 為 extension。Spring-loaded pin 鎖到 indicator 突出 1mm；每日 retighten 直至連 1–2 天 indicator 仍突 1mm 即停",
-        "C. 在前額正中",
-        "D. 任意位置"
+        "A. 在 occiput 下，靠近頸椎",
+        "B. Temporal ridge（顳肌上方），耳廓上 3–4 cm；正下耳道為 neutral；後 2–3 cm 為 flexion；前 2–3 cm 為 extension；spring-loaded pin 鎖到 indicator 突出 1mm",
+        "C. 在前額正中，眉間上方",
+        "D. 可置於任意位置，無解剖標記"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Gardner-Wells tongs</span>：pin 在 <span class='key'>temporal ridge（顳肌上方）+ pinna 上 3–4 cm（2-3 finger-breadth）</span>。位置：<span class='key'>正對耳道（neutral）；後 2–3 cm（flexion，例如 locked facets）；前 2–3 cm（extension）</span>。Tighten：<span class='key'>spring-loaded pin 直 indicator 突出 1mm</span>。每日 retighten 直連 1–2 天仍 1mm 即停。Crutchfield tongs 需預鑽。Halo ring 可作初期 traction，後改 vest（如 post-fusion）。"
@@ -268,10 +268,10 @@
       "tag": "秘籍 · Greenberg Ch69 · Halo 安裝",
       "q": "Halo ring 安裝關鍵原則為？",
       "opts": [
-        "A. 任意位置",
-        "B. Ring 在頭顱最寬處（equator）；前距眶緣 ~1 cm 上、後距 pinna ~1 cm 上；anterior pin 在 lateral 2/3 of orbit；posterior pin 在耳後；扭力成人 ~8 in-lb，小兒 2–5 in-lb；前 pin 推進前讓患者閉眼避免 'pinning eyes open'",
-        "C. 任何 pin 位置都可",
-        "D. 不需扭力規範"
+        "A. 可放任意位置，無扭力規範",
+        "B. Ring 在頭顱最寬處（equator）；前距眶緣 ~1 cm 上、後距 pinna ~1 cm 上；anterior pin 在 lateral 2/3 of orbit；扭力成人 ~8 in-lb，小兒 2–5 in-lb；前 pin 推進前讓患者閉眼",
+        "C. Pin 位置不限，任何 pin 點皆可",
+        "D. 扭力越大越好，無需規範"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Halo ring 原則</span>：選 size 使環與頭皮約 1–2 cm 間距。<span class='key'>位置：頭顱最寬處（equator）；前距眶緣 ~1 cm 上、後距 pinna ~1 cm 上</span>。Pin 位置：<span class='key'>anterior 在 lateral 2/3 orbit；posterior 在耳後</span>；小兒可加額外 pin 分散負荷。<span class='key'>扭力：成人 ~8 in-lb，小兒 2–5 in-lb</span>。技巧：<span class='key'>(1) 前 pin 推進前讓患者閉眼</span>避免 pinning eyes open；(2) 避免 pin 在 temporalis muscle 或 temporal squamosa；(3) <span class='key'>避免 pin 在 medial 1/3 orbit</span> 以免傷 supraorbital/supratrochlear nerves 與穿破薄前壁。"
@@ -281,12 +281,12 @@
       "tag": "心法 · Greenberg Ch69 · NG/Foley",
       "q": "急性 SCI 患者初期住院為何需要 NG tube 與 Foley catheter？",
       "opts": [
-        "A. 美觀考量",
-        "B. NG：防嘔吐 aspiration、abdominal decompression（distention 影響呼吸；paralytic ileus 常見且持續數天）；Foley：I/O + 防 urinary retention 致膀胱脹大",
-        "C. 為了打點滴方便",
-        "D. 完全不需要"
+        "A. NG/Foley 純為美觀考量",
+        "B. 為了打點滴方便",
+        "C. NG：防嘔吐 aspiration、abdominal decompression（distention 影響呼吸；paralytic ileus 常見且持續數天）；Foley：I/O + 防 urinary retention 致膀胱脹大",
+        "D. 急性 SCI 完全不需要 NG 或 Foley"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>NG tube 抽吸</span>：<span class='key'>防止嘔吐 aspiration、解除腹脹</span>（distention 可阻礙呼吸；<span class='key'>paralytic ileus 在 SCI 常見，通常持續數天</span>）。<span class='key'>Indwelling (Foley) urinary catheter</span>：<span class='key'>記錄 I/O、防止 urinary retention 致膀胱脹大</span>。Backboard 早移除（早期 removal 減少 decubitus ulcer 風險）。"
     },
     {
@@ -294,12 +294,12 @@
       "tag": "心法 · Greenberg Ch69 · 抗凝劑量",
       "q": "依 Greenberg，SCI 患者 SQ heparin 劑量比較中，較佳方案為？",
       "opts": [
-        "A. Mini-dose 5000U SQ q12h",
-        "B. Titrated dose（PTT 1.5x control）— DVT/PE 7% vs mini-dose 31%",
-        "C. 不用 heparin",
-        "D. 必須 IV heparin"
+        "A. Mini-dose 5000U SQ q12h 為標準",
+        "B. 完全不可使用 heparin",
+        "C. 必須 IV continuous infusion 才有效",
+        "D. Titrated dose（PTT 1.5x control）— DVT/PE 7% vs mini-dose 31%"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "75 患者比較：<span class='key'>Titrated SQ heparin q12h 至 PTT 1.5x control → 7% thromboembolic events</span>，相比 mini-dose 5000U SQ q12h 之 31%。但須注意 heparin 副作用：<span class='key'>thrombosis、thrombocytopenia (HIT)、長期 osteoporosis</span>。"
     },
     {
@@ -307,12 +307,12 @@
       "tag": "功法 · Greenberg Ch69 · 胸腰椎適應症",
       "q": "下列何者需常規 thoracolumbar AP + lateral X 光？",
       "opts": [
-        "A. 任何外傷皆要",
-        "B. 從車輛拋出、跌 ≥6 ft；訴背痛；意識不清；無法可靠述背痛或精神狀態異常；機轉不明或其他傷暗示脊椎傷",
-        "C. 只看精神狀態",
-        "D. 完全不需要"
+        "A. 任何外傷皆需 routine TL X-ray",
+        "B. 只需看精神狀態判斷",
+        "C. 完全不需要 thoracolumbar X-ray",
+        "D. 從車輛拋出、跌 ≥6 ft；訴背痛；意識不清；無法可靠述背痛或精神狀態異常；機轉不明或其他傷暗示脊椎傷"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Thoracic + LS-spine X-ray 適應症（所有外傷者中）：<span class='key'>(1) 從車輛拋出或跌 ≥6 ft</span>；<span class='key'>(2) 訴背痛</span>；<span class='key'>(3) 意識不清</span>；<span class='key'>(4) 無法可靠述背痛 / 精神狀態異常致無法評估</span>；<span class='key'>(5) 機轉不明或其他傷暗示脊椎傷</span>。Bone scan 可區分舊 vs 急性傷（成人 24-48 hr 內 hot，可達 1 年；老年 2-3 週後 hot，>1 年）。Bony abnormality 或神經學缺損 → CT/MRI 該區。"
     },
     {
@@ -320,12 +320,12 @@
       "tag": "心法 · Greenberg Ch69 · Hypothermia",
       "q": "AANS/CNS 對於急性 SCI 用 local 或 systemic hypothermia 之 position statement 為？",
       "opts": [
-        "A. 強烈建議使用",
-        "B. 證據不足，不建議 for or against；應注意 systemic hypothermia 在 TBI 與 medical complications 相關",
-        "C. 絕對禁忌",
-        "D. 必須使用"
+        "A. 強烈建議常規使用 hypothermia",
+        "B. 為絕對禁忌，不可使用",
+        "C. 證據不足，不建議 for or against；應注意 systemic hypothermia 在 TBI 與 medical complications 相關",
+        "D. 必須使用，否則預後極差"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>AANS/CNS 聯合 position statement</span>：<span class='key'>無足夠證據建議 local 或 systemic hypothermia for/against 急性 SCI</span>。<span class='key'>應注意 systemic hypothermia 在 TBI 與 medical complications 相關</span>。"
     },
     {
@@ -333,10 +333,10 @@
       "tag": "秘籍 · Greenberg Ch69 · DVT 診斷",
       "q": "SCI 患者 DVT 診斷之 Level III 建議方法為？",
       "opts": [
-        "A. 只看臨床",
+        "A. 完全僅靠臨床評估，不需影像",
         "B. Duplex Doppler ultrasound、impedance plethysmography、venography、臨床評估",
-        "C. PET",
-        "D. 顱骨平片"
+        "C. PET-CT 為首選工具",
+        "D. 顱骨平片可診斷 DVT"
       ],
       "answer": 1,
       "explanation": "Level III 建議診斷方法：<span class='key'>duplex Doppler ultrasound、impedance plethysmography、venography、臨床評估</span>。第一線常為 duplex Doppler（非侵入、bedside）。"
@@ -346,10 +346,10 @@
       "tag": "心法 · Greenberg Ch69 · Cervical collar 移除",
       "q": "去除 cervical collar 的好處為？",
       "opts": [
-        "A. 沒有好處",
+        "A. 去除 collar 完全沒有好處",
         "B. 減少皮膚 breakdown、減少 mechanical ventilation 天數、縮短 ICU stay、降低 ICP",
-        "C. 增加感染",
-        "D. 增加死亡率"
+        "C. 去除 collar 只會增加感染率",
+        "D. 去除 collar 會增加死亡率"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Cervical collar 應盡早安全移除</span>。好處：<span class='key'>(1) 減少皮膚 breakdown</span>；<span class='key'>(2) 減少 mechanical ventilation 天數</span>；<span class='key'>(3) 縮短 ICU stay</span>；<span class='key'>(4) 降低 ICP</span>。Asymptomatic 患者（NEXUS criteria）：滿足全條件可不用 collar 不需影像。Penetrating brain trauma 除非 trajectory 暗示頸椎傷否則不用 collar (Level III)。Awake + 頸痛/壓痛 + 正常 CT：normal flexion-extension X-ray 或 normal MRI 後可去 collar。"
@@ -359,12 +359,12 @@
       "tag": "秘籍 · Greenberg Ch69 · Obtunded + 正常 CT",
       "q": "Obtunded 患者 + 正常頸 CT + 全四肢 gross movement，cervical collar 處理選項為？",
       "opts": [
-        "A. 必須立即去 collar",
-        "B. 選項：(1) 維持 collar 直可臨床檢查；(2) 僅依 normal CT 即去 collar（CT 陰性下韌帶傷 <5%，臨床顯著傷未知但 <<1%）；(3) 拍 cervical MRI（normal 才去 collar）。✖ Flexion-extension X-ray 不應做",
-        "C. 必須做 fusion",
-        "D. 必須拍 12 視圖"
+        "A. 必須立即去 collar，無需進一步影像",
+        "B. 必須做 cervical fusion",
+        "C. 必須拍 12 視圖才能確認",
+        "D. 選項：(1) 維持 collar 直可臨床檢查；(2) 僅依 normal CT 即去 collar；(3) 拍 cervical MRI 正常才去 collar。✖ Flexion-extension X-ray 不應做"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Obtunded + normal CT + 4 肢 gross movement 之選項：<span class='key'>(1) 維持 collar 直可臨床檢查</span>（Level III）；<span class='key'>(2) 僅依 normal CT 即去 collar</span>（normal CT 下韌帶傷率 <5%，臨床顯著傷未知但 <<1%）；<span class='key'>(3) 拍 cervical MRI（AANS/CNS 2002 建議 48 小時內），normal 才去 collar (Level II)</span>。<span class='key'>禁忌：Flexion-extension X-ray 不應做</span>（Level II，low yield、cost-ineffective、可能危險）。"
     },
     {
@@ -372,9 +372,9 @@
       "tag": "心法 · Greenberg Ch69 · Pre-reduction MRI",
       "q": "Closed reduction 前 pre-reduction MRI 的關鍵發現為？",
       "opts": [
-        "A. 找腫瘤",
+        "A. 找腫瘤為主要目的",
         "B. Facet subluxation 患者 33–50% 顯示 disrupted 或 herniated disc — 但對清醒 closed reduction outcome 影響不顯著",
-        "C. 排除水腦",
+        "C. 排除水腦症",
         "D. 看顱內出血"
       ],
       "answer": 1,
@@ -385,10 +385,10 @@
       "tag": "秘籍 · Greenberg Ch69 · 軟組織",
       "q": "頸椎軟組織 X 光徵象中，retropharyngeal space 異常之閾值為？",
       "opts": [
-        "A. >2 mm",
-        "B. >7 mm（成人）或 >14 mm 之 retrotracheal space（成人）/ 22 mm（小兒）",
-        "C. >50 mm",
-        "D. 無閾值"
+        "A. >2 mm 即異常",
+        "B. >7 mm（成人）retropharyngeal；>14 mm 之 retrotracheal space（成人）/ 22 mm（小兒）",
+        "C. >50 mm 才視為異常",
+        "D. 無公認閾值"
       ],
       "answer": 1,
       "explanation": "頸椎 X 光軟組織徵象（提示 C-spine trauma）：<span class='key'>retropharyngeal space >7 mm（成人）</span>；<span class='key'>retrotracheal space >14 mm（成人）/ 22 mm（小兒）</span>。其他：displaced prevertebral fat stripe、tracheal deviation、laryngeal dislocation。Vertebral alignment：loss of lordosis、acute kyphotic angulation、torticollis、widened interspinous space (flaring)、axial rotation、contour line discontinuity。Joint：<span class='key'>ADI >3 mm（成人）/ >4 mm（小兒）</span>、disc space 變化、apophyseal joint widening。"

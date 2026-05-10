@@ -9,11 +9,11 @@
       "q": "依 Brain Trauma Foundation 院前指引，下列何者為應避免的關鍵閾值？",
       "opts": [
         "A. SpO₂ <95%、SBP <120 mmHg",
-        "B. SpO₂ <90%、SBP <90 mmHg",
-        "C. SpO₂ <80%、SBP <80 mmHg",
+        "B. SpO₂ <85%、SBP <70 mmHg",
+        "C. SpO₂ <90%、SBP <90 mmHg",
         "D. SpO₂ <70%、SBP <60 mmHg"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "BTF 院前指引：避免<span class='key'>低氧 (SpO₂ <90%)</span> 與<span class='key'>低血壓 (SBP <90 mmHg)</span>。即使單次 hypotension 都會使死亡率倍增。CPP 需要 SBP 維持，且自體調節在 30–50% TBI 患者已喪失，使 BP 直接決定 CBF。"
     },
     {
@@ -21,12 +21,12 @@
       "tag": "心法 · Youmans Ch386 · 院前處置",
       "q": "下列關於 \"Scoop and run\" (BLS) 與 \"Stay and play\" (ALS) 策略的比較，何者較符合文獻？",
       "opts": [
-        "A. 「Stay and play」對所有外傷皆優於「scoop and run」",
-        "B. 「Scoop and run」（快速送往創傷中心）對穿刺傷與部分嚴重鈍傷的結果可能更佳",
-        "C. 兩者沒有差別",
-        "D. 院前不需任何處置"
+        "A. 「Stay and play」於各類外傷皆優於「scoop and run」",
+        "B. 兩種策略結果完全相同，文獻無顯著差異",
+        "C. 院前完全不需任何處置，直送即可",
+        "D. 「Scoop and run」對 penetrating trauma 與部分嚴重 blunt head injury 之結果可能更佳"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>「Scoop and run」</span>策略對 penetrating trauma 與部分嚴重 blunt head injury 結果更佳 — 在現場過度延誤積極處置反而不利。但兩者都需要適當的 airway 控制（GCS ≤8 該插管）、避免 hypoxia/hypotension。"
     },
     {
@@ -34,12 +34,12 @@
       "tag": "秘籍 · Youmans Ch386 · 抗纖溶",
       "q": "依 CRASH-3 試驗結果，TXA (tranexamic acid) 在 TBI 患者的使用結論為？",
       "opts": [
-        "A. 對所有 TBI 患者皆無效",
-        "B. 受傷後 3 小時內給予安全且能減少 head injury–related death",
-        "C. 受傷 24 小時內任何時候給予都有效",
-        "D. 增加死亡率，禁忌使用"
+        "A. TXA 對所有 TBI 患者皆無效，與 placebo 一樣",
+        "B. 傷後 24 小時內任何時點給藥皆有相同效果",
+        "C. TXA 顯著增加死亡率，是 TBI 之禁忌藥物",
+        "D. 受傷後 3 小時內給予 TXA 安全且能減少 head injury–related 死亡"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>CRASH-3</span> (2019)：<span class='key'>受傷 3 小時內</span>給予 TXA 安全，且能減少 head injury–related 死亡。後續延伸至院外給藥的試驗未顯示 6 個月神經學結果改善，需進一步研究哪一族群最受益。"
     },
     {
@@ -47,12 +47,12 @@
       "tag": "功法 · Youmans Ch386 · ATLS 初評",
       "q": "ATLS primary survey 之 ABCDE 的「D」代表什麼？",
       "opts": [
-        "A. Drugs（用藥史）",
-        "B. Disability（神經功能評估，含 GCS 與瞳孔）",
-        "C. Decompression（減壓）",
-        "D. Disposition（處置去向）"
+        "A. Drugs — 採集用藥史與成癮藥物",
+        "B. Decompression — 胸腔減壓",
+        "C. Disposition — 處置去向（轉病房/手術室）",
+        "D. Disability — 神經功能評估，含 GCS 與瞳孔"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>D = Disability</span>：包含 GCS、瞳孔大小與反射、腦幹反射（pupillary、corneal、cough、gag）、簡易 cranial nerve 與 motor/sensory 檢查。<span class='key'>E = Exposure</span>（脫去衣物全身檢查，避免低體溫）。注意：近期研究顯示 ABC vs CAB 順序對死亡率無顯著差異，可同時平行進行。"
     },
     {
@@ -60,12 +60,12 @@
       "tag": "心法 · Youmans Ch386 · 病史記錄",
       "q": "外傷病史採集常用的 AMPLE 助記字中，第二個 \"M\" 代表？",
       "opts": [
-        "A. Mechanism (機轉)",
-        "B. Medications (用藥)",
-        "C. Mental status (精神狀態)",
-        "D. Mass casualties (傷亡規模)"
+        "A. Mechanism — 受傷機轉",
+        "B. Mental status — 意識狀態",
+        "C. Mass casualties — 傷亡規模分類",
+        "D. Medications — 包括 antiplatelet/anticoagulant 用藥"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>AMPLE</span>：<span class='key'>A</span>llergies（過敏）、<span class='key'>M</span>edications（用藥，特別注意 antiplatelet/anticoagulant 如 aspirin、clopidogrel、warfarin、apixaban）、<span class='key'>P</span>ast medical history（含懷孕）、<span class='key'>L</span>ast meal、<span class='key'>E</span>vents（事故經過）。"
     },
     {
@@ -73,12 +73,12 @@
       "tag": "心法 · Youmans Ch386 · 通氣管理",
       "q": "對非腦疝脫之 TBI 患者，預防性過度換氣 (prophylactic hyperventilation) 的建議為？",
       "opts": [
-        "A. 應常規維持 ETCO₂ 25 mmHg",
-        "B. 應避免 — Muizelaar 等 RCT 顯示經驗性過度換氣使結果更差；ETCO₂ 應 >35 mmHg",
-        "C. 對所有 TBI 都有益，越低越好",
-        "D. 僅在 ICP <10 時進行"
+        "A. 應避免常規預防性過度換氣；ETCO₂ 應 >35 mmHg（PaCO₂ 35–40）",
+        "B. 應常規維持 ETCO₂ 25 mmHg 以降低 ICP",
+        "C. 對所有 TBI 都有益，ETCO₂ 越低越好",
+        "D. 僅在 ICP <10 mmHg 才使用"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>避免</span>預防性過度換氣（Muizelaar RCT 顯示更差結果）。一般 TBI 應目標 <span class='key'>ETCO₂ >35 mmHg</span>（PaCO₂ 35–40）。<span class='key'>例外</span>：明顯 herniation 徵象時，可短暫 hyperventilation 至 ETCO₂ 30–35 作為 temporizing measure，同時準備手術或影像。"
     },
     {
@@ -86,12 +86,12 @@
       "tag": "功法 · Youmans Ch386 · 插管適應症",
       "q": "TBI 患者依現行指引，何時應立即插管？",
       "opts": [
-        "A. 所有 TBI 患者",
-        "B. GCS ≤ 8、無法維持氣道、低氧，或意識顯著惡化者",
-        "C. 僅 GCS = 3 才需插管",
-        "D. 不應插管以避免併發症"
+        "A. GCS ≤ 8、無法維持氣道、低氧或意識顯著惡化者",
+        "B. 所有 TBI 患者皆需立即插管",
+        "C. 僅 GCS = 3 的患者才需插管",
+        "D. 不應插管，以避免併發症"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "插管適應症：<span class='key'>GCS ≤ 8</span>、無法維持 airway、低氧、意識顯著惡化、痙攣、呼吸衰竭、嚴重顏面/胸腹傷。原則：<span class='key'>低門檻插管</span>以保護氣道、防止低氧/高碳酸血症。注意：rapid-sequence intubation (RSI) 由訓練充足、有經驗的人員執行，過度換氣與 aspiration 是主要風險。"
     },
     {
@@ -100,11 +100,11 @@
       "q": "外傷患者出現單側固定散大、無光反應的瞳孔，最該優先考慮？",
       "opts": [
         "A. 對側 uncal transtentorial herniation",
-        "B. 同側 uncal transtentorial herniation（除非另有證據）",
-        "C. Marcus Gunn pupil",
-        "D. Horner 症候群"
+        "B. Marcus Gunn pupil（afferent defect）",
+        "C. Horner 症候群之單側表現",
+        "D. 同側 uncal transtentorial herniation（除非另有證據）"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "外傷患者單側固定散大瞳孔 = <span class='key'>同側 uncal transtentorial herniation 直到證明非如此</span>。機轉：uncus 疝壓迫同側 CN III 與大腦腳。鑑別：眼外傷直接造成、bilateral mydriatic 用藥、Marcus Gunn (afferent defect)、Kernohan notch (false localizing)。"
     },
     {
@@ -112,12 +112,12 @@
       "tag": "秘籍 · Youmans Ch386 · 瞳孔",
       "q": "Marcus Gunn pupil（afferent pupillary defect）在外傷患者中代表？",
       "opts": [
-        "A. 同側 CN III 損傷",
-        "B. 同側視神經損傷",
-        "C. 雙側 CN II 病變",
-        "D. 頸內動脈剝離"
+        "A. 同側視神經損傷（afferent defect）",
+        "B. 同側 CN III 動眼神經麻痺",
+        "C. 雙側 CN II 之全盲性病變",
+        "D. 頸內動脈剝離合併交感神經損傷"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Marcus Gunn pupil（afferent pupillary defect）</span>：照同側眼瞳孔不收縮，但照健側時兩側皆收縮 — 提示<span class='key'>同側視神經損傷</span>（傳入路斷裂）。傳出路（CN III）正常，故 swinging flashlight test 由健側轉至患側時瞳孔反而擴大。"
     },
     {
@@ -125,12 +125,12 @@
       "tag": "心法 · Youmans Ch386 · 瞳孔",
       "q": "外傷患者單側瞳孔縮小合併輕度上瞼下垂 (mild ptosis)，最該懷疑？",
       "opts": [
-        "A. 同側 uncal herniation",
-        "B. Pontine 病灶",
-        "C. Horner 症候群（提示頸動脈剝離）",
-        "D. 麻醉藥反應"
+        "A. 同側 uncal herniation 之早期表現",
+        "B. Horner 症候群（提示頸動脈剝離）",
+        "C. Pontine 病灶造成之 pinpoint pupils",
+        "D. 麻醉藥（如 fentanyl）之全身性反應"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Horner 症候群三聯：<span class='key'>瞳孔縮小 (miosis) + 上瞼下垂 (ptosis) + 同側無汗 (anhidrosis)</span>。外傷患者出現此症狀，需警覺<span class='key'>頸內動脈剝離</span>（交感神經叢隨頸動脈走行受損）。雙側 pinpoint pupils 多為 narcotic 用藥或 pontine 病灶。"
     },
     {
@@ -138,12 +138,12 @@
       "tag": "心法 · Youmans Ch386 · 顱底骨折徵象",
       "q": "Battle sign（乳突區瘀斑）暗示？",
       "opts": [
-        "A. 前顱底骨折",
-        "B. 後顱底（顳骨岩部 / 乳突區）骨折",
-        "C. 顳葉腦挫傷",
-        "D. 蛛網膜下腔出血"
+        "A. 前顱底（篩板）骨折",
+        "B. 顳葉腦挫傷之外觀表現",
+        "C. 後顱底（顳骨岩部 / 乳突區）骨折",
+        "D. 蛛網膜下腔出血之皮膚徵象"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Battle sign</span>（乳突瘀斑）= <span class='key'>後顱底骨折</span>跡象（顳骨岩部、乳突區）。<span class='key'>Raccoon eyes</span>（眼周瘀斑）= 前顱底骨折。兩者均可合併 CSF 耳漏 (otorrhea) 或鼻漏 (rhinorrhea)。"
     },
     {
@@ -151,8 +151,8 @@
       "tag": "功法 · Youmans Ch386 · GCS",
       "q": "插管病人無法評估 verbal score 時，依本章建議該如何記錄？",
       "opts": [
-        "A. 直接給 V = 5，假設清醒",
-        "B. 不記錄 GCS",
+        "A. 直接給 V = 5，假設病人清醒",
+        "B. 完全不記錄 GCS 直至拔管",
         "C. 多數創傷中心記為 V = 1t（t 表示 intubated）",
         "D. 必須等拔管後才能算 GCS"
       ],
@@ -166,8 +166,8 @@
       "opts": [
         "A. Eye-opening response",
         "B. Verbal response",
-        "C. Motor response",
-        "D. 三者等重要"
+        "C. Motor response（最具再現性與預後預測力）",
+        "D. 三項評分對預後重要性完全相同"
       ],
       "answer": 2,
       "explanation": "<span class='key'>Motor score 最具再現性 (reproducibility) 且預後預測力最強</span>。即使其他兩項受限（插管、低血壓），motor score 仍應記錄。最具預後意義的 GCS 為 <span class='key'>postresuscitation GCS</span>（airway 與血流動力學穩定後測得）。"
@@ -180,7 +180,7 @@
         "A. M2（取較差側）",
         "B. M3（取較佳側 — best response 原則）",
         "C. M5（特殊情況例外）",
-        "D. 平均 M2.5"
+        "D. 平均後給 M2.5"
       ],
       "answer": 1,
       "explanation": "<span class='key'>GCS 採 best response 原則</span> — 取較佳的一側 motor。Decorticate (M3, 屈曲) > Decerebrate (M2, 伸展)，故 M3。但要<span class='key'>另外註記 focality</span>（不對稱），因為 herniation 早期常為單側徵象，這個資訊對定位很重要。"
@@ -190,12 +190,12 @@
       "tag": "功法 · Youmans Ch386 · 腦疝脫",
       "q": "Uncal transtentorial herniation 典型臨床三聯徵為？",
       "opts": [
-        "A. 同側瞳孔散大 + 對側 hemiparesis + 意識惡化",
-        "B. 對側瞳孔散大 + 同側 hemiparesis",
+        "A. 對側瞳孔散大 + 同側 hemiparesis",
+        "B. 同側瞳孔散大 + 對側 hemiparesis + 意識惡化",
         "C. 雙側瞳孔散大 + 過度換氣",
         "D. 雙側瞳孔縮小 + bradycardia"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Uncal herniation 典型：<span class='key'>同側瞳孔散大（CN III 受壓）+ 對側 hemiparesis（同側 cerebral peduncle 受壓）+ 意識惡化</span>。可能合併同側 PCA 受壓造成枕葉梗塞。瞳孔變化的那一側通常即 herniation 發生側 — 對定位很重要。"
     },
     {
@@ -203,10 +203,10 @@
       "tag": "秘籍 · Youmans Ch386 · 假定位徵象",
       "q": "Kernohan notch effect 為什麼是「false localizing sign」？",
       "opts": [
-        "A. 因為瞳孔變化發生在對側",
-        "B. 因為對側大腦腳被推擠至天幕邊緣，產生「同側瞳孔散大 + 同側 hemiparesis」 — 與一般 uncal herniation 的對側 hemiparesis 不同",
-        "C. 因為瞳孔不會散大",
-        "D. 因為 GCS 沒有變化"
+        "A. 因瞳孔變化發生於對側，而非預期之同側",
+        "B. 對側大腦腳被推擠至天幕邊緣 → 同側瞳孔散大 + 同側 hemiparesis（與一般 uncal herniation 之對側 hemiparesis 不同）",
+        "C. 因病灶側瞳孔不散大",
+        "D. 因 GCS 完全不變化，無法定位"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Kernohan notch effect</span>：uncal herniation 將對側大腦腳推擠至對側 tentorial 邊緣 → 表現為<span class='key'>同側瞳孔散大 + 同側（而非預期之對側）hemiparesis</span>。瞳孔仍指出 herniation 側（病灶側），但 motor finding 會誤導 — 故稱 false localizing。"
@@ -216,12 +216,12 @@
       "tag": "秘籍 · Youmans Ch386 · 腦疝脫",
       "q": "Tonsillar herniation 的核心臨床危險為？",
       "opts": [
-        "A. 對側 hemiparesis",
-        "B. 視野缺損",
-        "C. 延髓受壓 → 突發呼吸驅力喪失，需立刻減壓否則無法回復",
-        "D. 雙側瞳孔散大但意識正常"
+        "A. 對側 hemiparesis 為唯一臨床表現",
+        "B. 視野缺損（同側偏盲）為主要危險",
+        "C. 雙側瞳孔散大但意識仍然清醒",
+        "D. 延髓受壓 → 突發呼吸驅力喪失，需立刻減壓否則不可逆"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "<span class='key'>Tonsillar herniation</span>：小腦扁桃體被推過 foramen magnum → <span class='key'>延髓受壓 → 呼吸驅力突然喪失</span> → 不可逆腦幹損傷除非立刻減壓。可由 supratentorial 持續向下壓迫或原發後顱窩腫瘤造成。Duret hemorrhage 可發生於 uncal 或 tonsillar herniation 後。"
     },
     {
@@ -229,12 +229,12 @@
       "tag": "功法 · Youmans Ch386 · CT 適應症",
       "q": "依 CDC Level A 建議，輕度 TBI 合併 LOC 或 PTA 時，下列何者單一條件即足以做頭部 CT？",
       "opts": [
-        "A. 任一項：頭痛、嘔吐、>60 歲、藥物/酒精影響、短期記憶缺損、鎖骨上方外傷、創傷後癲癇、GCS<15、局部神經學缺損、凝血異常",
-        "B. 必須三項以上才需要",
-        "C. 僅 GCS<13 才需要",
-        "D. 必須住院 24 小時觀察才決定"
+        "A. 必須同時符合三項以上才考慮 CT",
+        "B. 僅 GCS<13 才需要 CT",
+        "C. 任一項：頭痛、嘔吐、>60 歲、藥物/酒精影響、短期記憶缺損、鎖骨上方外傷、創傷後癲癇、GCS<15、局部神經學缺損、凝血異常",
+        "D. 必須住院觀察 24 小時後再決定是否 CT"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "CDC Level A（mild TBI + LOC 或 PTA）：<span class='key'>任一</span>下列單獨成立即適應症 — 頭痛、嘔吐、>60 歲、藥物/酒精影響、短期記憶缺損、鎖骨上方外傷、posttraumatic seizure、GCS<15、focal neurological deficit、coagulopathy。Level B（無 LOC/PTA）需更嚴重條件如 severe headache、>65 歲、basilar fx 跡象、危險機制等。"
     },
     {
@@ -242,12 +242,12 @@
       "tag": "心法 · Youmans Ch386 · 影像生物標記",
       "q": "對於是否進行頭部 CT 仍不確定的輕度 TBI 患者，目前漸受重視的血清標記為？",
       "opts": [
-        "A. CK-MB 與 troponin",
-        "B. S100B 與 GFAP",
+        "A. S100B 與 GFAP",
+        "B. CK-MB 與 troponin",
         "C. CRP 與 ESR",
         "D. AST 與 ALT"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>S100B（神經膠質）和 GFAP（glial fibrillary acidic protein）</span>濃度與 TBI 嚴重度相關，可作為決定是否 CT 的輔助。<span class='key'>UCH-L1</span>（神經元）也是另一受關注指標。對 CT-negative 的患者，這些 biomarker 升高與 MRI 上的微病灶相關。"
     },
     {
@@ -256,11 +256,11 @@
       "q": "急性 TBI 處置中，MRI 的角色為？",
       "opts": [
         "A. 取代 CT 作為第一線急診影像",
-        "B. 主要用於穩定後、CT normal 但臨床懷疑 cerebral edema、DAI、ischemia 的患者",
-        "C. 用於骨折評估",
-        "D. 用於插管前的氣道評估"
+        "B. 用於骨折評估，較 CT 更敏感",
+        "C. 用於插管前的氣道結構評估",
+        "D. 主要用於穩定後、CT normal 但臨床懷疑 cerebral edema、DAI、ischemia 之患者"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>MRI 不是急性 TBI 第一線</span>（時間長、限制多、骨折評估差）。實務角色：穩定後 CT normal 但持續症狀、懷疑 <span class='key'>cerebral edema、DAI、ischemia</span> — 早期介入可能改善預後。MR angiography 對 dissection / occlusion 評估也很有用。"
     },
     {
@@ -268,12 +268,12 @@
       "tag": "功法 · Youmans Ch386 · ICP 監測",
       "q": "依現行指引，下列何種情況建議放置 ICP monitor？",
       "opts": [
-        "A. 所有頭部外傷患者",
-        "B. GCS ≤ 8 + 異常 CT 結果",
-        "C. 僅 GCS = 15 的輕度患者",
-        "D. 沒有適應症，不需 ICP monitor"
+        "A. GCS ≤ 8 + 異常 CT 結果",
+        "B. 所有頭部外傷患者均應放置 ICP monitor",
+        "C. 僅 GCS = 15 的輕度患者使用",
+        "D. ICP monitor 已被證實無效，不需放置"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "ICP 監測適應症：<span class='key'>GCS ≤ 8 + 異常 CT</span>（hematoma、contusion、edema、compressed cisterns）。Chesnut 等 RCT 在開發中國家未顯示與臨床/影像管理之差異，但設計受運送時間影響，<span class='key'>不可推論至有完整急診運送系統的已開發國家</span> — 故指引仍維持監測建議。ICP > 20 mmHg 與惡化和死亡率相關。"
     },
     {
@@ -281,12 +281,12 @@
       "tag": "心法 · Youmans Ch386 · 滲透治療",
       "q": "Mannitol 急性降 ICP 之常用劑量與監測指標為？",
       "opts": [
-        "A. 0.05–0.1 g/kg；監測心電圖",
-        "B. 0.5–1.4 g/kg；血清 osm 維持 <320 mOsm/kg；插 Foley 維持 euvolemia",
-        "C. 5 g/kg；不需監測",
-        "D. 0.01 g/kg；只能用一次"
+        "A. 0.5–1.4 g/kg；血清 osm 維持 <320 mOsm/kg；插 Foley 維持 euvolemia",
+        "B. 0.05–0.1 g/kg；僅監測心電圖",
+        "C. 5 g/kg 一次大劑量；不需任何監測",
+        "D. 0.01 g/kg；終生只能使用一次"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Mannitol 0.5–1.4 g/kg bolus</span>（典型 0.25–1.0；急性疝脫可達 1.4）。機轉：volume expansion + 降低 viscosity → cerebral vasoconstriction → 降 ICP。監測：<span class='key'>serum osmolality 維持 <320 mOsm/kg</span>（防 acute tubular necrosis）；<span class='key'>插 Foley</span>追蹤輸出，補液維持 euvolemia 防低血壓。"
     },
     {
@@ -294,10 +294,10 @@
       "tag": "秘籍 · Youmans Ch386 · 滲透治療",
       "q": "下列關於高張食鹽水 (hypertonic saline) 在 TBI 的使用，何者正確？",
       "opts": [
-        "A. 完全不應使用，禁忌",
-        "B. 3% 約 150 mL 或 23% 約 30 mL bolus；目標 serum Na 150–160 mmol/L；風險為持續性 hyperchloremic metabolic acidosis",
-        "C. 主要副作用是低血鈉",
-        "D. 必須先輸 200 mL hypotonic 溶液"
+        "A. 完全禁用 — HTS 對 TBI 為禁忌",
+        "B. 3% 約 150 mL 或 23% 約 30 mL bolus；目標 serum Na 150–160 mmol/L；風險為 hyperchloremic metabolic acidosis",
+        "C. 主要副作用為低血鈉與腦水腫加劇",
+        "D. 必須先輸 200 mL hypotonic 溶液後才能給 HTS"
       ],
       "answer": 1,
       "explanation": "<span class='key'>HTS</span>：3% (150 mL) 或 23% (30 mL) bolus；3% NaCl 持續輸注，每 2 小時測 Na，<span class='key'>目標 150–160 mmol/L</span>。優點：對低血容、腎功能不全者特別有用。<span class='key'>主要風險：持續性 hyperchloremic metabolic acidosis</span>。Cooper 等 RCT 顯示院前 HTS 為 TBI 安全的 resuscitation fluid。"
@@ -307,10 +307,10 @@
       "tag": "功法 · Youmans Ch386 · 癲癇預防",
       "q": "目前 TBI 後癲癇預防的首選藥物為何？理由為？",
       "opts": [
-        "A. Phenytoin — 完全無副作用",
-        "B. Levetiracetam (Keppra) — 預防效力相近 phenytoin，但副作用較少、由腎排泄、不經 CYP450",
-        "C. Carbamazepine — 用於所有 TBI",
-        "D. Valproate — 預防 status epilepticus 唯一選項"
+        "A. Phenytoin — 預防效力相近，且完全無副作用",
+        "B. Levetiracetam — 預防效力相近 phenytoin，但副作用較少、由腎排泄、不經 CYP450",
+        "C. Carbamazepine — 用於所有 TBI 患者",
+        "D. Valproate — 為預防 status epilepticus 唯一選擇"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Levetiracetam (Keppra)</span> 已大幅取代 phenytoin 成為 TBI 後 seizure prophylaxis 首選。理由：<span class='key'>預防效力相近、副作用較少、腎排泄不經 CYP450</span>，與其他藥物交互作用少。Phenytoin（Temkin RCT）僅減少傷後第一週 seizure (3.6% vs 14.2%)，超過 1 週無預防效果。Phenytoin 快速 IV 可致心律不整與低血壓。"
@@ -320,12 +320,12 @@
       "tag": "心法 · Youmans Ch386 · 血流動力學",
       "q": "Cushing 反射的典型三聯徵為？臨床意義為？",
       "opts": [
-        "A. 高血壓 + 心搏過緩 + 不規則呼吸 → 顱內高壓晚期、即將 herniation 之預兆",
-        "B. 低血壓 + 心搏過速 + 過度換氣 → 出血性休克",
-        "C. 高血壓 + 心搏過速 + 過度換氣 → 嗜鉻細胞瘤",
+        "A. 低血壓 + 心搏過速 + 過度換氣 → 出血性休克",
+        "B. 高血壓 + 心搏過速 + 過度換氣 → 嗜鉻細胞瘤",
+        "C. 高血壓 + 心搏過緩 + 不規則呼吸 → 顱內高壓晚期、即將 herniation",
         "D. 低血壓 + 心搏過緩 + 呼吸暫停 → 神經源性休克"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "<span class='key'>Cushing reflex</span>（Cushing 1901 描述）：<span class='key'>HTN + bradycardia + 不規則呼吸</span>。機轉：ICP 過高 → 腦幹受壓 → sympathetic 反應升 BP 維持 CPP → baroreflex 引發 bradycardia。臨床意義：<span class='key'>顱內高壓晚期警訊，即將 herniation</span>。實務常因病人已 mechanical ventilation，呼吸變化不明顯。"
     },
     {
@@ -333,10 +333,10 @@
       "tag": "秘籍 · Youmans Ch386 · 休克鑑別",
       "q": "外傷患者出現 hypotension + bradycardia（而非預期的 hypotension + tachycardia），最該懷疑？",
       "opts": [
-        "A. 出血性休克",
-        "B. Neurogenic shock（脊髓損傷），應給 pressors 而非單純 volume expansion",
-        "C. 過敏性休克",
-        "D. 心因性休克"
+        "A. 出血性休克之代償性表現",
+        "B. Neurogenic shock（脊髓損傷），應給 pressor 而非單純 volume expansion",
+        "C. 過敏性休克伴心律緩慢",
+        "D. 心因性休克之早期表現"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Hypotension + bradycardia</span>（缺少預期的 tachycardia 反射）→ <span class='key'>Neurogenic shock</span>（脊髓損傷喪失交感緊張度）。處置：先排除其他出血源、CVP 監測、<span class='key'>使用 vasopressor</span>（而非無限制 volume expansion）。Hypovolemic shock 一般 tachycardia + hypotension。"
@@ -346,12 +346,12 @@
       "tag": "心法 · Youmans Ch386 · 臨床警訊",
       "q": "「Talk and die」現象在 TBI 中最常見的兩種病灶為？",
       "opts": [
-        "A. SAH 與 IVH",
-        "B. Acute EDH（lucid interval 後突發惡化）與雙側額葉 contusion（延遲擴大或合併 edema）",
-        "C. DAI 與 cerebral edema",
-        "D. 腦腫瘤與 stroke"
+        "A. Acute EDH（lucid interval 後突發惡化）與雙側額葉 contusion（延遲擴大或合併 edema）",
+        "B. SAH 與 IVH 為兩大主因",
+        "C. DAI 與 cerebral edema 為兩大主因",
+        "D. 腦腫瘤與 stroke 為主因"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>「Talk and die」</span>：起初清醒、後突然惡化的 TBI。最常見原因：<span class='key'>(1) Acute EDH</span> 在 lucid interval 後血腫擴大壓迫；<span class='key'>(2) Bifrontal contusions</span> 後續擴大或合併 delayed edema。Lobato 等研究：清醒後昏迷的患者，<span class='key'>~80%</span> CT 可找到 focal mass lesion。"
     },
     {
@@ -359,12 +359,12 @@
       "tag": "秘籍 · Youmans Ch386 · 腦氧監測",
       "q": "BOOST (Brain Oxygen Optimization in Severe TBI) 試驗的核心介入為？",
       "opts": [
-        "A. 持續性過度換氣",
-        "B. 多模態監測腦氧（PbtO₂）並針對腦缺氧進行優化處置",
-        "C. 大劑量類固醇",
-        "D. 預防性低溫療法"
+        "A. 持續性過度換氣以降低 ICP",
+        "B. 大劑量類固醇治療外傷性腦水腫",
+        "C. 多模態監測腦氧（PbtO₂）並針對腦缺氧進行優化處置",
+        "D. 預防性低溫療法（targeted hypothermia）"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>BOOST</span> 系列試驗：除了 ICP，加入<span class='key'>多模態監測（含 PbtO₂、溫度、代謝、間接 CBF）</span>，針對 brain hypoxia 介入處置。BOOST-2 已顯示腦缺氧減少時死亡率與 outcome 有改善趨勢，BOOST-3 進行中。代表「不只看 ICP，還要看腦組織氧合」的趨勢。"
     },
     {
@@ -372,10 +372,10 @@
       "tag": "功法 · Youmans Ch386 · 血壓目標",
       "q": "急性 resuscitation 中，TBI 患者血壓的最低目標（依 BTF 第 4 版）為？",
       "opts": [
-        "A. SBP > 60 mmHg 即可",
+        "A. SBP > 60 mmHg 即可，無需更高",
         "B. SBP > 100 mmHg（並避免任何 hypotension episode）",
-        "C. MAP > 30 mmHg",
-        "D. 不需特別維持血壓"
+        "C. MAP > 30 mmHg 為唯一要求",
+        "D. 不需特別維持血壓，自體調節即可"
       ],
       "answer": 1,
       "explanation": "急性 resuscitation：<span class='key'>SBP 維持 > 100 mmHg</span>（BTF 第 4 版進一步分齡：50–69 歲 ≥100；其他年齡 ≥110）。<span class='key'>單次 hypotension episode 即可使死亡率倍增</span>。CPP 目標 60–70 mmHg。Marmarou 等資料庫分析顯示 ICP 不穩 + hypotension 是預後最重要的可調控因子。"
@@ -385,12 +385,12 @@
       "tag": "秘籍 · Youmans Ch386 · 創傷中心",
       "q": "依 Demetriades 等大型回溯研究（ISS > 15），下列敘述何者正確？",
       "opts": [
-        "A. 在 ACS Level I trauma center 治療結果與 nontrauma center 無差別",
-        "B. ACS Level I trauma center 顯著優於 nontrauma center；對嚴重患者 (ISS > 15) Level I 又優於 Level II",
-        "C. Level II 中心結果優於 Level I",
-        "D. 創傷中心等級與結果無關"
+        "A. Level I 與 nontrauma center 結果無差別",
+        "B. Level II 結果優於 Level I",
+        "C. 創傷中心等級與結果完全無關",
+        "D. ACS Level I trauma center 顯著優於 nontrauma center；嚴重患者 (ISS>15) Level I 又優於 Level II"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Demetriades 等：嚴重外傷 (ISS > 15) 在 <span class='key'>ACS Level I trauma center 結果優於 Level II</span>；MacKenzie 等多中心研究證實 trauma center 整體死亡風險低於 nontrauma center。對 TBI 患者，<span class='key'>儘速轉送有 neurosurgeon coverage 的 Level I/II 中心</span>仍是長期預後的關鍵。"
     }
   ]

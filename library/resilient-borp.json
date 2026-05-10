@@ -9,12 +9,12 @@
       "tag": "情境 · BORP · 啟動條件",
       "q": "依南區劇本，BORP 團隊何時被啟動？",
       "opts": [
-        "A. 任何急診爆滿時",
-        "B. 主建物（含急診/開刀房/ICU）成為熱區無法使用 + 鄰近發生大量傷患事件 + 其他重度級急救醫院車程 >40 分鐘",
-        "C. 任何車禍發生時",
-        "D. 例行手術排程不夠時"
+        "A. 急診人滿為患（>20 名重傷患同時湧入）即可啟動",
+        "B. 醫院主建物部分樓層停電時即啟動",
+        "C. 任何車禍多人傷亡（≥3 人）即啟動",
+        "D. 主建物熱區無法用 + 鄰近大量傷患 + 其他重度級醫院車程 >40 分鐘 + 衛生局指示"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "BORP（備援手術室）啟動條件：<span class='key'>(1) 主建物成為熱區（如爆裂物威脅）— 急診、開刀房、ICU 皆禁止使用</span>；<span class='key'>(2) 鄰近發生大量傷患事件</span>（南區劇本：恐嚇電話 + 30 分鐘後鄰近工廠爆炸）；<span class='key'>(3) 其他重度級急救醫院車程 >40 分鐘</span>；<span class='key'>(4) 衛生局與指揮中心協調後指示</span>。地點：<span class='key'>院內相對安全之獨立建物（如教學研究大樓地下室）</span>。"
     },
     {
@@ -22,12 +22,12 @@
       "tag": "情境 · BORP · 團隊編制",
       "q": "南區劇本之 BORP 團隊編制人數為？",
       "opts": [
-        "A. 5 人",
-        "B. 10 人 — EDD×1、EDN×1、EMT×1、S×2、ORN×1、ANE×1、ICU×2、LOG×1",
-        "C. 20 人",
-        "D. 50 人"
+        "A. 5 人 — 醫師 2、護理 2、衛勤 1",
+        "B. 20 人，分內外科手術組 + 護理組 + 後勤組",
+        "C. 10 人 — EDD/EDN/EMT/S×2/ORN/ANE/ICU×2/LOG",
+        "D. 12 人 — 多 1 名復健治療師 + 1 名社工"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>BORP 標準 10 人編制</span>：<span class='key'>EDD（急診醫師×1）</span>現場醫療指揮、檢傷決策；<span class='key'>EDN（急診護理師×1）</span>檢傷護理、建立管路；<span class='key'>EMT2 衛勤人員×1</span> TCCC 及協助醫療；<span class='key'>S1/S2（外科醫師×2）</span>手術決策與 DCS；<span class='key'>ORN（手術室護理師×1）</span>整備、協助手術；<span class='key'>ANE（麻醉科醫師×1）</span>DCR 及手術麻醉；<span class='key'>ICU1/ICU2（重症護理師×2）</span>術前護理及術後重症照護；<span class='key'>LOG（後勤行政×1）</span>通訊聯繫、物資調配、後送通道。"
     },
     {
@@ -35,12 +35,12 @@
       "tag": "情境 · BORP · 目標",
       "q": "BORP 部署的核心醫療目標為？",
       "opts": [
-        "A. 取代醫院的全套手術功能",
-        "B. 收治現場中重傷患，穩定後進行轉院後送，但須先完成必要之 damage control",
-        "C. 僅提供基本急救",
-        "D. 提供例行門診"
+        "A. 收治中重傷患，穩定後完成 damage control 即轉院後送",
+        "B. 於院內建構完整二級手術中心，可定期排定例行手術",
+        "C. 僅提供現場止血與基本急救，不執行任何手術",
+        "D. 取代主建物功能，提供完整 ICU 與門診服務"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "BORP 核心目標：<span class='key'>收治現場中重傷患 → 穩定後轉院後送</span>。轉送前必須<span class='key'>完成必要之 damage control</span>（DCS/DCR）。劇本：團隊攜<span class='key'>一組 BORP 標準裝備 + 10U LTOWB</span>。當地消防分隊已設外圍醫療站，<span class='key'>輕傷留外圍醫療站等待分流；瀕死則原地留置不進 BORP</span>。"
     },
     {
@@ -48,12 +48,12 @@
       "tag": "心法 · BORP · 檢傷分類",
       "q": "依 BORP 醫療交班單，「檢傷分類」與「後送分類」共有哪幾級？",
       "opts": [
-        "A. 都各 2 級",
-        "B. 檢傷分類 4 級：重傷、中傷、輕傷、死亡。後送分類 3 級：非常緊急、緊急、常規",
-        "C. 各 5 級",
-        "D. 沒有分類"
+        "A. 檢傷 3 級（紅/黃/綠）+ 後送 2 級（緊急/非緊急）",
+        "B. 檢傷 5 級（START 系統）+ 後送 4 級",
+        "C. 檢傷與後送各 2 級（緊急/非緊急）",
+        "D. 檢傷 4 級（重/中/輕/死）+ 後送 3 級（非常緊急/緊急/常規）"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "BORP 交班單：<span class='key'>檢傷分類 4 級 — 重傷 / 中傷 / 輕傷 / 死亡</span>。<span class='key'>後送分類 3 級 — 非常緊急 / 緊急 / 常規</span>。配合 MIST 交班：M（機轉）、I（傷勢）、S（症狀/徵象）、T（已有處置）。"
     },
     {
@@ -61,10 +61,10 @@
       "tag": "心法 · BORP · 病患流分流",
       "q": "依劇本，下列何種傷患不進入 BORP 醫療站？",
       "opts": [
-        "A. 重傷患皆進入",
-        "B. 輕傷留外圍醫療站等待分流後送；瀕死則於外圍醫療站原地留置",
-        "C. 所有傷患都進入",
-        "D. 只有醫護人員進入"
+        "A. 瀕死患者進 BORP 接受最積極處置",
+        "B. 輕傷外圍醫療站等待後送；瀕死於外圍醫療站原地留置",
+        "C. 輕傷與重傷皆優先進入 BORP",
+        "D. 所有檢傷分類患者皆入 BORP，依 priority 處理"
       ],
       "answer": 1,
       "explanation": "BORP 分流原則：<span class='key'>重傷與中傷 → 進入 BORP 醫療站</span>；<span class='key'>輕傷 → 留外圍醫療站等待分流後送</span>；<span class='key'>瀕死（expectant）→ 於外圍醫療站原地留置，不進 BORP</span>。資源有限環境下，BORP 集中救治可救者。劇本目標：3 名模擬病患（2 重傷、1 中傷），60 分鐘內完成。"
@@ -74,12 +74,12 @@
       "tag": "情境 · BORP · MIST 交班",
       "q": "MIST 戰傷交班四要素為？",
       "opts": [
-        "A. Medication, Injection, Surgery, Treatment",
-        "B. Mechanism、Injury、Signs and symptoms、Treatments",
-        "C. Mood, Income, Sleep, Trauma",
-        "D. Mass, Intelligence, Strength, Time"
+        "A. Medication、Imaging、Surgery、Time",
+        "B. Mood、Intake、Sleep、Trauma",
+        "C. Mechanism、Injury、Signs/Symptoms、Treatments",
+        "D. Mass、Intelligence、Strength、Time"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>MIST 交班</span>：<span class='key'>M (Mechanism) 受傷機轉</span>、<span class='key'>I (Injury) 傷勢</span>、<span class='key'>S (Signs & Symptoms) 症狀與徵象（含意識 GCS、生命徵象）</span>、<span class='key'>T (Treatments) 已執行的處置</span>（如止血帶、敷料、輸液、藥物）。例如劇本重傷 #2：M 爆炸破片穿刺；I 左上腹穿刺傷；S 大量出血、皮膚濕冷、E2V1M5；T Simple mask 使用、破片未移除。"
     },
     {
@@ -87,12 +87,12 @@
       "tag": "心法 · BORP · 受傷機轉",
       "q": "BORP 交班單上的受傷機轉勾選不包括？",
       "opts": [
-        "A. 火炮 / 槍傷 / 手榴彈 / 土製炸藥",
-        "B. 燒傷 / 鈍傷 / 高處墜落 / 壓砸傷",
-        "C. 車禍 / 刀傷穿刺傷",
-        "D. 過敏反應"
+        "A. 高處墜落",
+        "B. 土製炸藥",
+        "C. 過敏反應",
+        "D. 刀傷或穿刺傷"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "BORP 交班單之受傷機轉（可多選）：<span class='key'>火炮、槍傷、手榴彈、土製炸藥、燒傷、鈍傷、高處墜落、壓砸傷、車禍、刀傷/穿刺傷</span>。<span class='key'>過敏反應非外傷機轉</span>。設計考量戰傷 + 民災情境。其他可填「其它」。"
     },
     {
@@ -100,12 +100,12 @@
       "tag": "心法 · 止血帶",
       "q": "依 BORP 交班單，止血帶記錄需含哪些資訊？",
       "opts": [
-        "A. 只記時間",
-        "B. 部位（右臂、左臂、右腿、左腿）+ 上止血帶時間 + 止血帶轉換（conversion）時間",
-        "C. 只記顏色",
-        "D. 不需記錄"
+        "A. 僅記錄止血帶顏色與品牌型號",
+        "B. 僅記錄起始時間（無需記轉換）",
+        "C. 四肢部位 + 上止血帶時間 + conversion 時間",
+        "D. 僅記錄左/右側（無需區分手腳）"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "止血帶記錄四肢分開：<span class='key'>右臂、左臂、右腿、左腿</span>，每肢記<span class='key'>上止血帶時間</span>與<span class='key'>止血帶轉換 (conversion) 時間</span>。Conversion 重要 — 移除戰場原止血帶（高位 high and tight），改由更精確處 + 敷料/包紮替代，減少缺血時間（理想 <2 小時）。"
     },
     {
@@ -113,12 +113,12 @@
       "tag": "心法 · TCCC · 雙止血帶",
       "q": "若一條止血帶束緊後仍持續脈衝狀滲血，正確處置為？",
       "opts": [
-        "A. 拆除原止血帶換新的",
-        "B. 在原止血帶旁加用第二條止血帶束緊",
-        "C. 直接放棄止血",
-        "D. 灑止血粉即可"
+        "A. 立即拆除原止血帶換上新的",
+        "B. 僅在傷口灑止血粉即可",
+        "C. 於原止血帶旁加用第二條（更近端）束緊",
+        "D. 改以鬆散包紮觀察出血量"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>單條止血帶不足以止血 → 在原止血帶旁加用第二條（更靠近近端）</span>。劇本重傷 #4 範例：右下肢膝蓋下 nearly amputation，原止血帶鬆脫 → 重束緊但仍呈脈衝狀滲血 → <span class='key'>第二條止血帶束緊後無明顯出血</span> → 清潔濕紗 + 彈性繃帶包紮。<span class='key'>不可直接拆除止血中的止血帶</span>（會大量出血）。"
     },
     {
@@ -126,12 +126,12 @@
       "tag": "秘籍 · TCCC · Junctional",
       "q": "Junctional（交界部，如腹股溝）出血用止血帶不易，正確處置為？",
       "opts": [
-        "A. 大力按壓即可",
-        "B. 第二條止血帶 + hemostatic gauze（止血紗布）填塞 + 加壓",
-        "C. 止血帶束緊大腿",
-        "D. 不需處理"
+        "A. 止血帶束於遠端肢體即可控制",
+        "B. 用標準繃帶輕度加壓 30 分鐘觀察",
+        "C. 直接縫合皮膚邊緣止血",
+        "D. 第二條止血帶 + hemostatic gauze 填塞 + 加壓"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Junctional（鼠蹊、腋下、頸部）出血標準止血帶不易達到。處置：<span class='key'>第二條止血帶（特殊 junctional tourniquet 如 SAM Junctional 或 CRoC）+ hemostatic gauze（止血紗布）填塞 + 加壓</span>。劇本重傷 #6 範例：右大腿交界部開放性撕裂傷，<span class='key'>右下肢第二條止血帶 + 止血紗布填塞</span>。BORP 表格 C 區：止血帶分 Extremity / Junctional / Truncal 三類；敷料分 Hemostatic / Pressure / Other。"
     },
     {
@@ -139,12 +139,12 @@
       "tag": "心法 · BORP · 氣道",
       "q": "BORP 交班單之氣道處置 (A) 選項不包括？",
       "opts": [
-        "A. Intact（自然通暢）",
-        "B. NPA（鼻咽道）",
-        "C. CRIC（環甲膜切開術）",
-        "D. PEG（經皮胃造瘻）"
+        "A. NPA（鼻咽道）",
+        "B. PEG（經皮胃造瘻）",
+        "C. CRIC（環甲膜切開）",
+        "D. LMA（喉頭罩）"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "BORP 氣道 (A) 處置：<span class='key'>Intact（自然通暢）、NPA（nasopharyngeal airway）、CRIC（cricothyroidotomy 環甲膜切開術）、ET-Tube（氣管插管）、LMA（laryngeal mask airway）</span>。<span class='key'>PEG 為長期營養通路，非急性氣道處置</span>。CRIC 為氣道無法建立時之最後手段。"
     },
     {
@@ -152,12 +152,12 @@
       "tag": "心法 · BORP · 呼吸",
       "q": "BORP 之 B（Breathing）處置選項中，「Needle-D」代表？",
       "opts": [
-        "A. 給藥",
-        "B. Needle decompression — 針穿刺減壓張力性氣胸（第 5 肋間鎖中線或 2-3 肋間鎖中線）",
-        "C. 縫合針",
-        "D. 採血針"
+        "A. Needle decompression — 張力性氣胸針穿刺減壓",
+        "B. Needle directly — 直接針頭給藥靜脈通路",
+        "C. Needle drainage — 腹腔灌洗用穿刺針",
+        "D. Needle drug — 抗生素緊急穿刺給藥"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Needle-D = needle decompression（針穿刺減壓）</span>，用於張力性氣胸 (tension PTX)。位置：第<span class='key'>5 肋間 anterior axillary line</span>（TCCC 偏好）或<span class='key'>2-3 肋間 midclavicular line</span>。Chest-Tube：胸管引流。<span class='key'>Chest-Seal：穿刺胸傷貼合（防 sucking chest wound）</span>。劇本重傷 #2：插管後 SpO₂ 仍 90-92%，左側呼吸音降低 → 放左胸管，引流氣體 + 1000cc 鮮血。"
     },
     {
@@ -165,12 +165,12 @@
       "tag": "情境 · 重傷 #2 · 心包",
       "q": "重傷 #2（左上腹穿刺傷、E2V1M5、BP 60/46、SpO₂ 84%），FAST 顯示心包膜積液（+）腹內積液（+），代表什麼？需做什麼手術？",
       "opts": [
-        "A. 觀察即可",
-        "B. Cardiac tamponade + 腹部出血 → 開胸（左前側 thoracotomy 含心包減壓）+ 剖腹探查",
-        "C. 只需打針",
-        "D. 立即出院"
+        "A. 等待後送，不於 BORP 進行任何手術",
+        "B. 僅做胸管引流，腹部 packing 後送",
+        "C. 立即截肢處理創傷源後送",
+        "D. Cardiac tamponade + 腹部出血 → 開胸（含心包減壓）+ 剖腹探查"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "重傷 #2 FAST 心包膜積液（+）+ 腹內積液（+）+ 大量出血休克 → <span class='key'>cardiac tamponade + 腹部出血</span>。手術：<span class='key'>左前側 thoracotomy + 心包減壓 → 發現左心室 1cm laceration（縫合）+ 左下肺葉 3cm laceration（GIA wedge resection）+ aortic clamp 暫時控制橫膈以下出血 → 剖腹探查發現肝臟左葉 through-and-through 撕裂 + 橫膈膜撕裂（packing）→ 緩慢鬆 aortic clamp → 胸管引流 + 關胸 → Bogata bag/VAC 暫時關腹</span>。"
     },
     {
@@ -178,12 +178,12 @@
       "tag": "情境 · 重傷 #2 · 開胸技術",
       "q": "重傷 #2 行 left anterolateral thoracotomy 處理 cardiac tamponade 時，dissection 順序為？",
       "opts": [
-        "A. 直接切心臟",
-        "B. 開胸 → 打開心包膜減壓 → 縫合心臟 laceration → 處理肺葉出血（GIA wedge resection）→ aortic clamp 暫時控制 diaphragm 以下出血",
-        "C. 先夾主動脈再開胸",
-        "D. 先剖腹後開胸"
+        "A. 開胸 → 心包減壓 → 縫心臟 laceration → 處理肺出血 → aortic clamp",
+        "B. 先 aortic clamp → 心包減壓 → 直接截肢動脈起源",
+        "C. 先剖腹探查肝脾，再考慮開胸",
+        "D. 純觀察 30 分鐘待病情穩定再手術"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Damage Control Thoracotomy（左前側）順序：<span class='key'>(1) 開胸 → 打開心包膜減壓</span>（解除 tamponade）→ <span class='key'>(2) 縫合心臟 laceration</span>（重傷 #2：左心室 1 cm，縫合）→ <span class='key'>(3) 處理肺葉出血（GIA 或 auto-suture wedge resection）</span> → <span class='key'>(4) Aortic clamp 暫時控制 diaphragm 以下出血</span>（為 transition 至剖腹做準備）→ 完成步驟後生命徵象從 BP 60/46 → BP 76/56。"
     },
     {
@@ -191,12 +191,12 @@
       "tag": "情境 · 重傷 #2 · DCS 暫時關閉",
       "q": "重傷 #2 剖腹完成肝臟 packing 後的腹部 closure 方式為？",
       "opts": [
-        "A. 立即正式縫合",
-        "B. Bogata bag 或自製 VAC 暫時關閉腹腔（damage control，準備轉送）",
-        "C. 不需關閉",
-        "D. 用石膏固定"
+        "A. Bogata bag 或 VAC 暫時關腹（damage control，準備轉送）",
+        "B. 標準 layered closure 含 fascial 縫合與 staples 皮膚",
+        "C. 腹腔灌洗液體留置 + 開放暴露於空氣中",
+        "D. 外用石膏固定腹壁防擴張"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "DCS 之 abbreviated laparotomy 暫時關閉：<span class='key'>Bogata bag（透明袋裝液體封閉）或自製 VAC（負壓敷料）</span>暫時關腹。理由：<span class='key'>(1) 防止 abdominal compartment syndrome；(2) 減少手術時間；(3) 保留再手術空間</span>。後續轉送至確定醫院 24-48 hr 內 second-look 完成 definitive repair。"
     },
     {
@@ -204,12 +204,12 @@
       "tag": "情境 · 重傷 #5 · Pelvic",
       "q": "重傷 #5（梁柱鈍傷、骨盆鈍傷、BP 66/42、HR 158、骨盆固定帶下觸診不穩定），手術為？",
       "opts": [
-        "A. 不需手術",
-        "B. Preperitoneal packing + external fixation（不穩定骨盆骨折之 DCS）",
-        "C. 全身骨盆置換",
-        "D. 開胸"
+        "A. 全骨盆置換手術",
+        "B. 立即 ORIF（open reduction internal fixation）",
+        "C. Preperitoneal packing + external fixation",
+        "D. 僅靜脈輸液加壓，不手術"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "重傷 #5 = unstable pelvic fracture + 持續低血壓。BORP DCS：<span class='key'>preperitoneal packing + external fixation</span>。手術器械：<span class='key'>周邊血管包 + 骨盆外固定包</span>。流程：暫時移除骨盆固定帶 → 觸診確認不穩定 → 立刻重束緊 → 神經學檢查 → 尿道口無血、肛指無血 → preperitoneal packing + ex-fix。手術後 BP 80/60，HR 120。"
     },
     {
@@ -217,12 +217,12 @@
       "tag": "心法 · 骨盆評估",
       "q": "Unstable pelvic fracture 的初步評估必做項目不包括？",
       "opts": [
-        "A. 觸診骨盆穩定度（暫時鬆固定帶後）",
-        "B. 尿道口檢查（出血提示尿道傷）",
-        "C. 肛指檢查（高位前列腺、出血、缺損）",
-        "D. 立刻顱骨穿刺"
+        "A. 尿道口出血檢查",
+        "B. 顱骨穿刺",
+        "C. 肛指檢查",
+        "D. 暫時鬆固定帶後觸診穩定度"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "Unstable pelvic fracture 評估：<span class='key'>(1) 暫時鬆骨盆固定帶 → 觸診穩定度 → 不穩定立即重束緊</span>；<span class='key'>(2) 尿道口檢查 — 出血提示尿道傷</span>（dysuria 或無法導尿）；<span class='key'>(3) 肛指檢查 — 高位前列腺（uretral disruption）、出血（直腸傷）、缺損</span>；(4) 神經學檢查；(5) 四肢肌力與感覺。<span class='key'>顱骨穿刺非標準骨盆評估</span>。"
     },
     {
@@ -230,12 +230,12 @@
       "tag": "情境 · 重傷 #6 · Vascular",
       "q": "重傷 #6（右大腿交界部撕裂傷 + 持續出血，2 條止血帶 + 填塞仍出血），術中發現右鼠蹊股動脈 + 股靜脈破裂，手術為？",
       "opts": [
-        "A. 直接結紮所有血管",
-        "B. Temporary vascular shunt（動靜脈分流手術）— DCS 暫時恢復遠端灌流，後送做正式修補",
-        "C. 截肢",
-        "D. 觀察即可"
+        "A. Temporary vascular shunt（暫維持遠端灌流，後送做正式 graft）",
+        "B. 立即截肢避免感染擴散",
+        "C. 結紮所有可見血管",
+        "D. 用 Foley catheter 球囊壓迫血管止血"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "重傷 #6 鼠蹊股動脈 + 靜脈破裂之 DCS 標準：<span class='key'>Temporary vascular shunt（動靜脈分流手術）</span>。原理：<span class='key'>(1) 暫時維持遠端肢體灌流（防 ischemia-reperfusion）；(2) 縮短手術時間（僅放 shunt，不做 definitive 重建）；(3) 後送至確定醫院做正式 graft 重建</span>。Shunt 可用 Pruitt-Inahara、Argyle 等。手術前生命徵象 BP 70/45 → 完成後 BP 90/65、SpO₂ 99%。"
     },
     {
@@ -244,11 +244,11 @@
       "q": "重傷 #6 在檢傷區的處置順序中，下列何者錯誤？",
       "opts": [
         "A. 第二條止血帶 + 止血紗布填塞",
-        "B. 病患意識改變 → 進行插管 + 放胸管（聽診右側呼吸音降低 → 放右側胸管，引流氣體 + 150cc 血）",
-        "C. 直接送開刀房不做任何處置",
-        "D. 建立 IC/IO/large bore central catheter + TXA 2g + 預防性抗生素 + 止痛藥 + LTOWB 2U"
+        "B. 直接送開刀房不做任何檢傷區處置",
+        "C. 意識改變 → 進行插管 + 呼吸機",
+        "D. IC/IO + TXA 2g + 抗生素 + 止痛 + LTOWB 2U"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "重傷 #6 檢傷區處置順序（按劇本）：<span class='key'>(1) 第二條止血帶 + 止血紗布填塞</span>；<span class='key'>(2) 維持呼吸道：意識改變 → 進行插管</span>；<span class='key'>(3) 呼吸機操作</span>；<span class='key'>(4) 插管後 SpO₂ 仍 90-92%，聽診右側呼吸音降低 → 放右側胸管（引氣 + 150cc 血）</span>；<span class='key'>(5) IC/IO/large bore + TXA 2g + 預防性抗生素 + 止痛 + Belmont LTOWB 2U</span>；(6) FAST、神經學、Tetanus；(7) 保溫；(8) 入手術室。<span class='key'>不可直接送 OR 跳過 ABC 處置</span>。"
     },
     {
@@ -256,10 +256,10 @@
       "tag": "心法 · DCR · TXA",
       "q": "依 BORP 劇本，TXA 標準劑量為？何時給予？",
       "opts": [
-        "A. 0.5 g 任何時間",
-        "B. 2 g 在大量出血傷患的 IC/IO/large bore 建立後立即給予",
-        "C. 50 g IV bolus",
-        "D. 不使用 TXA"
+        "A. 0.5 g IV，僅在凝血異常時給予",
+        "B. 2 g IV，IC/IO 建立後立即給予",
+        "C. 5 g IV，分 5 次每 15 分給",
+        "D. 10 g IM，作為止痛輔助"
       ],
       "answer": 1,
       "explanation": "<span class='key'>TXA（tranexamic acid）標準劑量：2 g IV</span>，在 IC/IO/large bore 建立後立即給予。所有重傷患者皆給予。基於 <span class='key'>CRASH-2</span>（trauma 傷後 3 小時內降低死亡率）、<span class='key'>CRASH-3</span>（mild-moderate TBI 死亡率改善）。BORP 劇本 4 名重傷皆給 TXA 2 g。"
@@ -269,12 +269,12 @@
       "tag": "心法 · DCR · LTOWB",
       "q": "LTOWB 是什麼？BORP 標準裝備中攜帶多少單位？",
       "opts": [
-        "A. Low-Titer O Whole Blood — 低效價 O 型全血；劇本標準裝備攜帶 10U",
-        "B. Long-Term Omega Wide Blood",
-        "C. 抗生素",
-        "D. 麻醉藥"
+        "A. Long-Term Omega Whole Blood — 含 omega-3 的長效血品",
+        "B. Low-Titer O Whole Blood — 低效價 O 型全血；標準裝備 10U",
+        "C. Low Temperature Oxygen Wide Blood — 低溫氧合血",
+        "D. Lyophilized Type O White Blood — 凍乾白血球"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "<span class='key'>LTOWB = Low-Titer O Whole Blood（低效價 O 型全血）</span>。一袋含 RBC + plasma + platelet 接近生理比例。<span class='key'>BORP 標準裝備攜帶 10U</span>。優於 1:1:1 component therapy 之處：<span class='key'>(1) 不需 type & cross；(2) 含完整 clotting factors；(3) 較少 dilution；(4) 室溫 22°C 或 4°C 儲存（依機構）；(5) 一袋 ~500 mL = 1U</span>。劇本各重傷患者用 Belmont rapid infuser 給 LTOWB，必要時請求血液支援 +10U。"
     },
     {
@@ -282,12 +282,12 @@
       "tag": "心法 · DCR · 鈣離子",
       "q": "為何 BORP 麻醉醫師需在 LTOWB 大量輸血時補充鈣離子？",
       "opts": [
-        "A. 增加肌肉力量",
-        "B. 血品中 citrate 螯合鈣離子 → ionized calcium 下降 → 心肌收縮力降低 + coagulopathy 加劇；citrate toxicity",
-        "C. 預防感染",
-        "D. 提升 SpO₂"
+        "A. 預防低血糖伴隨之肌肉抽搐",
+        "B. 提升 SpO₂ 與紅血球攜氧能力",
+        "C. 中和血品的酸性 pH 值",
+        "D. Citrate 螯合 ionized Ca → 心肌收縮降 + coagulopathy 加劇"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>大量輸血時必補鈣離子</span>。原因：<span class='key'>血品（含 LTOWB、PRBC、FFP）中 citrate 為抗凝劑，輸入後 chelate ionized calcium → 血鈣下降 → (1) 心肌收縮力降低、(2) coagulopathy 加劇（凝血因子需 Ca²⁺）、(3) citrate toxicity</span>。劇本各重傷麻醉階段：「補充鈣離子」。常用劑量 1 g calcium gluconate 或 calcium chloride 每 4 單位輸血。"
     },
     {
@@ -295,10 +295,10 @@
       "tag": "心法 · DCR · 致命三聯徵",
       "q": "Trauma 之 「lethal triad」與 BORP 之防範策略對應為？",
       "opts": [
-        "A. Hypothermia + acidosis + coagulopathy；BORP：保溫毯/主動加熱毯、permissive hypotension、LTOWB + TXA",
+        "A. Hypothermia + acidosis + coagulopathy",
         "B. Hypoxia + bradycardia + nausea",
-        "C. 發燒 + 高血壓 + 心搏過速",
-        "D. 沒有三聯徵"
+        "C. 高血壓 + 心搏過速 + 發燒",
+        "D. 高血糖 + 高血鉀 + 高鈉"
       ],
       "answer": 0,
       "explanation": "<span class='key'>Trauma lethal triad</span>：<span class='key'>hypothermia + acidosis + coagulopathy</span>（互相惡化的死亡三角）。BORP 防範：<span class='key'>(1) 保溫</span> — 病患保溫、溫毯機/主動加熱毯使用、Belmont 輸液加熱；<span class='key'>(2) 控制酸中毒</span> — DCR 維持灌流、permissive hypotension；<span class='key'>(3) 防 coagulopathy</span> — LTOWB（保留凝血因子）+ TXA（抗纖溶）+ 鈣離子。"
@@ -308,12 +308,12 @@
       "tag": "心法 · BORP · 預防性抗生素",
       "q": "BORP 劇本各重傷之預防性抗生素 first-line 為？",
       "opts": [
-        "A. Vancomycin",
-        "B. Cefazolin 1-2 g IV",
-        "C. Penicillin G",
-        "D. 不需抗生素"
+        "A. Cefazolin 1-2 g IV",
+        "B. Vancomycin 1 g IV 為穿透傷首選",
+        "C. Penicillin G 大劑量靜脈為黃金標準",
+        "D. 經驗性無需給予抗生素，等培養結果"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "BORP 劇本標準預防性抗生素：<span class='key'>Cefazolin 1-2 g IV</span>。給予時機：<span class='key'>檢傷區 IV 建立後立即</span>，若檢傷未給則手術區（麻醉誘導）立即給。BORP 表格也列 <span class='key'>Moxifloxacin、Ertapenem</span> 為其他抗生素選項（戰傷穿透傷時）。給藥還包括 <span class='key'>Tetanus Toxoid 0.5 ml</span>。"
     },
     {
@@ -321,12 +321,12 @@
       "tag": "心法 · BORP · 止痛",
       "q": "BORP 交班單記載之止痛藥選項不包括？",
       "opts": [
-        "A. Ketamine",
-        "B. Fentanyl",
-        "C. Morphine",
-        "D. Acetaminophen 口服"
+        "A. Acetaminophen 口服（PO）",
+        "B. Ketamine",
+        "C. Fentanyl",
+        "D. Morphine"
       ],
-      "answer": 3,
+      "answer": 0,
       "explanation": "BORP 交班單之止痛藥（C 區）：<span class='key'>Ketamine、Fentanyl、Morphine</span>。劇本：「給予 IV 止痛藥物（如 Morphine/Fentanyl）並觀察呼吸抑制情形。」<span class='key'>口服 Acetaminophen 不適用緊急戰傷</span>（吸收慢、不可靠）。Ketamine 在 hemorrhagic shock 為較佳選擇（不致 hypotension）。"
     },
     {
@@ -334,10 +334,10 @@
       "tag": "情境 · 重傷 #4 · 截肢",
       "q": "重傷 #4（右下肢膝下 nearly amputation、原止血帶鬆脫），檢傷區重新束緊 + 第二條止血帶後，下一步處置正確的為？",
       "opts": [
-        "A. 立即斷肢丟棄",
-        "B. 清潔濕紗 + 彈性繃帶包紮；O2 mask；IC/IO + TXA 2g + 預防性抗生素 + 止痛；LTOWB 2U；FAST、神經學；保溫；轉復甦區",
-        "C. 不需任何處理",
-        "D. 立即截肢手術"
+        "A. 立即截肢處理 + 縫合皮膚 + 點滴室觀察",
+        "B. 雙止血帶 + 濕紗包紮 + IC/IO + TXA + 抗生素 + 止痛 + LTOWB 2U",
+        "C. 僅止血帶束緊，無需任何 IV 處置",
+        "D. 送 OR 立即正式截肢手術"
       ],
       "answer": 1,
       "explanation": "重傷 #4 標準處置：<span class='key'>(1) 重束緊原止血帶 + 加第二條止血帶</span>；<span class='key'>(2) 清潔濕紗 + 彈性繃帶包紮</span>；(3) 維持呼吸道（O2 cannula 或 mask）；(4) IC/IO/large bore + <span class='key'>TXA 2g + 預防性抗生素 + 止痛藥 + LTOWB 2U</span>；(5) FAST（negative）；(6) 神經學檢查；(7) 全身查無其他傷口；(8) 保溫；(9) 給止痛；(10) 轉復甦區。<span class='key'>不立即截肢，先穩定後送</span>。"
@@ -347,12 +347,12 @@
       "tag": "心法 · TQ · Conversion",
       "q": "重傷 #4 在復甦區考慮 tourniquet replacement（從膝下移至膝上），原則為何？",
       "opts": [
-        "A. 立即移除原止血帶",
-        "B. 在更近端先放新止血帶，確認無血流再移除遠端原止血帶；視現場狀況而定（後送時間、出血嚴重度）",
-        "C. 只能在 OR 進行",
-        "D. 不可執行"
+        "A. 直接拆除原止血帶換新的",
+        "B. 僅鬆綁原止血帶讓血流恢復觀察 5 分鐘",
+        "C. 更近端先放新止血帶 + 確認無血流再移遠端",
+        "D. 需於開刀房在麻醉下執行"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Tourniquet conversion / replacement</span>：<span class='key'>在更近端先放新止血帶束緊 → 確認無血流 → 再移除遠端原止血帶</span>。劇本：「可考慮做 tourniquet replacement 至膝上處（視現場狀況而定）」。考量：(1) 後送時間（接近 ischemia 2 小時門檻）；(2) 出血嚴重度。原則：<span class='key'>絕不單純拆除止血中的止血帶</span>。"
     },
     {
@@ -360,12 +360,12 @@
       "tag": "心法 · BORP · FAST",
       "q": "FAST 在 BORP 流程中的角色為？",
       "opts": [
-        "A. 完整影像取代 CT",
-        "B. Bedside 超音波快速評估：腹腔積液（Morison's pouch、splenorenal、pelvic）+ 心包積液（subxiphoid）+ 雙側胸腔",
-        "C. 只看心臟",
-        "D. 不在 BORP 中使用"
+        "A. Bedside US：Morison pouch + splenorenal + pelvic + 心包",
+        "B. 完整全身 CT 掃描取代影像金標準",
+        "C. 僅評估心臟瓣膜功能",
+        "D. 腹部觸診 + 聽診替代影像"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>FAST (Focused Assessment with Sonography for Trauma)</span>：bedside 超音波快速評估 4 個區域 — <span class='key'>(1) Morison's pouch（肝腎間，腹腔最低位）；(2) splenorenal recess；(3) pelvic（pouch of Douglas）；(4) subxiphoid（心包）</span>。<span class='key'>Extended FAST (eFAST)</span> 加雙側胸腔（PTX/hemothorax）。劇本各傷患皆做 FAST：重傷 #2 心包（+）腹（+）；#4/#5/#6 negative。FAST 不取代 CT，但 BORP 環境中為快速 triage 工具。"
     },
     {
@@ -374,11 +374,11 @@
       "q": "中傷 #1（爆炸後群眾踩踏、右小腿閉鎖性骨折、意識清楚、BP 130/80），處置不包括？",
       "opts": [
         "A. 5P 患肢遠端脈搏檢查",
-        "B. 雙側呼吸音檢查、IC、止痛、Tetanus、預防性抗生素、傷口濕紗包紮、保溫",
-        "C. 立即開刀",
-        "D. FAST、神經學、全身褪衣檢查"
+        "B. Tetanus + 預防性抗生素 + 止痛",
+        "C. FAST + 神經學 + 全身褪衣檢查",
+        "D. 立即開刀（封閉性骨折非緊急）"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "中傷 #1（封閉性骨折，生命徵象穩定）：<span class='key'>(1) 5P 評估遠端</span>（pulse, pallor, paresthesia, paralysis, pain）；<span class='key'>(2) 雙側呼吸音聽診</span>；(3) IC + 止痛（評估呼吸抑制）；(4) FAST negative；(5) 神經學；(6) 全身褪衣檢查；(7) <span class='key'>Tetanus 0.5ml + 預防性抗生素</span>；(8) 傷口濕紗覆蓋包紮；(9) 保溫；(10) 轉復甦區。<span class='key'>不立即開刀</span> — BORP 環境僅做 damage control，封閉性骨折非緊急。"
     },
     {
@@ -386,12 +386,12 @@
       "tag": "情境 · 中傷 #2 · 高處墜落",
       "q": "中傷 #2（從一層樓墜落、骨盆痛、BP 92/64、HR 110），處置中需特別注意？",
       "opts": [
-        "A. 立即拆除骨盆固定帶",
-        "B. 暫時鬆固定帶觸診，發現不穩立即重束；尿道口/肛指檢查；BP 86/60、HR 120 → LTOWB 2U + 通知醫師",
-        "C. 不需做任何檢查",
-        "D. 直接全身麻醉"
+        "A. 直接全身麻醉手術",
+        "B. 僅給止痛藥觀察，不做骨盆評估",
+        "C. 立即骨盆牽引 + 全身固定石膏",
+        "D. 鬆固定帶觸診不穩立即重束 + 尿道/肛指 + 後續 LTOWB 2U"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "中傷 #2 處置：<span class='key'>(1) 暫時移除骨盆固定帶 → 觸診不穩 → 立即重束緊</span>；(2) 神經學檢查；(3) 四肢肌力評估；<span class='key'>(4) 尿道口檢查（無血）；(5) 肛指檢查（無血、無缺損）</span>；(6) FAST negative；(7) 保溫 + 止痛；(8) 復甦區評估 BP 86/60、HR 120 → <span class='key'>LTOWB 2U + 通知醫師</span>（生命徵象惡化）。"
     },
     {
@@ -400,11 +400,11 @@
       "q": "復甦區（recovery area）的核心功能不包括？",
       "opts": [
         "A. 病患交班 + 確認後送時間",
-        "B. 生命徵象量測 + 全身再次評估",
-        "C. 制定後續照護計畫（PFC 表格）+ 疼痛管理 + 呼吸機操作 + I-stat / 血糖機操作",
-        "D. 進行第二次完整外科手術"
+        "B. PFC 表格制定後續照護計畫",
+        "C. 進行第二次完整外科手術",
+        "D. I-stat + 血糖機 + 呼吸機操作"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "復甦區（術後）功能：<span class='key'>(1) 病患交班、確認後送時間；(2) 生命徵象量測 + 全身再次評估；(3) 制定 PFC（Prolonged Field Care）表格之後續照護計畫；(4) 疼痛管理（IV morphine 或 continuous infusion）；(5) 抗生素續劑量管理；(6) 呼吸機操作 + 抽吸機抽痰；(7) I-stat（血氣、電解質）+ 血糖機；(8) 後送交班 + 病歷文件</span>。<span class='key'>不做第二次完整手術</span> — 後送至確定醫院做。"
     },
     {
@@ -412,12 +412,12 @@
       "tag": "心法 · BORP · PFC 表格",
       "q": "PFC 是什麼？",
       "opts": [
-        "A. Personal File Confidential",
-        "B. Prolonged Field Care — 延長戰場/災難照護表格，記錄病患在資源受限環境之長時間照護計畫（呼吸、循環、疼痛、抗生素、敷料、監測等）",
-        "C. Post-Fracture Care",
-        "D. Pre-Flight Checklist"
+        "A. Personal File Confidential — 個人病歷保密",
+        "B. Post-Fracture Care — 術後骨折追蹤",
+        "C. Pre-Flight Checklist — 後送前確認單",
+        "D. Prolonged Field Care — 延長戰場/災難照護表格"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>PFC = Prolonged Field Care</span>，延長戰場/災難照護。設計用於後送延遲（>1 小時甚至數十小時）情境之系統化照護計畫。<span class='key'>南區劇本注意：「此次演練暫不考慮 1 小時以上之延長照護」</span>，但 PFC 表格仍是復甦區制定後送前計畫之工具。內容含：呼吸/循環/疼痛/抗生素/傷口/監測/特殊狀況處理流程。"
     },
     {
@@ -425,12 +425,12 @@
       "tag": "心法 · BORP · 評分結構",
       "q": "115 年備援手術室團隊挑戰賽的總分配比，哪一項權重最高？",
       "opts": [
-        "A. 人員組織及任務分配（5 分）",
-        "B. 模擬手術處置（術中，30 分）",
-        "C. 器械組裝及功能測試（10 分）",
-        "D. 外部聯繫與資訊回報（15 分）"
+        "A. 人員組織及任務分配（術前，5 分）",
+        "B. 外部聯繫與資訊回報（術後，15 分）",
+        "C. 團隊協作與突發應變（術中，20 分）",
+        "D. 模擬手術處置（術中，30 分）"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "評分結構（總 100 分）：<span class='key'>術前</span>人員組織 5 + 器械組裝 10 + 損傷控制復甦處置 20 = 35 分；<span class='key'>術中</span> 模擬手術處置 <span class='key'>30 分</span>+ 團隊協作與突發應變 20 = 50 分；<span class='key'>術後</span>外部聯繫與資訊回報 15 分。<span class='key'>「模擬手術處置 30 分」為最高權重項</span>。"
     },
     {
@@ -438,12 +438,12 @@
       "tag": "心法 · BORP · 術前損傷控制",
       "q": "「術前損傷控制復甦處置」評分構面（20 分）的兩大評估重點為？",
       "opts": [
-        "A. 病患服裝與化妝",
-        "B. 復甦處置正確性（遵照 ATLS 指引處置復甦，10 分）+ 檢傷分流順暢度（病人檢傷分流與轉送聯絡處置，10 分）",
-        "C. 器械顏色",
-        "D. 麻醉藥物選擇"
+        "A. 病患服裝與化妝 5 + 場地清潔 15",
+        "B. 麻醉藥物選擇 10 + 抗生素類別 10",
+        "C. 復甦處置正確性 10 + 檢傷分流順暢度 10",
+        "D. 團隊精神口號 10 + 隊伍整齊度 10"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>術前損傷控制復甦處置（20 分）</span>：<span class='key'>(1) 復甦處置正確性 10 分</span> — 遵照 ATLS 指引處置復甦，處置傷患得宜；<span class='key'>(2) 檢傷分流順暢度 10 分</span> — 病人檢傷分流與轉送聯絡處置良好。"
     },
     {
@@ -451,12 +451,12 @@
       "tag": "心法 · BORP · 突發應變",
       "q": "術中「團隊協作與突發應變」（20 分）中，「應變與決策」項目評估面對何種突發狀況？",
       "opts": [
-        "A. 例行手術",
-        "B. 停電、出血、設備故障",
-        "C. 病患打鼾",
-        "D. 沒有特定狀況"
+        "A. 病患打鼾或翻身",
+        "B. 手術衣破損",
+        "C. 團員口渴想喝水",
+        "D. 停電、出血、設備故障"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "「應變與決策」評估：<span class='key'>面對突發狀況（停電、出血、設備故障）能即時調整</span>。臨場指揮與溝通（10 分）+ 應變與決策（10 分）= 20 分。BORP 環境特別易遇此類問題（資源受限、行動性裝備）。"
     },
     {
@@ -464,12 +464,12 @@
       "tag": "心法 · BORP · REMOC",
       "q": "BORP 術後通報之指揮鏈為？",
       "opts": [
-        "A. 隨意通報",
-        "B. 依 REMOC 指揮鏈進行回報；通報內容含 4 要素：地點、狀況、需求、行動",
-        "C. 只通報院長",
-        "D. 不需通報"
+        "A. 電話通知院長即可",
+        "B. 自由發揮敘述事件即可",
+        "C. 僅口頭回報無需文件記錄",
+        "D. 依 REMOC 指揮鏈回報；4 要素：地點/狀況/需求/行動"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>術後外部聯繫與資訊回報（15 分）= 依 REMOC 指揮鏈進行回報</span>。通報內容必含 4 要素：<span class='key'>(1) 地點、(2) 狀況、(3) 需求、(4) 行動</span>。配分：通報流程正確 5 + 回報邏輯與清晰度 5 + 在資源受限環境下持續監測與轉介判斷 5。LOG 角色負責通訊聯繫、物資調配、與警方協調後送通道。"
     },
     {
@@ -477,12 +477,12 @@
       "tag": "情境 · BORP · 啟動時程",
       "q": "依南區劇本，BORP 整套演練（含到達與開設）總時間為？",
       "opts": [
-        "A. 30 分鐘",
-        "B. 60 分鐘 — 到達與開設 10 分鐘 + 處置與後送 50 分鐘",
-        "C. 4 小時",
-        "D. 24 小時"
+        "A. 60 分鐘 — 開設 10 + 處置與後送 50",
+        "B. 30 分鐘 — 全程含開設與後送",
+        "C. 4 小時 — 完整 ICU 照護到後送",
+        "D. 24 小時 — 含夜間長期照護"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "南區劇本時間軸：<span class='key'>00:00 抵達開設位置</span>（BORP 成員抵達安全建物，確認區域安全 Security Check）→ <span class='key'>00:10 手術室開設完成</span>（檢傷區-手術區-復甦區開設）→ 00:12 重傷 #1 入 → 00:15 中傷 #2 入 → 00:20 重傷 #3 入 → <span class='key'>00:50 救護車 1 抵達</span>（最優先病患後送）→ <span class='key'>01:00 演練結束</span>。<span class='key'>共 60 分鐘 — 到達與開設 10 分鐘 + 處置與後送 50 分鐘</span>。"
     },
     {
@@ -490,12 +490,12 @@
       "tag": "心法 · 戰傷三大死因",
       "q": "戰傷或大量傷亡事件中，可預防之死因 (preventable death) 前三大為？",
       "opts": [
-        "A. 中風 + 心肌梗塞 + 癌症",
-        "B. 出血（特別是肢體與 junctional）+ 張力性氣胸 + 氣道阻塞",
-        "C. 過敏 + 中暑 + 摔倒",
-        "D. 沒有可預防死因"
+        "A. 心肌梗塞 + 中風 + 肺栓塞",
+        "B. 過敏 + 中暑 + 摔倒",
+        "C. 大量出血（含 junctional）+ 張力性氣胸 + 氣道阻塞",
+        "D. 感染 + 休克 + 多重器官衰竭"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "戰傷可預防之死因前三大（TCCC 哲學）：<span class='key'>(1) 大量出血（特別是肢體 + junctional）— 可用止血帶 + hemostatic gauze + packing</span>；<span class='key'>(2) 張力性氣胸 — 可用 needle decompression + chest tube + chest seal</span>；<span class='key'>(3) 氣道阻塞 — 可用 NPA、LMA、ET-tube、CRIC</span>。BORP 流程設計即針對此三大威脅。"
     },
     {
@@ -503,12 +503,12 @@
       "tag": "心法 · DCS 原則",
       "q": "Damage Control Surgery (DCS) 的三大階段為？",
       "opts": [
-        "A. 一次完整手術",
-        "B. (1) Initial abbreviated surgery（控制出血 + 污染，暫時關閉）；(2) ICU resuscitation（matrix triad 矯正）；(3) Definitive surgery（24-48 hr 後 second-look）",
-        "C. 只有 ICU 階段",
-        "D. 不需手術"
+        "A. 一次完整手術後出院",
+        "B. 僅 ICU 階段觀察不手術",
+        "C. ER + OR + 病房 三階段順序",
+        "D. Initial abbreviated surgery → ICU resuscitation → definitive surgery 24-48 hr 後"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Damage Control Surgery 三階段</span>：<span class='key'>(1) Initial abbreviated surgery</span> — 控制出血（packing、aortic clamp、shunt）+ 控制污染（暫時 closure，如 Bogata bag）+ 不做 definitive 重建；<span class='key'>(2) ICU resuscitation</span> — 矯正 lethal triad（hypothermia/acidosis/coagulopathy）、LTOWB、TXA、calcium、加溫；<span class='key'>(3) Definitive surgery 24-48 hr 後 second-look</span>，做最終 anastomosis、closure、bone fixation。BORP 主要負責階段 1。"
     },
     {
@@ -516,12 +516,12 @@
       "tag": "心法 · DCR 原則",
       "q": "Damage Control Resuscitation (DCR) 的核心原則不包括？",
       "opts": [
-        "A. Permissive hypotension（允許性低血壓）",
-        "B. Hemostatic resuscitation（用 LTOWB 或 1:1:1 比例 component）",
-        "C. 早期 TXA + 控制出血",
-        "D. 大量輸入晶體液（crystalloid）至 BP 正常"
+        "A. Permissive hypotension（SBP 80-90）",
+        "B. 大量輸入晶體液（normal saline / LR）至 BP 正常",
+        "C. Hemostatic resuscitation（LTOWB 或 1:1:1 component）",
+        "D. 早期 TXA + 控制出血源"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "DCR 核心原則：<span class='key'>(1) Permissive hypotension（允許性低血壓 SBP 80-90 mmHg），TBI 例外</span>；<span class='key'>(2) Hemostatic resuscitation（LTOWB 或 1:1:1 比例之 PRBC:FFP:Platelet）取代結晶液</span>；<span class='key'>(3) 早期 TXA（3 hr 內）+ 早期出血控制</span>。<span class='key'>避免大量晶體液</span>（會稀釋凝血因子、加劇 lethal triad、加 oedema、增加 abdominal compartment syndrome 風險）。"
     },
     {
@@ -529,12 +529,12 @@
       "tag": "情境 · 重傷 #4 · 復甦區",
       "q": "重傷 #4 在復甦區的後送時間預估與穩定狀態為？",
       "opts": [
-        "A. 立即後送",
-        "B. 約 1 小時；BP 108/74、HR 102、RR 22、SpO₂ 98% — 相對穩定",
-        "C. 24 小時後",
-        "D. 不需後送"
+        "A. 立即 < 5 分鐘後送，未做任何處置",
+        "B. 24 小時後再考慮，先觀察",
+        "C. 約 1 小時；BP 108/74、HR 102 — 相對穩定",
+        "D. 不需後送，留 BORP 完整恢復"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "重傷 #4 復甦區：<span class='key'>後送時間約 1 小時</span>；可考慮 tourniquet replacement 至膝上處（視狀況）；生命徵象 <span class='key'>BP 108/74、HR 102、RR 22、SpO₂ 98%</span>（相對穩定，最大原因為早期 tourniquet 控制出血 + LTOWB 復甦）；制定 PFC 表格；疼痛管理；後送交班。"
     },
     {
@@ -543,11 +543,11 @@
       "q": "BORP 麻醉醫師（ANE）的核心任務不包括？",
       "opts": [
         "A. 全身麻醉誘導 + 給藥（含止痛）+ 操作輸液幫浦",
-        "B. 大口徑中心靜脈導管建立（檢傷未建立時）",
-        "C. 呼吸機連接製氧機（O₂ concentrator）操作 + 設定",
-        "D. 執行 craniotomy"
+        "B. 執行 craniotomy",
+        "C. 建立 large bore central catheter（檢傷未建立時）",
+        "D. 呼吸機連接製氧機 + 設定"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "ANE 任務：<span class='key'>(1) 全身麻醉誘導 + 給藥（含止痛）+ 操作輸液幫浦；(2) 建立 large bore central catheter（若檢傷未建立）；(3) 呼吸機連接製氧機（oxygen concentrator）操作 + 設定；(4) 量測生命徵象；(5) 持續 LTOWB + 請求血液支援；(6) 補充鈣離子；(7) 溫毯機/主動加熱毯使用</span>。<span class='key'>Craniotomy 是外科醫師（S1/S2）任務，非 ANE</span>。"
     },
     {
@@ -555,12 +555,12 @@
       "tag": "心法 · 設備 · 製氧機",
       "q": "BORP 環境使用 oxygen concentrator（製氧機）而非氧氣鋼瓶之優勢為？",
       "opts": [
-        "A. 沒有差別",
-        "B. 行動性、不需頻繁補充、可長時間使用、安全（無爆炸風險）；缺點為流量較低（多 5-10 L/min 上限）、壓力低",
-        "C. 流量較大",
-        "D. 完全取代鋼瓶"
+        "A. 行動性、不需頻繁補充、無爆炸風險（缺點：流量壓力低）",
+        "B. 流量極大，可同時供 10 名患者使用",
+        "C. 壓力高於鋼瓶，更適合插管病人",
+        "D. 完全可取代鋼瓶，無任何缺點"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Oxygen concentrator（製氧機）</span>：從空氣中濃縮 O₂（PSA 技術）。BORP 優勢：<span class='key'>(1) 行動性高（可隨 BORP 移動）；(2) 不需頻繁補充（無耗盡風險）；(3) 可長時間使用；(4) 無鋼瓶爆炸風險</span>。缺點：<span class='key'>流量較低（多 5-10 L/min 上限）、壓力較低、需供電</span>。劇本：「呼吸機連接製氧機操作及設定」。"
     },
     {
@@ -568,10 +568,10 @@
       "tag": "心法 · 設備 · 高壓滅菌",
       "q": "BORP 重複使用器械之消毒方式為？",
       "opts": [
-        "A. 酒精擦拭即可",
-        "B. 小型高壓消毒鍋（autoclave）— 在 BORP 即時消毒，supports 多次手術",
-        "C. 紫外線照射",
-        "D. 不需消毒"
+        "A. 酒精擦拭 30 秒即可",
+        "B. 小型高壓消毒鍋（autoclave）— BORP 即時消毒重複手術",
+        "C. 紫外線照射 5 分鐘",
+        "D. 僅丟棄使用，不重複消毒"
       ],
       "answer": 1,
       "explanation": "BORP 流程：「<span class='key'>器械清洗及操作小型高壓消毒鍋</span>」— 每次手術後處理。<span class='key'>小型 autoclave</span> 容量小、加熱快，適合 BORP 行動性需求。在資源受限環境支持多次手術。每名重傷術後皆執行此步驟。"
@@ -581,10 +581,10 @@
       "tag": "心法 · 設備 · I-stat",
       "q": "I-stat 設備在 BORP 復甦區之用途為？",
       "opts": [
-        "A. 血壓計",
-        "B. Point-of-care 血氣 + 電解質 + 凝血等多參數分析（含 pH、PaCO₂、PaO₂、Na、K、ionized Ca、Hb、Hct、glucose、lactate、PT/INR）",
-        "C. 心電圖",
-        "D. 影像設備"
+        "A. 標準血壓計與心電圖整合機",
+        "B. POC 多參數：血氣 + 電解質 + 凝血 + 代謝（pH/Na/K/Ca/Hb/lactate/PT）",
+        "C. 便攜式 X 光發生器",
+        "D. 全自動麻醉機"
       ],
       "answer": 1,
       "explanation": "<span class='key'>I-stat = Point-of-care 多參數分析</span>。手持裝置 + 各種測試卡（cartridges）。可測：<span class='key'>(1) 血氣（pH、PaCO₂、PaO₂、HCO₃、SaO₂）；(2) 電解質（Na、K、Cl、ionized Ca）；(3) 血液學（Hb、Hct）；(4) 代謝（glucose、lactate、creatinine）；(5) 凝血（PT/INR）</span>。BORP 復甦區搭配血糖機監測病患在資源受限環境之代謝與循環狀態。"
@@ -594,12 +594,12 @@
       "tag": "心法 · 設備 · Belmont",
       "q": "Belmont 是什麼設備？BORP 中之角色？",
       "opts": [
-        "A. 一種藥品",
-        "B. Rapid infuser（快速輸液器，可快速大量加溫輸入血品/輸液，~750 ml/min），BORP 標準配備",
-        "C. 麻醉機",
-        "D. 不存在"
+        "A. 新型麻醉誘導機",
+        "B. 可攜式手術燈組",
+        "C. 腹部超音波探頭",
+        "D. Rapid infuser — 加熱大量輸血/輸液（~750 ml/min），BORP 標配"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Belmont Rapid Infuser</span>：可<span class='key'>快速大量輸入血品 + 輸液 + 加熱（最高 ~750 ml/min）+ 監測壓力/溫度/氣泡</span>之 trauma 復甦關鍵設備。BORP 劇本各重傷皆「以 Belmont 輸血 2U WB」。優於 standard pressure bag：(1) 加熱防低體溫；(2) 防氣泡；(3) 流速可控；(4) 自動偵測。"
     },
     {
@@ -607,12 +607,12 @@
       "tag": "情境 · 重傷 #6 · 處置順序",
       "q": "重傷 #6 檢傷區處置中，意識改變後應優先做什麼？",
       "opts": [
-        "A. 給予止痛藥",
-        "B. 維持呼吸道 — 立即進行插管 + 呼吸機操作 + 後續放胸管（聽診右側呼吸音降低）",
-        "C. 直接送 OR",
-        "D. 注射 TXA"
+        "A. 立即給予止痛藥緩解意識變化",
+        "B. 直接送 OR 不做任何氣道處置",
+        "C. 維持呼吸道 — 立即插管 + 後續放右胸管（呼吸音降低）",
+        "D. 僅注射 TXA 觀察反應"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "重傷 #6 順序（按劇本）：<span class='key'>(1) 第二條止血帶 + 止血紗布填塞</span>（已存在威脅生命之出血先處理）→ <span class='key'>(2) 病患意識改變 → 維持呼吸道 → 立即插管 + 呼吸機</span>（GCS E3V3M6 但意識改變）→ <span class='key'>(3) 插管後 SpO₂ 仍 90-92% → 聽診右側呼吸音降低 → 放右側胸管</span>（引氣 + 150cc 血）→ (4) IC/IO + TXA + 抗生素 + 止痛 + LTOWB → (5) FAST → (6) 神經學 → (7) 入 OR。原則：<span class='key'>MARCH（M assive bleed → A irway → R esp → C irc → H ypothermia）</span>"
     },
     {
@@ -620,12 +620,12 @@
       "tag": "心法 · TCCC · MARCH",
       "q": "TCCC 戰術現場照護處置順序 MARCH 為？",
       "opts": [
-        "A. Massage Aid Run Cool Help",
-        "B. Massive bleeding → Airway → Respiration → Circulation → Hypothermia/Head injury",
-        "C. Management Auditing Records Charts Health",
-        "D. 沒有此順序"
+        "A. Massage → Aid → Run → Cool → Help",
+        "B. Movement → Awareness → Reaction → Care → Healing",
+        "C. Massive bleeding → Airway → Respiration → Circulation → Hypothermia",
+        "D. Mass → Intelligence → Strength → Time → Health"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>TCCC MARCH 順序</span>（取代傳統 ABC，因戰場最大死因為 massive hemorrhage）：<span class='key'>M assive bleeding（止血帶、敷料、壓迫）</span> → <span class='key'>A irway（NPA/LMA/ET/CRIC）</span> → <span class='key'>R espiration（needle-D、chest seal、chest tube）</span> → <span class='key'>C irculation（IC/IO、TXA、輸液/血品）</span> → <span class='key'>H ypothermia（保溫）/ H ead injury（GCS、TBI 處置）</span>。BORP 流程根本即為 MARCH 應用。"
     },
     {
@@ -633,12 +633,12 @@
       "tag": "心法 · 戰傷 · 過度輸液",
       "q": "為何 trauma 患者過度輸入晶體液（normal saline、Lactated Ringer's）反而有害？",
       "opts": [
-        "A. 完全無害",
-        "B. 稀釋凝血因子加劇 coagulopathy；加 lethal triad；增加 abdominal compartment syndrome / pulmonary edema 風險；推離 hemostatic clot 致再出血",
-        "C. 只在老年人有害",
-        "D. 必須大量灌注"
+        "A. 稀釋凝血因子加劇 coagulopathy + 加 lethal triad + 推離 hemostatic clot",
+        "B. 完全無害，可以無限灌注",
+        "C. 只在老年人有害，年輕人無妨",
+        "D. 提升血壓必然有益"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "過度晶體液之害：<span class='key'>(1) 稀釋凝血因子 → coagulopathy 加劇</span>；<span class='key'>(2) 加 lethal triad（hypothermia + dilutional anaemia + acidosis）</span>；<span class='key'>(3) 增加 abdominal compartment syndrome 風險</span>；<span class='key'>(4) 增加 pulmonary edema/ARDS 風險</span>；<span class='key'>(5) BP 太快上升可能推離 hemostatic clot 致再出血</span>。新觀念：「fluid push」改為「blood push」+ permissive hypotension。"
     },
     {
@@ -646,9 +646,9 @@
       "tag": "心法 · BORP · 後送考量",
       "q": "BORP 之 ICU 護理師 (ICU1/ICU2) 在後送前的關鍵任務不包括？",
       "opts": [
-        "A. 後送交班 + 完成相關病歷文件",
-        "B. PFC 表格制定後續照護計畫",
-        "C. 持續疼痛管理 + 抗生素續劑量監測 + I-stat / 血糖機操作",
+        "A. 病患交班 + 確認後送時間",
+        "B. 持續疼痛管理 + 抗生素續劑量管理",
+        "C. I-stat + 血糖機 + 呼吸機操作",
         "D. 執行 craniotomy"
       ],
       "answer": 3,
@@ -659,10 +659,10 @@
       "tag": "情境 · 重傷 #2 · 麻醉時生命徵象",
       "q": "重傷 #2 進入手術區麻醉時生命徵象 BP 58/40、HR 140、SpO₂ 92%，麻醉誘導需特別注意？",
       "opts": [
-        "A. 用標準劑量誘導劑",
-        "B. 嚴重休克 + 心包填塞風險：減量誘導劑（避免 hypotensive collapse）；ketamine 較佳；持續 LTOWB；準備 emergent thoracotomy；補鈣 + 加溫",
-        "C. 用最大劑量",
-        "D. 不需麻醉"
+        "A. 用最大劑量 propofol 快速誘導",
+        "B. 減量誘導劑（避免 collapse）+ ketamine 較佳 + 持續 LTOWB + 鈣離子 + 加溫",
+        "C. 直接拒絕麻醉，無菌局部麻醉手術",
+        "D. 標準成人劑量誘導劑無需調整"
       ],
       "answer": 1,
       "explanation": "嚴重休克 + cardiac tamponade 之麻醉考量：<span class='key'>(1) 減量誘導劑</span>（標準劑量在 hypovolemia 致 cardiovascular collapse）；<span class='key'>(2) Ketamine 較佳</span>（不致 hypotension，反而輕微 sympathomimetic）— BORP 偏好藥物；<span class='key'>(3) 避免 propofol、thiopental（嚴重低血壓）</span>；<span class='key'>(4) 持續 LTOWB + 鈣離子 + 加溫</span>；<span class='key'>(5) 準備立即開胸（左前側 thoracotomy）解 tamponade</span>。"
@@ -672,12 +672,12 @@
       "tag": "心法 · BORP · 演練成功要素",
       "q": "BORP 演練成功的關鍵要素不包括？",
       "opts": [
-        "A. 動線設計流暢（檢傷區-手術區-復甦區）",
-        "B. 各角色明確就位 + 啟動口令一致",
-        "C. 物資盤點 + 組裝順序正確 + 無菌操作 + 環境控制",
-        "D. 個人英雄主義"
+        "A. 動線設計流暢（檢傷-手術-復甦）",
+        "B. 個人英雄主義",
+        "C. 各角色明確就位 + 啟動口令一致",
+        "D. 物資盤點 + 組裝順序正確 + 無菌操作"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "BORP 成功關鍵：<span class='key'>(1) 動線設計流暢</span>（檢傷區-手術區-復甦區之 patient flow）；<span class='key'>(2) 各角色明確就位 + 分工合理 + 啟動口令一致</span>（10 人團隊）；<span class='key'>(3) 物資盤點 + 組裝順序正確 + 時效良好 + 無菌操作</span>；<span class='key'>(4) 遵 ATLS/TCCC/DCS/DCR 指引</span>；<span class='key'>(5) 即時 REMOC 通報</span>。<span class='key'>個人英雄主義反而害事</span> — 戰場/災難醫療強調系統與團隊。"
     },
     {
@@ -685,10 +685,10 @@
       "tag": "心法 · 戰傷 · 韌性醫療精神",
       "q": "「韌性醫療」(Resilient Healthcare) 在 BORP 情境中的核心精神為？",
       "opts": [
-        "A. 完全依賴醫院主建物",
-        "B. 在主建物失能（戰爭、爆裂物、災害）時，仍能透過行動性備援單位維持基本損傷控制能力，挽救可救者",
-        "C. 拒絕治療傷患",
-        "D. 只在平時運作"
+        "A. 完全依賴醫院主建物之常態運作",
+        "B. 主建物失能時仍能透過行動性備援單位維持基本損傷控制能力",
+        "C. 僅在平時運作，戰時災難時暫停",
+        "D. 拒絕治療無法救治之傷患"
       ],
       "answer": 1,
       "explanation": "<span class='key'>韌性醫療（Resilient Healthcare）</span>：<span class='key'>系統面對失能/破壞時保持核心功能的能力</span>。BORP 體現此精神：<span class='key'>(1) 主建物失能時（爆裂物、戰爭、火災、大地震）；(2) 仍能透過行動性備援單位（標準裝備 + 10U LTOWB + 10 人團隊）；(3) 在相對安全之獨立建物（如教學研究大樓地下室）；(4) 維持基本損傷控制能力（DCS + DCR）；(5) 挽救可救者（中重傷穩定後後送）</span>。台灣面對災害（地震、颱風）+ 國防情境，需要此能力。"
@@ -698,12 +698,12 @@
       "tag": "心法 · BORP · 演練排除",
       "q": "依南區劇本，演練「暫不考慮」哪一項？",
       "opts": [
-        "A. ATLS 處置",
-        "B. 1 小時以上之延長照護（PFC 進階情境）",
-        "C. 損傷控制手術",
-        "D. 團隊溝通"
+        "A. 1 小時以上之延長照護（PFC 進階情境）",
+        "B. ATLS 處置與檢傷分流",
+        "C. 損傷控制手術與麻醉",
+        "D. 團隊溝通與 REMOC 通報"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "南區劇本明確「<span class='key'>此次演練暫不考慮 1 小時以上之延長照護</span>」。原因：<span class='key'>(1) 60 分鐘總時程限制；(2) 焦點在 BORP 開設 + DCS/DCR + 後送，非延長照護；(3) 延長照護涉及進階 PFC 技術（呼吸機長時管理、感染控制、長時鎮靜麻醉、營養）較複雜，另作演練</span>。實戰可能延長照護，故 PFC 表格仍是 復甦區產出文件。"
     }
   ]

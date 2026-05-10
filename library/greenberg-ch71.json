@@ -9,11 +9,11 @@
       "q": "依 Level I 證據，下頸椎損傷分類首選為？SLIC 三大評估面向為？",
       "opts": [
         "A. Marshall scale；只看骨頭",
-        "B. SLIC（Subaxial Injury Classification）— 評估 morphology + disco-ligamentous complex (DLC) + neurologic status",
-        "C. ASIA；只看神經學",
-        "D. Hunt-Hess；只看出血"
+        "B. ASIA；只看神經學",
+        "C. Hunt-Hess；只看出血",
+        "D. SLIC（Subaxial Injury Classification）— 評估 morphology + DLC + neurologic status"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Level I：用 SLIC（Subaxial Injury Classification）+ 嚴重度分數</span>。三大評估：<span class='key'>(1) Morphology 0-4 分</span>（無/compression/burst/distraction/rotation-translation）、<span class='key'>(2) DLC 0-2 分</span>（intact/indeterminate/disrupted）、<span class='key'>(3) Neurologic 0-3 分</span>（intact/root/complete cord/incomplete cord，加 +1 if continuous cord compression with deficit）。Inter-rater ICC = 0.71。"
     },
     {
@@ -21,12 +21,12 @@
       "tag": "功法 · Greenberg Ch71 · SLIC 處置",
       "q": "依 SLIC 總分之處置原則為？",
       "opts": [
-        "A. 全部都需手術",
-        "B. 1-3 分非手術；4 分未指明；≥5 分手術",
-        "C. >0 分都手術",
-        "D. <10 分都不手術"
+        "A. 全部 SLIC 病灶皆需手術",
+        "B. SLIC >0 分皆手術",
+        "C. 1-3 分非手術；4 分未指明（臨床判斷）；≥5 分手術",
+        "D. SLIC <10 分皆不手術"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "SLIC 處置：<span class='key'>1-3 分 = 非手術</span>；<span class='key'>4 分 = 未指明（臨床判斷）</span>；<span class='key'>≥5 分 = 手術</span>。SLIC 範圍 0-10。記述方式包括：脊椎節段、SLIC morphology、bony injury 詳細、DLC status、neurologic status、confounders（AS、DISH、osteoporosis、舊手術等）。"
     },
     {
@@ -34,10 +34,10 @@
       "tag": "心法 · Greenberg Ch71 · DLC",
       "q": "下列何者為 DLC（disco-ligamentous complex）的成分？最強的 anterior 與 posterior DLC 元素分別為？",
       "opts": [
-        "A. 只有 ALL",
+        "A. DLC 僅含 ALL 一條",
         "B. ALL（anterior 最強）、PLL、ligamentum flavum、facet capsule（posterior 最強）、interspinous + supraspinous ligaments",
-        "C. 只有 PLL",
-        "D. 只有 facet capsule"
+        "C. DLC 僅含 PLL 一條",
+        "D. DLC 僅含 facet capsule 一條"
       ],
       "answer": 1,
       "explanation": "<span class='key'>DLC 成分</span>：<span class='key'>ALL（anterior longitudinal ligament，anterior DLC 最強）</span>、PLL、ligamentum flavum、<span class='key'>facet capsule（posterior DLC 最強）</span>、interspinous + supraspinous ligaments。DLC 是 SLIC 中最難評估的參數 — 大多由 MRI 間接推論。成人韌帶癒合不如骨頭可預測。"
@@ -48,11 +48,11 @@
       "q": "依 White & Panjabi 標準，subaxial cervical spine 不穩定之分數閾值為？哪些為 2 分項目？",
       "opts": [
         "A. ≥1 分即不穩",
-        "B. 總分 ≥5 分即不穩；2 分項目：anterior elements destroyed、posterior elements destroyed、positive stretch test、spinal cord damage、sagittal displacement >3.5mm 或 20%、relative sagittal angulation >11°",
-        "C. 必須 ≥10",
-        "D. 沒有閾值"
+        "B. 必須 ≥10 分才不穩",
+        "C. W&P 沒有公認閾值",
+        "D. 總分 ≥5 分（範圍 0-16）；2 分項目：anterior/posterior elements destroyed、+stretch test、cord damage、sagittal disp >3.5mm 或 20%、relative sagittal angulation >11°"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>White & Panjabi 不穩定閾值：≥5 分（範圍 0-16）</span>。2 分項目：anterior elements 破壞、posterior elements 破壞、positive stretch test、spinal cord damage、<span class='key'>sagittal plane displacement >3.5mm 或 20%</span>、<span class='key'>relative sagittal plane angulation >11°</span>（或 sagittal rotation >20°）。1 分項目：nerve root damage、abnormal disc narrowing、developmentally narrow canal（sagittal <13mm 或 Pavlov ratio <0.8）、dangerous loading anticipated。資訊不足項目加半值。"
     },
     {
@@ -60,10 +60,10 @@
       "tag": "心法 · Greenberg Ch71 · Anterior vs Posterior",
       "q": "Anterior elements 破壞 vs posterior elements 破壞，何者在 flexion 較不穩定？何者在 extension？",
       "opts": [
-        "A. Anterior 在 flexion 較不穩",
-        "B. 一般而言：anterior 破壞 → extension 不穩；posterior 破壞 → flexion 不穩。對搬運與固定有意義。Ankylosing spondylitis 等可使其他穩定傷變不穩",
-        "C. 兩者皆 stable",
-        "D. 無差別"
+        "A. Anterior 破壞於 flexion 較不穩",
+        "B. Anterior 破壞 → extension 不穩；posterior 破壞 → flexion 不穩；AS 等可使其他穩定傷變不穩",
+        "C. Anterior 與 posterior 破壞皆 stable",
+        "D. Anterior 與 posterior 破壞無不穩定差別"
       ],
       "answer": 1,
       "explanation": "原則：<span class='key'>Anterior elements 破壞 → extension 較不穩</span>；<span class='key'>Posterior elements 破壞 → flexion 較不穩</span>。對 patient transfer 與 immobilization 重要。<span class='key'>Ankylosing spondylitis 等情況可使原本穩定的傷變不穩</span>，需特別小心。"
@@ -73,12 +73,12 @@
       "tag": "秘籍 · Greenberg Ch71 · Stretch test",
       "q": "Cervical stretch test 的執行與正向標準為？",
       "opts": [
-        "A. 隨意拉",
-        "B. 仰臥 X 光台，每 5 分鐘加 10 lbs，直至 33% 體重（最多 65 lbs）；每改變後檢查神經學 + lateral X-ray；正向：分離 >1.7 mm、angulation >7.5°、或 neuro 改變。✖明顯不穩為禁忌",
-        "C. 必須坐姿",
-        "D. 用 100 lbs 直接拉"
+        "A. 可隨意拉，無標準",
+        "B. 必須坐姿進行",
+        "C. 仰臥 X 光台，每 5 分鐘加 10 lbs，直至 33% 體重（最多 65 lbs）；正向：分離 >1.7 mm、angulation >7.5°、或 neuro 改變；明顯不穩為禁忌",
+        "D. 用 100 lbs 直接拉一次"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Cervical stretch test</span>（用於穩定難判定時，如無明顯骨/韌帶傷之運動員）：<span class='key'>仰臥 X 光台，每 5 分鐘加 10 lbs traction，直至 33% 體重（最多 65 lbs）</span>。每改變後做 <span class='key'>neuro exam + lateral X-ray</span>。<span class='key'>正向標準</span>：<span class='key'>分離增加 >1.7 mm、angulation 增加 >7.5°、或 neuro exam 改變</span>。<span class='key'>禁忌</span>：明顯不穩定。"
     },
     {
@@ -86,12 +86,12 @@
       "tag": "功法 · Greenberg Ch71 · Clay shoveler",
       "q": "Clay shoveler's fracture 的特徵與處置為？",
       "opts": [
-        "A. 不穩定，需手術",
-        "B. C7 spinous process avulsion（鏟泥土時拋擲動作肌肉拉扯）；穩定，無大風險；做 flexion-extension X-ray 或 CT 排除其他隱匿骨折；rigid collar PRN pain",
-        "C. 必死",
-        "D. 必須立即手術"
+        "A. 為不穩定骨折，需手術",
+        "B. 預後極差，幾乎必死",
+        "C. 必須立即手術 fusion",
+        "D. C7 spinous process avulsion；穩定，無大風險；做 flexion-extension X-ray 或 CT 排除其他隱匿骨折；rigid collar PRN pain"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Clay shoveler's fracture</span>：spinous process 撕脫骨折（多 C7）。最早於 Perth, Australia 描述（鏟黏泥時黏在鏟上拉扯 trapezius 等接於頸椎 spinous process 的肌肉）。也可由 whiplash、向上拉手臂（跌倒時抓住自己）、頸 hyperflexion、直接擊打 spinous process 致。<span class='key'>穩定，自身無大風險</span>。<span class='key'>處置：做 flexion-extension X-ray 或 CT 排除其他隱匿骨折；rigid collar PRN pain</span>。"
     },
     {
@@ -99,10 +99,10 @@
       "tag": "心法 · Greenberg Ch71 · Vertical compression",
       "q": "Vertical compression injury 的機轉與最常見後果為？",
       "opts": [
-        "A. 純 hyperflexion；造成 EDH",
-        "B. 需 reverse normal cervical lordosis（如 slightly flexed posture）才能純 axial 力；最常 = burst fracture，可能 retropulsion 入 canal 致神經學缺損",
-        "C. 必須 hyperextension",
-        "D. 不會骨折"
+        "A. 純 hyperflexion 機轉，造成 EDH",
+        "B. 需 reverse normal cervical lordosis（slightly flexed posture）；最常 = burst fracture，可能 retropulsion 入 canal 致 deficit",
+        "C. 必須 hyperextension 才會出現",
+        "D. 永不會骨折，僅軟組織傷"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Vertical compression</span>：純 axial 壓力 → <span class='key'>需 reverse normal cervical lordosis（slightly flexed posture）</span>。<span class='key'>最常結果：burst fracture</span>，可能 <span class='key'>retropulsion of bone into spinal canal 致神經學缺損</span>。"
@@ -112,12 +112,12 @@
       "tag": "功法 · Greenberg Ch71 · Flexion injury",
       "q": "下頸椎 flexion injury 在頸椎外傷中的比例為？常見原因為？",
       "opts": [
-        "A. <1%；無原因",
-        "B. ~15% 頸椎外傷；MVA、跌、跳水入淺水",
-        "C. >90%；只有 MVA",
-        "D. 0%；不存在"
+        "A. <1% 之罕見傷，無明確原因",
+        "B. >90% 頸椎外傷，僅 MVA 機轉",
+        "C. 0%（不存在這類傷）",
+        "D. ~15% 頸椎外傷；MVA、跌、跳水入淺水"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Flexion injury 占下頸椎外傷 ~15%</span>。常見原因：<span class='key'>MVA、跌落、跳水入淺水</span>。Compression-flexion injury：典型「跳水傷」。<span class='key'>Posterior element 骨折在 compression-flexion 高達 50%</span>。Subtypes：teardrop fracture、quadrangular fracture。"
     },
     {
@@ -125,10 +125,10 @@
       "tag": "功法 · Greenberg Ch71 · Teardrop",
       "q": "Teardrop fracture 的機轉與典型臨床表現為？",
       "opts": [
-        "A. 純 hyperextension；患者多無症狀",
-        "B. Hyperflexion + axial loading（取消 normal cervical lordosis）；最嚴重型完全韌帶/facet/disc 破壞 + ≥3mm 後位移入 canal；患者多 quadriplegic（部分 anterior cord syndrome）",
-        "C. 純橫向力",
-        "D. 老化所致"
+        "A. 純 hyperextension 機轉；患者多無症狀",
+        "B. Hyperflexion + axial loading（取消 normal cervical lordosis）；最嚴重型完全韌帶/facet/disc 破壞 + ≥3mm 後位移；患者多 quadriplegic",
+        "C. 純橫向力造成；無神經學影響",
+        "D. 為老化過程之自然產物"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Teardrop fracture</span>（Schneider & Kahn 描述）：<span class='key'>hyperflexion + axial loading 至顱頂、頸彎曲</span>（取消 normal cervical lordosis）— 常被誤認為 hyperextension（因 retrolisthesis）。兩個力：<span class='key'>(1) 前柱壓力，(2) DLC 拉力</span>。最嚴重型：完全韌帶/facet/disc 破壞 + <span class='key'>≥3mm 後位移入 canal</span>。占頸椎外傷 ~5%。<span class='key'>患者多 quadriplegic</span>，部分完整、部分 anterior cervical cord syndrome。<span class='key'>通常不穩定</span>。"
@@ -140,10 +140,10 @@
       "opts": [
         "A. Lateral X-ray 上 anterior inferior VB 邊緣的小骨片",
         "B. Sagittal split fracture 經 VB（AP 視 + thin CT）",
-        "C. 大型三角形 anterior inferior VB 骨片",
-        "D. Vertebral body 完全消失"
+        "C. Vertebral body 完全消失",
+        "D. 大型三角形 anterior inferior VB 骨片"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "Teardrop fracture 影像特徵：<span class='key'>(1) anterior inferior VB 邊緣小骨片（teardrop）</span>；<span class='key'>(2) sagittal plane VB 骨折（sagittal split）</span>，AP 視可見、thin CT 更敏感；<span class='key'>(3) 大型三角形 anterior inferior VB 骨片</span>；(4) 其他 VB 骨折；(5) <span class='key'>fractured vertebra 多後位移於下方椎體</span>（oblique X-ray 可見）；(6) 受傷椎體常 anterior wedged (kyphosis)；(7) facet joint 破壞；(8) prevertebral 軟組織腫脹；(9) 受傷下方椎間盤狹窄。VB 完全消失非典型。"
     },
     {
@@ -151,12 +151,12 @@
       "tag": "秘籍 · Greenberg Ch71 · Teardrop vs avulsion",
       "q": "如何區分 teardrop fracture 與簡單 avulsion fracture？",
       "opts": [
-        "A. 完全無法區分",
-        "B. Avulsion：神經學完整、骨片小、無 VB 排列異常、無 sagittal VB 骨折、無 posterior element 骨折、無 prevertebral 腫脹、無 VB/disc 高度損失。滿足者做 flexion-extension X-ray，無異常活動 → rigid collar 4–7 天後再拍；不滿足者當 unstable 處理 + CT",
-        "C. 只看 X-ray 大小",
-        "D. 用磁鐵測試"
+        "A. Avulsion 標準：神經學完整、骨片小、無 VB 排列異常、無 sagittal VB 骨折、無 posterior element 骨折、無 prevertebral 腫脹、無 VB/disc 高度損失。滿足者 → flexion-extension X-ray，無異常活動 → rigid collar 4–7 天後再拍；不滿足 → 當 unstable + CT",
+        "B. 兩者完全無法區分",
+        "C. 僅看 X-ray 上骨片大小即可",
+        "D. 需用磁鐵測試"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Teardrop vs avulsion 區分標準（avulsion 較單純，源於 hyperextension 致 ALL 拉脫）：<span class='key'>(1) 神經學完整</span>（含 mental status，排除 inebriated/concussed）；<span class='key'>(2) 骨片小</span>；<span class='key'>(3) 無 VB 排列異常</span>；<span class='key'>(4) AP X-ray 或 CT 無 sagittal plane VB 骨折</span>；<span class='key'>(5) 無 posterior element 骨折</span>；<span class='key'>(6) 無 prevertebral 軟組織腫脹</span>；<span class='key'>(7) 無 VB 或 disc 高度損失</span>。<span class='key'>滿足全條件 → flexion-extension X-ray</span>；無異常活動 → rigid collar，<span class='key'>4–7 天後再拍</span>（待肌肉痙攣消退），正常即去 collar。<span class='key'>不滿足 → 當 unstable，CT 評估隱匿傷</span>。MRI 評估 disc 與 posterior ligament。"
     },
     {
@@ -164,12 +164,12 @@
       "tag": "心法 · Greenberg Ch71 · Hyperflexion sprain",
       "q": "Hyperflexion sprain 的特徵與診斷陷阱為？",
       "opts": [
-        "A. 必有骨折",
-        "B. 純韌帶傷（posterior ligament complex），無骨折；plain lateral X-ray 在正常排列時可漏；需 flexion-extension views；急性期肌肉痙攣可遮蔽不穩定 → 1–2 週後再拍",
-        "C. 一定有 SDH",
-        "D. 必死"
+        "A. 必有骨折才能診斷",
+        "B. 一定合併 SDH",
+        "C. 純韌帶傷（posterior ligament complex），無骨折；plain lateral X-ray 在正常排列時可漏；需 flexion-extension views；急性期肌肉痙攣可遮蔽不穩定 → 1–2 週後再拍",
+        "D. 預後極差，幾乎必死"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Hyperflexion sprain</span>：<span class='key'>純韌帶傷（posterior ligamentous complex），無骨折</span>。<span class='key'>plain lateral X-ray 在正常排列時可漏</span>，<span class='key'>需 flexion-extension views</span>。<span class='key'>急性期 paraspinal muscle spasm 可遮蔽不穩定</span>（splint 頸部阻止真正 flexion）→ <span class='key'>rigid collar，1–2 週疼痛減後再拍</span>。影像徵象：kyphotic angulation、anterior rotation 或 1–3mm subluxation、anterior 窄 + posterior 寬之 disc space、posterior cortex 距離增加、superior facet anterior+superior 位移（facet 關節變寬）、interspinous space fanning。"
     },
     {
@@ -178,11 +178,11 @@
       "q": "Cadaver 研究顯示 ligamentous instability 之水平 subluxation 與 angulation 閾值為？",
       "opts": [
         "A. >0.5 mm 或 >5°",
-        "B. >3.5 mm 水平 subluxation 或 >11° angulation = ligamentous instability",
-        "C. >50 mm",
-        "D. 無閾值"
+        "B. >50 mm（已大規模脫位）",
+        "C. 無公認閾值",
+        "D. >3.5 mm 水平 subluxation 或 >11° angulation"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Cadaver 研究：<span class='key'>水平 subluxation >3.5 mm 或 >11° 相鄰節段 angulation = ligamentous instability</span>。臨床：plain film 上 ≤3.5mm subluxation + 無 neuro deficit → 拍 flexion-extension。無 abnormal movement → 去 collar。"
     },
     {
@@ -192,8 +192,8 @@
       "opts": [
         "A. 占頸椎傷 1%；皆神經學完整",
         "B. 占頸椎傷 6–10%；25% 完整、37% root deficit、22% incomplete cord、15% complete quadriplegic",
-        "C. 占 80%；皆癱",
-        "D. 不存在"
+        "C. 占 80% 並皆癱瘓",
+        "D. ULF 不存在"
       ],
       "answer": 1,
       "explanation": "<span class='key'>ULF 占頸椎外傷 6–10%</span>。神經學分布：<span class='key'>25% 完整、37% root deficit、22% incomplete cord、15% complete quadriplegic</span>。機轉：<span class='key'>flexion + rotation</span>。BLF 機轉：純 hyperflexion。"
@@ -203,12 +203,12 @@
       "tag": "心法 · Greenberg Ch71 · BLF 流行病學",
       "q": "Bilateral locked facet (BLF) 的流行病學與位置為？",
       "opts": [
-        "A. 常見，皆 C2",
-        "B. 罕見，最常 C5–6 或 C6–7；65–87% complete quadriplegia、13–25% incomplete、≤10% intact；adjacent fracture 40–60%",
-        "C. 只在 C7-T1",
-        "D. 都神經學完整"
+        "A. 常見，皆位於 C2",
+        "B. 只發生在 C7-T1 交界",
+        "C. 罕見，最常 C5–6 或 C6–7；65–87% complete quadriplegia、13–25% incomplete、≤10% intact；adjacent fracture 40–60%",
+        "D. 全部患者神經學完整"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>BLF 罕見</span>；機轉為 apophyseal joint、ligamentum flavum、longitudinal、interspinous ligament + annulus 之破壞。<span class='key'>最常 C5–6 或 C6–7</span>。神經學：<span class='key'>65–87% complete quadriplegia、13–25% incomplete、≤10% intact</span>。<span class='key'>Adjacent fracture（VB、facet、lamina、pedicle）40–60%</span>。Nerve root deficit 也可能。"
     },
     {
@@ -216,10 +216,10 @@
       "tag": "秘籍 · Greenberg Ch71 · Locked facet 影像",
       "q": "Locked facet 在 axial CT 上的特徵性 sign 為？",
       "opts": [
-        "A. 「Honeycomb」sign",
+        "A. 「Honeycomb」sign 為特徵",
         "B. 「Naked facet」sign — facet 關節面可見但對應的 articulating 'mate' 不在或在錯誤側",
-        "C. 「Pinwheel」sign",
-        "D. 完全無 sign"
+        "C. 「Pinwheel」sign 為診斷依據",
+        "D. 影像上完全無 sign"
       ],
       "answer": 1,
       "explanation": "<span class='key'>「Naked facet」sign</span>：axial CT 上可見 facet 關節面但<span class='key'>對應的 articulating 'mate' 缺失或在錯誤側</span>。Sagittal CT 為 locked facet 之最佳影像 — <span class='key'>superior level 之 inferior facet 位於 inferior level 之 superior facet 之前（與正常相反）</span>。ULF 在 CT 還可見上方節段 anteriorly rotated。"
@@ -229,12 +229,12 @@
       "tag": "心法 · Greenberg Ch71 · Bow-tie",
       "q": "「Bow-tie sign」在 lateral X-ray 上代表什麼？",
       "opts": [
-        "A. 正常",
-        "B. ULF — 受傷層左右 facet 並列而非正常重疊；多伴 <25% subluxation；spinous process 間隙增寬（posterior ligamentous complex 破壞）",
-        "C. EDH",
-        "D. 腫瘤"
+        "A. 為正常解剖表現",
+        "B. 代表 EDH 之側面投影",
+        "C. ULF — 受傷層左右 facet 並列而非正常重疊；多伴 <25% subluxation；spinous process 間隙增寬",
+        "D. 為腫瘤之影像特徵"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>「Bow-tie sign」</span>：lateral X-ray 上<span class='key'>受傷層左右 facet 並列（side-by-side）而非正常重疊（superimposed）</span> — ULF 特徵。常伴 <25% subluxation。Posterior ligamentous complex 破壞可致 spinous process 間隙增寬。AP X-ray：subluxation 上方之 spinous process 旋向 locked facet 同側。Oblique X-ray（60° LAO 看左 locked facet）：可見 locked facet 阻擋 neural foramen。BLF 在 lateral X-ray 上多 >50% subluxation。"
     },
     {
@@ -242,12 +242,12 @@
       "tag": "心法 · Greenberg Ch71 · MRI 必要性",
       "q": "Closed reduction 之前為何強烈建議 MRI（特別在 BLF）？",
       "opts": [
-        "A. 確認年齡",
-        "B. 排除 traumatic disc herniation（BLF 中達 80%）— 為 closed reduction 之禁忌；可改變手術方式（anterior vs posterior）",
+        "A. 排除 traumatic disc herniation（BLF 中達 80%）— 為 closed reduction 之禁忌；可改變手術方式（anterior vs posterior）",
+        "B. 確認患者實際年齡",
         "C. 看顱內出血",
-        "D. 完全不需要"
+        "D. MRI 完全不需要"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>MRI 在 closed reduction 前強烈建議</span>：<span class='key'>排除 traumatic disc herniation（BLF 中達 80%）</span>。<span class='key'>Disc herniation 為 closed reduction 之禁忌</span>，可致神經學惡化。MRI 也影響手術決策（anterior vs posterior approach）。CTA 在可能時也應做（VAI 風險）。"
     },
     {
@@ -255,12 +255,12 @@
       "tag": "秘籍 · Greenberg Ch71 · 仿冒病灶",
       "q": "下列何者可能 mimic ULF？如何鑑別？",
       "opts": [
-        "A. 椎管狹窄",
-        "B. Congenital absence of cervical pedicle（多 C6）— 三聯：(1) 同側 neural foramen 增大；(2) 同側背側位移之 dysplastic articular pillar/lamina；(3) 同側 dysplastic transverse process。鑑別：無 anterolisthesis on lateral；無 spinous process 旋轉 on AP",
-        "C. 腫瘤",
-        "D. 無 mimic"
+        "A. 椎管狹窄會 mimic ULF",
+        "B. 腦腫瘤之投影 mimic ULF",
+        "C. Congenital absence of cervical pedicle（多 C6）— 三聯：同側 neural foramen 增大、背側位移之 dysplastic articular pillar/lamina、dysplastic transverse process。鑑別：無 anterolisthesis；無 spinous process 旋轉",
+        "D. ULF 沒有 mimic 病灶"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Congenital absence of cervical pedicle</span>（多 C6）罕見，可 mimic ULF。三聯：<span class='key'>(1) 同側 neural foramen 增大（可錯認為 schwannoma 等 foraminal tumor）；(2) 同側背側位移之 dysplastic articular pillar/lamina；(3) 同側 dysplastic transverse process</span>。鑑別 ULF：<span class='key'>無 anterolisthesis on lateral；無 spinous process 旋轉 on AP</span>。多無症狀。手術不太能改善症狀。"
     },
     {
@@ -268,12 +268,12 @@
       "tag": "心法 · Greenberg Ch71 · ULF 處置",
       "q": "ULF 的處置選項中，哪種治療失敗率較高？",
       "opts": [
-        "A. 手術一律失敗",
-        "B. Nonoperative 治療失敗率較高（持續疼痛、神經學惡化）vs surgical treatment",
-        "C. 完全相同",
-        "D. 無治療成功"
+        "A. 手術組一律失敗",
+        "B. 手術與非手術完全相同",
+        "C. 兩種治療皆無成功病例",
+        "D. Nonoperative 治療失敗率較高（持續疼痛、神經學惡化）vs surgical treatment"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "ULF 處置選項：<span class='key'>(1) 不治療</span>（僅無症狀者，需密切追蹤，失敗則 fusion）；<span class='key'>(2) closed reduction ± post-reduction fusion</span>；<span class='key'>(3) 手術</span>（anterior ACDF / posterior open reduction & internal fixation / 360° fusion）。<span class='key'>Nonoperative 治療之 ULF 失敗率較高</span>（持續疼痛、神經學惡化）— 多數作者建議 surgery。"
     },
     {
@@ -281,12 +281,12 @@
       "tag": "秘籍 · Greenberg Ch71 · Closed reduction 技術",
       "q": "Locked facet closed reduction 之 traction 技術為？",
       "opts": [
-        "A. 一次拉 100 lbs",
-        "B. 初始 weight ≈ 3 × 椎節數（lbs），每 10–15 分鐘加 5–10 lbs；每改變後 neuro/SSEP/MEP + lateral X-ray；不超過 10 lbs/level；任何 disc space >10mm = overdistraction；達 reduction 即停",
-        "C. 用最大 weight 直接 reduce",
-        "D. 不可用 traction"
+        "A. 一次拉 100 lbs 直接 reduce",
+        "B. 用最大可承受 weight 直接 reduce",
+        "C. 禁止使用 traction",
+        "D. 初始 weight ≈ 3 × 椎節數（lbs），每 10–15 分鐘加 5–10 lbs；不超過 10 lbs/level；任何 disc space >10mm = overdistraction"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Closed reduction traction 技術</span>：<span class='key'>初始 weight ≈ 3 × 受傷椎節數（lbs）</span>；<span class='key'>每 10–15 分鐘加 5–10 lbs</span>；每改變後評 neuro/SSEP/MEP + lateral X-ray 或 fluoro。停止標準：<span class='key'>(1) 不超過 10 lbs/level（部分作者 5 lbs/level）</span>；(2) facet 已 perched 或 distract 達目標 reduction；(3) occipitocervical instability 出現；<span class='key'>(4) 任何 disc space >10mm（overdistraction）</span>；(5) 神經學或 SSEP/MEP 惡化。ULF 加 gentle 旋轉至 locked side；BLF 加 gentle 後 tension（如枕下 rolled towel）。Reduction 後 5–10 lbs traction 維持。"
     },
     {
@@ -294,12 +294,12 @@
       "tag": "心法 · Greenberg Ch71 · 開放 reduction",
       "q": "Locked facet open reduction 之 approach 選擇原則為？",
       "opts": [
-        "A. 一律前路",
-        "B. Posterior 最常用；Anterior 用於 traumatic disc herniation 在 subluxation 層；360° approach 用 anterior plate + posterior lateral mass screws/rods 可省略 post-op 外固定",
-        "C. 一律後路",
-        "D. 不需手術"
+        "A. 一律前路 (ACDF) 為唯一選擇",
+        "B. 一律後路 (posterior fusion)",
+        "C. Posterior 最常用；Anterior 用於 traumatic disc herniation 在 subluxation 層；360° approach 用 anterior plate + posterior lateral mass screws/rods 可省略 post-op 外固定",
+        "D. 都不需要手術介入"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Open reduction approach：<span class='key'>(1) Posterior 最常用</span>，仍有 disc herniation 致惡化風險，故 pre-op MRI；常需鑽除下方節段 superior facet tip；root symptom 加 foraminotomy 解壓 root。<span class='key'>(2) Anterior：用於 subluxation 層之 traumatic disc herniation</span>；移除 disc + 探 anterior epidural space 理論上降低 deficit 惡化風險。ULF 可放 Caspar pins 在 VB → traction 下旋轉 pin 朝 locked facet 側。BLF anterior 較難。<span class='key'>(3) 360° (combined) approach</span>：anterior plate + posterior lateral mass screws/rods 可省略 post-op 外固定。"
     },
     {
@@ -307,12 +307,12 @@
       "tag": "心法 · Greenberg Ch71 · Halo 失敗率",
       "q": "Locked facet 患者單用 halo vest（不手術）的結果為？",
       "opts": [
-        "A. 100% 成功",
-        "B. 高達 77% poor anatomic result（雖 late instability 不常見）— 暗示應考慮手術；ligamentous instability 單獨者尤其需手術",
-        "C. 完全無效",
-        "D. 100% 死亡"
+        "A. 100% 成功，無失敗病例",
+        "B. halo 完全無效，從不使用",
+        "C. halo 後 100% 死亡率",
+        "D. 高達 77% poor anatomic result（雖 late instability 不常見）— 暗示應考慮手術；ligamentous instability 單獨者尤其需手術"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Closed reduction 成功後，halo vest（3 個月）可治癒部分 facet fracture fragment 患者，需頻繁 X-ray 排除 redislocation。Halo removal 後 flexion-extension X-ray 確認穩定性。<span class='key'>Halo vest 單獨：高達 77% 患者 poor anatomic result</span>（雖 late instability 不常見）— 暗示<span class='key'>多數 facet dislocation 應考慮手術</span>。<span class='key'>無 facet fracture fragment 之單獨韌帶不穩 → 更明確需手術</span>（韌帶可能不癒合）。或 open reduction 後皆需手術 fusion。"
     },
     {
@@ -320,12 +320,12 @@
       "tag": "心法 · Greenberg Ch71 · Posterior 手術指徵",
       "q": "下列何種情況強制使用 posterior approach？",
       "opts": [
-        "A. 任何前柱壓迫",
-        "B. (1) 無 anterior masses（無 traumatic disc herniation 或大骨刺）；(2) >1/3 VB 寬度的 subluxation（提示嚴重 posterior 韌帶傷）；(3) posterior element 骨折；(4) unreducible dislocation = mandatory posterior",
-        "C. 從不用後路",
-        "D. 不需要 approach"
+        "A. (1) 無 anterior masses；(2) >1/3 VB 寬度的 subluxation；(3) posterior element 骨折；(4) unreducible dislocation",
+        "B. 任何前柱壓迫皆強制後路",
+        "C. 從不使用後路",
+        "D. approach 選擇與病灶無關"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Posterior approach 偏好條件：<span class='key'>(1) 無 anterior mass（如 traumatic disc herniation 或大骨刺）；(2) subluxation > 1/3 VB 寬度</span>（提示嚴重 posterior 韌帶傷）；<span class='key'>(3) posterior element 骨折</span>。<span class='key'>Unreducible dislocation = posterior approach mandatory</span>。"
     },
     {
@@ -333,12 +333,12 @@
       "tag": "秘籍 · Greenberg Ch71 · 無骨傷",
       "q": "Extension injury 不伴骨傷可致何種神經學症候群？",
       "opts": [
-        "A. 不會有神經學症狀",
-        "B. Central cord syndrome（多老年 cervical spondylosis）、SCIWORA（多兒童）；middle-aged 之 hyperextension dislocation 自發 reduce 可致 SCI 但 X-ray normal（MRI/autopsy 上有 ALL/disc rupture）；亦可合併 carotid dissection",
-        "C. 必死",
-        "D. 完全治癒"
+        "A. Extension injury 不會有任何神經學症狀",
+        "B. 預後極差，幾乎必死",
+        "C. 完全自癒，無後遺症",
+        "D. Central cord syndrome（多老年 cervical spondylosis）、SCIWORA（多兒童）；middle-aged 之 hyperextension dislocation 自發 reduce 可致 SCI 但 X-ray normal；亦可合併 carotid dissection"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Extension injury 不伴骨傷可致 SCI</span>。型態：<span class='key'>(1) Central cord syndrome</span>（多老年 + cervical spondylosis）；<span class='key'>(2) SCIWORA</span>（多兒童）；<span class='key'>(3) Middle-aged hyperextension dislocation 自發 reduce</span>，X-ray 可正常但 MRI/autopsy 顯示 ALL 或 disc rupture。<span class='key'>Extension force 也可致 carotid artery dissection</span>。"
     },
     {
@@ -346,10 +346,10 @@
       "tag": "功法 · Greenberg Ch71 · Lateral mass 分類",
       "q": "Lateral mass / facet 骨折的 4 大分類為？",
       "opts": [
-        "A. Type I-IV",
+        "A. Type I-IV（依 deformity 程度）",
         "B. Separation fracture（lamina + ipsilateral pedicle 骨折，致 horizontalization of facet）、comminuted、split、traumatic spondylolysis（雙側 pars 水平骨折）",
-        "C. A-D 型",
-        "D. 沒有分類"
+        "C. A-D 型（依 displacement 程度）",
+        "D. 目前文獻無公認分類"
       ],
       "answer": 1,
       "explanation": "Lateral mass / facet 骨折 4 型（Lee）：<span class='key'>(1) Separation fracture</span> — lamina + 同側 pedicle 骨折，致 <span class='key'>「horizontalization of facet」</span>（detached articular mass 旋至更水平方向）。常合併 ALL rupture + 1-2 層 disc fissure。Neuro deficit 常見。Unstable。<span class='key'>(2) Comminuted fracture</span> — 多發骨折，常伴 lateral angulation deformity。<span class='key'>(3) Split fracture</span> — 一個 lateral mass 內 coronally 走的垂直骨折，下層 superior facet invagination。<span class='key'>(4) Traumatic spondylolysis</span> — 雙側 pars interarticularis 水平骨折，分離前後脊椎元素。<span class='key'>Whole lateral mass 骨折 77% 伴 anterior subluxation</span>。"
@@ -359,10 +359,10 @@
       "tag": "秘籍 · Greenberg Ch71 · 非手術失敗",
       "q": "Unilateral cervical facet fracture 之 nonoperative 治療失敗的影像 risk factor 為？",
       "opts": [
-        "A. 任何骨折大小都失敗",
-        "B. Fracture fragment (FF) 高度 >1 cm，或 FF >40% 對側 lateral mass 高度",
-        "C. 必須完全粉碎才失敗",
-        "D. 無 risk factor"
+        "A. 任何骨折大小皆會非手術失敗",
+        "B. FF 高度 >1 cm，或 FF >40% 對側 lateral mass 高度",
+        "C. 必須完全粉碎才會失敗",
+        "D. 無公認 risk factor"
       ],
       "answer": 1,
       "explanation": "Aarabi 26 ULF 患者 CT 研究：<span class='key'>Nonoperative 治療失敗 risk factor</span>：<span class='key'>(1) FF 高度 >1 cm</span>；或 <span class='key'>(2) FF >40% LM</span>（對側完整 lateral mass 高度，皆於 sagittal CT 量 cephalocaudal tip-to-tip）。FF = fracture fragment 之 maximum tip-to-tip cephalocaudal 高度於 sequential sagittal reconstructions。"
@@ -372,12 +372,12 @@
       "tag": "心法 · Greenberg Ch71 · Lateral mass 手術",
       "q": "Lateral mass / facet 骨折手術之首選方法為？",
       "opts": [
-        "A. 只有前路",
-        "B. 多數 posterior approach + lateral mass screw 或 pedicle screw + rods，至少跨上下各 1 層（受傷層之骨折側通常跳過螺絲）；必要時加神經減壓 + anterior approach release rigid deformity / 補 anterior column support",
-        "C. 不需手術",
-        "D. 只有 fusion"
+        "A. 只能採前路 (ACDF)",
+        "B. 不需手術介入",
+        "C. 多數 posterior approach + lateral mass 或 pedicle screw + rods，至少跨上下各 1 層；必要時加 anterior approach release rigid deformity / 補 anterior column support",
+        "D. 僅需 fusion，無需固定"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Lateral mass / facet 骨折之手術：<span class='key'>多數 posterior approach + lateral mass 或 pedicle screw + rods</span>，<span class='key'>至少跨上下各 1 層</span>（受傷層之骨折側通常跳過螺絲）。同時做 neural decompression 必要時。Anterior approach 可加 — release rigid deformity 或補 anterior column support。Some <span class='key'>separation fracture 可考慮 cervical pedicle screw 之 osteosynthesis（保留動作）</span>跨骨折線。Anterior approach 替代：通常只需 fuse 1 層；缺點：壓迫 fragment 不一定能減壓 + 干擾未受損區（subluxation 時 anterior column 可能已受損）。"
     },
     {
@@ -385,12 +385,12 @@
       "tag": "功法 · Greenberg Ch71 · 通則處置",
       "q": "依 Level III，subaxial cervical fracture/dislocation 之治療通則為？",
       "opts": [
-        "A. 一律手術",
-        "B. Closed/open reduction 目標為 cord 減壓 + spinal canal 恢復；穩定固定（內固定或外固定）以早期 mobilization + 復健；無條件可用時 prolonged bed rest + traction；AS 患者特別注意",
-        "C. 完全保守觀察",
-        "D. 必死"
+        "A. 一律手術，無保守選項",
+        "B. 完全保守觀察，不需手術",
+        "C. Closed/open reduction 目標為 cord 減壓 + spinal canal 恢復；穩定固定（內固定或外固定）以早期 mobilization；無條件可用時 prolonged bed rest + traction；AS 患者特別注意",
+        "D. 預後極差，治療無意義"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Level III 通則：<span class='key'>(1) Closed 或 open reduction 之 subaxial fracture/dislocation 目標 = cord 減壓 + spinal canal 恢復</span>。<span class='key'>(2) 穩定固定（內固定或外固定）以促進早期 mobilization + 復健</span>。手術時 anterior 或 posterior fixation 皆可（除非 approach 為減壓所必需）。<span class='key'>(3) 若無 contemporary 治療選項 → prolonged bed rest + traction</span>。<span class='key'>(4) AS 患者：即使輕傷亦建議 routine CT + MRI；手術需 posterior long segment 或 360° fusion；anterior stand-alone 在 AS 失敗率達 50%</span>。"
     },
     {
@@ -398,12 +398,12 @@
       "tag": "心法 · Greenberg Ch71 · AS 特殊",
       "q": "Ankylosing spondylitis 患者頸椎傷之特殊建議為？",
       "opts": [
-        "A. 與一般患者相同",
-        "B. 即使輕傷亦建議 routine CT + MRI；手術用 posterior long segment 或 360° fusion；anterior stand-alone 失敗率達 50%",
-        "C. 不需特別處理",
-        "D. 完全保守觀察"
+        "A. 即使輕傷亦建議 routine CT + MRI；手術用 posterior long segment 或 360° fusion；anterior stand-alone 失敗率達 50%",
+        "B. 與一般患者完全相同處理",
+        "C. 完全不需特別處理",
+        "D. AS 患者僅需保守觀察"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "AS（ankylosing spondylitis）患者頸椎特殊處置：<span class='key'>(1) 即使輕傷亦建議 routine CT + MRI</span>（融合骨易斷裂、傷可隱匿）；<span class='key'>(2) 手術需 posterior long segment instrumentation + fusion 或 360° fusion</span>；<span class='key'>(3) Anterior stand-alone instrumentation + fusion 在 AS 失敗率達 50%</span>。AS 屬於 confounder，可使原本穩定的傷變不穩。"
     },
     {
@@ -411,12 +411,12 @@
       "tag": "心法 · Greenberg Ch71 · 穩定 vs 不穩定",
       "q": "穩定 vs 不穩定 subaxial fracture 的 management 差異為？",
       "opts": [
-        "A. 都用 halo",
-        "B. 穩定：non-halo orthosis 1-6 週；不穩定：traction 7 週 + orthosis 8 週、halo 11 週 + orthosis 4 週、surgical fusion + orthosis 15 週、surgical fusion + 內固定 ± 短期 orthosis",
-        "C. 都不需治療",
-        "D. 都需 surgery"
+        "A. 穩定：non-halo orthosis 1-6 週；不穩定：traction 7 週 + orthosis 8 週、halo 11 週 + orthosis 4 週、surgical fusion + orthosis 15 週、surgical fusion + 內固定 ± 短期 orthosis",
+        "B. 穩定與不穩定都用 halo",
+        "C. 穩定與不穩定都不需治療",
+        "D. 穩定與不穩定都需立即 surgery"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Stable fracture：<span class='key'>non-halo orthosis 1-6 週</span>。Unstable fracture（多選項，long-term spinal stability 證據不足以推薦特定方案）：<span class='key'>(1) traction 7 週 + orthosis 8 週；(2) halo 11 週 + orthosis 4 週；(3) surgical fusion + orthosis 15 週；(4) surgical fusion + 內固定（lateral mass screws & rods）± 短期 orthosis（數週）</span>。"
     },
     {
@@ -424,10 +424,10 @@
       "tag": "秘籍 · Greenberg Ch71 · 急性減壓",
       "q": "急性 spinal cord 減壓在無 complete SCI 之 subaxial 傷的指徵為？",
       "opts": [
-        "A. 任何骨折",
+        "A. 任何骨折皆需立即減壓",
         "B. (1) 影像顯示骨頭/異物在 spinal canal + 對應 cord symptoms；(2) CT/myelogram/MRI 上 complete block；(3) 臨床判斷（progressive incomplete SCI）",
-        "C. 從不需減壓",
-        "D. 全部都要減壓"
+        "C. 從不需要急性減壓",
+        "D. 全部 subaxial 傷皆需減壓"
       ],
       "answer": 1,
       "explanation": "急性減壓在無 complete SCI 之 subaxial 傷的指徵（一般接受，雖有爭議）：<span class='key'>(1) 影像顯示骨頭/異物在 spinal canal + 對應 spinal cord symptoms</span>；<span class='key'>(2) CT/myelogram/MRI 上 complete block</span>；<span class='key'>(3) 臨床判斷</span>（如 progressive incomplete SCI 且醫師相信減壓有益）。"
@@ -437,12 +437,12 @@
       "tag": "心法 · Greenberg Ch71 · Complete SCI 手術",
       "q": "Complete SCI（ASIA A、非 spinal shock）患者手術的角色為？",
       "opts": [
-        "A. 手術可顯著恢復神經功能",
-        "B. 不會有顯著神經功能恢復；主要目的為 spinal stabilization 以坐姿（pulmonary、心理、復健）；自發 fusion 約 8–12 週但手術加速；早期手術可致更多神經傷，應於穩定後做",
-        "C. 必死",
-        "D. 必須立即手術"
+        "A. 不會有顯著神經功能恢復；主要目的為 spinal stabilization 以坐姿；自發 fusion 約 8–12 週但手術加速；早期手術可致更多神經傷，應於穩定後做",
+        "B. 手術可顯著恢復神經功能",
+        "C. Complete SCI 後必死",
+        "D. Complete SCI 必須立即手術"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Complete SCI（ASIA A，非 spinal shock）手術不會有顯著神經功能恢復</span>。若有持續 cord compression + bulbocavernosus reflex 缺失 → 可能 spinal shock，安全前提下儘早手術；積極非手術 reduction subluxation 仍應追求。<span class='key'>主要手術目的：spinal stabilization</span>，使患者可坐立（改善肺功能、心理、復健）。<span class='key'>自發 fusion 約 8–12 週</span>，手術加速 mobilization 並降低 delayed kyphotic deformity 風險。<span class='key'>早期手術可致更多神經傷</span> → 應在患者醫療與神經學穩定後做。"
     },
     {
@@ -450,12 +450,12 @@
       "tag": "秘籍 · Greenberg Ch71 · Pavlov ratio",
       "q": "Pavlov ratio 是什麼？閾值為？",
       "opts": [
-        "A. 心率公式",
-        "B. (中央 VB 後緣到最近 spinolaminar line 距離) ÷ (中央 VB 之 AP 直徑)；<0.8 = developmentally narrow canal（W&P 不穩定 1 分）",
-        "C. 血壓公式",
-        "D. 無此 ratio"
+        "A. (中央 VB 後緣到最近 spinolaminar line 距離) ÷ (中央 VB 之 AP 直徑)；<0.8 = developmentally narrow canal",
+        "B. 為心率調控公式",
+        "C. 為血壓調控公式",
+        "D. 目前文獻無此 ratio"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Pavlov ratio = (中央 VB 後緣到最近 spinolaminar line 距離) ÷ (中央 VB 之 AP 直徑)</span>。<span class='key'><0.8 = developmentally narrow canal</span>（W&P 不穩定計分中 1 分）。對應 sagittal canal diameter <13 mm。Narrow canal 患者較易 central cord syndrome 等於微小傷後出現嚴重神經學症狀。"
     },
     {
@@ -463,12 +463,12 @@
       "tag": "心法 · Greenberg Ch71 · Closed reduction 缺點",
       "q": "Closed reduction 的缺點不包括？",
       "opts": [
-        "A. BLF 約 25% 無法 reduce",
-        "B. 可能 overdistraction 較高層次 / 加劇其他骨折",
-        "C. Closed reduction 後可能 traumatic disc herniation 致神經學惡化（需立即 MRI、確診則 prompt discectomy）",
-        "D. 100% 成功且零風險"
+        "A. 100% 成功且零風險",
+        "B. BLF 約 25% 無法 reduce",
+        "C. 可能 overdistraction 較高層次 / 加劇其他骨折",
+        "D. Closed reduction 後可能 traumatic disc herniation 致神經學惡化"
       ],
-      "answer": 3,
+      "answer": 0,
       "explanation": "Closed reduction 缺點：<span class='key'>(1) BLF 約 25% 無法 reduce</span>；<span class='key'>(2) 可能 overdistraction 較高層次或加劇其他骨折</span>；<span class='key'>(3) Closed reduction 後可能 traumatic disc herniation 致神經學惡化</span> — 需立即 MRI、確診則 prompt discectomy；<span class='key'>(4) 增加患者時間與痛苦</span>（特別多數仍需手術 fusion）。BLF 之 closed reduction 一般較 ULF 困難。Open reduction 在 reduction 失敗時通常需要。"
     },
     {
@@ -476,12 +476,12 @@
       "tag": "秘籍 · Greenberg Ch71 · 神經學分布",
       "q": "ULF 與 BLF 之 anterolisthesis 程度差異為？",
       "opts": [
-        "A. 兩者相同",
-        "B. ULF：rotatory subluxation + 較輕 anterolisthesis（plain X-ray 易漏，需 CT/oblique X-ray）；BLF：直接 anterolisthesis 通常 >50%（易見於 lateral X-ray）",
-        "C. ULF >90%；BLF <10%",
-        "D. 無差異"
+        "A. ULF：rotatory subluxation + 較輕 anterolisthesis（plain X-ray 易漏，需 CT/oblique X-ray）；BLF：直接 anterolisthesis 通常 >50%（lateral X-ray 易見）",
+        "B. ULF 與 BLF 影像表現完全相同",
+        "C. ULF >90%；BLF <10% 之 anterolisthesis",
+        "D. 兩者無 anterolisthesis 差異"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>ULF 與 BLF 影像差異</span>：兩者皆會 subluxation。<span class='key'>BLF：anterolisthesis 通常 >50%</span> on lateral X-ray（明顯）。<span class='key'>ULF：rotatory subluxation + 較輕 anterolisthesis</span>（<25%）；plain X-ray 上常被漏，需 CT 或 oblique X-ray（神經孔被 locked facet 阻擋）。Sagittal CT 為 locked facet 之最佳影像。"
     }
   ]

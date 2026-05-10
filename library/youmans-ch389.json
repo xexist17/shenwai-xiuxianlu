@@ -8,12 +8,12 @@
       "tag": "功法 · Youmans Ch389 · 影像策略",
       "q": "下列何者為非侵入性神經監測在 TBI 患者管理中的主要角色？",
       "opts": [
-        "A. 完全取代侵入性監測",
-        "B. 補充侵入性監測，特別是當侵入性方法不可用或禁忌時（如凝血異常）",
-        "C. 僅用於兒童",
-        "D. 取代影像檢查"
+        "A. 完全取代侵入性監測，使後者成為過時技術",
+        "B. 僅可用於兒童族群，成人不適用",
+        "C. 可取代影像檢查（CT/MRI）作為主要評估工具",
+        "D. 補充侵入性監測，特別在侵入性方法不可用或禁忌（如凝血異常）時"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "非侵入性監測<span class='key'>無法完全取代</span>侵入性方法，但可作為<span class='key'>補充</span>。優勢：感染風險低/無、成本低、不需手術置入、易移動。<span class='key'>適用情境</span>：侵入性監測不可用或禁忌（如凝血異常、無法手術）時的暫時方案。"
     },
     {
@@ -21,12 +21,12 @@
       "tag": "功法 · Youmans Ch389 · 顱內超音波",
       "q": "顱內超音波（transcranial color-coded duplex Doppler）區分顱內血腫與缺血性中風的影像特徵為？",
       "opts": [
-        "A. 血腫低回音、缺血高回音",
-        "B. 血腫高回音 (hyperechogenic)、缺血低回音 (hypoechogenic)",
-        "C. 兩者都呈高回音",
-        "D. 兩者都呈低回音"
+        "A. 血腫高回音 (hyperechogenic)、缺血低回音 (hypoechogenic)",
+        "B. 血腫低回音、缺血高回音",
+        "C. 血腫與缺血兩者都呈高回音",
+        "D. 血腫與缺血兩者都呈低回音"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>血腫 = hyperechogenic（高回音、亮）</span>；<span class='key'>缺血組織 = hypoechogenic（低回音、暗）</span>。對 CT 比較，敏感度 94%、特異度 95%。<span class='key'>限制</span>：~12% 患者有 poor acoustic window（顱骨太厚），且對小血腫敏感度差。"
     },
     {
@@ -34,12 +34,12 @@
       "tag": "心法 · Youmans Ch389 · 水腦症超音波",
       "q": "顱內超音波檢測水腦症時，側腦室的典型影像特徵稱為？",
       "opts": [
-        "A. 「銀河」狀星點",
-        "B. 「雙鐵軌」（double railroad）— 兩條平行高回音線包夾無回音 CSF",
-        "C. 「蜂窩」結構",
-        "D. 「梅花」分布"
+        "A. 「銀河」狀的散在高回音星點",
+        "B. 「蜂窩」狀的多孔結構",
+        "C. 「雙鐵軌」（double railroad）— 兩條平行高回音線包夾無回音 CSF",
+        "D. 「梅花」狀的對稱分布"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>正常 CSF = 無回音 (anechoic)</span>，<span class='key'>ependymal cells = 高回音</span>，故側腦室呈現典型 <span class='key'>「double railroad」雙鐵軌</span>。最佳評估部位：第三腦室寬度、雙側 frontal horn、外側腦室中段。臨床用：EVD clamping trial 中，腦室擴大 ≥5.5 mm → 需重開引流。"
     },
     {
@@ -47,12 +47,12 @@
       "tag": "功法 · Youmans Ch389 · 視神經鞘",
       "q": "超音波測量 optic nerve sheath diameter (ONSD) 應在距眼球後極多少深度測量？正常值為？",
       "opts": [
-        "A. 1 mm；<3 mm 正常",
-        "B. 3 mm 後方；多數認為 <5 mm 為正常",
-        "C. 10 mm；<8 mm 正常",
-        "D. 距 cornea 5 mm；<2 mm 正常"
+        "A. 距眼球後極 1 mm；<3 mm 為正常",
+        "B. 距眼球後極 10 mm；<8 mm 為正常",
+        "C. 距眼球後極 3 mm 處測量；多數認為 <5 mm 為正常",
+        "D. 距 cornea 5 mm；<2 mm 為正常"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>ONSD 應在距眼球後極 3 mm</span>處測量（此點對 ICP 變化反應最靈敏）。<span class='key'>正常值 <5 mm</span>。原理：ICP 升高 → CSF 累積於視神經鞘前段 → 鞘直徑變大。<span class='key'>禁忌</span>：眼眶腫瘤、ocular sarcoidosis、Graves 病、發炎性眼疾。"
     },
     {
@@ -60,12 +60,12 @@
       "tag": "秘籍 · Youmans Ch389 · ONSD 預測 ICP",
       "q": "ONSD 預測 ICP > 22 mmHg 的最佳 cutoff 值與其敏感度為？",
       "opts": [
-        "A. 4.0 mm；敏感度 50%",
-        "B. 5.83 mm；敏感度 94.4%、特異度 81.0%",
-        "C. 8.0 mm；敏感度 99%",
-        "D. 3.5 mm；敏感度 30%"
+        "A. 4.0 mm；敏感度 50%、特異度 65%",
+        "B. 8.0 mm；敏感度 99%、特異度 99%",
+        "C. 5.83 mm；敏感度 94.4%、特異度 81.0%",
+        "D. 3.5 mm；敏感度 30%、特異度 40%"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Wang 等：ONSD <span class='key'>5.83 mm cutoff</span> 預測 ICP > 22 mmHg → 敏感度 <span class='key'>94.4%</span>、特異度 81.0%。Gupta：>0.63 cm cutoff，CSF 壓 >20 cmH₂O 敏感度 77.3%。整體 ONSD 與 ICP 線性相關 (r=0.771)，但變異性使其<span class='key'>不能取代侵入性 ICP monitor</span>，僅作篩檢用。"
     },
     {
@@ -73,12 +73,12 @@
       "tag": "心法 · Youmans Ch389 · 中線偏移超音波",
       "q": "超音波測量 midline shift 的標準計算方式為？",
       "opts": [
-        "A. 直接量單側顱骨到第三腦室的距離",
-        "B. (同側顱骨到第三腦室距離 − 對側距離) ÷ 2",
-        "C. 取第三腦室前後徑差",
-        "D. 看 falx 偏移度數"
+        "A. MLS = (同側顱骨到第三腦室距離 − 對側距離) ÷ 2",
+        "B. 直接量單側顱骨到第三腦室的絕對距離",
+        "C. 取第三腦室前後徑之差值",
+        "D. 依 falx 偏移之角度（°）計算"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "MLS 計算：在<span class='key'>第三腦室或 septum pellucidum 層面</span>，測量雙側顱骨到第三腦室的距離 (d₁、d₂)，<span class='key'>MLS = (d₁ − d₂) / 2</span>。研究多在 stroke 與 supratentorial hemorrhage 患者驗證；TBI 患者亦有良好相關性。"
     },
     {
@@ -86,12 +86,12 @@
       "tag": "功法 · Youmans Ch389 · 瞳孔測量",
       "q": "Optical pupillometer 的 Neurological Pupil index (NPi) 評分範圍與正常值為？",
       "opts": [
-        "A. 0–5；3.0–5 為正常或敏捷反應",
-        "B. 1–10；6 以上正常",
-        "C. 0–100；50 以上正常",
-        "D. A、B、C 三級"
+        "A. NPi 範圍 1–10；6 以上為正常",
+        "B. NPi 範圍 0–100；50 以上為正常",
+        "C. NPi 範圍 0–5；3.0–5 為正常或敏捷反應",
+        "D. NPi 採 A、B、C 三級制"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "<span class='key'>NPi 評分 0–5</span>：<span class='key'>3.0–5 正常或敏捷反應</span>，越低越異常。優點：能偵測肉眼難見的細微變化、observer 間變異小、不受環境光影響。<span class='key'>限制</span>：與 ICP 相關性研究結果不一，異常 NPi 可能在 ICP 正常時出現，目前不能單獨作為 ICP 監測工具。"
     },
     {
@@ -99,12 +99,12 @@
       "tag": "心法 · Youmans Ch389 · CT 預測 ICP",
       "q": "CT 影像作為 ICP 升高之預測工具，下列何者為其特性？",
       "opts": [
-        "A. 高敏感度、低特異度，可動態監測",
-        "B. 高特異度、低敏感度，僅能單一時間點評估",
-        "C. 無敏感度、無特異度",
-        "D. 完全可取代侵入性 ICP monitor"
+        "A. 高特異度、低敏感度，僅能單一時間點評估",
+        "B. 高敏感度、低特異度，可動態監測 ICP",
+        "C. 對 ICP 預測既無敏感度也無特異度",
+        "D. 可完全取代侵入性 ICP monitor"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "CT 對 ICP 預測：<span class='key'>高特異度、低敏感度</span>，且僅能<span class='key'>單一時間點</span>評估（無連續性）。預測指標：midline shift、basal cisterns 消失、灰白質界線消失、腦溝大小、出血/挫傷/SAH 存在。Marshall 分類也類似，整體預測力有限。<span class='key'>主要用途仍為診斷工具</span>。"
     },
     {
@@ -112,10 +112,10 @@
       "tag": "秘籍 · Youmans Ch389 · MRI elastance",
       "q": "MRI-ICP 方法的核心原理（Marmarou 1975）為？",
       "opts": [
-        "A. 直接測 CSF 流速",
-        "B. 顱內彈性 (intracranial elastance) — 心臟搏動使顱內體積與壓力呈關係",
-        "C. 利用對比劑強化",
-        "D. 量水腫範圍"
+        "A. 直接測量 CSF 流速以計算 ICP",
+        "B. 顱內彈性 — 心臟搏動使顱內體積與壓力呈關係",
+        "C. 利用 gadolinium 對比劑強化來估算 ICP",
+        "D. 量測腦水腫範圍以推算 ICP"
       ],
       "answer": 1,
       "explanation": "<span class='key'>顱內彈性</span>原理：每個心動週期，血液搏動造成顱內體積微小波動，<span class='key'>體積波動的變化幅度反映 elastance</span>。Marmarou 1975 描述此關係。MRI 量 CSF 壓力梯度的振幅 vs 顱內 pulse pressure 振幅 → 線性相關。<span class='key'>主要限制</span>：需要將病人移至放射科，僅單一時間點。"
@@ -125,10 +125,10 @@
       "tag": "心法 · Youmans Ch389 · TMD",
       "q": "Tympanic membrane displacement (TMD) 監測 ICP 的原理為？",
       "opts": [
-        "A. 直接量耳道氣壓",
+        "A. 直接量耳道氣壓變化",
         "B. CSF 壓經 perilymphatic duct 傳到耳蝸 perilymph，影響鐙骨反射時的鼓膜位移",
-        "C. 鼓膜厚度測量",
-        "D. 中耳壓力直接量測"
+        "C. 鼓膜厚度的超音波測量",
+        "D. 中耳壓力的直接量測"
       ],
       "answer": 1,
       "explanation": "TMD 原理：<span class='key'>CSF 壓 → 經 perilymphatic duct → 耳蝸 perilymph → 影響鐙骨反射時鼓膜位移</span>。Marchbanks 1987 首次描述。<span class='key'>限制</span>：操作者依賴、需要正常 tympanometry 與 acoustic reflex、需 patent cochlear aqueduct（老年人 perilymphatic duct 通暢度下降）、ossicles/eustachian tube 異常都會影響。"
@@ -138,10 +138,10 @@
       "tag": "秘籍 · Youmans Ch389 · 眼壓 vs ICP",
       "q": "Tonometry（眼內壓）與 ICP 的相關性，依大多數研究為？",
       "opts": [
-        "A. 高度相關，可作為 ICP 替代測量",
+        "A. 與 ICP 高度相關，可直接作為替代測量",
         "B. 大多研究顯示 poor sensitivity 與 specificity，不適合作為 ICP 預測工具",
-        "C. 完全等於 ICP",
-        "D. 反向相關"
+        "C. 完全等於 ICP 數值，1:1 對應",
+        "D. 與 ICP 呈反向相關"
       ],
       "answer": 1,
       "explanation": "Sajjadi 2006 用 Schiøtz tonometer：50 病人 IOP vs 腰穿 ICP 顯示強相關 (r=0.955)。但 Czarnik、Golan 等研究：<span class='key'>22 病人中只 2 人顯示相關</span>；handheld tonometry 預測 ICP 升高<span class='key'>敏感度與特異度都差</span>。結論：<span class='key'>不適合作為 ICP 篩檢工具</span>。"
@@ -151,12 +151,12 @@
       "tag": "功法 · Youmans Ch389 · NIRS 原理",
       "q": "Cerebral NIRS（近紅外光譜）監測腦氧的核心原理為？",
       "opts": [
-        "A. 量腦組織溫度差",
-        "B. 600–1000 nm 近紅外光穿透頭皮+顱骨+腦組織；oxyhemoglobin 與 deoxyhemoglobin 對特定波長吸收度不同 → 反映 rSo₂",
-        "C. 量腦電圖頻率",
+        "A. 600–1000 nm 近紅外光穿透頭皮+顱骨+腦組織；HbO₂ 與 HHb 對特定波長吸收度不同 → 計算 rSo₂",
+        "B. 量測腦組織之溫度差以反映灌流",
+        "C. 由腦電圖頻率分析推算腦氧",
         "D. 直接量血液 PO₂"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "NIRS 原理：<span class='key'>600–1000 nm 近紅外光</span>（在此波段組織相對透明）穿透頭皮/顱骨/腦組織，<span class='key'>HbO₂ 與 HHb 對不同波長的吸收度</span>差異 → 計算 <span class='key'>rSo₂（regional cerebral oxygen saturation）</span> = HbO₂ / (HbO₂+HHb)。其他指標：TOI、Scto₂。"
     },
     {
@@ -164,12 +164,12 @@
       "tag": "心法 · Youmans Ch389 · NIRS 警戒值",
       "q": "依目前文獻，NIRS rSo₂ 達到何種數值應警覺有腦部缺氧需介入？",
       "opts": [
-        "A. rSo₂ < 80% 即異常",
-        "B. rSo₂ < 35–40%，或自基線下降絕對值 ≥ 20%",
-        "C. rSo₂ 必須 < 5%",
-        "D. 無標準"
+        "A. rSo₂ < 80% 即視為異常",
+        "B. rSo₂ 必須 < 5% 才有意義",
+        "C. 目前無任何標準警戒值",
+        "D. rSo₂ < 35–40%，或自基線下降絕對值 ≥ 20%"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "rSo₂ 警戒值：<span class='key'>< 35–40% 或自基線絕對下降 ≥ 20%</span> → 應介入處理潛在腦部缺氧。Ajayan 等則認為左右差 >20%、>80% 或 <50% 都顯著。<span class='key'>限制</span>：目前無 universal normal value（不像 pulse oximetry 有標準），需更多研究建立 reference range。"
     },
     {
@@ -178,11 +178,11 @@
       "q": "下列關於 INVOS (Somanetics) 與 NIRO (Hamamatsu) 兩個 NIRS 系統的敘述，何者正確？",
       "opts": [
         "A. INVOS 與 NIRO 數值完全可互換",
-        "B. 兩者皆用 spatially resolved spectroscopy (SRS)，對重大生理變化反應一致；但絕對 rSo₂/TOI 數值不同、不可互換",
-        "C. INVOS 用 NIR、NIRO 用 X-ray",
-        "D. NIRO 是侵入性"
+        "B. INVOS 用 NIR、NIRO 用 X-ray，原理完全不同",
+        "C. NIRO 屬侵入性監測技術",
+        "D. 兩者皆用 spatially resolved spectroscopy；對重大生理變化反應一致；但絕對 rSo₂/TOI 數值不可互換"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "INVOS 用 <span class='key'>rSo₂</span>，NIRO 用 <span class='key'>TOI</span>，<span class='key'>兩者皆基於 SRS（spatially resolved spectroscopy）</span>。對重大生理變化反應接近，但<span class='key'>絕對數值不互換</span>。基線或微小生理變化時關聯性差。"
     },
     {
@@ -190,12 +190,12 @@
       "tag": "心法 · Youmans Ch389 · NIRS 限制",
       "q": "下列何者會影響 NIRS rSo₂ 測量準確度？",
       "opts": [
-        "A. 顱骨厚度、頭皮血腫、CSF 厚度、體位（坐 vs 躺）",
-        "B. 病人姓名",
-        "C. 室內燈光顏色",
-        "D. 手術衣顏色"
+        "A. 病人姓名與身分證末碼",
+        "B. 顱骨厚度、頭皮血腫、CSF 厚度、體位（坐 vs 躺）",
+        "C. 室內燈光顏色（白光/黃光）",
+        "D. 手術衣顏色（綠 vs 藍）"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "影響 NIRS 測量的因素：<span class='key'>顱骨/頭皮厚度、CSF 厚度</span>（厚度增加 → 訊號減弱）、<span class='key'>頭皮血腫</span>（造成 false positive，光譜儀無法區分顱外與顱內血液）、<span class='key'>體位</span>（坐位 forehead rSo₂ 顯著低於躺位）。<span class='key'>兒童效果較好</span>（顱骨薄、extracranial contamination 少）。"
     },
     {
@@ -203,12 +203,12 @@
       "tag": "秘籍 · Youmans Ch389 · NIRS 限制",
       "q": "下列何種顱內病灶 NIRS 偵測能力較差？",
       "opts": [
-        "A. 急性 SDH",
-        "B. 急性 EDH",
-        "C. 慢性 SDH 與 diffuse axonal injury",
-        "D. 大腦半球大面積出血"
+        "A. 急性 SDH（表淺、雙側不對稱）",
+        "B. 慢性 SDH 與 diffuse axonal injury (DAI)",
+        "C. 急性 EDH（局部高密度）",
+        "D. 大腦半球大面積急性出血"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "NIRS 對 TBI 多數出血敏感（多為 SDH/EDH 較表淺），但<span class='key'>慢性 SDH 與 DAI（diffuse axonal injury）難以偵測</span> — 慢性 SDH 血液成分變化、DAI 為微出血+白質損傷。原理：NIRS 比較<span class='key'>左右半球光譜差異</span>，因為 hemoglobin 對 NIR 吸收最高。對稱性病灶或散在小病灶較難識別。"
     },
     {
@@ -216,12 +216,12 @@
       "tag": "功法 · Youmans Ch389 · TCD 公式",
       "q": "Gosling pulsatility index (PI) 的計算公式為？",
       "opts": [
-        "A. PI = mFV / (sFV − dFV)",
-        "B. PI = (sFV − dFV) ÷ mFV",
-        "C. PI = sFV × dFV",
+        "A. PI = mFV ÷ (sFV − dFV)",
+        "B. PI = sFV × dFV",
+        "C. PI = (sFV − dFV) ÷ mFV",
         "D. PI = sFV + dFV"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>Gosling PI = (sFV − dFV) / mFV</span>，sFV = 收縮期峰流速、dFV = 舒張期流速、mFV = 平均流速。PI 反映<span class='key'>遠端腦血管阻力 (CVR)</span>，PI 越高 → CVR 越高。但 PI 也受 CPP、pulse amplitude、heart rate 等影響，故對 ICP 預測不一致 — Bellner sens 89%、Zweifel 290 病人卻僅 r=0.31。"
     },
     {
@@ -229,12 +229,12 @@
       "tag": "心法 · Youmans Ch389 · CBF 三相",
       "q": "TBI 後腦血流 (CBF) 的三相演變為？",
       "opts": [
-        "A. 持續低流量",
-        "B. 第 1 相 hypoperfusion → 第 2 相 hyperemia → 第 3 相 vasospasm",
-        "C. hyperemia → hypoperfusion → 正常",
-        "D. 隨機波動"
+        "A. 全程持續低流量，無明顯波動",
+        "B. hyperemia → hypoperfusion → 完全恢復正常",
+        "C. 完全隨機波動，無明確分期",
+        "D. 第 1 相 hypoperfusion → 第 2 相 hyperemia → 第 3 相 vasospasm"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Martin 1997 描述 TBI 後 CBF 三相：<span class='key'>(1) hypoperfusion（傷後初期）→ (2) hyperemia（顯著充血）→ (3) vasospasm</span>。Robertson 1992：<span class='key'>降低的 CBF 與較高死亡率與較差神經學預後相關</span>。TCD 可監測這三相變化。"
     },
     {
@@ -242,12 +242,12 @@
       "tag": "秘籍 · Youmans Ch389 · PRx",
       "q": "Pressure Reactivity Index (PRx) 計算什麼？正負值如何解讀？",
       "opts": [
-        "A. PRx = ICP / MAP；越大越好",
-        "B. MAP 與 ICP 的相關性。負值 = autoregulation 完整；正值 = autoregulation 受損",
-        "C. 直接量腦動脈口徑",
-        "D. 量 CSF 流速"
+        "A. MAP 與 ICP 的相關係數；負值 = autoregulation 完整；正值 = autoregulation 受損",
+        "B. PRx = ICP / MAP；數值越大代表 autoregulation 越好",
+        "C. 為腦動脈口徑之直接量測",
+        "D. 為 CSF 流速的時間變化率"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>PRx = MAP 與 ICP 的相關係數</span>（30 個連續 10 秒 MAP 平均值與 ICP 計算）。<span class='key'>負相關 = 主動 counterregulatory adjustment（cerebrovascular reactivity 完整）</span>；<span class='key'>正相關 = MAP 被動傳遞至 cerebral blood volume 與 ICP（autoregulation 受損）</span>。"
     },
     {
@@ -255,12 +255,12 @@
       "tag": "秘籍 · Youmans Ch389 · CPPopt",
       "q": "Optimal CPP (CPPopt) 如何由 PRx 決定？",
       "opts": [
-        "A. CPPopt 為 PRx 最高點對應的 CPP",
-        "B. PRx vs CPP 繪製成 U 形曲線，最低點（PRx 最小）對應之 CPP 即 CPPopt",
-        "C. 任意 60 mmHg 即可",
-        "D. CPPopt 不存在"
+        "A. PRx vs CPP 繪成 U 形曲線，最低點（PRx 最小）對應之 CPP 即 CPPopt",
+        "B. CPPopt 為 PRx 最高點對應的 CPP",
+        "C. CPPopt 固定為 60 mmHg，與個體差異無關",
+        "D. CPPopt 是統計概念，臨床上不存在"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>CPPopt</span>：將 PRx vs CPP 繪圖 → <span class='key'>U 形曲線</span>，<span class='key'>最低點（PRx 最小、autoregulation 反應最佳）對應的 CPP 即 CPPopt</span>。CPP 越接近 CPPopt → 預後越好。Aries 2012 等研究顯示<span class='key'>偏離 CPPopt 與較差預後相關</span>。實務挑戰：CPPopt 在短時間區段計算，需 robotic TCD 等延長記錄。"
     },
     {
@@ -268,12 +268,12 @@
       "tag": "心法 · Youmans Ch389 · Mx",
       "q": "Mean flow velocity index (Mx) 的解讀為？",
       "opts": [
-        "A. 量 MCA 流速與 CPP 的相關性。正值 = autoregulation 受損；負值 = 完整",
-        "B. 流速越高越好",
-        "C. 與 ICP 反向相關",
-        "D. 是壓力的直接測量"
+        "A. Mx 數值越高代表 CBF 越好",
+        "B. Mx 與 ICP 呈反向線性關係",
+        "C. Mx 是 ICP 之直接量測",
+        "D. MCA flow velocity 與 CPP 的相關係數；正值 = autoregulation 受損；負值 = 完整"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "<span class='key'>Mx = MCA flow velocity 與 CPP 的相關係數</span>。<span class='key'>正相關 = autoregulation 受損</span>；<span class='key'>負相關 = autoregulation 完整</span>。Sorrentino 提出兩個 threshold：<span class='key'>Mx 0.05（下界）</span>存活與良好預後機率高；<span class='key'>Mx 0.30（上界）</span>以上死亡率與不良預後高。Mxa 是 flow velocity vs MAP（無 ICP monitor 時用）。"
     },
     {
@@ -281,12 +281,12 @@
       "tag": "秘籍 · Youmans Ch389 · Plateau waves",
       "q": "Plateau waves 在 TBI 患者出現率約為？臨床意義為？",
       "opts": [
-        "A. <1%；無臨床意義",
-        "B. ~25%（四分之一 TBI 患者）；持續 >30 分鐘的 plateau wave 與較差預後相關",
-        "C. 100% TBI 都會出現",
-        "D. 僅見於兒童"
+        "A. <1% TBI 患者，臨床意義不明",
+        "B. 100% TBI 都會出現，是必然現象",
+        "C. ~25%（四分之一 TBI 患者）；持續 >30 分鐘的 plateau wave 與較差預後相關",
+        "D. 僅見於兒童族群，成人不會發生"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Plateau waves：突發性 ICP 升高 + CPP 降低 → 二次缺血。出現率約 <span class='key'>25% TBI 患者</span>。機轉：<span class='key'>vasodilatory cascade</span>（動脈壓降 → cerebral blood volume 升 → ICP 升 → CPP 降）。TCD 上 diastolic flow velocity 顯著下降、PI 顯著升高。<span class='key'>持續 >30 分鐘的 plateau wave 與較差預後相關</span>。"
     },
     {
@@ -295,11 +295,11 @@
       "q": "TCD 在 TBI 後 vasospasm 偵測的角色為？",
       "opts": [
         "A. TCD 完全可取代 cerebral angiography",
-        "B. TCD 可早期偵測（高血流速暗示），但結果為 operator-dependent；某些研究顯示與 angiography 敏感度相當",
-        "C. TCD 無法偵測 vasospasm",
-        "D. 只在 SAH 有用，TBI 沒幫助"
+        "B. TCD 無法偵測 vasospasm，只能 angiography 確診",
+        "C. TCD 僅在 SAH 有用，TBI 完全沒幫助",
+        "D. 可早期偵測高血流速（暗示 vasospasm），但 operator-dependent；某些研究顯示與 angiography 敏感度相當"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "TBI 後 vasospasm 多見於 traumatic SAH 與 blast 傷後。<span class='key'>TCD 可早期偵測高血流速</span>（尚無臨床症狀前），易用且資訊豐富。<span class='key'>主要限制：operator-dependent</span>，特別是非 MCA 血管。研究結果不一：部分顯示與 cerebral angiography 敏感度相當，部分顯示與症狀性 vasospasm 相關性弱。"
     },
     {
@@ -307,10 +307,10 @@
       "tag": "秘籍 · Youmans Ch389 · Schmidt 法",
       "q": "Schmidt 等 (2000) 提出的 noninvasive ICP 估算方法基於什麼參數？",
       "opts": [
-        "A. CT 影像分析",
+        "A. 依 CT 影像分析腦溝/腦室特徵估算",
         "B. 利用 cerebral blood flow velocity（TCD）與 MAP，透過數學公式持續估算 ICP",
-        "C. 直接顱骨壓電",
-        "D. 紅外線溫度感應"
+        "C. 直接於顱骨外貼壓電感測器測量",
+        "D. 以紅外線溫度感應推算"
       ],
       "answer": 1,
       "explanation": "Schmidt 法：<span class='key'>由 cerebral blood flow velocity（TCD）與 MAP</span>，透過<span class='key'>數學公式（非生理結構）</span>持續估算 ICP。Cardim 2016 比較 4 種方法：<span class='key'>Schmidt 法為最佳 ICP 估算器</span>。提供完整 ICP 波形。原理：assuming nIICP = MAP − nCPP。"
@@ -320,10 +320,10 @@
       "tag": "心法 · Youmans Ch389 · BTF 指引",
       "q": "依 BTF 第 4 版指引，下列何種 TBI 患者建議放置 ICP monitor？",
       "opts": [
-        "A. 所有頭部外傷",
-        "B. 復甦後 GCS 3–8 + 異常 CT (顯示 hematoma、contusion、edema、herniation 等)",
-        "C. 僅 GCS = 15 的輕度患者",
-        "D. 不需要 ICP monitor"
+        "A. 所有頭部外傷皆需放置 ICP monitor",
+        "B. 復甦後 GCS 3–8 + 異常 CT（hematoma、contusion、edema、herniation 等）",
+        "C. 僅 GCS = 15 的輕度患者使用",
+        "D. 目前已不建議任何患者使用 ICP monitor"
       ],
       "answer": 1,
       "explanation": "BTF 第 4 版：<span class='key'>復甦後 GCS 3–8 + 異常 CT（hematoma、contusion、edema、herniation 等）</span>應放置 ICP monitor，可降低 in-hospital 與 2 週後死亡率。<span class='key'>非侵入性方法目前不能取代</span>，但侵入性方法的併發症（出血、感染、misposition）讓非侵入性監測有補充價值。"
@@ -333,12 +333,12 @@
       "tag": "秘籍 · Youmans Ch389 · NIRS 預後",
       "q": "依 Vilke 等研究，NIRS rSo₂ 對 TBI 患者預後的預測能力為？",
       "opts": [
-        "A. 完全無預測力",
-        "B. 入 ICU 後 1 小時 rSo₂ 不超過 ~68%（左右半球） → 死亡風險增加 5–17 倍",
-        "C. 比 GCS 差很多",
-        "D. 只能預測 1 週內預後"
+        "A. NIRS rSo₂ 對 TBI 預後完全無預測力",
+        "B. NIRS 預後預測力顯著差於 GCS",
+        "C. 入 ICU 後 1 小時 rSo₂ 不超過 ~68%（左右半球） → 死亡風險增加 5–17 倍",
+        "D. NIRS rSo₂ 僅能預測 1 週內預後，無長期意義"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Vilke 2014：入 neuro-ICU <span class='key'>1 小時後 rSo₂ 左半球 ≤ 68%、右半球 ≤ 68.3%</span> → 死亡 hazard ratio <span class='key'>左 17 倍 (P<.01)、右 5.1 倍 (P<.05)</span>。比傳統參數（GCS、blood glucose、Hb level）為更強之 hospital mortality 區分子。Zweifel：NIRS-derived PRx 與預後也有良好相關性。"
     },
     {
@@ -346,12 +346,12 @@
       "tag": "心法 · Youmans Ch389 · 院前 NIRS",
       "q": "NIRS 在 TBI 院前處置的潛在優勢為？",
       "opts": [
-        "A. 取代 CT 完全不需到醫院",
-        "B. 攜帶式、4 分鐘內可掃描，作為現場 triage 工具加速治療啟動",
-        "C. 必須在開刀房才能用",
-        "D. 需要病人配合不能在無意識病人使用"
+        "A. 可完全取代 CT，使院前直接決定處置",
+        "B. 必須在開刀房內才能使用",
+        "C. 需病人配合，無法用於無意識者",
+        "D. 攜帶式、約 4 分鐘內可掃描，作為現場 triage 工具加速治療啟動"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "院前 NIRS 優勢：<span class='key'>portable handheld device</span>，Peters 報告<span class='key'>院前掃描中位數 4 分鐘</span>。<span class='key'>目的不是偵測所有微小血腫，而是 triage</span> 加速臨床處置。對患者預後可能有正面影響。但目前仍為研究階段，需更多證據確立角色。"
     },
     {
@@ -359,12 +359,12 @@
       "tag": "秘籍 · Youmans Ch389 · 視神經 MRI",
       "q": "MRI 量 ONSD（距眼球後極 3 mm）預測 ICP 升高的準確度為？",
       "opts": [
-        "A. 完全無法預測",
-        "B. 與侵入性 ICP 顯著相關 (r ≈ 0.71)，敏感度 90%、特異度 92%",
-        "C. 只能用於兒童",
-        "D. 必須打顯影劑才有用"
+        "A. 與侵入性 ICP 顯著相關 (r ≈ 0.71)，敏感度 90%、特異度 92%",
+        "B. MRI ONSD 完全無法預測 ICP",
+        "C. MRI ONSD 僅可用於兒童族群",
+        "D. 必須注射 gadolinium 對比劑才有用"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Geeraerts 2008：MRI 量 ONSD（距眼球後極 3 mm）與 parenchymal ICP monitor 數值<span class='key'>顯著相關 r ≈ 0.71</span>，<span class='key'>敏感度 90%、特異度 92%</span>。但 MRI 同樣有 single time point 限制 + 需運送病人到 MRI 室之風險。"
     },
     {
@@ -372,10 +372,10 @@
       "tag": "心法 · Youmans Ch389 · TCD 預後",
       "q": "Bouzat 等多中心研究：mild–moderate TBI 入 ICU 時 TCD 預測 7 日內神經學惡化的 cutoff 為？",
       "opts": [
-        "A. PI < 0.5",
-        "B. 雙側 MCA：PI < 1.25 + diastolic flow velocity > 25 cm/s 為正常；超出此範圍預測惡化敏感度 80%、特異度 79%",
-        "C. mFV < 5 cm/s",
-        "D. 任何 PI > 5"
+        "A. PI < 0.5 為唯一切點",
+        "B. 雙側 MCA：PI < 1.25 + diastolic flow velocity > 25 cm/s 為正常；超出範圍預測惡化敏感度 80%、特異度 79%",
+        "C. mFV < 5 cm/s 為惡化指標",
+        "D. 任何 PI > 5 即視為惡化"
       ],
       "answer": 1,
       "explanation": "Bouzat 2016 多中心觀察：mild–moderate TBI 入 neuro-ICU 時 TCD <span class='key'>正常定義：雙側 MCA PI < 1.25 + diastolic flow velocity > 25 cm/s</span>。6% 患者於 1 週內出現 secondary neurological deterioration。TCD 異常者預測惡化<span class='key'>敏感度 80%、特異度 79%</span>。第 28 天 disability rating scale 也較差。"

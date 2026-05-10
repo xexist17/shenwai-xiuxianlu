@@ -9,12 +9,12 @@
       "tag": "功法 · Youmans Ch382 · 影像策略",
       "q": "急性 TBI 患者初始影像檢查的首選為下列何者？",
       "opts": [
-        "A. 顱骨平片 (skull X-ray)",
-        "B. 非顯影頭部 CT (noncontrast head CT)",
-        "C. 顯影 MRI",
-        "D. CT angiography"
+        "A. 鎮靜下做頭部 + 頸椎 MRI",
+        "B. 頭部 + 頸部 CT angiography（一次評估顱內與血管）",
+        "C. 非顯影頭部 CT",
+        "D. 顱骨平片合併頸椎 X 光"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>非顯影頭部 CT</span> 為急性 TBI 首選 — 速度快（~1 秒成像）、對急性出血敏感、對骨折特異度高、幾乎無禁忌症，加上多數急診 24/7 可用（CT 94% vs MRI 13%）。MRI 雖對微病灶較敏感，但耗時、有禁忌（pacemaker、metal）、不利不穩定病人，<span class='key'>不適合急性處置</span>。"
     },
     {
@@ -22,10 +22,10 @@
       "tag": "心法 · Youmans Ch382 · 影像策略",
       "q": "關於急性閉鎖性頭部外傷後的顱骨平片 (skull radiographs)，目前的 CDC/ACEP 指引建議為？",
       "opts": [
-        "A. 所有 GCS<15 的患者皆應拍",
-        "B. 不建議用於評估輕度 TBI，因敏感度不足且陰性結果可能誤導",
-        "C. 兒童優先於 CT 使用",
-        "D. 為基底骨折之 gold standard"
+        "A. 在無 CT 設備之區域為 mTBI 標準篩檢工具",
+        "B. 不建議用於評估輕度 TBI；陰性結果可能誤導臨床判斷",
+        "C. 對基底顱骨骨折之偵測特異度高於 CT",
+        "D. 兒童 mTBI 中應先試顱骨平片再決定是否 CT"
       ],
       "answer": 1,
       "explanation": "CDC/ACEP（2002 起、2009 重申）明確：<span class='key'>顱骨平片不應用於輕度 TBI 評估</span>。理由：雖骨折提高顱內病灶機率，但敏感度不足以篩檢，陰性反而誤導。但 CT 開始時的 frontal/lateral scout view 仍應檢視 — 偶可顯示 CT 軸切難辨之 transversely-oriented 骨折或上頸椎傷。"
@@ -35,10 +35,10 @@
       "tag": "心法 · Youmans Ch382 · 影像策略",
       "q": "下列何者是 MRI 較 CT 敏感度更高的急性 TBI 病灶？",
       "opts": [
-        "A. 顱骨骨折",
-        "B. 顏面骨骨折",
-        "C. 微出血、小皮質挫傷、小型硬腦膜外/下少量積液",
-        "D. 顱內金屬異物"
+        "A. 顱骨與顏面骨骨折之精確定位",
+        "B. Hyperacute SAH（傷後 1 小時內）的偵測",
+        "C. 微出血、小皮質挫傷、薄層 extra-axial 積液",
+        "D. 中線偏移角度的精確量化"
       ],
       "answer": 2,
       "explanation": "MRI 對 <span class='key'>microhemorrhages、small cortical contusions、small extra-axial collections</span>、hemorrhagic axonal injury 敏感度都優於 CT。CT 仍勝出的領域：<span class='key'>骨折</span>（CT 對 bony detail 極佳）、<span class='key'>金屬異物</span>（屬 MRI 禁忌）。"
@@ -48,12 +48,12 @@
       "tag": "功法 · Youmans Ch382 · CT 適應症",
       "q": "依 CDC/ACEP 指引，下列哪一種情況不需立即進行非顯影頭部 CT？",
       "opts": [
-        "A. GCS 14 且有明確意識喪失",
-        "B. 65 歲以上有頭部撞擊",
-        "C. 25 歲、GCS 15、無意識喪失、無局部神經學缺損",
-        "D. 凝血功能異常之頭部外傷"
+        "A. 70 歲跌倒後輕微頭痛、GCS 15、無 LOC",
+        "B. 25 歲、GCS 14、目擊有短暫 LOC",
+        "C. 服用 warfarin 之中老年人輕微頭撞",
+        "D. 25 歲、GCS 15、無 LOC、無局部缺損、無頭痛"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "CDC/ACEP 觸發 CT 的條件包含：GCS<15、LOC、PTA、嘔吐、嚴重頭痛、>60–65 歲、凝血異常、藥物/酒精影響、短期記憶障礙、posttraumatic seizure、局部神經學缺損、危險機制。<span class='key'>選項 C 不滿足任一條件，可不必 CT</span>。"
     },
     {
@@ -61,12 +61,12 @@
       "tag": "秘籍 · Youmans Ch382 · NICE 指引",
       "q": "依 NICE 指引，下列何者需於受傷後 1 小時內完成頭部 CT？",
       "opts": [
-        "A. 受傷後 2 小時 GCS 仍 <15",
-        "B. 單次嘔吐",
-        "C. 受傷時喪失意識 < 30 秒",
-        "D. 60 歲以上成人輕微頭撞"
+        "A. 單次嘔吐合併輕微頭痛",
+        "B. 受傷 2 小時後 GCS 仍 < 15",
+        "C. 受傷時短暫 LOC 約 30 秒、現已恢復清醒",
+        "D. 70 歲、GCS 15、長期服 aspirin"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "NICE 1 小時內必做 CT：<span class='key'>初評 GCS<13；傷後 2 小時 GCS 仍 <15</span>；開放/凹陷/基底骨折跡象；局部神經學缺損；posttraumatic seizure；><span class='key'>1 次</span>嘔吐（非單次）。其他 risk factor（如 ≥65、凝血異常、危險機制）為 8 小時內。"
     },
     {
@@ -74,12 +74,12 @@
       "tag": "心法 · Youmans Ch382 · CT 分級",
       "q": "Rotterdam CT 分類相較於 Marshall score 的主要改良是什麼？",
       "opts": [
-        "A. 加入 GCS 分數",
-        "B. 加入 EDH 與 traumatic SAH 兩個獨立評分項，提升 6 個月死亡率預測能力",
-        "C. 改用瞳孔反射作為主要參數",
-        "D. 不再考慮中線偏移"
+        "A. 加入 Hunt-Hess 分級作為次要參數",
+        "B. 改用 GCS motor score 取代影像參數",
+        "C. 將中線偏移再細分為 5 級",
+        "D. 加入 EDH 與 traumatic SAH 為獨立評分項，提升 6 個月死亡率預測力"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "Rotterdam（Maas 2005）在 Marshall（midline shift、cisterns、lesion density）基礎上，<span class='key'>新增 epidural hematoma（無=+1, 有=0）和 traumatic SAH/IVH（有=+1）</span>兩個獨立評分項，重新分組後對 6 個月死亡率的鑑別力優於原 Marshall 分類。"
     },
     {
@@ -87,10 +87,10 @@
       "tag": "秘籍 · Youmans Ch382 · Marshall score",
       "q": "Marshall CT 分類中，第 V 級（Diffuse Injury V）代表什麼？",
       "opts": [
-        "A. 中線偏移 0–5 mm，腦池正常",
-        "B. 中線偏移 >5 mm，腦池消失",
-        "C. 任何已被手術清除的病灶 (any lesion surgically evacuated)",
-        "D. 非手術性病灶 >25 cm³"
+        "A. 中線偏移 >5 mm + 任何高密度病灶",
+        "B. 未手術但 >25 cm³ 高密度病灶",
+        "C. 任何已被手術清除之 mass lesion",
+        "D. 雙側 cisterns 對稱性受壓"
       ],
       "answer": 2,
       "explanation": "Marshall 六級：<span class='key'>I</span> 無病灶；<span class='key'>II</span> 中線偏移 0–5mm + 腦池正常；<span class='key'>III</span> 中線偏移 0–5mm + 腦池受壓/消失（diffuse swelling）；<span class='key'>IV</span> 中線偏移 >5mm；<span class='key'>V</span> 任何已手術清除的 mass lesion；<span class='key'>VI</span> 未手術但 >25 cm³ 的高密度病灶。"
@@ -100,12 +100,12 @@
       "tag": "功法 · Youmans Ch382 · 硬腦膜外血腫",
       "q": "硬腦膜外血腫 (EDH) 最常見的出血來源是？",
       "opts": [
-        "A. 中腦膜動脈 (middle meningeal artery)",
-        "B. 橋靜脈 (bridging veins)",
-        "C. 大腦中動脈 (MCA)",
-        "D. 上矢狀竇"
+        "A. 大腦中動脈 (MCA) 之 M2 皮質分支",
+        "B. 蜘蛛膜下腔之橋靜脈剪切性撕裂",
+        "C. 中腦膜動脈分支被骨折線撕裂",
+        "D. 軟腦膜小動脈與深部穿支"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "<span class='key'>~90% 動脈性 EDH 源自中腦膜動脈</span>分支被骨折撕裂；高壓動脈血將硬腦膜外層 (periosteal layer) 從顱骨內板剝離，於原本只是 potential space 處快速形成血腫。約 10% 為靜脈源（蝶頂竇、橫竇、上矢狀竇）— 這類較 benign，少數會嚴重擴大。"
     },
     {
@@ -113,12 +113,12 @@
       "tag": "功法 · Youmans Ch382 · EDH 影像",
       "q": "急性 EDH 在頭部 CT 上的「典型」外觀為？",
       "opts": [
-        "A. 新月形 (crescent-shaped) 高密度",
-        "B. 雙凸形 (biconvex / lentiform) 高密度",
-        "C. 線狀沿著腦溝分佈",
-        "D. 中央高密度、周圍低密度的同心圓"
+        "A. 新月形 (crescent) 高密度",
+        "B. 線狀沿著腦溝分佈",
+        "C. 多病灶星散性高密度",
+        "D. 雙凸形 (biconvex / lentiform) 高密度"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "經典 EDH = <span class='key'>biconvex (lentiform) 高密度</span>，因外層硬腦膜緊密附著顱骨內板與骨縫，限制血液擴散方向，故呈雙凸形。內含<span class='key'>低密度區（mixed-density）</span>或顯影 extravasation 提示 hyperacute active bleeding，預後較差。新月形是 SDH 的特徵。"
     },
     {
@@ -126,12 +126,12 @@
       "tag": "心法 · Youmans Ch382 · EDH 解剖",
       "q": "關於 EDH 跨越骨縫 (suture lines) 的能力，下列何者正確？",
       "opts": [
-        "A. EDH 可自由跨越所有骨縫",
-        "B. EDH 一般不跨越骨縫，但顱頂 (vertex) 處的矢狀縫是例外",
-        "C. EDH 從不跨越骨縫，無例外",
-        "D. EDH 僅跨越人字縫 (lambdoid suture)"
+        "A. 一般不跨骨縫，但 vertex 之矢狀縫為例外",
+        "B. 自由跨越所有骨縫",
+        "C. 僅可跨人字縫 (lambdoid)",
+        "D. 從不跨任何骨縫，無例外"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "EDH <span class='key'>通常不跨骨縫</span>（外層硬腦膜緊附骨縫）。<span class='key'>Vertex 處的矢狀縫是例外</span> — 該處外層硬腦膜附著較鬆，加上上矢狀竇位於兩層硬腦膜之間，故 vertex EDH 可跨中線。SDH 則可自由跨骨縫，但無法跨大腦鐮和小腦天幕。"
     },
     {
@@ -139,20 +139,25 @@
       "tag": "心法 · Youmans Ch382 · EDH vs SDH",
       "q": "下列關於 EDH 與小腦天幕 (tentorium cerebelli) 關係的敘述，何者正確？",
       "opts": [
-        "A. EDH 不能跨越小腦天幕",
-        "B. EDH 可輕易跨越小腦天幕，可同時出現於幕上與幕下",
-        "C. SDH 較容易跨越小腦天幕，EDH 不能",
-        "D. EDH 僅出現在幕下"
+        "A. EDH 可跨小腦天幕，SDH 受 dural reflection 阻擋不能跨",
+        "B. EDH 不能跨；SDH 可自由跨越",
+        "C. 兩者皆可自由跨越天幕與大腦鐮",
+        "D. 兩者皆不可跨越任何 dural reflection"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>EDH 可跨小腦天幕</span>，影像上可同時延伸至幕上與幕下。<span class='key'>SDH 反而被 dural reflections（大腦鐮、小腦天幕）阻擋</span>無法跨越。要點記憶：EDH 怕骨縫不怕 dural reflections；SDH 不怕骨縫怕 dural reflections。"
     },
     {
       "type": "choice",
       "tag": "秘籍 · Youmans Ch382 · EDH 流行病學",
       "q": "成人之動脈性 EDH 約有多少比例位於顳區 (temporal region)？",
-      "opts": ["A. 約 25%", "B. 約 50%", "C. 約 75%", "D. 約 95%"],
-      "answer": 2,
+      "opts": [
+        "A. 約 25%",
+        "B. 約 75%",
+        "C. 約 50%",
+        "D. 約 95%"
+      ],
+      "answer": 1,
       "explanation": "成人 EDH <span class='key'>~75% 位於顳區</span>，因該處中腦膜動脈分支沿顱骨內板深刻走行，骨折易直接撕裂。約 90% EDH 患者可在 CT 找到對應的<span class='key'>顱骨骨折</span>。兒童分佈則較均勻（顳/枕/額/後顱窩相近）。"
     },
     {
@@ -160,12 +165,12 @@
       "tag": "秘籍 · Youmans Ch382 · 小兒 EDH",
       "q": "EDH 在兒童相較於成人為何較少見？",
       "opts": [
-        "A. 兒童顱骨較硬，外傷不易造成出血",
-        "B. 兒童顱骨較有彈性，且中腦膜動脈尚未深刻嵌入內板",
-        "C. 兒童硬腦膜本身較厚",
-        "D. 兒童凝血功能較佳"
+        "A. 兒童顱骨彈性較佳，且中腦膜動脈尚未深刻嵌入內板",
+        "B. 兒童顱骨較硬，外傷不易致顱內出血",
+        "C. 兒童硬腦膜本身較厚，可阻擋出血擴散",
+        "D. 兒童凝血功能較成人佳"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "兒童 <span class='key'>顱骨彈性較佳、中腦膜動脈尚未深刻嵌入內板</span>，故較不易被骨折撕裂。老年人 EDH 也少見 — 硬腦膜更緊附顱骨難以剝離。當兒童發生 EDH 時，分佈較均勻；且小兒 mixed-density EDH 預後較差（更高 morbidity/mortality）。"
     },
     {
@@ -173,12 +178,12 @@
       "tag": "功法 · Youmans Ch382 · 硬腦膜下血腫",
       "q": "急性硬腦膜下血腫 (SDH) 最常見的出血來源是？",
       "opts": [
-        "A. 中腦膜動脈",
-        "B. 大腦皮質橋靜脈 (cortical bridging veins)",
-        "C. 蜘蛛膜顆粒",
+        "A. 中腦膜動脈分支",
+        "B. 蜘蛛膜顆粒 (arachnoid granulations)",
+        "C. 大腦皮質橋靜脈 (cortical bridging veins)",
         "D. 軟腦膜小動脈"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "SDH 多源自<span class='key'>皮質橋靜脈 (cortical bridging veins)</span>被剪切力撕裂 — 這些靜脈從腦表穿過 subarachnoid 與 dura，匯入靜脈竇前最易受傷。少數源自皮質動脈、軟腦膜血管或蜘蛛膜顆粒。SDH 也常出現在 contrecoup 部位（不像 EDH 多在 coup 部位）。"
     },
     {
@@ -186,10 +191,10 @@
       "tag": "心法 · Youmans Ch382 · SDH 解剖",
       "q": "下列關於 SDH 跨越解剖屏障的敘述，何者正確？",
       "opts": [
-        "A. SDH 可自由跨越骨縫，但無法跨越大腦鐮 (falx) 與小腦天幕",
-        "B. SDH 不可跨越骨縫，但可跨越大腦鐮",
-        "C. SDH 可同時跨越骨縫、大腦鐮與小腦天幕",
-        "D. SDH 不可跨越任何屏障"
+        "A. 可自由跨骨縫，但無法跨大腦鐮與小腦天幕",
+        "B. 不能跨骨縫，但可跨大腦鐮",
+        "C. 可同時跨骨縫、大腦鐮與小腦天幕",
+        "D. 不能跨任何屏障"
       ],
       "answer": 0,
       "explanation": "SDH <span class='key'>可自由跨骨縫</span>（dura 與 arachnoid 鬆散連接，僅薄層 fibroblast 隔開），故常蔓延整個半球凸面。但<span class='key'>無法跨大腦鐮與小腦天幕</span>這些厚實 dural reflections。SDH 可沿大腦鐮前後延伸（CT 上呈 thickened「shaggy」falx）或沿天幕（高密度線）。"
@@ -199,12 +204,12 @@
       "tag": "秘籍 · Youmans Ch382 · SDH 演變",
       "q": "在無凝血功能異常的情況下，SDH 在 CT 上密度衰減的平均速率約為？",
       "opts": [
-        "A. 每天減少 0.1–0.3 HU",
-        "B. 每天減少 0.7–1.5 HU",
+        "A. 每天減少 0.7–1.5 HU",
+        "B. 每天減少 0.1–0.3 HU",
         "C. 每天減少 5–10 HU",
-        "D. 每天減少 25 HU"
+        "D. 每天減少 25 HU 以上"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "急性 SDH 約 1–2 小時內變高密度，之後 <span class='key'>~0.7–1.5 HU/天</span>衰減（globin 降解）。亞急性（1–3 週）約 50% 等密度、50% 低密度；3 週後 90% 為低密度。<span class='key'>等密度 SDH 在 CT 上極易被忽略</span> — 這是 missed SDH 的常見陷阱。"
     },
     {
@@ -212,12 +217,12 @@
       "tag": "功法 · Youmans Ch382 · 蜘蛛膜下腔出血",
       "q": "創傷性 SAH 與動脈瘤性 SAH 在 CT 分佈上的主要差異是？",
       "opts": [
-        "A. 創傷性集中在 basal cisterns；動脈瘤性多在腦溝",
-        "B. 創傷性常見於周邊腦溝、sylvian fissure、anterior interhemispheric fissure；動脈瘤性則最多在 circle of Willis 周邊基底池",
-        "C. 兩者分佈相同無法區分",
-        "D. 動脈瘤性 SAH 不會出現在 sylvian fissure"
+        "A. 兩者皆主要集中於 basal cisterns",
+        "B. 動脈瘤性 SAH 不會出現在 sylvian fissure 內",
+        "C. 創傷性多在凸面腦溝/sylvian/anterior interhemispheric；動脈瘤性主要集中於 basal cisterns 周邊",
+        "D. 兩者影像分布相同，無法靠位置鑑別"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "<span class='key'>創傷性 SAH</span>：周邊腦溝（凸面）、sylvian fissure、anterior interhemispheric fissure；少量也可見於 basal cisterns。<span class='key'>動脈瘤性 SAH</span>：因 berry aneurysm 多在 circle of Willis 與 MCA bifurcation，最大量集中於<span class='key'>基底池</span>（和/或 sylvian、anterior interhemispheric）。基底池血量是鑑別關鍵。"
     },
     {
@@ -226,11 +231,11 @@
       "q": "對於急性與亞急性 SAH，下列哪一種 MRI 序列敏感度最高？",
       "opts": [
         "A. T1-weighted",
-        "B. T2-weighted fast spin echo",
-        "C. T2 FLAIR",
+        "B. T2 FLAIR",
+        "C. T2-weighted fast spin echo",
         "D. Diffusion-weighted (DWI)"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "<span class='key'>T2 FLAIR</span> 對急性與亞急性 SAH 均最敏感（FLAIR 抑制 CSF 訊號使血液突出），亞急性 SAH 更明顯優於 CT。<span class='key'>陷阱</span>：oxygen therapy、腦膜炎、軟腦膜癌轉移、近金屬磁場干擾都可能在 FLAIR 上 mimic SAH。"
     },
     {
@@ -238,9 +243,9 @@
       "tag": "秘籍 · Youmans Ch382 · 蜘蛛膜下腔出血",
       "q": "下列關於創傷性 SAH 的敘述，何者正確？",
       "opts": [
-        "A. 在 CT 上的高密度可維持數週",
-        "B. 在 CT 上常於數小時至 2 天內變得難以偵測，需依賴腦溝模糊化等線索",
-        "C. T2 FLAIR 對亞急性 SAH 不如 CT 敏感",
+        "A. 高密度可維持數週至 1 個月以上",
+        "B. 數小時至 2 天內變得不易偵測；需依賴 sulci 模糊化等線索",
+        "C. T2 FLAIR 對亞急性 SAH 的敏感度低於 CT",
         "D. 必定合併硬腦膜外血腫"
       ],
       "answer": 1,
@@ -250,8 +255,13 @@
       "type": "choice",
       "tag": "心法 · Youmans Ch382 · 腦室內出血",
       "q": "創傷性腦室內出血 (IVH) 在閉鎖性頭部外傷中的發生率約為？",
-      "opts": ["A. <0.1%", "B. 1–5%", "C. 約 25%", "D. 超過 50%"],
-      "answer": 1,
+      "opts": [
+        "A. < 0.1%",
+        "B. 約 25%",
+        "C. 1–5%",
+        "D. > 50%"
+      ],
+      "answer": 2,
       "explanation": "創傷性 <span class='key'>IVH 約 1–5%</span>。表現為依重力沉積於枕角的高密度液體層。機轉：(1) subependymal vessels 撕裂；(2) ICH 延伸入腦室；(3) SAH 經 Luschka/Magendie 反流。慢性併發症：communicating hydrocephalus（~12% 創傷性 SAH 患者，IVH 更高風險）。"
     },
     {
@@ -259,12 +269,12 @@
       "tag": "功法 · Youmans Ch382 · 腦挫傷",
       "q": "腦挫傷最常見的位置為何？",
       "opts": [
-        "A. 枕葉與小腦",
-        "B. 前顳葉（沿蝶骨大翼，約 50%）與額葉（特別是眼眶面，約 30%）",
-        "C. 視丘與基底節",
+        "A. 枕葉與小腦半球",
+        "B. 視丘與基底節",
+        "C. 前顳葉（沿蝶骨大翼，~50%）+ 額葉眼眶面（~30%）",
         "D. 中腦與橋腦"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "腦挫傷好發於<span class='key'>緊鄰顱骨內板粗糙突起</span>處：前顳葉沿蝶骨大翼（~50%）、額葉特別是眼眶面（~30%）、下顳葉鄰岩骨。頂枕葉 13%、小腦 10%。<span class='key'>凹陷骨折下方</span>常合併。基底節挫傷罕見（多為 hypertensive vasculopathy）。"
     },
     {
@@ -273,9 +283,9 @@
       "q": "「Blooming」(挫傷膨大) 的臨床意義為何？",
       "opts": [
         "A. 慢性挫傷的鈣化過程",
-        "B. 急性/超急性挫傷的出血與水腫在傷後數小時內擴大；初次 CT 可能低估病灶",
-        "C. MRI 上鐵血黃素沉積",
-        "D. 注射顯影劑後病灶變大"
+        "B. 急性/超急性挫傷的出血與水腫於數小時內擴大；初次 CT 可能低估",
+        "C. MRI 上鐵血黃素長期沉積之顯現",
+        "D. 注射顯影劑後病灶體積放大"
       ],
       "answer": 1,
       "explanation": "<span class='key'>Blooming</span> = 急性挫傷之 hemorrhage 與 edema 在傷後數小時持續擴大。臨床意義：傷後 1–2 小時內首次 CT 可能<span class='key'>低估病灶大小</span>甚至完全 missing 小皮質挫傷。<span class='key'>Burst temporal lobe</span> = 前顳葉嚴重挫傷膨大造成 medial temporal herniation 壓迫中腦，需積極監控與重複 CT。"
@@ -286,11 +296,11 @@
       "q": "亞急性腦挫傷 (1–數週) 在顯影 CT/MRI 上可能呈現環狀強化 (ring enhancement)，最常見之鑑別診斷不包括？",
       "opts": [
         "A. 轉移性腫瘤",
-        "B. 腦膿瘍",
-        "C. 急性 EDH",
+        "B. 急性 EDH",
+        "C. 腦膿瘍",
         "D. 亞急性梗塞"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "亞急性挫傷因新生血管屏障不完整呈 <span class='key'>ring enhancement</span>，可 mimic 轉移瘤、原發腦瘤、感染、膿瘍、cerebritis、亞急性梗塞。<span class='key'>EDH 不會 ring enhance</span>（為腔外血液集合）。鑑別關鍵：臨床史 + 位置（眶額、前顳）+ 已知 contusion 演變時間軸。"
     },
     {
@@ -298,12 +308,12 @@
       "tag": "心法 · Youmans Ch382 · 影像比較",
       "q": "MRI 與 CT 對腦挫傷的偵測敏感度比較約為？",
       "opts": [
-        "A. MRI ~98% vs CT ~56%",
-        "B. MRI ~70% vs CT ~70%",
-        "C. CT ~98% vs MRI ~56%",
-        "D. 兩者皆 < 50%"
+        "A. MRI ~70% vs CT ~70%",
+        "B. CT ~98% vs MRI ~56%",
+        "C. 兩者皆 < 50%",
+        "D. MRI ~98% vs CT ~56%"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Hesselink 等研究：<span class='key'>MRI ~98%、CT ~56%</span>。CT 易漏掉小皮質挫傷（特別是 motion / streak artifact）。<span class='key'>3D thin-section T1</span> 對亞急性挫傷（methemoglobin 高訊號）特別敏感；T2 FLAIR 與 T2 也都好用。"
     },
     {
@@ -311,9 +321,9 @@
       "tag": "心法 · Youmans Ch382 · 出血定義",
       "q": "依 Imaging Common Data Elements，腦實質內血腫 (intracerebral hematoma, ICH) 與腦挫傷如何區分？",
       "opts": [
-        "A. ICH 為混雜血液與腦組織，挫傷為均質出血",
-        "B. ICH 指 >5 mm 之均質融合性血液集合，挫傷則為混雜血與腦組織",
-        "C. 兩者完全相同，僅命名不同",
+        "A. 任何 >2 mm 之顱內出血",
+        "B. >5 mm 之均質融合性血液集合；挫傷則為混雜血液與腦組織",
+        "C. ICH 與挫傷完全相同，僅命名不同",
         "D. ICH 必定位於後顱窩"
       ],
       "answer": 1,
@@ -324,12 +334,12 @@
       "tag": "秘籍 · Youmans Ch382 · 血腫年齡",
       "q": "「Early subacute」(約 2 天–1 週) 之顱內血腫，在 T1 加權 MRI 上典型呈現？",
       "opts": [
-        "A. 等訊號 (isointense)",
-        "B. 高訊號 (hyperintense)，因 methemoglobin 形成於紅血球內",
-        "C. 低訊號，因 deoxyhemoglobin",
-        "D. 完全黑色 (signal void)"
+        "A. 高訊號 (hyperintense)，源自 intracellular methemoglobin",
+        "B. 等訊號 (isointense)",
+        "C. 低訊號，源自 deoxyhemoglobin",
+        "D. 完全黑色 (signal void)，源自 ferritin"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "血腫演變記憶法（CT / T1 / T2）：<br><span class='key'>Hyperacute</span>（小時內，oxyhb intracellular）：↑/≈/↑<br><span class='key'>Acute</span>（小時–2 天，deoxyhb intracellular）：↑/≈或↓/↓<br><span class='key'>Early subacute</span>（2 天–1 週，methb intracellular）：≈/<span class='key'>↑↑</span>/↓<br><span class='key'>Late subacute</span>（1 週–數週，methb extracellular）：↓/↑↑/↑<br><span class='key'>Chronic</span>（>1 月，hemosiderin）：↓/≈或↓/↓"
     },
     {
@@ -337,12 +347,12 @@
       "tag": "心法 · Youmans Ch382 · DAI",
       "q": "依 Imaging Common Data Elements，TAI 與 DAI 如何區分？",
       "opts": [
-        "A. TAI 為 1–3 個影像可見軸突損傷病灶；DAI 為 ≥4 個",
-        "B. TAI 僅見於兒童；DAI 僅見於成人",
-        "C. TAI 為出血性；DAI 為非出血性",
-        "D. TAI 限於白質；DAI 限於灰質"
+        "A. TAI 限兒童；DAI 限成人",
+        "B. TAI 為出血性；DAI 為非出血性",
+        "C. TAI 限白質；DAI 限灰質",
+        "D. TAI = 1–3 個影像可見軸突損傷病灶；DAI ≥ 4 個"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "標準化術語：<span class='key'>TAI = 1–3 個</span>影像可見軸突損傷病灶；<span class='key'>DAI = ≥4 個</span>。常見位置：lobar white matter（額/顳，~50%）、<span class='key'>corpus callosum（~22%，多在 splenium）</span>、corona radiata（19%）、internal capsule（8%）、dorsolateral midbrain。<20% TAI 為出血性。"
     },
     {
@@ -352,10 +362,10 @@
       "opts": [
         "A. T1-weighted",
         "B. T2 fast spin echo",
-        "C. SWI (susceptibility-weighted imaging)",
-        "D. DWI"
+        "C. Standard DWI",
+        "D. SWI (susceptibility-weighted imaging)"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "<span class='key'>SWI > T2*-GRE > T2 FSE</span> 對出血性 shear injury 敏感度。SWI 對 paramagnetic 血液產物造成的局部磁場扭曲特別敏感，呈 conspicuous signal void（但血管也是黑色，需小心鑑別）。<span class='key'>非出血性</span>急性 TAI（佔 80%）則用 <span class='key'>DWI</span>（reduced diffusion，幾天內回正常）。"
     },
     {
@@ -363,12 +373,12 @@
       "tag": "心法 · Youmans Ch382 · 腦水腫",
       "q": "TBI 中（特別是兒童）最常見的腦水腫類型為？",
       "opts": [
-        "A. 血管性水腫 (vasogenic edema)",
-        "B. 細胞毒性水腫 (cytotoxic edema)",
+        "A. 細胞毒性水腫 (cytotoxic edema)",
+        "B. 血管性水腫 (vasogenic edema)",
         "C. 滲透性水腫 (hypo-osmotic)",
         "D. 間質性水腫 (interstitial edema)"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "TBI（特別兒童）以 <span class='key'>cytotoxic edema</span> 最常見，源自離子通道滲漏、粒線體衰竭、組織缺氧。其他類型：<span class='key'>vasogenic</span>（圍繞挫傷/腫瘤）、<span class='key'>interstitial</span>（阻塞性水腦周圍）、<span class='key'>hypo-osmotic</span>（血鈉低）、<span class='key'>hydrostatic</span>（突發血壓升高）。Hyperemia（dysautoregulation）為 cerebral swelling 另一機制。"
     },
     {
@@ -376,12 +386,12 @@
       "tag": "功法 · Youmans Ch382 · 腦疝脫",
       "q": "嚴重的鐮下疝脫 (subfalcine herniation) 因壓迫位於大腦鐮下方的動脈分支，最容易導致下列哪一條動脈供血區梗塞？",
       "opts": [
-        "A. 前大腦動脈 (ACA)",
-        "B. 中大腦動脈 (MCA)",
-        "C. 後大腦動脈 (PCA)",
-        "D. 後下小腦動脈 (PICA)"
+        "A. 中大腦動脈 (MCA)",
+        "B. 後大腦動脈 (PCA)",
+        "C. 後下小腦動脈 (PICA)",
+        "D. 前大腦動脈 (ACA)"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "<span class='key'>Subfalcine herniation</span>（即 midline shift）— 帶狀回 (cingulate gyrus) 被推過大腦鐮下方 — 壓迫 <span class='key'>ACA 在 anterior interhemispheric fissure 內的分支</span>，造成 ACA 區域梗塞。<span class='key'>單側下行 transtentorial herniation</span> 則壓迫 ipsilateral PCA 在 perimesencephalic cistern → PCA 區梗塞（含 hemorrhagic transformation）。"
     },
     {
@@ -389,12 +399,12 @@
       "tag": "秘籍 · Youmans Ch382 · 腦疝脫",
       "q": "下列關於 Duret hemorrhage 的敘述，何者正確？",
       "opts": [
-        "A. 位於額葉皮質下，常因 EDH 直接壓迫造成",
-        "B. 位於中腦與橋腦，常見於雙側下行 transtentorial herniation 後，源自基底動脈穿支被牽扯撕裂",
-        "C. 為小腦扁桃體疝脫之特徵",
-        "D. 為硬腦膜外靜脈竇出血"
+        "A. 中腦/橋腦中線，雙側下行 transtentorial herniation 後 basilar 穿支被牽扯撕裂",
+        "B. 額葉皮質下，因 EDH 直接壓迫造成",
+        "C. 小腦扁桃體下行疝脫之特徵性出血",
+        "D. 硬腦膜外靜脈竇之破裂出血"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "<span class='key'>Duret hemorrhage</span> = 中腦/橋腦出血，發生於嚴重<span class='key'>雙側下行 transtentorial herniation</span> 時。機轉：基底動脈 pontine perforating branches 被縱向牽扯撕裂（少數認為為 venous thrombosis/infarction）。<span class='key'>預後極差</span>。"
     },
     {
@@ -402,12 +412,12 @@
       "tag": "秘籍 · Youmans Ch382 · BCVI",
       "q": "Denver Grading Scale 中，Grade IV 之鈍性腦血管損傷 (BCVI) 代表什麼？此級頸動脈損傷的中風發生率為？",
       "opts": [
-        "A. 假性動脈瘤 (pseudoaneurysm)，~26%",
-        "B. 血管完全阻塞 (occlusion)，頸動脈損傷者中風率約 50%",
-        "C. 血管橫斷 (transection)，~3%",
-        "D. <25% 管腔狹窄，~6%"
+        "A. 假性動脈瘤 (pseudoaneurysm)；中風率約 26%",
+        "B. 血管橫斷 (transection)；中風率約 3%",
+        "C. < 25% 管腔狹窄；中風率約 6%",
+        "D. 完全阻塞 (occlusion)；頸動脈損傷者中風率約 50%"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "<span class='key'>Denver Grading Scale</span>（BCVI）：<span class='key'>I</span> 管壁不規則或 <25% 狹窄；<span class='key'>II</span> intraluminal thrombus / intimal flap / >25% 狹窄；<span class='key'>III</span> pseudoaneurysm；<span class='key'>IV</span> 完全阻塞；<span class='key'>V</span> 血管橫斷。頸動脈中風率：I 3%、II 14%、III 26%、<span class='key'>IV 50%</span>、V 100%。椎動脈：I 6% → V 100%。"
     }
   ]
