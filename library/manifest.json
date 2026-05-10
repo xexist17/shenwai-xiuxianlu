@@ -107,6 +107,45 @@
       "topic": "綜合範例"
     },
     {
+      "id": "greenberg-ch66",
+      "title": "Ch66 小兒頭部外傷",
+      "subtitle": "Pediatric Head Injury · 25 題",
+      "ref": "Greenberg's Handbook 10th Ed · Ch66 · pp.1098–1105",
+      "icon": "🍼",
+      "color": "#d4824a",
+      "file": "greenberg-ch66.json",
+      "imported": true,
+      "questionCount": 25,
+      "book": "Greenberg's Handbook",
+      "topic": "09 創傷 TBI"
+    },
+    {
+      "id": "greenberg-ch69",
+      "title": "Ch69 脊髓損傷管理",
+      "subtitle": "Management of Spinal Cord Injury · 30 題",
+      "ref": "Greenberg's Handbook 10th Ed · Ch69 · pp.1138–1146",
+      "icon": "🌿",
+      "color": "#5a8b6f",
+      "file": "greenberg-ch69.json",
+      "imported": true,
+      "questionCount": 30,
+      "book": "Greenberg's Handbook",
+      "topic": "08 脊椎"
+    },
+    {
+      "id": "greenberg-ch71",
+      "title": "Ch71 下頸椎 C3-C7 損傷",
+      "subtitle": "Subaxial Cervical Injuries · 37 題",
+      "ref": "Greenberg's Handbook 10th Ed · Ch71 · pp.1181–1196",
+      "icon": "🔒",
+      "color": "#5a7b8b",
+      "file": "greenberg-ch71.json",
+      "imported": true,
+      "questionCount": 37,
+      "book": "Greenberg's Handbook",
+      "topic": "08 脊椎"
+    },
+    {
       "id": "greenberg-handbook",
       "title": "住院醫師心法",
       "subtitle": "10th Edition · 5 題",

@@ -2198,7 +2198,11 @@ const SKILLS = {
   // 第二批章節解鎖
   bone:      { name: '龍骨真訣', icon: '🦴', type: 'damage', dmg: 38, cd: 2, desc: '貫穿龍骨之力，連續斬擊' },
   vampire:   { name: '血脈洞察', icon: '🩸', type: 'damage', dmg: 22, lifesteal: 0.7, cd: 3, desc: '洞察血脈奧妙，吸取對手 70% 生機' },
-  sunheart:  { name: '童心赤陽', icon: '☀️', type: 'heal', heal: 50, cd: 4, desc: '赤子純陽之氣，回復 50 道心' }
+  sunheart:  { name: '童心赤陽', icon: '☀️', type: 'heal', heal: 50, cd: 4, desc: '赤子純陽之氣，回復 50 道心' },
+  // Greenberg 新章解鎖
+  cradle:    { name: '赤子護身', icon: '🍼', type: 'shield', shield: 40, cd: 3, desc: '小兒之身柔韌，築護盾 40 點' },
+  meridian2: { name: '斷脈再生', icon: '🌿', type: 'heal', heal: 35, cd: 3, desc: '脊髓殘傷再修復，回復 35 道心' },
+  lockstrike:{ name: '封脈一擊', icon: '🔒', type: 'damage', dmg: 42, cd: 3, desc: '封鎖頸椎要害，造成大量傷害' }
 };
 
 // 起手永久招式
@@ -2214,7 +2218,10 @@ const BOOK_SKILLS = {
   'greenberg-handbook': 'lifesteal',  // 範例 → 吸星大法
   'youmans-ch339':      'bone',       // 脊椎 C2 骨折 → 龍骨真訣
   'youmans-ch436':      'vampire',    // 腦血管 ICA 動脈瘤 → 血脈洞察
-  'youmans-ch232':      'sunheart'    // 小兒腦瘤 → 童心赤陽
+  'youmans-ch232':      'sunheart',   // 小兒腦瘤 → 童心赤陽
+  'greenberg-ch66':     'cradle',     // 小兒頭部外傷 → 赤子護身
+  'greenberg-ch69':     'meridian2',  // SCI 管理 → 斷脈再生
+  'greenberg-ch71':     'lockstrike'  // 下頸椎傷 → 封脈一擊
 };
 
 function unlockedSkillIds() {

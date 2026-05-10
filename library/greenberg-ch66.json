@@ -1,0 +1,332 @@
+{
+  "id": "greenberg-ch66",
+  "title": "Ch66 小兒頭部外傷",
+  "subtitle": "Pediatric Head Injury · 25 題",
+  "questions": [
+    {
+      "type": "choice",
+      "tag": "功法 · Greenberg Ch66 · 流行病學",
+      "q": "因外傷住院的兒童中，多少比例有頭部受傷？小兒 CNS 損傷在外傷死亡中地位為？",
+      "opts": [
+        "A. 30% 有頭傷；不是主要死因",
+        "B. 75% 有頭傷；CNS 損傷是小兒外傷死亡的最常見原因",
+        "C. 10%；罕見死因",
+        "D. 95%；皆致死"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>外傷住院兒童 75% 有頭部受傷</span>。多數為 mild，但<span class='key'>CNS 損傷 = 小兒外傷死亡之最常見原因</span>。小兒頭傷整體死亡率 10–13%（住院者）。<span class='key'>嚴重頭傷 + decerebrate posturing 死亡率高達 71%</span>。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · 小兒 vs 成人",
+      "q": "下列何者為小兒 vs 成人頭部外傷的關鍵差異？",
+      "opts": [
+        "A. 小兒受傷比成人嚴重",
+        "B. 兒童傷勢通常較輕；昏迷兒童中 surgical lesion 機率 < 成人",
+        "C. 兒童手術機率高於成人",
+        "D. 完全無差異"
+      ],
+      "answer": 1,
+      "explanation": "小兒 vs 成人頭傷差異：<span class='key'>(1) 流行病學</span> — 兒童傷勢通常較輕；<span class='key'>昏迷兒童 surgical lesion 機率 < 成人</span>。<span class='key'>(2) 損傷類型</span> — 小兒特有：birth injuries、cephalhematoma、stroller/walker injuries、NAT (shaken baby)、leptomeningeal cysts (growing fractures)、retroclival hematoma。<span class='key'>(3) 反應</span> — malignant cerebral edema（年幼兒童特有）、posttraumatic seizures 24 hr 內較常。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Greenberg Ch66 · Malignant edema",
+      "q": "「Malignant cerebral edema」在小兒頭部外傷中的特徵為？",
+      "opts": [
+        "A. 老年人特有",
+        "B. 年幼兒童頭傷後突發嚴重腦腫脹，可能源自 hyperemia；近期可能不如以往認為常見",
+        "C. 完全不會發生",
+        "D. 等同 SDH"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Malignant cerebral edema</span>：年幼兒童頭傷後 acute onset 嚴重腦腫脹，<span class='key'>可能源自 hyperemia</span>（cerebral blood flow 增加）。近期研究（Muizelaar 等）顯示可能不如以往認為常見。臨床表現為「talk and die」型病人 — 初期清醒後迅速昏迷。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · 癲癇",
+      "q": "Posttraumatic seizure 在小兒 vs 成人有何差異？",
+      "opts": [
+        "A. 小兒從不發生",
+        "B. 小兒受傷 24 小時內發生 seizure 的機率高於成人",
+        "C. 成人 24 小時內較易",
+        "D. 完全相同"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>小兒受傷 24 小時內 posttraumatic seizure 機率高於成人</span>（Hahn 1988）。Greenberg 對小兒 TBI 後 seizure prophylaxis 仍建議考慮 levetiracetam。Early seizure（傷後 1 週內）vs late seizure（>1 週）需區分；early 可預防，late 才反映 epileptogenic focus。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Greenberg Ch66 · PECARN",
+      "q": "依 PECARN 演算法，<2 歲小兒 mild TBI 何時建議做 head CT？",
+      "opts": [
+        "A. 任何年齡都建議 CT",
+        "B. GCS 14、altered mental status 跡象、或 palpable skull fracture",
+        "C. 只看年齡",
+        "D. 完全不需要 CT"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>PECARN <2 歲建議 CT</span>：<span class='key'>GCS 14、altered mental status、或 palpable skull fracture</span>。中間區（occipital/parietal/temporal scalp hematoma、LOC ≥5 sec、severe mechanism、parental concern）→ CT vs 觀察視臨床判斷、≤3 個月、parental preference。其他低風險可不做 CT。<span class='key'>≥2 歲 PECARN</span>：GCS 14、AMS、basilar skull fx 跡象 → CT；中間區（LOC、嘔吐、severe mechanism、severe headache）→ CT vs 觀察。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · 影像策略",
+      "q": "依 practice guidelines，小兒 mild TBI 的影像策略 Level B 建議為？",
+      "opts": [
+        "A. 全部都要 CT 或 MRI",
+        "B. 不應 routine CT；應使用 PECARN 等 validated clinical decision rules；不應 routine MRI 評估急性 mTBI",
+        "C. 必須 always MRI",
+        "D. 可以隨意做"
+      ],
+      "answer": 1,
+      "explanation": "Practice guidelines (Level B)：<span class='key'>(1) 不應 routine CT 評估小兒 mild TBI</span>；<span class='key'>(2) 應使用 validated clinical decision rules（如 PECARN）識別低風險</span>；<span class='key'>(3) 不應 routine MRI 評估急性 mTBI</span>（Rapid sequence MRI 雖可行但未列入 guideline）。<span class='key'>Home observation</span>：GCS 14–15 + normal CT + neuro 穩定 → 接近零 occult brain injury 風險。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Greenberg Ch66 · Cephalhematoma",
+      "q": "Subgaleal vs Subperiosteal hematoma 之解剖與臨床差異為？",
+      "opts": [
+        "A. 兩者完全相同",
+        "B. Subgaleal 在 galea 下，可跨骨縫；可極大致 <1 歲嬰兒需輸血。Subperiosteal 在骨膜下，受骨縫限制；新生兒最常見（產傷），firmer",
+        "C. Subgaleal 必侷限在骨縫內",
+        "D. Subperiosteal 跨骨縫"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Subgaleal hematoma</span>：bleed 進 loose CT 將 galea 與 periosteum 分開；<span class='key'>可跨骨縫</span>；可極大；<span class='key'><1 歲嬰兒可致顯著失血需輸血</span>；soft, fluctuant；不會鈣化。<span class='key'>Subperiosteal (cephalhematoma)</span>：bleed elevate periosteum；<span class='key'>extent 受骨縫限制</span>；<span class='key'>新生兒最常見</span>（產傷或 fetal scalp monitor）；firmer, less ballotable；<span class='key'>80% 在 2–3 週內 reabsorb</span>；偶可鈣化。Inexperienced 醫師可能誤為 CSF collection（不會發生）。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Greenberg Ch66 · Cephalhematoma 處理",
+      "q": "Cephalhematoma 的標準處置為？",
+      "opts": [
+        "A. 立即 needle aspiration",
+        "B. 多數僅 analgesics 即可，2–4 週自癒；避免穿刺（感染風險>觀察）；持續 >6 週需骨頭 X 光，鈣化則考慮美容手術",
+        "C. 立即手術切除",
+        "D. 抗生素治療"
+      ],
+      "answer": 1,
+      "explanation": "Cephalhematoma 處置：<span class='key'>多數僅 analgesics 即可</span>，2–4 週自癒。<span class='key'>避免 percutaneous aspiration</span>（感染風險大於觀察風險，新生兒抽血會 anemic）。大型病灶追 serial Hb/Hct。Subperiosteal 持續 <span class='key'>>6 週應拍頭骨 X 光</span>，若已鈣化可為美觀手術切除（多數 3–6 個月後顱骨自動恢復原狀）。Hyperbilirubinemia (jaundice) 可能於 reabsorb 過程出現（最晚 10 天後）。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Greenberg Ch66 · PTLMC",
+      "q": "Posttraumatic leptomeningeal cyst (PTLMC, growing skull fracture) 形成的必要條件為？",
+      "opts": [
+        "A. 任何骨折",
+        "B. Wide separated fracture + dural tear；多 <1 歲，>90% 在 3 歲前；rapidly growing brain 似為 prerequisite",
+        "C. 必須有 SDH",
+        "D. 無條件，皆可發生"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>PTLMC（growing skull fracture）</span>：fracture line 隨時間 widen。發生率 0.05–0.6% 之顱骨骨折。<span class='key'>必要條件：wide separated fracture + dural tear</span>。Mean age <1 歲，<span class='key'>>90% 在 3 歲前</span>（rapidly growing brain 似為 prerequisite）。罕見成人 case。<span class='key'>>6 個月後幾乎不發生</span>。鑑別：「Pseudogrowing fracture」— 早期 widen 但無 subgaleal mass，數月內自癒。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · PTLMC 治療",
+      "q": "True PTLMC 的處置原則為？",
+      "opts": [
+        "A. 觀察即可，自癒",
+        "B. 手術 — dural closure 為 mandatory；dural defect 通常 > bony defect，宜骨折周邊 craniotomy 修補硬腦膜後復位骨片",
+        "C. 抗生素治療",
+        "D. Halo vest 即可"
+      ],
+      "answer": 1,
+      "explanation": "True PTLMC：<span class='key'>手術為標準處置，dural closure mandatory</span>。<span class='key'>Dural defect 通常 > bony defect</span>，故宜在 fracture 周邊作 craniotomy → 修補硬腦膜後 → 骨片復位。Pseudogrowing fracture 可 X 光追蹤，僅在數月後仍 expansion 或 subgaleal mass 出現時手術。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · 凹陷骨折",
+      "q": "小兒 simple depressed skull fracture 的手術指徵為？",
+      "opts": [
+        "A. 任何凹陷皆需手術",
+        "B. 確定 dural penetration、年長兒童消腫後仍持續美觀缺陷、合併局部神經學缺損",
+        "C. 從不手術",
+        "D. 只看年齡"
+      ],
+      "answer": 1,
+      "explanation": "小兒 simple depressed skull fracture 手術指徵：<span class='key'>(1) 確定 dural penetration</span>；<span class='key'>(2) 年長兒童消腫後仍持續美觀缺陷</span>；<span class='key'>(3) ± 局部神經學缺損相關於骨折</span>（此組 dural laceration 較常見，雖通常 trivial）。研究：<16 歲 simple depressed fx 手術 vs 非手術組，seizure / 神經學異常 / 美觀結果無差異 — 因為<span class='key'>年幼兒童腦長 → 顱骨 remodeling 自動撫平 deformity</span>。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Greenberg Ch66 · Ping-pong",
+      "q": "「Ping-pong ball」fracture 的處置原則為？",
+      "opts": [
+        "A. 任何位置都需手術",
+        "B. 新生兒 green-stick 型骨折；temporoparietal 區無下層腦傷者通常無需手術（顱骨成長自癒）；指徵：intraparenchymal bone fragments、神經學缺損、ICP 升、CSF leak、follow-up 困難",
+        "C. 必死無疑",
+        "D. 無需任何處理"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>「Ping-pong ball」fracture</span>：新生兒 green-stick 型骨折，因顱骨可塑性，局部凹陷如壓爛的乒乓球。<span class='key'>Temporoparietal 區無下層腦傷者通常無需手術</span>（隨顱骨成長 deformity 自動 correct）。手術指徵：<span class='key'>intraparenchymal bone fragments、神經學缺損（rare）、ICP 升高、CSF leak（galea 下）、follow-up 不易</span>。Frontal 區為美觀可小切口進入 → Penfield #3 dissector 推回。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · DST",
+      "q": "對於小兒 blunt trauma 後顱骨骨折，何時建議做 venous imaging（CTV/MRV）排除 dural sinus thrombosis？",
+      "opts": [
+        "A. 全部都要做",
+        "B. 僅在懷疑 venous hypertension 或 venous infarction 且考慮 anticoagulation 時",
+        "C. 只在 GCS<8 才做",
+        "D. 從不需要做"
+      ],
+      "answer": 1,
+      "explanation": "DST 在小兒罕見（0.67/100K/年）；佔 penetrating head trauma 的 4%。Hersh 系列 2224 小兒 blunt trauma 顱骨骨折：僅 41 (2%) 做 venous imaging（多因骨折鄰近 dural sinus），其中 8/41 (20%) 有 DST、14 (34%) 有 extrinsic compression、3 例 DST 發展為 venous infarct。建議：<span class='key'>僅在懷疑 venous hypertension 或 venous infarction 且考慮 anticoagulation 時做</span>（避免不必要 radiation/anesthesia）。Anticoagulation 對 pediatric DST 有 Level II 建議（減少 propagation、infarct、poor outcome）。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Greenberg Ch66 · Retroclival",
+      "q": "Retroclival hematoma 的關鍵特徵為？",
+      "opts": [
+        "A. 老年人特有，自發性出血",
+        "B. 罕見，小兒特好發（頭/體重比高、occipital condyle 較平、韌帶鬆弛）；常與 atlantooccipital dislocation (AOD) 相關；通常保守處置 brace（halo/SOMI）",
+        "C. 必死",
+        "D. 必須立即手術"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Retroclival hematoma</span>：罕見，<span class='key'>predilection for pediatrics</span>（頭/體重比高、occipital condyle 較平、韌帶鬆弛）。常因 violent hyperflexion/hyperextension（MVA）。可能 epidural（anterior to tectorial membrane）或 subdural（posterior），可合併。<span class='key'>常合併 AOD、occipital condyle fracture、odontoid fracture、apical odontoid lig 撕裂、clivus fx</span>。<span class='key'>多數保守處置 brace</span>（halo vest 或 SOMI），預後通常良好。Hematoma 在 2–11 週 resolve。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Greenberg Ch66 · Retroclival CN",
+      "q": "Retroclival hematoma 最常受影響的 cranial nerve 為？",
+      "opts": [
+        "A. CN I 嗅神經",
+        "B. CN VI（abducens）— 可單側或雙側",
+        "C. CN II 視神經",
+        "D. CN VIII"
+      ],
+      "answer": 1,
+      "explanation": "Retroclival hematoma 神經學缺損源自鄰近 brain parenchyma 與 CN 的 stretching、compression 或 contusion。<span class='key'>CN VI（abducens）為最常受影響之 CN</span>，可單側或雙側。其他可能：CN II/III/V/VII/IX/XI/XII。其他表現：hemiparesis、quadriparesis、hydrocephalus、occipitocervical instability。手術指徵：fusion（強指徵：AOD 韌帶不穩定；軟指徵：CN deficits）、evacuation（少有，僅 symptomatic brainstem compression）、ventriculostomy/shunt（hydrocephalus）。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · Retroclival 影像",
+      "q": "Retroclival hematoma 的首選影像為？",
+      "opts": [
+        "A. Plain skull X-ray",
+        "B. Noncontrast MRI 為首選；T2WI 可較佳顯示急性 hematoma；DWI 排除 stroke；STIR 評估韌帶損傷；加 CT 評估 occipital condyle / apical lig avulsion / atlantooccipital interval",
+        "C. PET",
+        "D. CT angiography only"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Noncontrast MRI = retroclival hematoma 首選影像</span>。T2WI 較佳顯示 acute hematoma；DWI 排除 stroke；<span class='key'>STIR 評估韌帶損傷</span>。CT 含 coronal reconstruction 用於：<span class='key'>occipital condyle fractures、apical odontoid lig 撕裂、atlantooccipital interval（AOD 之 surrogate marker）</span>。CTA 在懷疑 stroke 或 BCVI 時加做。"
+    },
+    {
+      "type": "choice",
+      "tag": "功法 · Greenberg Ch66 · NAT",
+      "q": "Nonaccidental trauma (NAT, child abuse) 在 <10 歲「意外」帶到 ER 中的比例為？",
+      "opts": [
+        "A. <0.1%",
+        "B. 至少 10%；< 3 歲是 abuse highest 之年齡組（accidental significant trauma 此年齡組少見）",
+        "C. >50%",
+        "D. 0%"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>NAT：<10 歲「意外」帶到 ER 至少 10% 為 NAT</span>。<span class='key'><3 歲 = battering highest 年齡組</span>（accidental significant trauma 此年齡少見）。無 pathognomonic finding，但提高警覺：<span class='key'>(1) retinal hemorrhage</span>；(2) <2 歲雙側 chronic SDH；(3) 多發/合併 intracranial injury 之顱骨骨折；(4) 顯著神經學損傷但外觀傷少；(5) 不同年齡多發位置損傷。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Greenberg Ch66 · Shaken baby",
+      "q": "Shaken baby syndrome 的特徵性影像發現為？",
+      "opts": [
+        "A. 單側 EDH",
+        "B. Retinal hemorrhages、雙側 SDH (80%)、SAH；外傷少見（含 impact 也少有）；多死於不可控 ICP 升高",
+        "C. 完全無影像發現",
+        "D. 只有頭皮血腫"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Shaken baby</span>：嬰兒頭/體比大 + 頸肌弱 → 劇烈搖晃 → whiplash-like angular acceleration-deceleration。部分研究認為<span class='key'>純搖晃可能不足以致重傷，常合併 impact</span>。特徵：<span class='key'>retinal hemorrhages、雙側 SDH (80%)、SAH</span>；<span class='key'>外觀傷少見</span>（含 impact 可能僅 autopsy 才見）；少數有 finger marks、rib fractures、肺挫傷。<span class='key'>死亡多源於不可控 intracranial hypertension</span>；可合併 cervicomedullary junction 損傷。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · Retinal hemorrhage",
+      "q": "Retinal hemorrhage 在小兒外傷之 specificity 為？",
+      "opts": [
+        "A. 非特異，所有頭傷都會",
+        "B. 「在多發傷+不一致 history 之兒童，RH = pathognomonic of battering」（Eisenbrey）；但 RH 可在無虐待證據時出現（如產傷 15–30%、急性高山症、急性 ICP 升、Purtscher's retinopathy）",
+        "C. 100% 特異於 NAT",
+        "D. 僅見於老年人"
+      ],
+      "answer": 1,
+      "explanation": "Eisenbrey: <span class='key'>「多發傷+不一致 history 之兒童，RH = pathognomonic of battering」</span>。研究：16/26 battered children <3 歲有 RH，相比 1/32 non-battered traumatized children（單一 false positive 是 traumatic parturition — 產傷 RH 發生率 15–30%）。但 RH 也可在無虐待時出現。<span class='key'>差別診斷</span>：(1) child abuse / shaken baby；(2) benign subdural effusion of infancy；(3) 急性高山症；(4) 急性 ICP 升（嚴重 seizure 後）；(5) Purtscher's retinopathy（重大外傷後視力喪失，posterior pole ischemia）。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Greenberg Ch66 · NAT 顱骨骨折",
+      "q": "Child abuse 之顱骨骨折相較於 accidental injury 的特徵為？",
+      "opts": [
+        "A. 完全相同，無法區分",
+        "B. NAT 較多：multiple fractures、bilateral fractures、跨骨縫骨折",
+        "C. NAT 都是 unilateral",
+        "D. NAT 從不跨骨縫"
+      ],
+      "answer": 1,
+      "explanation": "Meservy 1987 系列：39 documented NAT vs 95 probable accidental skull fracture：<span class='key'>NAT 較多 — (1) multiple fractures、(2) bilateral fractures、(3) 跨骨縫骨折</span>。Parietal bone 在兩組都最常見（~90%）。<span class='key'>Depressed skull fracture 因 overlying hematoma 常被臨床漏掉</span>。Retinal hemorrhage 在「shaken baby」常見但不常合併 skull fracture。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · Outcome",
+      "q": "小兒 vs 成人頭傷 outcome 比較為？",
+      "opts": [
+        "A. 兒童一律比成人差",
+        "B. 整體兒童優於成人；但 very young children 不如 school-age child",
+        "C. 完全無差異",
+        "D. 兒童一律極佳"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>整體兒童 outcome 優於成人</span>（Luerson 1988）。但 <span class='key'>very young children outcome 不如 school-age child</span>（Kriel 1989）。一個有趣議題：兒童 outcome 後的神經心理學功能異常未必都與外傷相關 — 受傷的兒童可能本來就有 pre-existing tendencies 增加 propensity to get hurt（Bijur 1990，但有爭議）。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Greenberg Ch66 · 凹陷骨折流行病學",
+      "q": "小兒 depressed skull fracture 之 epidemiology 為？",
+      "opts": [
+        "A. 都發生在 occipital",
+        "B. 多在 frontal 與 parietal；1/3 為 closed（年幼兒童多 — 顱骨薄易變形，多家中事故）；2/3 為 compound（年長兒童 — 多 MVA），dural laceration 在 compound 較常",
+        "C. 完全相同年齡分布",
+        "D. 全部都是 open"
+      ],
+      "answer": 1,
+      "explanation": "小兒 depressed skull fracture：<span class='key'>多在 frontal 與 parietal 骨</span>。<span class='key'>1/3 為 closed</span>，發生於<span class='key'>年幼兒童（mean 3.4 歲）</span> — 顱骨薄易變形，多家中事故。<span class='key'>2/3 為 compound（mean 8.0 歲）</span> — 多 MVA。<span class='key'>Dural lacerations 在 compound 較常見</span>。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · Retroclival management",
+      "q": "Retroclival hematoma 的 surgical fusion 之強指徵為？",
+      "opts": [
+        "A. 任何 hematoma",
+        "B. Ligamentous instability，例如 atlantooccipital dislocation 達 AOD surgical criteria",
+        "C. 任何頭痛",
+        "D. 病人請求"
+      ],
+      "answer": 1,
+      "explanation": "Retroclival hematoma 多保守處置。Surgical 介入指徵：<span class='key'>Fusion 強指徵 — ligamentous instability（如 AOD 達 surgical criteria）</span>；<span class='key'>軟指徵 — CN deficits</span>。<span class='key'>Hematoma evacuation 罕見</span>，僅在 symptomatic brainstem compression。<span class='key'>Ventriculostomy/shunt</span> 在 hydrocephalus。多數 brace（halo/SOMI）即可。"
+    },
+    {
+      "type": "choice",
+      "tag": "秘籍 · Greenberg Ch66 · Purtscher",
+      "q": "Purtscher's retinopathy 的特徵為？",
+      "opts": [
+        "A. 任何頭傷後皆出現",
+        "B. 重大外傷後視力喪失（chest crush、airbag、pancreatitis、childbirth、renal failure 等）；posterior pole ischemia + 視神經盤周邊 cotton-wool exudates 與 hemorrhage；機轉：fat/air/fibrin/complement/platelet 微栓；無治療",
+        "C. 僅見於兒童",
+        "D. 完全可治癒"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Purtscher's retinopathy</span>：<span class='key'>重大外傷後視力喪失</span>（chest crush、airbag 充氣、pancreatitis、childbirth、renal failure 等）。影像：<span class='key'>posterior pole ischemia + 視神經盤周邊 cotton-wool exudates 與 hemorrhage</span>。機轉：可能 fat、air、fibrin clot、complement-mediated aggregate、platelet clump 之微栓。<span class='key'>無已知治療</span>。為 retinal hemorrhage 之鑑別診斷之一。"
+    },
+    {
+      "type": "choice",
+      "tag": "心法 · Greenberg Ch66 · 觀察條件",
+      "q": "GCS 14–15 + normal CT 之 mild pediatric TBI 可考慮 home observation 的條件為？",
+      "opts": [
+        "A. 任何狀況下皆可",
+        "B. Neurologically stable（near zero risk of occult brain injury）；前提：1 個月–17 歲、排除疑似/證實 child abuse、排除其他需住院因素",
+        "C. 必須住院 1 週",
+        "D. 必須 ICU 觀察"
+      ],
+      "answer": 1,
+      "explanation": "<span class='key'>Home observation 適應症</span>：<span class='key'>GCS 14–15 + normal CT + 神經學穩定</span>（這群 occult brain injury 風險近乎零）。Pediatrics 定義：1 個月–17 歲。Minor head injury 定義：GCS ≥13。<span class='key'>排除：疑似/證實 child abuse、需住院因素</span>。建議基於 prospective trials（非 randomized）或 large case series。"
+    }
+  ]
+}
