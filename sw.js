@@ -1,6 +1,6 @@
 // 神外修仙錄 service worker
 // 版本變更時，舊快取會自動清除
-const VERSION = 'sxxl-v2';
+const VERSION = 'sxxl-v3';
 const CACHE = `sxxl-${VERSION}`;
 
 // 第一次安裝時預先快取核心資源

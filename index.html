@@ -816,6 +816,95 @@
     letter-spacing: 2px;
   }
 
+  /* 治寶閣 / 探寶 */
+  .treasure-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .treasure-row {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: linear-gradient(180deg, rgba(40,28,20,.5), rgba(20,14,10,.7));
+    border: 1px solid rgba(201,163,90,.25);
+    border-radius: 12px;
+    gap: 12px;
+  }
+  .treasure-row.locked { opacity: .35; filter: grayscale(.8); }
+  .treasure-icon {
+    font-size: 32px;
+    width: 50px; height: 50px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(13,10,8,.6);
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  .treasure-info { flex: 1; min-width: 0; }
+  .treasure-name {
+    font-size: 14px;
+    color: var(--gold-bright);
+    letter-spacing: 1.5px;
+    margin-bottom: 3px;
+  }
+  .treasure-tier {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--ink);
+    margin-left: 6px;
+    background: var(--gold-bright);
+  }
+  .treasure-desc {
+    font-size: 11px;
+    color: var(--paper-dim);
+    line-height: 1.5;
+  }
+  .treasure-help {
+    text-align: center;
+    color: var(--paper-dim);
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 16px;
+  }
+  .treasure-empty {
+    text-align: center;
+    color: var(--paper-dim);
+    padding: 40px 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .hunt-stage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    padding: 30px 8px;
+    margin: 12px 0;
+  }
+  .hunt-chest {
+    aspect-ratio: 1;
+    background: linear-gradient(160deg, rgba(60,42,28,.65), rgba(30,20,14,.85));
+    border: 2px solid rgba(201,163,90,.5);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 56px;
+    cursor: pointer;
+    transition: all .3s;
+    user-select: none;
+  }
+  .hunt-chest:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(201,163,90,.3); }
+  .hunt-chest.opened { transform: scale(1.1); filter: brightness(1.4) drop-shadow(0 0 20px var(--gold-bright)); }
+  .hunt-chest.dim { opacity: .35; pointer-events: none; filter: grayscale(.6); }
+  .hunt-help {
+    text-align: center;
+    color: var(--paper-dim);
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
   /* Modals */
   .modal-overlay {
     position: absolute; inset: 0;
@@ -1424,6 +1513,18 @@
             <div class="ct" id="error-cost">∞ 可重複</div>
             <span class="badge hidden" id="error-badge">0</span>
           </button>
+          <button class="action-card" data-action="hunt">
+            <span class="ic">⛰️</span>
+            <div class="ti">探寶</div>
+            <div class="ds">入秘境探查三盒<br>偶得法寶</div>
+            <div class="ct">－1 點</div>
+          </button>
+          <button class="action-card" data-action="treasures">
+            <span class="ic">💎</span>
+            <div class="ti">治寶閣</div>
+            <div class="ds">已收法寶清單<br>裝備永久生效</div>
+            <span class="badge hidden" id="treasure-badge">0</span>
+          </button>
           <button class="action-card wide" data-action="stats">
             <span class="ic">🏯</span>
             <div class="ti">我的修為</div>
@@ -1532,6 +1633,22 @@
         </div>
       </div>
 
+      <!-- ============== 治寶閣 (treasures inventory) ============== -->
+      <div class="screen hidden" id="screen-treasures">
+        <button class="back" onclick="go('home')">←</button>
+        <div class="chapter-tag">治 寶 閣 · 所 藏 法 寶</div>
+        <div id="treasure-list" class="treasure-list"></div>
+        <div class="treasure-help">所有法寶皆永久生效，加成自動計入。</div>
+      </div>
+
+      <!-- ============== 探寶 (treasure hunting) ============== -->
+      <div class="screen hidden" id="screen-hunt">
+        <button class="back" onclick="go('home')">←</button>
+        <div class="chapter-tag">秘 境 探 查 · 三 盒 任 開 一</div>
+        <div class="hunt-stage" id="hunt-stage"></div>
+        <div class="hunt-help">點擊一個寶箱開啟，內容隨機。</div>
+      </div>
+
     </div>
 
     <!-- Modals -->
@@ -1552,32 +1669,55 @@ if ('serviceWorker' in navigator) {
 //═══════════════════════════════════════════════
 // STATE
 //═══════════════════════════════════════════════
-const state = {
-  // resources
-  lingli: 234,
-  lingshi: 88,
+// 玩家修為持久化 (resources / progress / streak / pills / attrs / buffs)
+const PROGRESS_DEFAULTS = {
+  lingli: 234, lingshi: 88,
   apMax: 10, ap: 10,
-
-  // progress
-  rankIdx: 11,
-  progress: 67, toNext: 33,
-
-  // attributes (E)
+  rankIdx: 11, progress: 67, toNext: 33,
   attr: { wuxing: 5, genfu: 3, shenshi: 2 },
   hintLeft: 2,
+  streak: 7, correctChain: 0,
+  pills: { peiyuan: 2, xingshen: 1, huxin: 3 },
+  buffs: [],
+  fortuneUsedToday: false,
+  lastSeenDate: ''
+};
+const _savedProgress = JSON.parse(localStorage.getItem('progress') || '{}');
+const _mergedProgress = Object.assign({}, PROGRESS_DEFAULTS, _savedProgress);
+// 巢狀 object 也要 merge（避免新增欄位時舊存檔讀不到）
+_mergedProgress.attr  = Object.assign({}, PROGRESS_DEFAULTS.attr,  _savedProgress.attr  || {});
+_mergedProgress.pills = Object.assign({}, PROGRESS_DEFAULTS.pills, _savedProgress.pills || {});
+
+const state = {
+  // resources
+  lingli: _mergedProgress.lingli,
+  lingshi: _mergedProgress.lingshi,
+  apMax: _mergedProgress.apMax, ap: _mergedProgress.ap,
+
+  // progress
+  rankIdx: _mergedProgress.rankIdx,
+  progress: _mergedProgress.progress, toNext: _mergedProgress.toNext,
+
+  // attributes (E)
+  attr: _mergedProgress.attr,
+  hintLeft: _mergedProgress.hintLeft,
 
   // streak
-  streak: 7,
-  correctChain: 0,
+  streak: _mergedProgress.streak,
+  correctChain: _mergedProgress.correctChain,
 
   // inventory (B)
-  pills: { peiyuan: 2, xingshen: 1, huxin: 3 },
+  pills: _mergedProgress.pills,
 
   // buffs
-  buffs: [],          // { type, label, remaining }
+  buffs: _mergedProgress.buffs,          // { type, label, remaining }
 
   // daily flags
-  fortuneUsedToday: false,
+  fortuneUsedToday: _mergedProgress.fortuneUsedToday,
+  lastSeenDate: _mergedProgress.lastSeenDate,
+
+  // 法寶（治寶閣）— 持久化
+  treasures: JSON.parse(localStorage.getItem('treasures') || '[]'),
 
   // mode-specific
   currentQ: null,
@@ -1637,6 +1777,34 @@ state.combatStats = Object.assign({
 function saveStats() { localStorage.setItem('stats', JSON.stringify(state.stats)); }
 function saveCombatStats() { localStorage.setItem('combatStats', JSON.stringify(state.combatStats)); }
 function saveAchievements() { localStorage.setItem('achievements', JSON.stringify(state.achievements)); }
+function saveTreasures() { localStorage.setItem('treasures', JSON.stringify(state.treasures)); }
+
+// 持久化主修為（每次 render 都自動存）
+function saveProgress() {
+  const snapshot = {
+    lingli: state.lingli, lingshi: state.lingshi,
+    apMax: state.apMax, ap: state.ap,
+    rankIdx: state.rankIdx, progress: state.progress, toNext: state.toNext,
+    attr: state.attr, hintLeft: state.hintLeft,
+    streak: state.streak, correctChain: state.correctChain,
+    pills: state.pills, buffs: state.buffs,
+    fortuneUsedToday: state.fortuneUsedToday,
+    lastSeenDate: state.lastSeenDate
+  };
+  localStorage.setItem('progress', JSON.stringify(snapshot));
+}
+
+// 每日歸位：若上次活動日與今日不同，重置 fortuneUsedToday + AP 滿 + hintLeft 回滿
+function rolloverDaily() {
+  const today = new Date().toISOString().slice(0,10);
+  if (state.lastSeenDate !== today) {
+    state.fortuneUsedToday = false;
+    state.ap = state.apMax;
+    state.hintLeft = Math.max(state.hintLeft, 2 + (treasureHintBonus()));
+    state.lastSeenDate = today;
+    saveProgress();
+  }
+}
 
 // 境界提升時的屬性加成
 function gainStatsOnBreakthrough() {
@@ -1892,6 +2060,7 @@ function go(screen) {
   if (screen === 'library') renderLibrary();
   if (screen === 'stats') renderStats();
   if (screen === 'summary') renderSummary();
+  if (screen === 'treasures') renderTreasures();
 }
 
 function renderSummary() {
@@ -1952,6 +2121,7 @@ function consumeBuff(type) {
 // RENDER
 //═══════════════════════════════════════════════
 function render() {
+  saveProgress();  // 任何 UI 更新前都同步存檔
   $('rank-mini').textContent = ranks[state.rankIdx];
   $('char-rank').textContent = ranks[state.rankIdx];
   $('r-streak').textContent = state.streak;
@@ -1966,6 +2136,14 @@ function render() {
   $('p-peiyuan').textContent = state.pills.peiyuan;
   $('p-xingshen').textContent = state.pills.xingshen;
   $('p-huxin').textContent = state.pills.huxin;
+
+  // 治寶閣 badge
+  const tBadge = $('treasure-badge');
+  if (tBadge) {
+    const n = (state.treasures || []).length;
+    if (n > 0) { tBadge.textContent = n; tBadge.classList.remove('hidden'); }
+    else tBadge.classList.add('hidden');
+  }
 
   // AP dots
   const dots = $('ap-dots');
@@ -2036,6 +2214,8 @@ document.querySelectorAll('.action-card').forEach(card => {
     if (act === 'fortune')     drawFortune();
     if (act === 'errorReview') startStudy('errorReview');
     if (act === 'stats')       go('stats');
+    if (act === 'treasures')   go('treasures');
+    if (act === 'hunt')        startTreasureHunt();
   };
 });
 
@@ -2236,11 +2416,14 @@ function onCorrect() {
   gain = Math.round(gain * (1 + state.attr.wuxing * 0.05));
   if (state.buffs.find(b => b.type === 'x3xp')) gain *= 3;
   if (state.buffs.find(b => b.type === 'doublexp')) gain *= 2;
-  state.lingli += gain; state.progress += gain;
-  state.toNext = Math.max(0, state.toNext - gain);
+  // 聚靈環：每次答對 +5
+  const extra = treasureExtraLingli();
+  const totalGain = gain + extra;
+  state.lingli += totalGain; state.progress += totalGain;
+  state.toNext = Math.max(0, state.toNext - totalGain);
   state.correctChain++;
   if (state.correctChain > state.attr.genfu) state.correctChain = state.attr.genfu;
-  floatMsg(`⚡ 靈力 +${gain}`);
+  floatMsg(extra > 0 ? `⚡ 靈力 +${gain} (+💍${extra})` : `⚡ 靈力 +${gain}`);
   consumeBuff('x3xp');
   consumeBuff('doublexp');
   // 補天閣中答對 → 從錯題本移除
@@ -2328,6 +2511,22 @@ const bosses = [
   { name: '化神古魔',   icon: '😈', hp: 950, atk: 75, threshold: 26, drop: 'phoenix' }
 ];
 
+// 野怪池（隨機出現於心魔劫，HP/攻力較弱但種類繁多 — 用於探索變化）
+const WILD_MONSTERS = [
+  { name:'山中蛇精',     icon:'🐍', hp: 90,  atk: 14, threshold: 0  },
+  { name:'樹林狐魅',     icon:'🦊', hp: 110, atk: 16, threshold: 0  },
+  { name:'孤魂野鬼',     icon:'👻', hp: 95,  atk: 18, threshold: 0  },
+  { name:'屍變骷髏',     icon:'💀', hp: 140, atk: 20, threshold: 6  },
+  { name:'血翼蝙蝠',     icon:'🦇', hp: 130, atk: 22, threshold: 9  },
+  { name:'食人惡犬',     icon:'🐺', hp: 180, atk: 26, threshold: 12 },
+  { name:'毒蝎魔將',     icon:'🦂', hp: 220, atk: 30, threshold: 15 },
+  { name:'山魅古妖',     icon:'👹', hp: 280, atk: 36, threshold: 18 },
+  { name:'血爪魔修',     icon:'🦀', hp: 360, atk: 44, threshold: 21 },
+  { name:'夜叉惡修',     icon:'👿', hp: 460, atk: 52, threshold: 23 },
+  { name:'食心羅刹',     icon:'😼', hp: 580, atk: 60, threshold: 25 },
+  { name:'幽冥渡魂者', icon:'☠️', hp: 720, atk: 68, threshold: 27 }
+];
+
 // Boss 首次斬殺掉落的招式（與書本通讀解鎖獨立）
 const BOSS_DROP_SKILLS = {
   'piercer':     { name: '破甲擊',   icon: '🗡', type: 'damage', dmg: 24, cd: 1, desc: '低冷卻穿甲一擊，殺練氣小妖所得' },
@@ -2363,6 +2562,87 @@ const SKILLS = {
 
 // 起手永久招式
 const STARTER_SKILLS = ['meridian', 'guard'];
+
+//═══════════════════════════════════════════════
+// 法寶（治寶閣 / 探寶可獲）
+//═══════════════════════════════════════════════
+const TREASURES = {
+  'cloud-step':     { name:'踏雲靴',     icon:'👢', tier:'凡品', color:'#7a8b9a', desc:'神速 +3（道心 +6）', stat:{spd:3} },
+  'spirit-ring':    { name:'聚靈環',     icon:'💍', tier:'凡品', color:'#7a8b9a', desc:'答對題目時靈力 +5', extraLingli:5 },
+  'jade-pendant':   { name:'青玉吊墜',   icon:'🟢', tier:'凡品', color:'#7a8b9a', desc:'防力 +2', stat:{def:2} },
+  'tiger-talisman': { name:'伏虎符',     icon:'🪬', tier:'寶品', color:'#c9a35a', desc:'攻力 +5（招式傷害 +25%）', stat:{atk:5} },
+  'jade-guard':     { name:'玉骨護甲',   icon:'🛡️', tier:'寶品', color:'#c9a35a', desc:'防力 +4（減傷 +2.4）', stat:{def:4} },
+  'eye-of-truth':   { name:'天眼鏡',     icon:'👁️', tier:'寶品', color:'#c9a35a', desc:'每日提示 +1', hintBonus:1 },
+  'wind-fan':       { name:'乾坤扇',     icon:'🪭', tier:'仙品', color:'#a87dd6', desc:'戰鬥開場附加 30 護盾', combatShield:30 },
+  'dragon-pearl':   { name:'蒼龍珠',     icon:'🟣', tier:'仙品', color:'#a87dd6', desc:'靈犀 +6（爆擊率 +6%）', stat:{crit:6} },
+  'phoenix-feather':{ name:'鳳凰之羽',   icon:'🪶', tier:'仙品', color:'#a87dd6', desc:'每場戰鬥首次受到致死傷害會復活到 30% 道心（一場一次）', revive:true },
+  'demon-mirror':   { name:'照妖鏡',     icon:'🪞', tier:'仙品', color:'#a87dd6', desc:'戰鬥中可看到 boss 招式（顯示 rage 警告）', bossPreview:true },
+  'sage-scroll':    { name:'仙人遺卷',   icon:'📜', tier:'神器', color:'#e85d5d', desc:'全屬性 +3（atk/def/crit/spd）', stat:{atk:3,def:3,crit:3,spd:3} },
+  'kunlun-pill':    { name:'崑崙凝丹爐', icon:'⚱️', tier:'神器', color:'#e85d5d', desc:'每次採藥多出 1 株丹藥', gatherBonus:1 }
+};
+
+const TREASURE_POOLS = {
+  '凡品': ['cloud-step','spirit-ring','jade-pendant'],
+  '寶品': ['tiger-talisman','jade-guard','eye-of-truth'],
+  '仙品': ['wind-fan','dragon-pearl','phoenix-feather','demon-mirror'],
+  '神器': ['sage-scroll','kunlun-pill']
+};
+
+// 取得啟用法寶之屬性加成總和
+function treasureStatBonus() {
+  const bonus = { atk:0, def:0, crit:0, spd:0 };
+  state.treasures.forEach(id => {
+    const t = TREASURES[id];
+    if (t && t.stat) {
+      ['atk','def','crit','spd'].forEach(k => { if (t.stat[k]) bonus[k] += t.stat[k]; });
+    }
+  });
+  return bonus;
+}
+// 結合 combatStats + 法寶 → 戰鬥用實際數值
+function effectiveStats() {
+  const b = treasureStatBonus();
+  return {
+    atk:  state.combatStats.atk  + b.atk,
+    def:  state.combatStats.def  + b.def,
+    crit: state.combatStats.crit + b.crit,
+    spd:  state.combatStats.spd  + b.spd
+  };
+}
+function hasTreasure(id) { return state.treasures.includes(id); }
+function treasureHintBonus() {
+  let n = 0;
+  state.treasures.forEach(id => { const t = TREASURES[id]; if (t && t.hintBonus) n += t.hintBonus; });
+  return n;
+}
+function treasureExtraLingli() {
+  let n = 0;
+  state.treasures.forEach(id => { const t = TREASURES[id]; if (t && t.extraLingli) n += t.extraLingli; });
+  return n;
+}
+function treasureGatherBonus() {
+  let n = 0;
+  state.treasures.forEach(id => { const t = TREASURES[id]; if (t && t.gatherBonus) n += t.gatherBonus; });
+  return n;
+}
+function treasureCombatShield() {
+  let n = 0;
+  state.treasures.forEach(id => { const t = TREASURES[id]; if (t && t.combatShield) n += t.combatShield; });
+  return n;
+}
+function awardTreasure(id) {
+  if (!TREASURES[id]) return false;
+  if (state.treasures.includes(id)) return false;  // 已有
+  state.treasures.push(id);
+  saveTreasures();
+  return true;
+}
+// 由稀有度隨機取一個尚未擁有的法寶
+function rollTreasureByTier(tier) {
+  const pool = (TREASURE_POOLS[tier] || []).filter(id => !state.treasures.includes(id));
+  if (pool.length === 0) return null;
+  return rand(pool);
+}
 
 // 章節 → 招式（通讀解鎖）
 const BOOK_SKILLS = {
@@ -2414,29 +2694,49 @@ function pickBoss() {
   return eligible[eligible.length - 1] || bosses[0];
 }
 
+// 35% 機率出現野怪取代當前 boss（境界內隨機挑一隻）
+function pickEncounter() {
+  if (Math.random() < 0.35) {
+    const eligibleWilds = WILD_MONSTERS.filter(w => state.rankIdx >= w.threshold);
+    if (eligibleWilds.length > 0) {
+      const w = rand(eligibleWilds);
+      return { ...w, isWild: true };
+    }
+  }
+  return { ...pickBoss(), isWild: false };
+}
+
 function startTower() {
   if (state.ap < 2) return;
   state.ap -= 2;
 
-  // 設定 boss
-  const boss = pickBoss();
+  // 設定遭遇者（boss 或 wild monster，35% 機率出 wild）
+  const boss = pickEncounter();
   state.currentBoss = boss;
   state.bossHP = state.bossMaxHP = boss.hp;
   // 道心上限 = 100 + 神速*2
-  state.playerMaxHP = 100 + Math.floor(state.combatStats.spd * 2);
+  const es = effectiveStats();
+  state.playerMaxHP = 100 + Math.floor(es.spd * 2);
   state.playerHP = state.playerMaxHP;
   state.skillCooldowns = {};
   state.combatTurn = 'player';
-  state.playerShield = 0;
+  // 乾坤扇：開場護盾
+  state.playerShield = treasureCombatShield();
+  if (state.playerShield > 0) {
+    setTimeout(() => floatMsg(`🪭 乾坤扇開場護盾 +${state.playerShield}`), 400);
+  }
+  // 鳳凰之羽：每場一次復活
+  state.reviveAvailable = hasTreasure('phoenix-feather');
   state.bossTurnCount = 0;
 
   $('boss-avatar').textContent = boss.icon;
   $('boss-avatar').classList.remove('dying');
-  $('boss-name').textContent = boss.name;
+  $('boss-name').textContent = boss.isWild ? `${boss.name}（野怪）` : boss.name;
   updateHPBars();
 
   go('tower');
-  setCombatLog(`遭遇 ${boss.name}，準備出招！`, 'player-turn');
+  const prefix = boss.isWild ? '野怪襲來！' : '遭遇';
+  setCombatLog(`${prefix} ${boss.name}，準備出招！`, 'player-turn');
   renderSkillPanel();
 }
 
@@ -2480,9 +2780,10 @@ function useSkill(skill) {
 
   let logText = `你施展《${skill.name}》`;
 
+  const es = effectiveStats();
   if (skill.type === 'damage') {
-    const baseDmg = skill.dmg * (1 + state.combatStats.atk * 0.05);
-    const isCrit = Math.random() * 100 < state.combatStats.crit;
+    const baseDmg = skill.dmg * (1 + es.atk * 0.05);
+    const isCrit = Math.random() * 100 < es.crit;
     let dmg = Math.round(baseDmg * (isCrit ? 2 : 1) * (0.85 + Math.random() * 0.3));
     state.bossHP -= dmg;
     showDamage('boss', dmg, isCrit);
@@ -2497,7 +2798,7 @@ function useSkill(skill) {
       logText += `，吸取 ${heal} 道心`;
     }
   } else if (skill.type === 'heal') {
-    const heal = Math.round(skill.heal * (1 + state.combatStats.atk * 0.03));
+    const heal = Math.round(skill.heal * (1 + es.atk * 0.03));
     const before = state.playerHP;
     state.playerHP = Math.min(state.playerMaxHP, state.playerHP + heal);
     const actual = state.playerHP - before;
@@ -2539,7 +2840,7 @@ function bossTurn() {
     if (isRage) dmgMult *= 1.6;
     if (isLowHP) dmgMult *= 1.3;
     let dmg = Math.round(state.currentBoss.atk * dmgMult * (0.85 + Math.random() * 0.3));
-    const reduction = state.combatStats.def * 0.6;
+    const reduction = effectiveStats().def * 0.6;
     dmg = Math.max(1, Math.round(dmg - reduction));
     if (state.playerShield > 0) {
       const absorbed = Math.min(state.playerShield, dmg);
@@ -2554,8 +2855,17 @@ function bossTurn() {
     }
     updateHPBars();
     if (state.playerHP <= 0) {
-      setTimeout(() => endCombat('lose'), 700);
-      return;
+      // 鳳凰之羽：每場一次復活
+      if (state.reviveAvailable) {
+        state.reviveAvailable = false;
+        state.playerHP = Math.round(state.playerMaxHP * 0.3);
+        showDamage('player', '🪶 復活');
+        floatMsg(`🪶 鳳凰之羽護身，復活！`);
+        updateHPBars();
+      } else {
+        setTimeout(() => endCombat('lose'), 700);
+        return;
+      }
     }
     // 冷卻 −1
     Object.keys(state.skillCooldowns).forEach(id => {
@@ -2574,12 +2884,51 @@ function endCombat(result) {
   if (result === 'win') {
     state.stats.bossesSlain++;
     state.stats.towersWon++;
-    state.lingshi += 120;
-    state.lingli += 80;
-    state.pills.peiyuan++;
+    const isWild = state.currentBoss.isWild;
+    // 野怪獎勵較少；boss 獎勵照舊
+    const lingshiReward = isWild ? 40 : 120;
+    const lingliReward  = isWild ? 30 : 80;
+    state.lingshi += lingshiReward;
+    state.lingli  += lingliReward;
+    if (!isWild) state.pills.peiyuan++;
     saveStats();
-    // 首次斬殺 boss → 掉落招式
+
     const bossName = state.currentBoss.name;
+
+    // 野怪：50% 機率掉法寶（凡品 70% / 寶品 25% / 仙品 5%）
+    if (isWild) {
+      let droppedTreasureId = null;
+      if (Math.random() < 0.5) {
+        const r = Math.random();
+        let tier = '凡品';
+        if (r < 0.05) tier = '仙品';
+        else if (r < 0.30) tier = '寶品';
+        droppedTreasureId = rollTreasureByTier(tier);
+      }
+      if (droppedTreasureId && awardTreasure(droppedTreasureId)) {
+        const t = TREASURES[droppedTreasureId];
+        showModal({
+          label: '野 怪 落 物',
+          title: t.name,
+          desc: `斬殺 <span style='color:var(--gold-bright)'>${bossName}</span> 後翻出 ${t.icon} <span style='color:${t.color}'>【${t.tier}】 ${t.name}</span><br><span style='font-size:11px;color:var(--paper-dim)'>${t.desc}</span>`,
+          rewards: `💎 +${lingshiReward}　⚡ +${lingliReward}　${t.icon} 法寶 ×1`,
+          btn: '返 回',
+          onClose: () => go('home')
+        });
+        return;
+      }
+      showModal({
+        label: '野 戰 告 捷',
+        title: `斬 殺 ${bossName}`,
+        desc: `<span style='color:var(--gold-bright)'>${bossName}</span> 已被你擊潰，雖無重寶但靈氣豐厚。`,
+        rewards: `💎 +${lingshiReward}　⚡ +${lingliReward}`,
+        btn: '返 回',
+        onClose: () => go('home')
+      });
+      return;
+    }
+
+    // Boss：首次斬殺 → 掉落招式
     const isFirstClear = !state.bossesFirstClear.includes(bossName);
     if (isFirstClear) {
       state.bossesFirstClear.push(bossName);
@@ -2607,6 +2956,23 @@ function endCombat(result) {
         }
       });
       return;
+    }
+    // boss 重複斬殺：25% 機率掉一個 寶品/仙品
+    if (Math.random() < 0.25) {
+      const tier = Math.random() < 0.2 ? '仙品' : '寶品';
+      const id = rollTreasureByTier(tier);
+      if (id && awardTreasure(id)) {
+        const t = TREASURES[id];
+        showModal({
+          label: '心 魔 劫 結 果',
+          title: '斬 殺 心 魔',
+          desc: `<span style='color:var(--gold-bright)'>${bossName}</span> 留下 ${t.icon} <span style='color:${t.color}'>【${t.tier}】 ${t.name}</span><br><span style='font-size:11px;color:var(--paper-dim)'>${t.desc}</span>`,
+          rewards: `💎 +120　⚡ +80　🔴 培元丹 ×1　${t.icon} 法寶 ×1`,
+          btn: '返 回',
+          onClose: () => go('home')
+        });
+        return;
+      }
     }
     showModal({
       label: '心 魔 劫 結 果',
@@ -2736,12 +3102,144 @@ function startGather() {
 function endGather(collected) {
   if (state._gatherCleanup) state._gatherCleanup();
   if (collected === undefined) { go('home'); return; }
+  // 崑崙凝丹爐：每次採藥 +N 額外丹藥
+  const bonus = treasureGatherBonus();
+  let bonusMsg = '';
+  if (bonus > 0) {
+    for (let i = 0; i < bonus; i++) {
+      const which = rand(['peiyuan','xingshen','huxin']);
+      state.pills[which]++;
+    }
+    bonusMsg = `<br><span style='color:var(--gold-bright)'>⚱️ 崑崙凝丹爐額外凝結 ${bonus} 顆丹藥</span>`;
+  }
   showModal({
     label: '採 藥 完 畢',
     title: `採得 ${collected} 株`,
-    desc: '靈藥入袋，可待煉丹之用。',
+    desc: '靈藥入袋，可待煉丹之用。' + bonusMsg,
     btn: '返 回',
     onClose: () => go('home')
+  });
+}
+
+//═══════════════════════════════════════════════
+// 治寶閣 / 探寶
+//═══════════════════════════════════════════════
+function renderTreasures() {
+  const box = $('treasure-list');
+  if (!box) return;
+  box.innerHTML = '';
+  const owned = state.treasures;
+  if (owned.length === 0) {
+    box.innerHTML = `<div class="treasure-empty">寶閣空空如也<br>前往「探寶」尋訪法寶</div>`;
+    return;
+  }
+  // 依稀有度排序
+  const tierOrder = { '神器':0, '仙品':1, '寶品':2, '凡品':3 };
+  const sorted = [...owned].sort((a,b) => (tierOrder[TREASURES[a].tier] ?? 9) - (tierOrder[TREASURES[b].tier] ?? 9));
+  sorted.forEach(id => {
+    const t = TREASURES[id];
+    if (!t) return;
+    const row = document.createElement('div');
+    row.className = 'treasure-row';
+    row.innerHTML = `
+      <div class="treasure-icon">${t.icon}</div>
+      <div class="treasure-info">
+        <div class="treasure-name">${t.name}<span class="treasure-tier" style="background:${t.color}">${t.tier}</span></div>
+        <div class="treasure-desc">${t.desc}</div>
+      </div>
+    `;
+    box.appendChild(row);
+  });
+}
+
+function startTreasureHunt() {
+  if (state.ap < 1) { floatMsg('行動點不足'); return; }
+  state.ap--;
+  go('hunt');
+  const stage = $('hunt-stage');
+  stage.innerHTML = '';
+  let picked = false;
+  for (let i = 0; i < 3; i++) {
+    const c = document.createElement('div');
+    c.className = 'hunt-chest';
+    c.textContent = '🎁';
+    c.onclick = () => {
+      if (picked) return;
+      picked = true;
+      c.classList.add('opened');
+      stage.querySelectorAll('.hunt-chest').forEach(x => { if (x !== c) x.classList.add('dim'); });
+      setTimeout(() => resolveTreasureHunt(c), 700);
+    };
+    stage.appendChild(c);
+  }
+}
+
+function resolveTreasureHunt(chest) {
+  // 機率表：神器 2% / 仙品 12% / 寶品 28% / 凡品 30% / 靈石 18% / 丹藥 8% / 空 2%
+  const roll = Math.random();
+  let result;
+  let icon, title, desc, rewards;
+  if (roll < 0.02) {
+    const id = rollTreasureByTier('神器');
+    if (id) result = {type:'treasure', id, tier:'神器'};
+  } else if (roll < 0.14) {
+    const id = rollTreasureByTier('仙品');
+    if (id) result = {type:'treasure', id, tier:'仙品'};
+  } else if (roll < 0.42) {
+    const id = rollTreasureByTier('寶品');
+    if (id) result = {type:'treasure', id, tier:'寶品'};
+  } else if (roll < 0.72) {
+    const id = rollTreasureByTier('凡品');
+    if (id) result = {type:'treasure', id, tier:'凡品'};
+  }
+  // 若沒抽到（或某級已全收齊），fallback 給資源
+  if (!result) {
+    // 已收齊 treasures → 給更多靈石/丹藥
+    if (roll < 0.5) {
+      const amount = 15 + Math.floor(Math.random() * 30);
+      state.lingshi += amount;
+      result = {type:'lingshi', amount};
+    } else if (roll < 0.95) {
+      const which = rand(['peiyuan','xingshen','huxin']);
+      state.pills[which]++;
+      result = {type:'pill', which};
+    } else {
+      result = {type:'empty'};
+    }
+  }
+  if (result.type === 'treasure') {
+    const t = TREASURES[result.id];
+    awardTreasure(result.id);
+    chest.textContent = t.icon;
+    icon = t.icon;
+    title = t.name;
+    desc = `<span style='color:${t.color}'>【${t.tier}】</span> ${t.desc}<br><span style='color:var(--paper-dim);font-size:11px'>已收入治寶閣，永久生效</span>`;
+    rewards = `${t.icon} ${t.name}`;
+  } else if (result.type === 'lingshi') {
+    chest.textContent = '💎';
+    title = '尋得靈石';
+    desc = `寶箱內藏 ${result.amount} 顆靈石。`;
+    rewards = `💎 +${result.amount}`;
+  } else if (result.type === 'pill') {
+    const pillName = {peiyuan:'培元丹', xingshen:'醒神丹', huxin:'護心丹'}[result.which];
+    const pillIcon = {peiyuan:'🔴', xingshen:'🟢', huxin:'🔵'}[result.which];
+    chest.textContent = pillIcon;
+    title = pillName;
+    desc = '丹藥一枚，已入丹藥背包。';
+    rewards = `${pillIcon} ${pillName} ×1`;
+  } else {
+    chest.textContent = '💨';
+    title = '空空如也';
+    desc = '此盒為空，下次再試。';
+    rewards = '無';
+  }
+  showModal({
+    label: '探 寶 結 果',
+    title: title,
+    desc: desc,
+    rewards: rewards,
+    btn: '返 回',
+    onClose: () => { render(); go('home'); }
   });
 }
 
@@ -2869,6 +3367,9 @@ function renderStats() {
     ? Math.round(100 * state.stats.totalCorrect / state.stats.totalAnswered) + '%'
     : '—';
   const cs = state.combatStats;
+  const es = effectiveStats();          // 含法寶加成
+  const bonus = treasureStatBonus();    // 純法寶部分（用於提示）
+  const fmtBonus = v => v > 0 ? ` (+${v})` : '';
 
   const generalCards = [
     ['答題總數',   state.stats.totalAnswered],
@@ -2882,10 +3383,10 @@ function renderStats() {
   ];
 
   const combatCards = [
-    ['攻 力',          Math.round(cs.atk)],
-    ['防 力',          Math.round(cs.def)],
-    ['靈犀（爆擊）',   cs.crit.toFixed(1) + '%'],
-    ['神速（HP 加成）', Math.round(cs.spd)]
+    ['攻 力',          Math.round(es.atk) + fmtBonus(bonus.atk)],
+    ['防 力',          Math.round(es.def) + fmtBonus(bonus.def)],
+    ['靈犀（爆擊）',   es.crit.toFixed(1) + '%' + fmtBonus(bonus.crit)],
+    ['神速（HP 加成）', Math.round(es.spd) + fmtBonus(bonus.spd)]
   ];
 
   // 顯示所有招式（含起手 + 章節解鎖）
@@ -3054,6 +3555,7 @@ function renderLibrary() {
 //═══════════════════════════════════════════════
 (async () => {
   await loadLibrary();
+  rolloverDaily();  // 跨日 → AP/抽機緣/提示重置
   render();
 })();
 </script>
