@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xexist17.github.io/shenwai-xiuxianlu/sitemap.xml

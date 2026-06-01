@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+# 推送到下列分支時自動部署整個靜態網站
+on:
+  push:
+    branches:
+      - main
+      - claude/website-setup-html-zDEZY
+  workflow_dispatch:
+
+# 授予 Pages 部署所需權限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時只跑一個部署，新的會等舊的跑完
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          # 若 repo 尚未啟用 Pages，會自動嘗試啟用
+          enablement: true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 整個 repo 根目錄就是網站，無建置流程
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
